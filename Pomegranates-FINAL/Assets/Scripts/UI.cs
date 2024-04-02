@@ -6,9 +6,7 @@ using UnityEngine.UI;
 
 public class UI : MonoBehaviour
 {
-    public GameObject reticle;
-
-    public GameObject narrativeTextBox;
+    public TextMeshProUGUI reticle; 
     // Start is called before the first frame update
     void Start()
     {
@@ -47,11 +45,6 @@ public class UI : MonoBehaviour
             {
                 reticle.GetComponent<Image>().color = Color.white;
             }
-
-            if (hit.collider.CompareTag("Father"))
-            {
-                reticle.GetComponent<Image>().color = Color.white;
-            }
         }
         else
         {
@@ -59,7 +52,5 @@ public class UI : MonoBehaviour
         }
         
         
-        
     }
-    
 }

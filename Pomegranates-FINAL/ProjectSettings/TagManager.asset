@@ -3,16 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - CinemachineTarget
-  - Flyer
-  - Mound
-  - Vegetable
-  - Book
-  - Tree
-  - Spawner
-  - Memory
-  - Father
+  tags: []
   layers:
   - Default
   - TransparentFX
