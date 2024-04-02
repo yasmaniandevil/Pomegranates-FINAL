@@ -7,12 +7,12 @@ public class AudioTrigger : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    //public string audioVar;
+    public string audioVar;
     
     private void OnTriggerEnter(Collider other)
     {
         //AkSoundEngine.PostEvent("PortalEnter", gameObject);
-        //AkSoundEngine.PostEvent(audioVar, gameObject);
+        AkSoundEngine.PostEvent(audioVar, gameObject);
         Debug.Log("enter");
     }
 
