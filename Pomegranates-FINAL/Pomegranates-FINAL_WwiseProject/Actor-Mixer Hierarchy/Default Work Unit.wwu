@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{47A5CEF6-CF96-4712-BB98-D6BCAD61398D}" SchemaVersion="110">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{47A5CEF6-CF96-4712-BB98-D6BCAD61398D}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{47A5CEF6-CF96-4712-BB98-D6BCAD61398D}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="Ocean" ID="{28184B42-681F-4F18-BEB8-5794D26A80AB}" ShortID="357552548">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{388F345F-C687-4C6D-878F-23220F72DDD5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Ocean" ID="{6B1F347A-53E9-4186-B225-B034486C0E57}">
+							<Language>SFX</Language>
+							<AudioFile>Ocean.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="478541483"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Ocean" ID="{6B1F347A-53E9-4186-B225-B034486C0E57}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

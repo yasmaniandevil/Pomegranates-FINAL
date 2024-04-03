@@ -66,8 +66,22 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: 033ae9bc3205de4f958035f6f2b06e57
     GuidInternal: 
-    m_lastTime: -8584894597037051422
-    List: []
+    m_lastTime: -8584894592476831930
+    List:
+    - name: Ocean
+      guid: c3452399e1e70e408ea2fd85a7d3d3a2
+      id: 3802555985
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 033ae9bc3205de4f958035f6f2b06e57
+      - ElementName: Ocean
+        ObjectType: 7
+        guid: c3452399e1e70e408ea2fd85a7d3d3a2
+      Path: SoundBanks/Default Work Unit/Ocean
   EventWwu:
   - PhysicalPath: Events/Default Work Unit.wwu
     PathAndIcons:
@@ -80,8 +94,25 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 8097cb23c1290d4c9b41229fb2bf76ca
     GuidInternal: 
-    m_lastTime: -8584894597037072324
-    List: []
+    m_lastTime: -8584894592476857327
+    List:
+    - name: Play_Ocean
+      guid: c7653d949e949d4e8b0f516db0e9deee
+      id: 1724638476
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8097cb23c1290d4c9b41229fb2bf76ca
+      - ElementName: Play_Ocean
+        ObjectType: 3
+        guid: c7653d949e949d4e8b0f516db0e9deee
+      Path: Events/Default Work Unit/Play_Ocean
+      maxAttenuation: 0
+      maxDuration: 32.352654
+      minDuration: 32.352654
   RtpcWwu:
   - PhysicalPath: Game Parameters/Default Work Unit.wwu
     PathAndIcons:
