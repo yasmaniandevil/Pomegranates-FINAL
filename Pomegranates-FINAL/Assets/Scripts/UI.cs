@@ -20,8 +20,8 @@ public class UI : MonoBehaviour
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
-
-        if (Physics.Raycast(ray, out hit, 5)) //shoot ray
+        
+        if (Physics.Raycast(ray, out hit, 5)) //shoot ray and if its whichever it will chnage to white and in range
         {
             if (hit.collider.CompareTag("Mound")) //if it mound
             {
@@ -38,24 +38,24 @@ public class UI : MonoBehaviour
                 reticle.GetComponent<Image>().color = Color.white;
             }
             
-            if (hit.collider.CompareTag("Memory"))
+            if (hit.collider.CompareTag("Memory")) //if it memory
             {
                 reticle.GetComponent<Image>().color = Color.white;
             }
 
-            if (hit.collider.CompareTag("Tree"))
+            if (hit.collider.CompareTag("Tree")) //if it tree
             {
                 reticle.GetComponent<Image>().color = Color.white;
             }
 
-            if (hit.collider.CompareTag("Father"))
+            if (hit.collider.CompareTag("Father")) //if it father
             {
                 reticle.GetComponent<Image>().color = Color.white;
             }
         }
-        else
+        else //if not in range
         {
-            reticle.GetComponent<Image>().color = Color.red;
+            reticle.GetComponent<Image>().color = Color.red; //change red
         }
         
         

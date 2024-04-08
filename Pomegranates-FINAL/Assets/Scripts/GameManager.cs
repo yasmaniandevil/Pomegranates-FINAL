@@ -18,14 +18,14 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Cursor.visible = false;
+        Cursor.visible = false; //when game starts, cursor wont be visible and locked in the center
         Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.R)) //when R pressed, restart game
         {
             Debug.Log("hit R");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
     }
 
 
-    public void TurnPlayerOn() //function turns player movement off, reticle off, and cnavas with text on
+    public void TurnPlayerOn() //function turns player movement on, reticle on, and cnavas off
     {
         player.SetActive(true);
         canvas.SetActive(false);
@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
     }
 
-    public void ShowCanvas(string text) //does opposite and calls text from digging script
+    public void ShowCanvas(string text) //turns player off, turns on canvasand calls text from digging script
     {
         canvas.SetActive(true);
         player.SetActive(false);

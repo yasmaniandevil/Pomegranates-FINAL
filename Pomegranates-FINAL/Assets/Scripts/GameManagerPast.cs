@@ -51,8 +51,6 @@ public class GameManagerPast : MonoBehaviour
             {hospital, hospitalSpawner}
         };
         
-        Debug.Log(location.Count);
-        
         MemoryManager();
         ChangeFlyer();
         
@@ -61,7 +59,7 @@ public class GameManagerPast : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.R)) //restarts game
         {
             Debug.Log("hit R");
             //MemoryManager();
@@ -69,7 +67,7 @@ public class GameManagerPast : MonoBehaviour
         }
         
         //turns on the light in whichever place you are supposed to look at
-        if (currentLocation == churchSpawner)
+        if (currentLocation == churchSpawner) 
         {
             churchLight.SetActive(true);
         }
@@ -98,7 +96,7 @@ public class GameManagerPast : MonoBehaviour
     }
 
 
-    public void TurnPlayerOn() //function turns player movement off, reticle off, and cnavas with text on
+    public void TurnPlayerOn() //function turns player movement on, reticle on, and cnavas off
     {
         player.SetActive(true);
         canvas.SetActive(false);
@@ -108,7 +106,7 @@ public class GameManagerPast : MonoBehaviour
         currentLocation.SetActive(true);
     }
 
-    public void ShowCanvas(string text) //does opposite and calls text from digging script
+    public void ShowCanvas(string text) //turns player off, turns on canvasand calls text from digging script
     {
         canvas.SetActive(true);
         player.SetActive(false);
@@ -127,27 +125,28 @@ public class GameManagerPast : MonoBehaviour
         
     }
 
-    public void MemoryManager()
+    public void MemoryManager() 
     {
-        //convert dictionary keys to a list
+        //convert dictionary keys to a list //makes a list out of locations
         List<string> keysList = new List<string>(location.Keys);
         
         // Select a random Key
         string randomKey = keysList[Random.Range(0, keysList.Count)];
-
+        
+        //randomvalue will equal the location in the array that was randomly picked
         GameObject randomValue = location[randomKey];
 
-        currentLocationString = randomKey;
-        currentLocation = randomValue;
+        currentLocationString = randomKey; //string will be the random key
+        currentLocation = randomValue; //gameobject will be the value
         
         location.Remove(randomKey);
         
         Debug.Log(location.Count +"," +  currentLocation +"," +  currentLocationString);
     }
 
-    public void ArtifactJournal()
+    public void ArtifactJournal() //memory text will change
     {
-        for (int i = 0; i < bookTextBox.Length; i++)
+        for (int i = 0; i < bookTextBox.Length; i++) //will go down the text boxes to add them in order
         {
             if (bookTextBox[i].text == "New Text")
             {
@@ -161,15 +160,12 @@ public class GameManagerPast : MonoBehaviour
         }
     }
 
-    public void ChangeFlyer()
+    public void ChangeFlyer()//chnage flyer text with current location
     {
         currentLocation.SetActive(true);
         flyerTextBox.text = "Next memory at " + currentLocationString;
         //journalWriting.Play();
     }
 
-    public void SpawnPaper()
-    {
-        currentLocation.SetActive(true);
-    }
+ 
 }

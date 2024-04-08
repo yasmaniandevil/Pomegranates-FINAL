@@ -35,7 +35,7 @@ public class Narrative : MonoBehaviour
             {
                 if (hit.collider.CompareTag("Father")) //if hit father
                 { 
-                    timesTalkedToFather++;
+                    timesTalkedToFather++; 
                   FatherConvo(timesTalkedToFather);
                 }
             }
@@ -43,12 +43,12 @@ public class Narrative : MonoBehaviour
         }
     }
 
-    void ChangeCamera()
+    void ChangeCamera() //will turn off camera to change cameras
     { 
         camera.SetActive(false);
     }
 
-    private void BeginningText()
+    private void BeginningText() //will do first text of the game
     {
         ChangeText("Child, come here!");
         Invoke("ActivateTextBox", 2);
@@ -60,11 +60,11 @@ public class Narrative : MonoBehaviour
         if (amount == 1)
         {
             player.SetActive(false);
-            ChangeText("These radishes to our left are ready to be picked.");
-            ActivateTextBox();
-            Invoke("FatherContinued", 4);
-            Invoke("DeactivateTextBox",8);
-            Invoke("MoveFather", 8);
+            ChangeText("These radishes to our left are ready to be picked."); //change text box to this
+            ActivateTextBox(); //activate text box
+            Invoke("FatherContinued", 4); //play next father function to change text
+            Invoke("DeactivateTextBox",8); //turn off text box
+            Invoke("MoveFather", 8); //move father
         }
         else if (amount == 2)
         {
@@ -75,29 +75,29 @@ public class Narrative : MonoBehaviour
 
     void FatherContinued()
     {
-        ChangeText("Dig them up and meet me by the tree at the souq");
+        ChangeText("Dig them up and meet me by the tree at the souq"); //change text
     }
 
-    private void ActivateTextBox()
+    private void ActivateTextBox() //turn on text box
     {
         narrativeCanvas.gameObject.SetActive(true);
         player.SetActive(false);
     }
 
-    private void DeactivateTextBox()
+    private void DeactivateTextBox() //turn of campus
     {
         player.SetActive(true);
         narrativeCanvas.gameObject.SetActive(false);
     }
 
-    private void ChangeText(string text)
+    private void ChangeText(string text) //change text in text box
     {
         narrativeTextBox.text = text;
     }
 
-    private void MoveFather()
+    private void MoveFather() 
     {
-        father.transform.position = new Vector3(-25, 7, 1);
+        father.transform.position = new Vector3(-25, 7, 1); //move father to this position
         father.transform.Rotate(0,-90,0);
     }
     
