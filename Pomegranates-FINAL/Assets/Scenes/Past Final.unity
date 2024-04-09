@@ -17270,7 +17270,7 @@ PrefabInstance:
     - target: {fileID: 322158177937765311, guid: 0f190840a5db9b4489a3c125ab939f9a, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 21300000, guid: f4b62abda32224717a7b82566c575ea3, type: 3}
     - target: {fileID: 322158177964847033, guid: 0f190840a5db9b4489a3c125ab939f9a, type: 3}
       propertyPath: currentPaper
       value: 0
