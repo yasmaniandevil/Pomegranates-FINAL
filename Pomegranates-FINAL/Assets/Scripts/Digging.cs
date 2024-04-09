@@ -37,7 +37,7 @@ public class Digging : MonoBehaviour
                     Debug.Log("D I G");
                 }
 
-                if(hit.collider.CompareTag("Vegetable")) //if hit veggie
+                /*if(hit.collider.CompareTag("Vegetable")) //if hit veggie
                 {
                     Destroy(hit.collider.gameObject); //destroy gameobject
                     veggiesCollected++; //add to veggies collected
@@ -46,7 +46,7 @@ public class Digging : MonoBehaviour
                         gameManager.GetComponent<GameManager>().ShowCanvas(
                             "Good job on collecting all the vegetables. Head over to the mosque for a special gift. "); //do show canvas function with this text
                     }
-                }
+                }*/
 
                 if (hit.collider.CompareTag("Book")) //if hit book
                 {
@@ -80,6 +80,13 @@ public class Digging : MonoBehaviour
                     hit.collider.gameObject.GetComponent<Renderer>().material = null;
                     gameManager.GetComponent<GameManager>().ShowCanvas(
                         "As you bury the book full of memories of the past, you see as people and buildings comeback \n The End");
+                }
+
+                if (hit.collider.CompareTag("Flyer"))
+                {
+                    Destroy(hit.collider.gameObject);
+                    gameManager.GetComponent<GameManager>().ShowCanvas(
+                        "Head over to the Mosque for a special gift");
                 }
                 
             }

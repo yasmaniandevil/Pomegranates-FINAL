@@ -14,8 +14,10 @@ public class Narrative : MonoBehaviour
     public GameObject narrativeCanvas;
 
     public GameObject father;
-    
+    int timesTalkedToFather = 0;
 
+    public GameObject paperDrop;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +27,6 @@ public class Narrative : MonoBehaviour
 
     private void Update()
     {
-        int timesTalkedToFather = 0;
         if (Input.GetMouseButtonDown(0)) //when left mouse button pressed
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -34,9 +35,12 @@ public class Narrative : MonoBehaviour
             if (Physics.Raycast(ray, out hit, 5)) //shoot ray
             {
                 if (hit.collider.CompareTag("Father")) //if hit father
-                { 
-                    timesTalkedToFather++;
+                {
+                    Debug.Log(timesTalkedToFather);
+                   timesTalkedToFather++;
+                    Debug.Log(timesTalkedToFather);
                   FatherConvo(timesTalkedToFather);
+                   
                 }
             }
 
@@ -66,9 +70,21 @@ public class Narrative : MonoBehaviour
             Invoke("DeactivateTextBox",8);
             Invoke("MoveFather", 8);
         }
-        else if (amount == 2)
+        else if (amount >= 2 && player.GetComponent<Digging>().veggiesCollected < 4)
         {
-            
+            player.SetActive(false);
+            ChangeText("You need to get all the radishes!");
+            ActivateTextBox();
+            Invoke("DeactivateTextBox", 5);
+        }
+        else if (amount >= 2 && player.GetComponent<Digging>().veggiesCollected == 4)
+        {
+            player.SetActive(false);
+            ChangeText("Hurry, we must sell these before...");
+            ActivateTextBox();
+            Invoke("DeactivateTextBox", 5);
+            Invoke("DeleteFather", 5);
+            Invoke("PaperDrop",5);
         }
        
     }
@@ -99,6 +115,16 @@ public class Narrative : MonoBehaviour
     {
         father.transform.position = new Vector3(-25, 7, 1);
         father.transform.Rotate(0,-90,0);
+    }
+
+    void PaperDrop()
+    {
+        paperDrop.SetActive(true);
+    }
+
+    void DeleteFather()
+    {
+        Destroy(father);
     }
     
 }

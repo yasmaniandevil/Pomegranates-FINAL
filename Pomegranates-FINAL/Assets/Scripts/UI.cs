@@ -52,6 +52,11 @@ public class UI : MonoBehaviour
             {
                 reticle.GetComponent<Image>().color = Color.white;
             }
+            if (hit.collider.CompareTag("Flyer")) 
+            {
+                reticle.GetComponent<Image>().color = Color.white;
+            }
+
         }
         else
         {
