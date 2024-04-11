@@ -7,6 +7,9 @@ using UnityEngine.UI;
 public class UI : MonoBehaviour
 {
     public GameObject reticle;
+    
+    public Sprite open;
+    public Sprite closed; 
 
     public GameObject narrativeTextBox;
     // Start is called before the first frame update
@@ -25,42 +28,42 @@ public class UI : MonoBehaviour
         {
             if (hit.collider.CompareTag("Mound")) //if it mound
             {
-                reticle.GetComponent<Image>().color = Color.white;
+                reticle.GetComponent<Image>().sprite = open;
             }
 
             if (hit.collider.CompareTag("Vegetable")) //if hit veggie
             {
-                reticle.GetComponent<Image>().color = Color.white;
+                reticle.GetComponent<Image>().sprite = open;
             }
 
             if (hit.collider.CompareTag("Book")) //if hit book
             {
-                reticle.GetComponent<Image>().color = Color.white;
+                reticle.GetComponent<Image>().sprite = open;
             }
             
             if (hit.collider.CompareTag("Memory"))
             {
-                reticle.GetComponent<Image>().color = Color.white;
+                reticle.GetComponent<Image>().sprite = open;
             }
 
             if (hit.collider.CompareTag("Tree"))
             {
-                reticle.GetComponent<Image>().color = Color.white;
+                reticle.GetComponent<Image>().sprite = open;
             }
 
             if (hit.collider.CompareTag("Father"))
             {
-                reticle.GetComponent<Image>().color = Color.white;
+                reticle.GetComponent<Image>().sprite = open;
             }
             if (hit.collider.CompareTag("Flyer")) 
             {
-                reticle.GetComponent<Image>().color = Color.white;
+                reticle.GetComponent<Image>().sprite = open;
             }
 
         }
         else
         {
-            reticle.GetComponent<Image>().color = Color.red;
+            reticle.GetComponent<Image>().sprite = closed;
         }
         
         

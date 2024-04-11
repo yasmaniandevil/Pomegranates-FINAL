@@ -21,4 +21,8 @@ public class ChangeScenes : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName);
     }
+    public void SceneLoaderPast()
+    {
+        SceneManager.LoadScene("Past Final");
+    }
 }

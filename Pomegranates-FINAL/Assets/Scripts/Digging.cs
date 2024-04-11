@@ -9,6 +9,7 @@ public class Digging : MonoBehaviour
 
     public int veggiesCollected;
     public GameObject gameManager;
+    public GameObject particles;
     
     //public GameObject ClickedObj;
 
@@ -37,22 +38,17 @@ public class Digging : MonoBehaviour
                     Debug.Log("D I G");
                 }
 
-                /*if(hit.collider.CompareTag("Vegetable")) //if hit veggie
+                if(hit.collider.CompareTag("Vegetable")) //if hit veggie
                 {
                     Destroy(hit.collider.gameObject); //destroy gameobject
                     veggiesCollected++; //add to veggies collected
-                    if (veggiesCollected == 4)
-                    {
-                        gameManager.GetComponent<GameManager>().ShowCanvas(
-                            "Good job on collecting all the vegetables. Head over to the mosque for a special gift. "); //do show canvas function with this text
-                    }
-                }*/
+                }
 
                 if (hit.collider.CompareTag("Book")) //if hit book
                 {
                     Destroy(hit.collider.gameObject);
-                    gameManager.GetComponent<GameManager>().ShowCanvas(
-                        "When you pick up the book, you feel a power from it. Your surroundings begin to change and you are not where you started.");
+                    particles.SetActive(true);
+                    gameManager.GetComponent<ChangeScenes>().Invoke("SceneLoaderPast", 4);
                 }
                 
                 
