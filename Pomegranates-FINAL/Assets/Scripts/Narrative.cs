@@ -70,6 +70,7 @@ public class Narrative : MonoBehaviour
             player.SetActive(false);
             ChangeText("These radishes to our left are ready to be picked.");
             //disable change text set active dialogue1 button
+            //i wired the buttons in inspector so when the player hits space ideally the text is supposed to continue
            
             ActivateTextBox();
             Invoke("FatherContinued", 4);
