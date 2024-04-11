@@ -6771,7 +6771,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3481058442233640740, guid: 06db750d2a91f3a4cbb10ac831c1b9b6, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3504378921907573502, guid: 06db750d2a91f3a4cbb10ac831c1b9b6, type: 3}
       propertyPath: reticle
@@ -10419,7 +10419,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &424739255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33568,7 +33568,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1279765330
 RectTransform:
   m_ObjectHideFlags: 0
@@ -38782,7 +38782,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1451912594
 RectTransform:
   m_ObjectHideFlags: 0
