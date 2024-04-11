@@ -17,7 +17,11 @@ public class Narrative : MonoBehaviour
     int timesTalkedToFather = 0;
 
     public GameObject paperDrop;
-    
+
+    public GameObject dialogue1;
+    public GameObject dialogue2;
+    public GameObject dialogue3;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -65,6 +69,8 @@ public class Narrative : MonoBehaviour
         {
             player.SetActive(false);
             ChangeText("These radishes to our left are ready to be picked.");
+            //disable change text set active dialogue1 button
+           
             ActivateTextBox();
             Invoke("FatherContinued", 4);
             Invoke("DeactivateTextBox",8);
