@@ -67,7 +67,7 @@
 				</AuxBus>
 			</AuxBusses>
 		</SoundBank>
-		<SoundBank Id="3481854762" Type="User" Language="SFX" Hash="{7E1E90D1-F3CD-62DB-073A-D011484606FA}">
+		<SoundBank Id="3481854762" Type="User" Language="SFX" Hash="{5F741BB6-2BD4-959D-29D1-987036C44FFB}">
 			<ShortName>StreetAudioContainerSoundbank</ShortName>
 			<Path>StreetAudioContainerSoundbank.bnk</Path>
 			<Media>
@@ -117,7 +117,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="3320485656" Name="Event_Street_Audio_Sequence_Container" DurationType="Infinite">
+				<Event Id="3320485656" Name="Event_Street_Audio_Sequence_Container" MaxAttenuation="75" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="92873532"/>
 						<MediaRef Id="444594259"/>
@@ -135,5 +135,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{5BADA9AE-0754-D190-4F10-CFC8DBB26216}</FileHash>
+	<FileHash>{D24E9B60-3236-8737-FFA0-F031D06A3875}</FileHash>
 </SoundBanksInfo>
