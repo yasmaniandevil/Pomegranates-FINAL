@@ -9,10 +9,32 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{F56A610C-C7C4-F874-B68B-7ADDF94EBB7A}">
+		<SoundBank Id="265338097" Type="User" Language="SFX" Hash="{F8619801-BE06-5C23-EC67-1B9350B0C776}">
+			<ShortName>Music_ALBint_Soundbank</ShortName>
+			<Path>Music_ALBint_Soundbank.bnk</Path>
+			<Media>
+				<File Id="771506818" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ALBINT2.wav</ShortName>
+					<CachePath>SFX/ALBINT2_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3204538988" Name="Event_ALBint" DurationType="OneShot" DurationMin="55.05501" DurationMax="55.05501">
+					<MediaRefs>
+						<MediaRef Id="771506818"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{00D2D649-6880-882B-AA53-6C54062C8C6F}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
+				<ShareSets>
+					<Plugin Id="1008402193" Name="Low_Pass_20KHz" LibName="Wwise Parametric EQ" LibId="6881283"/>
+					<Plugin Id="1990128658" Name="Room_Medium" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="3604890626" Name="High_Pass_60Hz" LibName="Wwise Parametric EQ" LibId="6881283"/>
+				</ShareSets>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
 					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
@@ -21,24 +43,97 @@
 			<Busses>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
+			<AuxBusses>
+				<AuxBus Id="348963605" Name="Reverb">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="1990128658"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+				<AuxBus Id="730513497" Name="HPF">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="3604890626"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+				<AuxBus Id="864145949" Name="LPF">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="1008402193"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+			</AuxBusses>
 		</SoundBank>
-		<SoundBank Id="3802555985" Type="User" Language="SFX" Hash="{D6CDB375-E8F6-03F1-C5C6-58777229F247}">
-			<ShortName>Ocean</ShortName>
-			<Path>Ocean.bnk</Path>
+		<SoundBank Id="3481854762" Type="User" Language="SFX" Hash="{7E1E90D1-F3CD-62DB-073A-D011484606FA}">
+			<ShortName>StreetAudioContainerSoundbank</ShortName>
+			<Path>StreetAudioContainerSoundbank.bnk</Path>
 			<Media>
-				<File Id="478541483" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Ocean.wav</ShortName>
-					<CachePath>SFX/Ocean_10C4C929.wem</CachePath>
+				<File Id="92873532" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>StreeetAudio9.wav</ShortName>
+					<CachePath>SFX/StreeetAudio9_10C4C929.wem</CachePath>
+				</File>
+				<File Id="444594259" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>StreeetAudio3.wav</ShortName>
+					<CachePath>SFX/StreeetAudio3_10C4C929.wem</CachePath>
+				</File>
+				<File Id="578721059" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>StreeetAudio2.wav</ShortName>
+					<CachePath>SFX/StreeetAudio2_10C4C929.wem</CachePath>
+				</File>
+				<File Id="692415688" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>StreeetAudio12.wav</ShortName>
+					<CachePath>SFX/StreeetAudio12_10C4C929.wem</CachePath>
+				</File>
+				<File Id="735065192" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>StreeetAudio4.wav</ShortName>
+					<CachePath>SFX/StreeetAudio4_10C4C929.wem</CachePath>
+				</File>
+				<File Id="758391977" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>StreeetAudio11.wav</ShortName>
+					<CachePath>SFX/StreeetAudio11_10C4C929.wem</CachePath>
+				</File>
+				<File Id="807896705" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>StreeetAudio7.wav</ShortName>
+					<CachePath>SFX/StreeetAudio7_10C4C929.wem</CachePath>
+				</File>
+				<File Id="841591534" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>StreeetAudio6.wav</ShortName>
+					<CachePath>SFX/StreeetAudio6_10C4C929.wem</CachePath>
+				</File>
+				<File Id="871803557" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>StreeetAudio5.wav</ShortName>
+					<CachePath>SFX/StreeetAudio5_10C4C929.wem</CachePath>
+				</File>
+				<File Id="978359606" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>StreeetAudio10.wav</ShortName>
+					<CachePath>SFX/StreeetAudio10_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1005275723" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>StreeetAudio8.wav</ShortName>
+					<CachePath>SFX/StreeetAudio8_10C4C929.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
-				<Event Id="1724638476" Name="Play_Ocean" DurationType="OneShot" DurationMin="32.352654" DurationMax="32.352654">
+				<Event Id="3320485656" Name="Event_Street_Audio_Sequence_Container" DurationType="Infinite">
 					<MediaRefs>
-						<MediaRef Id="478541483"/>
+						<MediaRef Id="92873532"/>
+						<MediaRef Id="444594259"/>
+						<MediaRef Id="578721059"/>
+						<MediaRef Id="692415688"/>
+						<MediaRef Id="735065192"/>
+						<MediaRef Id="758391977"/>
+						<MediaRef Id="807896705"/>
+						<MediaRef Id="841591534"/>
+						<MediaRef Id="871803557"/>
+						<MediaRef Id="978359606"/>
+						<MediaRef Id="1005275723"/>
 					</MediaRefs>
 				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{ABAF2DB1-E910-FAE9-B425-D2C21652A509}</FileHash>
+	<FileHash>{5BADA9AE-0754-D190-4F10-CFC8DBB26216}</FileHash>
 </SoundBanksInfo>

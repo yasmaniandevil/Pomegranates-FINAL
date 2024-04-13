@@ -6585,19 +6585,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1521177076115487707, guid: 06db750d2a91f3a4cbb10ac831c1b9b6, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7711861
+      value: 0.77118605
       objectReference: {fileID: 0}
     - target: {fileID: 1521177076115487707, guid: 06db750d2a91f3a4cbb10ac831c1b9b6, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.2645076
+      value: -0.26450756
       objectReference: {fileID: 0}
     - target: {fileID: 1521177076115487707, guid: 06db750d2a91f3a4cbb10ac831c1b9b6, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.54773533
+      value: -0.5477353
       objectReference: {fileID: 0}
     - target: {fileID: 1521177076115487707, guid: 06db750d2a91f3a4cbb10ac831c1b9b6, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.18786661
+      value: -0.18786663
       objectReference: {fileID: 0}
     - target: {fileID: 3481058442233640740, guid: 06db750d2a91f3a4cbb10ac831c1b9b6, type: 3}
       propertyPath: m_Name
@@ -32093,7 +32093,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 989051792}
-  m_LocalRotation: {x: -0.2645076, y: -0.54773533, z: -0.18786661, w: 0.7711861}
+  m_LocalRotation: {x: -0.26450756, y: -0.5477353, z: -0.18786663, w: 0.77118605}
   m_LocalPosition: {x: -22.2, y: 9.91, z: -23.98}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -49560,13 +49560,16 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1712063436}
+  - component: {fileID: 1712063439}
+  - component: {fileID: 1712063438}
+  - component: {fileID: 1712063437}
   m_Layer: 0
-  m_Name: AMB_People
+  m_Name: AMB_StreetAudio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1712063436
 Transform:
   m_ObjectHideFlags: 0
@@ -49582,6 +49585,81 @@ Transform:
   m_Father: {fileID: 897577508}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1712063437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712063435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dea7f285146e74e389f07b5d7ae7d0e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: c0f07190c448c484882e08964807b9c0, type: 2}
+  useCallbacks: 0
+  Callbacks: []
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
+--- !u!114 &1712063438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712063435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 981320476500747d9bbdc45c7c7f9b7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
+--- !u!114 &1712063439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712063435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77011145e31504b3d8569944857b3010, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a4e311288882341218324cd92f2a9d89, type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!1001 &1712138441
 PrefabInstance:
   m_ObjectHideFlags: 0

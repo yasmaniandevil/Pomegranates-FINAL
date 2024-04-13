@@ -1,6 +1,16 @@
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	348963605	Reverb			\Default Work Unit\Master Audio Bus\Reverb	
+	730513497	HPF			\Default Work Unit\Master Audio Bus\HPF	
+	864145949	LPF			\Default Work Unit\Master Audio Bus\LPF	
+
+Effect plug-ins	ID	Name	Type				Notes
+	1008402193	Low_Pass_20KHz	Wwise Parametric EQ			
+	1990128658	Room_Medium	Wwise RoomVerb			
+	3604890626	High_Pass_60Hz	Wwise Parametric EQ			
+
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			
 	3859886410	System	System			

@@ -13,19 +13,28 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID PLAY_OCEAN = 1724638476U;
+        static const AkUniqueID EVENT_ALBINT = 3204538988U;
+        static const AkUniqueID EVENT_STREET_AUDIO_SEQUENCE_CONTAINER = 3320485656U;
     } // namespace EVENTS
 
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
-        static const AkUniqueID OCEAN = 3802555985U;
+        static const AkUniqueID MUSIC_ALBINT_SOUNDBANK = 265338097U;
+        static const AkUniqueID STREETAUDIOCONTAINERSOUNDBANK = 3481854762U;
     } // namespace BANKS
 
     namespace BUSSES
     {
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
     } // namespace BUSSES
+
+    namespace AUX_BUSSES
+    {
+        static const AkUniqueID HPF = 730513497U;
+        static const AkUniqueID LPF = 864145949U;
+        static const AkUniqueID REVERB = 348963605U;
+    } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES
     {

@@ -38,8 +38,42 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy/Default Work Unit
     guid: f732e3d294baae4b9e44cb31b07d54a0
     GuidInternal: 
-    m_lastTime: -8584894592093294254
+    m_lastTime: -8584886366866061760
     List:
+    - name: HPF
+      guid: 41656ba30f3e6041b56d0dff35945b0c
+      id: 730513497
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f732e3d294baae4b9e44cb31b07d54a0
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: HPF
+        ObjectType: 1
+        guid: 41656ba30f3e6041b56d0dff35945b0c
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/HPF
+    - name: LPF
+      guid: 54a02ec63189a949ae8ba820baa8b3d9
+      id: 864145949
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f732e3d294baae4b9e44cb31b07d54a0
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: LPF
+        ObjectType: 1
+        guid: 54a02ec63189a949ae8ba820baa8b3d9
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/LPF
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -54,6 +88,23 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus
+    - name: Reverb
+      guid: a4d210bc056c5f4d89d4e252bc7ffb84
+      id: 348963605
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f732e3d294baae4b9e44cb31b07d54a0
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Reverb
+        ObjectType: 1
+        guid: a4d210bc056c5f4d89d4e252bc7ffb84
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/Reverb
   BankWwu:
   - PhysicalPath: SoundBanks/Default Work Unit.wwu
     PathAndIcons:
@@ -66,49 +117,62 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: 033ae9bc3205de4f958035f6f2b06e57
     GuidInternal: 
-    m_lastTime: -8584887415828329318
-    List:
-    - name: Ocean
-      guid: c3452399e1e70e408ea2fd85a7d3d3a2
-      id: 3802555985
-      PathAndIcons:
-      - ElementName: SoundBanks
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 033ae9bc3205de4f958035f6f2b06e57
-      - ElementName: Ocean
-        ObjectType: 7
-        guid: c3452399e1e70e408ea2fd85a7d3d3a2
-      Path: SoundBanks/Default Work Unit/Ocean
-  - PhysicalPath: SoundBanks/Enviornmental Soundbank.wwu
+    m_lastTime: -8584886332851335274
+    List: []
+  - PhysicalPath: SoundBanks/Enviornmental Work Unit.wwu
     PathAndIcons:
     - ElementName: SoundBanks
       ObjectType: 5
       guid: 00000000000000000000000000000000
-    - ElementName: Enviornmental Soundbank
+    - ElementName: Enviornmental Work Unit
       ObjectType: 12
       guid: 811dc13d89a1484ba7327cd7cc47d6d1
-    ParentPath: SoundBanks/Enviornmental Soundbank
+    ParentPath: SoundBanks/Enviornmental Work Unit
     guid: 811dc13d89a1484ba7327cd7cc47d6d1
     GuidInternal: 
-    m_lastTime: -8584886547387463106
+    m_lastTime: -8584886332851303299
     List:
-    - name: StreetAudio
+    - name: StreetAudioContainerSoundbank
       guid: 9ba6de72fcaed1478e1afe6f1d08aa87
-      id: 4275012286
+      id: 3481854762
       PathAndIcons:
       - ElementName: SoundBanks
         ObjectType: 5
         guid: 00000000000000000000000000000000
-      - ElementName: Enviornmental Soundbank
+      - ElementName: Enviornmental Work Unit
         ObjectType: 12
         guid: 811dc13d89a1484ba7327cd7cc47d6d1
-      - ElementName: StreetAudio
+      - ElementName: StreetAudioContainerSoundbank
         ObjectType: 7
         guid: 9ba6de72fcaed1478e1afe6f1d08aa87
-      Path: SoundBanks/Enviornmental Soundbank/StreetAudio
+      Path: SoundBanks/Enviornmental Work Unit/StreetAudioContainerSoundbank
+  - PhysicalPath: SoundBanks/Music Work Unit.wwu
+    PathAndIcons:
+    - ElementName: SoundBanks
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Music Work Unit
+      ObjectType: 12
+      guid: c18c34e12c7e7d44877328d2d89e2c2d
+    ParentPath: SoundBanks/Music Work Unit
+    guid: c18c34e12c7e7d44877328d2d89e2c2d
+    GuidInternal: 
+    m_lastTime: -8584886332851284532
+    List:
+    - name: Music_ALBint_Soundbank
+      guid: f2e71fddc7aeb6458658b8e863ae6fe3
+      id: 265338097
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music Work Unit
+        ObjectType: 12
+        guid: c18c34e12c7e7d44877328d2d89e2c2d
+      - ElementName: Music_ALBint_Soundbank
+        ObjectType: 7
+        guid: f2e71fddc7aeb6458658b8e863ae6fe3
+      Path: SoundBanks/Music Work Unit/Music_ALBint_Soundbank
   EventWwu:
   - PhysicalPath: Events/Default Work Unit.wwu
     PathAndIcons:
@@ -121,25 +185,8 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 8097cb23c1290d4c9b41229fb2bf76ca
     GuidInternal: 
-    m_lastTime: -8584886538531700324
-    List:
-    - name: Play_Ocean
-      guid: c7653d949e949d4e8b0f516db0e9deee
-      id: 1724638476
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 8097cb23c1290d4c9b41229fb2bf76ca
-      - ElementName: Play_Ocean
-        ObjectType: 3
-        guid: c7653d949e949d4e8b0f516db0e9deee
-      Path: Events/Default Work Unit/Play_Ocean
-      maxAttenuation: 0
-      maxDuration: 32.352654
-      minDuration: 32.352654
+    m_lastTime: -8584886334396233395
+    List: []
   - PhysicalPath: Events/Environmental Events Work Unit.wwu
     PathAndIcons:
     - ElementName: Events
@@ -151,7 +198,7 @@ MonoBehaviour:
     ParentPath: Events/Environmental Events Work Unit
     guid: 88fa32bd4d1aa14b85d1e735b565316a
     GuidInternal: 
-    m_lastTime: -8584886548004080795
+    m_lastTime: -8584886353204207504
     List:
     - name: Event_Street_Audio_Sequence_Container
       guid: 829755acb3cbc840894e635428208105
@@ -170,6 +217,36 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+  - PhysicalPath: Events/Music Events Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Music Events Work Unit
+      ObjectType: 12
+      guid: bb625751613f284e8f36db8b35422e0b
+    ParentPath: Events/Music Events Work Unit
+    guid: bb625751613f284e8f36db8b35422e0b
+    GuidInternal: 
+    m_lastTime: -8584886332851265803
+    List:
+    - name: Event_ALBint
+      guid: d33cfcdbb033cf408f9abac76efdce4c
+      id: 3204538988
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music Events Work Unit
+        ObjectType: 12
+        guid: bb625751613f284e8f36db8b35422e0b
+      - ElementName: Event_ALBint
+        ObjectType: 3
+        guid: d33cfcdbb033cf408f9abac76efdce4c
+      Path: Events/Music Events Work Unit/Event_ALBint
+      maxAttenuation: 0
+      maxDuration: 55.05501
+      minDuration: 55.05501
   RtpcWwu:
   - PhysicalPath: Game Parameters/Default Work Unit.wwu
     PathAndIcons:
@@ -227,7 +304,7 @@ MonoBehaviour:
     m_lastTime: -8584894592093036433
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0b0000000c00000022000000230000004d0000004e000000
+  ExpandedWaapiItemIds: 06000000080000000a0000000b0000000c0000000e0000001000000022000000230000004d0000004e000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
