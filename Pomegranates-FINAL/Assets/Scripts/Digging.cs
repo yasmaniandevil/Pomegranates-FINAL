@@ -3,28 +3,23 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Digging : MonoBehaviour
 {
 
     public int veggiesCollected;
     public GameObject gameManager;
-    public GameObject particles;
-    
-    //public GameObject ClickedObj;
+    public GameObject book;
 
-    
-    //public Animation animShovel;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject flyerCanvas;
+    public GameObject reticleCanvas;
+    public GameObject player;
 
     // Update is called once per frame
     void Update()
     {
-
+        
         if (Input.GetMouseButtonDown(0)) //when left mouse button pressed
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -47,11 +42,14 @@ public class Digging : MonoBehaviour
                 if (hit.collider.CompareTag("Book")) //if hit book
                 {
                     Destroy(hit.collider.gameObject);
-                    particles.SetActive(true);
-                    gameManager.GetComponent<ChangeScenes>().Invoke("SceneLoaderPast", 4);
+                    book.SetActive(true);
+                    //book.GetComponent<AutoFlip>().Invoke("FlipRightPage", 2);
+                    Invoke("TurnBookOn", 3);
+                    player.SetActive(false);
+                    reticleCanvas.SetActive(false);
+                    Cursor.visible = true;
+                    Cursor.lockState = CursorLockMode.None;
                 }
-                
-                
                 
                 if (hit.collider.CompareTag("Memory") && gameManager.GetComponent<GameManagerPast>().location.Count > 0)
                 {
@@ -81,14 +79,22 @@ public class Digging : MonoBehaviour
                 if (hit.collider.CompareTag("Flyer"))
                 {
                     Destroy(hit.collider.gameObject);
-                    gameManager.GetComponent<GameManager>().ShowCanvas(
-                        "Head over to the Mosque for a special gift");
+                    flyerCanvas.SetActive(true);
+                    gameManager.GetComponent<Narrative>().flyerOn = true;
+                    player.SetActive(false);
+                    reticleCanvas.SetActive(false);
+
                 }
                 
             }
         }
 
      
+    }
+
+    void TurnBookOn()
+    {
+        gameManager.GetComponent<Narrative>().bookOn = true;
     }
     
 }

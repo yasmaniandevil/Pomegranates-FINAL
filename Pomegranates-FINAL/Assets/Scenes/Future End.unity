@@ -33465,12 +33465,18 @@ MonoBehaviour:
   player: {fileID: 0}
   narrativeCanvas: {fileID: 0}
   reticle: {fileID: 0}
-  temp: {fileID: 0}
   father: {fileID: 0}
   fatherMove: {fileID: 0}
   paperDrop: {fileID: 0}
   dialogue: []
   dialogueBox: {fileID: 0}
+  paperPrefab: {fileID: 0}
+  paperSpawn: {fileID: 0}
+  flyer: {fileID: 0}
+  book: {fileID: 0}
+  particles: {fileID: 0}
+  flyerOn: 0
+  bookOn: 0
 --- !u!1001 &1323166787
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39789,6 +39795,10 @@ PrefabInstance:
     - target: {fileID: 427150713847433160, guid: 0f190840a5db9b4489a3c125ab939f9a, type: 3}
       propertyPath: m_Name
       value: Book Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 427150713847433160, guid: 0f190840a5db9b4489a3c125ab939f9a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 427150713847433172, guid: 0f190840a5db9b4489a3c125ab939f9a, type: 3}
       propertyPath: m_Pivot.x
@@ -50612,6 +50622,63 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1765490707}
   m_Mesh: {fileID: 157164963643299130, guid: e982d5dae4095de4f8511b8fccc0a559, type: 3}
+--- !u!1 &1770120922
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1770120924}
+  - component: {fileID: 1770120923}
+  m_Layer: 0
+  m_Name: WwiseGlobal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1770120923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1770120922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd850781a44244e9a8da2ab88dd636c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitializationSettings: {fileID: 11400000, guid: 898ec5e90af9b41c58b616077b2d5a3c, type: 2}
+  basePath: 
+  language: 
+  defaultPoolSize: 0
+  lowerPoolSize: 0
+  streamingPoolSize: 0
+  memoryCutoffThreshold: 0
+  monitorPoolSize: 0
+  monitorQueuePoolSize: 0
+  callbackManagerBufferSize: 0
+  spatialAudioPoolSize: 0
+  maxSoundPropagationDepth: 0
+  engineLogging: 0
+--- !u!4 &1770120924
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1770120922}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1771845378
 PrefabInstance:
   m_ObjectHideFlags: 0

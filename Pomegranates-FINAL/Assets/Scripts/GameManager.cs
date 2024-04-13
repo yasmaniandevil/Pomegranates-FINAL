@@ -54,12 +54,5 @@ public class GameManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
     }
 
-    public void ChangeScene() //changes scene
-    {
-        if (buttonsPressed == 2) //if the button has been pressed
-        {
-            SceneManager.LoadScene("Past Final");
-        }
-        
-    }
+ 
 }

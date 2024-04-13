@@ -5,6 +5,8 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class Narrative : MonoBehaviour
 {
@@ -13,7 +15,6 @@ public class Narrative : MonoBehaviour
     
     public GameObject narrativeCanvas;
     public GameObject reticle;
-    public GameObject temp;
 
     public GameObject father;
     public GameObject fatherMove;
@@ -26,6 +27,17 @@ public class Narrative : MonoBehaviour
     private Sprite currentDialogue;
 
     public GameObject dialogueBox;
+
+    public GameObject paperPrefab;
+    public GameObject paperSpawn;
+    
+    public GameObject flyer;
+    public GameObject book;
+    public  GameObject particles;
+
+    public bool flyerOn;
+    public bool bookOn;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -55,7 +67,7 @@ public class Narrative : MonoBehaviour
 
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             DeactivateTextBox();
             if(currentDialogue == dialogue[1])
@@ -74,8 +86,26 @@ public class Narrative : MonoBehaviour
                 DeleteFather();
                 Cursor.visible = true;
                 Cursor.lockState = CursorLockMode.None;
-                temp.SetActive(true);
+                PaperDrop();
+                currentDialogue = null;
             }
+        }
+        if (Input.GetKeyDown(KeyCode.Space) && flyerOn == true )
+        {
+            flyer.SetActive(false);
+            flyerOn = false;
+            player.SetActive(true);
+            reticle.SetActive(true);
+        }
+        if (Input.GetKeyDown(KeyCode.Space) && bookOn == true )
+        {
+            book.SetActive(false);
+            particles.SetActive(true);
+            player.SetActive(true);
+            reticle.SetActive(true);
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+            Invoke("ChangeScene", 4);
         }
     }
 
@@ -94,6 +124,7 @@ public class Narrative : MonoBehaviour
         if (amount == 1)
         {
             ActivateTextBox(1);
+            father.tag = "Untagged";
         }
         else if (amount >= 2 && player.GetComponent<Digging>().veggiesCollected < 4)
         {
@@ -128,16 +159,31 @@ public class Narrative : MonoBehaviour
     {
         father.transform.position = fatherMove.transform.position;
         father.transform.rotation = fatherMove.transform.rotation;
+        father.tag = "Father";
     }
 
     void PaperDrop()
     {
         paperDrop.SetActive(true);
+        Invoke("SpawnPaper", 4);
     }
 
     void DeleteFather()
     {
         Destroy(father);
     }
+
+    void SpawnPaper()
+    {
+        Vector3 paperPos = new Vector3(paperSpawn.transform.position.x, paperSpawn.transform.position.y,
+            paperSpawn.transform.position.z);
+        Instantiate(paperPrefab, paperPos, transform.rotation);
+    }
+    
+    public void ChangeScene() //changes scene
+    {
+        SceneManager.LoadScene("Past Final");
+    }
+    
     
 }
