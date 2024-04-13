@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{9C472C09-89AB-46D7-87C7-20F1D2ABCF84}" SchemaVersion="110" RootDocumentID="{47A5CEF6-CF96-4712-BB98-D6BCAD61398D}" ParentDocumentID="{47A5CEF6-CF96-4712-BB98-D6BCAD61398D}">
+<WwiseDocument Type="WorkUnit" ID="{9C472C09-89AB-46D7-87C7-20F1D2ABCF84}" SchemaVersion="110">
 	<AudioObjects>
-		<WorkUnit Name="Music Work Unit" ID="{9C472C09-89AB-46D7-87C7-20F1D2ABCF84}" OwnerID="{47A5CEF6-CF96-4712-BB98-D6BCAD61398D}" PersistMode="Nested">
+		<WorkUnit Name="Music Work Unit" ID="{9C472C09-89AB-46D7-87C7-20F1D2ABCF84}" PersistMode="Standalone">
 			<ChildrenList>
 				<Sound Name="ALBINT" ID="{9F13420E-5517-471E-97C0-8B5A7048A9A0}" ShortID="115631412">
 					<PropertyList>

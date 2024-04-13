@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{3B76DE0B-2F5C-469C-9235-495D31C2DB59}" SchemaVersion="110">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{3B76DE0B-2F5C-469C-9235-495D31C2DB59}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{3B76DE0B-2F5C-469C-9235-495D31C2DB59}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="FadeOutStreetAudio" ID="{B6BE31DC-4844-4635-A2A9-80262065B2B3}"/>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

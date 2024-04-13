@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{3278F05B-D4EB-4DB9-8A0F-7C28D71A4DEE}" SchemaVersion="110" RootDocumentID="{47A5CEF6-CF96-4712-BB98-D6BCAD61398D}" ParentDocumentID="{47A5CEF6-CF96-4712-BB98-D6BCAD61398D}">
+<WwiseDocument Type="WorkUnit" ID="{3278F05B-D4EB-4DB9-8A0F-7C28D71A4DEE}" SchemaVersion="110">
 	<AudioObjects>
-		<WorkUnit Name="Enviornmental Work Unit" ID="{3278F05B-D4EB-4DB9-8A0F-7C28D71A4DEE}" OwnerID="{47A5CEF6-CF96-4712-BB98-D6BCAD61398D}" PersistMode="Nested">
+		<WorkUnit Name="Enviornmental Work Unit" ID="{3278F05B-D4EB-4DB9-8A0F-7C28D71A4DEE}" PersistMode="Standalone">
 			<ChildrenList>
 				<RandomSequenceContainer Name="Street Audio Sequence Container" ID="{00BC43B7-9548-490E-B888-BCF143494E91}" ShortID="734269477">
 					<PropertyList>
@@ -265,6 +265,45 @@
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{45687029-7448-4383-A2B0-46A9EE11C3B4}" ShortID="276524259">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Volume"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="FadeOutStreetAudio" ID="{B6BE31DC-4844-4635-A2A9-80262065B2B3}" WorkUnitID="{3B76DE0B-2F5C-469C-9235-495D31C2DB59}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{3A2591AC-6383-488D-A253-2686F51E56DB}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
 					<Playlist>
 						<ItemRef Name="StreeetAudio9" ID="{C8CC5C58-2432-4325-A932-47D809A5895A}"/>
 						<ItemRef Name="StreeetAudio2" ID="{C00F50E5-04E2-42FD-937C-D8D8DECF80D5}"/>
