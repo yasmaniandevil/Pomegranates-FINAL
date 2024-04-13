@@ -82,6 +82,33 @@ MonoBehaviour:
         ObjectType: 7
         guid: c3452399e1e70e408ea2fd85a7d3d3a2
       Path: SoundBanks/Default Work Unit/Ocean
+  - PhysicalPath: SoundBanks/Enviornmental Soundbank.wwu
+    PathAndIcons:
+    - ElementName: SoundBanks
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Enviornmental Soundbank
+      ObjectType: 12
+      guid: 811dc13d89a1484ba7327cd7cc47d6d1
+    ParentPath: SoundBanks/Enviornmental Soundbank
+    guid: 811dc13d89a1484ba7327cd7cc47d6d1
+    GuidInternal: 
+    m_lastTime: -8584886547387463106
+    List:
+    - name: StreetAudio
+      guid: 9ba6de72fcaed1478e1afe6f1d08aa87
+      id: 4275012286
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Enviornmental Soundbank
+        ObjectType: 12
+        guid: 811dc13d89a1484ba7327cd7cc47d6d1
+      - ElementName: StreetAudio
+        ObjectType: 7
+        guid: 9ba6de72fcaed1478e1afe6f1d08aa87
+      Path: SoundBanks/Enviornmental Soundbank/StreetAudio
   EventWwu:
   - PhysicalPath: Events/Default Work Unit.wwu
     PathAndIcons:
@@ -94,7 +121,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 8097cb23c1290d4c9b41229fb2bf76ca
     GuidInternal: 
-    m_lastTime: -8584887415828372833
+    m_lastTime: -8584886538531700324
     List:
     - name: Play_Ocean
       guid: c7653d949e949d4e8b0f516db0e9deee
@@ -113,6 +140,36 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 32.352654
       minDuration: 32.352654
+  - PhysicalPath: Events/Environmental Events Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Environmental Events Work Unit
+      ObjectType: 12
+      guid: 88fa32bd4d1aa14b85d1e735b565316a
+    ParentPath: Events/Environmental Events Work Unit
+    guid: 88fa32bd4d1aa14b85d1e735b565316a
+    GuidInternal: 
+    m_lastTime: -8584886548004080795
+    List:
+    - name: Event_Street_Audio_Sequence_Container
+      guid: 829755acb3cbc840894e635428208105
+      id: 3320485656
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Environmental Events Work Unit
+        ObjectType: 12
+        guid: 88fa32bd4d1aa14b85d1e735b565316a
+      - ElementName: Event_Street_Audio_Sequence_Container
+        ObjectType: 3
+        guid: 829755acb3cbc840894e635428208105
+      Path: Events/Environmental Events Work Unit/Event_Street_Audio_Sequence_Container
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters/Default Work Unit.wwu
     PathAndIcons:
@@ -170,7 +227,7 @@ MonoBehaviour:
     m_lastTime: -8584894592093036433
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 22000000230000004d0000004e000000
+  ExpandedWaapiItemIds: 0b0000000c00000022000000230000004d0000004e000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

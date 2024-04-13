@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{DC4162FD-7DAF-4F15-BB58-51F2201FED96}" SchemaVersion="110">
-	<InteractiveMusic>
-		<WorkUnit Name="StreetAudio" ID="{DC4162FD-7DAF-4F15-BB58-51F2201FED96}" PersistMode="Standalone"/>
-	</InteractiveMusic>
-</WwiseDocument>

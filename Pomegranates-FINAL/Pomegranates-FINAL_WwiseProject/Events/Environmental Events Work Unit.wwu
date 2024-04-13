@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{BD32FA88-1A4D-4BA1-85D1-E735B565316A}" SchemaVersion="110">
+	<Events>
+		<WorkUnit Name="Environmental Events Work Unit" ID="{BD32FA88-1A4D-4BA1-85D1-E735B565316A}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Event_Street_Audio_Sequence_Container" ID="{AC559782-CBB3-40C8-894E-635428208105}">
+					<ChildrenList>
+						<Action Name="" ID="{FCE7C0C0-733E-4DD1-9BD3-886329902D17}" ShortID="15170745">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Street Audio Sequence Container" ID="{00BC43B7-9548-490E-B888-BCF143494E91}" WorkUnitID="{3278F05B-D4EB-4DB9-8A0F-7C28D71A4DEE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
