@@ -212,7 +212,7 @@ MonoBehaviour:
     ParentPath: Events/Environmental Events Work Unit
     guid: 88fa32bd4d1aa14b85d1e735b565316a
     GuidInternal: 
-    m_lastTime: -8584885592900276028
+    m_lastTime: -8584885580608800100
     List:
     - name: Event_AdanSequenceContainer
       guid: 93e75f65e236b8459bfb77bc38ddf30c
@@ -259,7 +259,7 @@ MonoBehaviour:
     ParentPath: Events/Music Events Work Unit
     guid: bb625751613f284e8f36db8b35422e0b
     GuidInternal: 
-    m_lastTime: -8584885618479400212
+    m_lastTime: -8584885580608776962
     List:
     - name: Event_ALBint
       guid: d33cfcdbb033cf408f9abac76efdce4c
@@ -276,8 +276,8 @@ MonoBehaviour:
         guid: d33cfcdbb033cf408f9abac76efdce4c
       Path: Events/Music Events Work Unit/Event_ALBint
       maxAttenuation: 20
-      maxDuration: 55.05501
-      minDuration: 55.05501
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters/Default Work Unit.wwu
     PathAndIcons:
@@ -290,8 +290,22 @@ MonoBehaviour:
     ParentPath: Game Parameters/Default Work Unit
     guid: 0bde763b5c2f9c469235495d31c2db59
     GuidInternal: 
-    m_lastTime: -8584894592093674687
-    List: []
+    m_lastTime: -8584885577798889692
+    List:
+    - name: FadeOutStreetAudio
+      guid: dc31beb644483546a2a980262065b2b3
+      id: 513275970
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0bde763b5c2f9c469235495d31c2db59
+      - ElementName: FadeOutStreetAudio
+        ObjectType: 13
+        guid: dc31beb644483546a2a980262065b2b3
+      Path: Game Parameters/Default Work Unit/FadeOutStreetAudio
   StateWwu:
   - PhysicalPath: States/Default Work Unit.wwu
     PathAndIcons:
