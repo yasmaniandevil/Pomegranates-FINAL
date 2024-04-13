@@ -10,6 +10,13 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
+				<SoundBank Name="AdanSoundBank" ID="{0EB6BC82-9DD2-41D1-A2B4-78A4C0E5C6A2}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Event_AdanSequenceContainer" ID="{655FE793-36E2-45B8-9BFB-77BC38DDF30C}" WorkUnitID="{BD32FA88-1A4D-4BA1-85D1-E735B565316A}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>

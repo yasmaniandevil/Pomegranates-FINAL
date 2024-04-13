@@ -130,8 +130,22 @@ MonoBehaviour:
     ParentPath: SoundBanks/Enviornmental Work Unit
     guid: 811dc13d89a1484ba7327cd7cc47d6d1
     GuidInternal: 
-    m_lastTime: -8584886326275782142
+    m_lastTime: -8584885592900256600
     List:
+    - name: AdanSoundBank
+      guid: 82bcb60ed29dd141a2b478a4c0e5c6a2
+      id: 2963256630
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Enviornmental Work Unit
+        ObjectType: 12
+        guid: 811dc13d89a1484ba7327cd7cc47d6d1
+      - ElementName: AdanSoundBank
+        ObjectType: 7
+        guid: 82bcb60ed29dd141a2b478a4c0e5c6a2
+      Path: SoundBanks/Enviornmental Work Unit/AdanSoundBank
     - name: StreetAudioContainerSoundbank
       guid: 9ba6de72fcaed1478e1afe6f1d08aa87
       id: 3481854762
@@ -185,7 +199,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 8097cb23c1290d4c9b41229fb2bf76ca
     GuidInternal: 
-    m_lastTime: -8584886326279369781
+    m_lastTime: -8584885592900351527
     List: []
   - PhysicalPath: Events/Environmental Events Work Unit.wwu
     PathAndIcons:
@@ -198,8 +212,25 @@ MonoBehaviour:
     ParentPath: Events/Environmental Events Work Unit
     guid: 88fa32bd4d1aa14b85d1e735b565316a
     GuidInternal: 
-    m_lastTime: -8584886326279367423
+    m_lastTime: -8584885592900276028
     List:
+    - name: Event_AdanSequenceContainer
+      guid: 93e75f65e236b8459bfb77bc38ddf30c
+      id: 2897767672
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Environmental Events Work Unit
+        ObjectType: 12
+        guid: 88fa32bd4d1aa14b85d1e735b565316a
+      - ElementName: Event_AdanSequenceContainer
+        ObjectType: 3
+        guid: 93e75f65e236b8459bfb77bc38ddf30c
+      Path: Events/Environmental Events Work Unit/Event_AdanSequenceContainer
+      maxAttenuation: 100
+      maxDuration: 118.36081
+      minDuration: 118.36081
     - name: Event_Street_Audio_Sequence_Container
       guid: 829755acb3cbc840894e635428208105
       id: 3320485656
@@ -214,7 +245,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 829755acb3cbc840894e635428208105
       Path: Events/Environmental Events Work Unit/Event_Street_Audio_Sequence_Container
-      maxAttenuation: 75
+      maxAttenuation: 80
       maxDuration: -1
       minDuration: -1
   - PhysicalPath: Events/Music Events Work Unit.wwu
@@ -304,7 +335,7 @@ MonoBehaviour:
     m_lastTime: -8584894592093036433
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0600000008000000290000002d000000570000005b000000
+  ExpandedWaapiItemIds: 06000000080000000a0000000f00000011000000290000002d000000570000005b000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

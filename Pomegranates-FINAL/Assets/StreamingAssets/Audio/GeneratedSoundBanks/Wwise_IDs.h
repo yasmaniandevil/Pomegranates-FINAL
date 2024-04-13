@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID EVENT_ADANSEQUENCECONTAINER = 2897767672U;
         static const AkUniqueID EVENT_ALBINT = 3204538988U;
         static const AkUniqueID EVENT_STREET_AUDIO_SEQUENCE_CONTAINER = 3320485656U;
     } // namespace EVENTS
@@ -20,6 +21,7 @@ namespace AK
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
+        static const AkUniqueID ADANSOUNDBANK = 2963256630U;
         static const AkUniqueID MUSIC_ALBINT_SOUNDBANK = 265338097U;
         static const AkUniqueID STREETAUDIOCONTAINERSOUNDBANK = 3481854762U;
     } // namespace BANKS

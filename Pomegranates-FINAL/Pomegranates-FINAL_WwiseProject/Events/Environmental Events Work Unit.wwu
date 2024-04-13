@@ -14,6 +14,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Event_AdanSequenceContainer" ID="{655FE793-36E2-45B8-9BFB-77BC38DDF30C}">
+					<ChildrenList>
+						<Action Name="" ID="{D78211D0-CBB8-4F2E-956B-D9744EE79433}" ShortID="61885170">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AdanSequenceContainer" ID="{2A88B7EC-2D1B-438B-9B83-D10C6A2AFAD6}" WorkUnitID="{3278F05B-D4EB-4DB9-8A0F-7C28D71A4DEE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

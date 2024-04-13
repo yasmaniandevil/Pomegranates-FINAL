@@ -278,6 +278,82 @@
 						<ItemRef Name="StreeetAudio12" ID="{7A5A8906-0B4A-4BC3-A7AC-B793C2DEE043}"/>
 					</Playlist>
 				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="AdanSequenceContainer" ID="{2A88B7EC-2D1B-438B-9B83-D10C6A2AFAD6}" ShortID="477894183">
+					<PropertyList>
+						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+						<Property Name="UserAuxSendVolume0" Type="Real64">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="AdanAttenuation" ID="{5328F628-D03D-4A1F-B006-F30DFED65444}" WorkUnitID="{4EBC388F-9987-496A-9AB8-7944951BEB3E}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{388F345F-C687-4C6D-878F-23220F72DDD5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb" ID="{BC10D2A4-6C05-4D5F-89D4-E252BC7FFB84}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Adan1" ID="{D6B741D5-24C0-4925-B042-AC465EA7631B}" ShortID="862916346">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{388F345F-C687-4C6D-878F-23220F72DDD5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Adan1" ID="{44BC4901-81F1-42C6-A701-241336E6B82D}">
+									<Language>SFX</Language>
+									<AudioFile>Adan1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="707811535"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Adan1" ID="{44BC4901-81F1-42C6-A701-241336E6B82D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Adan2" ID="{AEAACF78-01D4-46D3-8926-230DB6577428}" ShortID="482774376">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{388F345F-C687-4C6D-878F-23220F72DDD5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Adan2" ID="{2D819311-F048-4A26-83EF-C748F7AA5F4D}">
+									<Language>SFX</Language>
+									<AudioFile>Adan2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="17168514"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Adan2" ID="{2D819311-F048-4A26-83EF-C748F7AA5F4D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<Playlist>
+						<ItemRef Name="Adan1" ID="{D6B741D5-24C0-4925-B042-AC465EA7631B}"/>
+						<ItemRef Name="Adan2" ID="{AEAACF78-01D4-46D3-8926-230DB6577428}"/>
+					</Playlist>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="265338097" Type="User" Language="SFX" Hash="{78E0113F-A69E-472B-8FCF-6E13A97E03BD}">
+		<SoundBank Id="265338097" Type="User" Language="SFX" Hash="{2D8CF33D-59CA-3AE3-DF90-0DCD98387EF6}">
 			<ShortName>Music_ALBint_Soundbank</ShortName>
 			<Path>Music_ALBint_Soundbank.bnk</Path>
 			<Media>
@@ -83,7 +83,32 @@
 				</AuxBus>
 			</AuxBusses>
 		</SoundBank>
-		<SoundBank Id="3481854762" Type="User" Language="SFX" Hash="{1B6896CF-4A63-0CE0-1DB3-82DE6215F16A}">
+		<SoundBank Id="2963256630" Type="User" Language="SFX" Hash="{F4945691-139C-B722-82F3-FF943A35066A}">
+			<ShortName>AdanSoundBank</ShortName>
+			<Path>AdanSoundBank.bnk</Path>
+			<Media>
+				<File Id="17168514" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Adan2.wav</ShortName>
+					<CachePath>SFX/Adan2_10C4C929.wem</CachePath>
+				</File>
+				<File Id="707811535" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Adan1.wav</ShortName>
+					<CachePath>SFX/Adan1_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2897767672" Name="Event_AdanSequenceContainer" MaxAttenuation="100" DurationType="OneShot" DurationMin="118.36081" DurationMax="118.36081">
+					<MediaRefs>
+						<MediaRef Id="17168514"/>
+						<MediaRef Id="707811535"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="348963605" Name="Reverb"/>
+					</AuxBusRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="3481854762" Type="User" Language="SFX" Hash="{D762908C-8B5F-5AEA-9768-3571BEC8B9F3}">
 			<ShortName>StreetAudioContainerSoundbank</ShortName>
 			<Path>StreetAudioContainerSoundbank.bnk</Path>
 			<Media>
@@ -133,7 +158,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="3320485656" Name="Event_Street_Audio_Sequence_Container" MaxAttenuation="75" DurationType="Infinite">
+				<Event Id="3320485656" Name="Event_Street_Audio_Sequence_Container" MaxAttenuation="80" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="92873532"/>
 						<MediaRef Id="444594259"/>
@@ -151,5 +176,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{A93444BA-52B1-A7D1-54B8-D14710AF49F8}</FileHash>
+	<FileHash>{ACDD213D-EED0-BD2C-8BFF-5861BE1EC98C}</FileHash>
 </SoundBanksInfo>
