@@ -9,24 +9,40 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="265338097" Type="User" Language="SFX" Hash="{F8619801-BE06-5C23-EC67-1B9350B0C776}">
+		<SoundBank Id="265338097" Type="User" Language="SFX" Hash="{78E0113F-A69E-472B-8FCF-6E13A97E03BD}">
 			<ShortName>Music_ALBint_Soundbank</ShortName>
 			<Path>Music_ALBint_Soundbank.bnk</Path>
 			<Media>
 				<File Id="771506818" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ALBINT2.wav</ShortName>
-					<CachePath>SFX/ALBINT2_10C4C929.wem</CachePath>
+					<CachePath>SFX/ALBINT2_D79FB2B7.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="2171939413" Name="Dialog_Leveler_Hard" LibName="Wwise Compressor" LibId="7077891"/>
+					<Plugin Id="4286906788" Name="Gentle_Program_Compressor_Minus_20dB_RMS" LibName="Wwise Compressor" LibId="7077891"/>
+				</ShareSets>
+			</Plugins>
 			<Events>
-				<Event Id="3204538988" Name="Event_ALBint" DurationType="OneShot" DurationMin="55.05501" DurationMax="55.05501">
+				<Event Id="3204538988" Name="Event_ALBint" MaxAttenuation="20" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="771506818"/>
 					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2171939413"/>
+							<PluginRef Id="4286906788"/>
+						</ShareSets>
+					</PluginRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="348963605" Name="Reverb"/>
+						<AuxBusRef Id="730513497" Name="HPF"/>
+					</AuxBusRefs>
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{202B32A7-F09E-7585-76C9-8A3CBCC6C3A2}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{F0D7D7C0-9C11-16AF-3AF4-29D1E65B7637}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -67,7 +83,7 @@
 				</AuxBus>
 			</AuxBusses>
 		</SoundBank>
-		<SoundBank Id="3481854762" Type="User" Language="SFX" Hash="{5F741BB6-2BD4-959D-29D1-987036C44FFB}">
+		<SoundBank Id="3481854762" Type="User" Language="SFX" Hash="{1B6896CF-4A63-0CE0-1DB3-82DE6215F16A}">
 			<ShortName>StreetAudioContainerSoundbank</ShortName>
 			<Path>StreetAudioContainerSoundbank.bnk</Path>
 			<Media>
@@ -135,5 +151,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{4DCC5779-5DA1-9977-AAD5-A5FE36F6D1D3}</FileHash>
+	<FileHash>{A93444BA-52B1-A7D1-54B8-D14710AF49F8}</FileHash>
 </SoundBanksInfo>

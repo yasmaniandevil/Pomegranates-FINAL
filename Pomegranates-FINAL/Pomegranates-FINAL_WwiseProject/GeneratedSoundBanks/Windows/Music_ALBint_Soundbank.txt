@@ -1,6 +1,10 @@
 Event	ID	Name			Wwise Object Path	Notes
 	3204538988	Event_ALBint			\Music Events Work Unit\Event_ALBint	
 
+Effect plug-ins	ID	Name	Type				Notes
+	2171939413	Dialog_Leveler_Hard	Wwise Compressor			
+	4286906788	Gentle_Program_Compressor_Minus_20dB_RMS	Wwise Compressor			
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	771506818	ALBINT2	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Windows\SFX\ALBINT2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music Work Unit\ALBINT2		9711800
+	771506818	ALBINT	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Windows\SFX\ALBINT2_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music Work Unit\ALBINT		9711800
 

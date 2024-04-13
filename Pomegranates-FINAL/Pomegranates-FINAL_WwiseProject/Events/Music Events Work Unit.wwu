@@ -8,7 +8,7 @@
 						<Action Name="" ID="{04F7EA41-1957-4932-AD1B-5C3186F9115D}" ShortID="14133195">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="ALBINT2" ID="{9F13420E-5517-471E-97C0-8B5A7048A9A0}" WorkUnitID="{9C472C09-89AB-46D7-87C7-20F1D2ABCF84}"/>
+									<ObjectRef Name="ALBINT" ID="{9F13420E-5517-471E-97C0-8B5A7048A9A0}" WorkUnitID="{9C472C09-89AB-46D7-87C7-20F1D2ABCF84}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

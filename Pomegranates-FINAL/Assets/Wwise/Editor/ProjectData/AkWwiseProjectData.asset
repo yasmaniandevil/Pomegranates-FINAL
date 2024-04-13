@@ -228,7 +228,7 @@ MonoBehaviour:
     ParentPath: Events/Music Events Work Unit
     guid: bb625751613f284e8f36db8b35422e0b
     GuidInternal: 
-    m_lastTime: -8584886326279365528
+    m_lastTime: -8584885618479400212
     List:
     - name: Event_ALBint
       guid: d33cfcdbb033cf408f9abac76efdce4c
@@ -244,7 +244,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: d33cfcdbb033cf408f9abac76efdce4c
       Path: Events/Music Events Work Unit/Event_ALBint
-      maxAttenuation: 0
+      maxAttenuation: 20
       maxDuration: 55.05501
       minDuration: 55.05501
   RtpcWwu:
@@ -304,7 +304,7 @@ MonoBehaviour:
     m_lastTime: -8584894592093036433
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0600000008000000
+  ExpandedWaapiItemIds: 0600000008000000290000002d000000570000005b000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
