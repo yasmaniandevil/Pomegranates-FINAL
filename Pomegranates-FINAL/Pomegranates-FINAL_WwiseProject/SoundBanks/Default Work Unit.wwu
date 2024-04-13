@@ -1,16 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{BCE93A03-0532-4FDE-9580-35F6F2B06E57}" SchemaVersion="110">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{BCE93A03-0532-4FDE-9580-35F6F2B06E57}" PersistMode="Standalone">
-			<ChildrenList>
-				<SoundBank Name="Ocean" ID="{992345C3-E7E1-400E-8EA2-FD85A7D3D3A2}">
-					<ObjectInclusionList>
-						<ObjectRef Name="Play_Ocean" ID="{943D65C7-949E-4E9D-8B0F-516DB0E9DEEE}" WorkUnitID="{23CB9780-29C1-4C0D-9B41-229FB2BF76CA}" Origin="Manual" Filter="7"/>
-					</ObjectInclusionList>
-					<ObjectExclusionList/>
-					<GameSyncExclusionList/>
-				</SoundBank>
-			</ChildrenList>
-		</WorkUnit>
+		<WorkUnit Name="Default Work Unit" ID="{BCE93A03-0532-4FDE-9580-35F6F2B06E57}" PersistMode="Standalone"/>
 	</SoundBanks>
 </WwiseDocument>

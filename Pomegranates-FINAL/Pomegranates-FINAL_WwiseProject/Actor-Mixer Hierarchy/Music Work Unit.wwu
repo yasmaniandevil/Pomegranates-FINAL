@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9C472C09-89AB-46D7-87C7-20F1D2ABCF84}" SchemaVersion="110" RootDocumentID="{47A5CEF6-CF96-4712-BB98-D6BCAD61398D}" ParentDocumentID="{47A5CEF6-CF96-4712-BB98-D6BCAD61398D}">
+	<AudioObjects>
+		<WorkUnit Name="Music Work Unit" ID="{9C472C09-89AB-46D7-87C7-20F1D2ABCF84}" OwnerID="{47A5CEF6-CF96-4712-BB98-D6BCAD61398D}" PersistMode="Nested">
+			<ChildrenList>
+				<Sound Name="ALBINT2" ID="{9F13420E-5517-471E-97C0-8B5A7048A9A0}" ShortID="115631412">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{388F345F-C687-4C6D-878F-23220F72DDD5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="ALBINT2" ID="{444EF07B-EDA8-49B9-9253-DCF8D06F49B4}">
+							<Language>SFX</Language>
+							<AudioFile>ALBINT2.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="771506818"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="ALBINT2" ID="{444EF07B-EDA8-49B9-9253-DCF8D06F49B4}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
