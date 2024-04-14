@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting.Antlr3.Runtime;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -11,9 +12,13 @@ public class GameManager : MonoBehaviour
     public GameObject canvas;
     public GameObject reticle;
 
+    public static bool paused;
+
     public int buttonsPressed;
 
     public TextMeshProUGUI canvasTextBox;
+
+    public GameObject PauseMenuCanvas;
     
     // Start is called before the first frame update
     void Start()
@@ -30,7 +35,16 @@ public class GameManager : MonoBehaviour
             Debug.Log("hit R");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
-        
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            PauseGame();
+            //PauseAudio();
+            //set active pause menu ui
+            //lock camera
+            //unlock cursor
+        }
+
     }
 
 
@@ -54,5 +68,39 @@ public class GameManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
     }
 
- 
+    public void PauseGame()
+    {
+        paused = !paused;
+        Time.timeScale = 1.0f - Time.timeScale;
+       
+
+        // pause or unpause the music
+        if (paused)
+        {
+            print("Game Paused");
+            AkSoundEngine.Suspend();
+            PauseMenuCanvas.SetActive(true);
+        
+        }
+        else
+        {
+            print("Game Resumed");
+            AkSoundEngine.WakeupFromSuspend();
+            //I want the cursor to go away when you unpause idk if this is how it is just in editor or build too, got to make test build
+            //and the first person camera got to be turned off
+        }
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
+    public void LoadScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
+    }
+
+   
+
 }
