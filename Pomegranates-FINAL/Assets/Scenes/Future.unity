@@ -34731,7 +34731,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2116174846}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1086801450
 Mesh:
@@ -47792,8 +47792,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 554414968}
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_Father: {fileID: 2116174846}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -65634,6 +65634,7 @@ Transform:
   - {fileID: 424739258}
   - {fileID: 427150715039156119}
   - {fileID: 1927578353}
+  - {fileID: 1581325429}
   - {fileID: 1076768810}
   m_Father: {fileID: 0}
   m_RootOrder: 7
