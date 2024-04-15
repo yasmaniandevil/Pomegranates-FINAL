@@ -2018,7 +2018,7 @@ GameObject:
   - component: {fileID: 7672624243585535467}
   - component: {fileID: 4366960902013622161}
   m_Layer: 0
-  m_Name: WomanBiggerClothed
+  m_Name: WomanBigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
