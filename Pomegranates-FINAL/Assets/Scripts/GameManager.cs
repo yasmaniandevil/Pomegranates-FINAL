@@ -30,11 +30,6 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            Debug.Log("hit R");
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -80,12 +75,17 @@ public class GameManager : MonoBehaviour
             print("Game Paused");
             AkSoundEngine.Suspend();
             PauseMenuCanvas.SetActive(true);
-        
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+
         }
         else
         {
             print("Game Resumed");
             AkSoundEngine.WakeupFromSuspend();
+            PauseMenuCanvas.SetActive(false);
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
             //I want the cursor to go away when you unpause idk if this is how it is just in editor or build too, got to make test build
             //and the first person camera got to be turned off
         }
