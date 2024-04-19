@@ -117,8 +117,22 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: 033ae9bc3205de4f958035f6f2b06e57
     GuidInternal: 
-    m_lastTime: -8584886326275784505
-    List: []
+    m_lastTime: -8584881142056214938
+    List:
+    - name: SFX_Soundbank
+      guid: 814744e96deada44be0bc829252c19fa
+      id: 2641024368
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 033ae9bc3205de4f958035f6f2b06e57
+      - ElementName: SFX_Soundbank
+        ObjectType: 7
+        guid: 814744e96deada44be0bc829252c19fa
+      Path: SoundBanks/Default Work Unit/SFX_Soundbank
   - PhysicalPath: SoundBanks/Enviornmental Work Unit.wwu
     PathAndIcons:
     - ElementName: SoundBanks
@@ -199,7 +213,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 8097cb23c1290d4c9b41229fb2bf76ca
     GuidInternal: 
-    m_lastTime: -8584885592900351527
+    m_lastTime: -8584881274036951478
     List: []
   - PhysicalPath: Events/Environmental Events Work Unit.wwu
     PathAndIcons:
@@ -278,6 +292,36 @@ MonoBehaviour:
       maxAttenuation: 20
       maxDuration: -1
       minDuration: -1
+  - PhysicalPath: Events/SFX.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: SFX
+      ObjectType: 12
+      guid: 380ca8262e8d6545a178d6745499f3a4
+    ParentPath: Events/SFX
+    guid: 380ca8262e8d6545a178d6745499f3a4
+    GuidInternal: 
+    m_lastTime: -8584881142057841085
+    List:
+    - name: Event_WritingSFX
+      guid: 29ca5b884acc634d9d2c11cb4c1fad8e
+      id: 562259991
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: SFX
+        ObjectType: 12
+        guid: 380ca8262e8d6545a178d6745499f3a4
+      - ElementName: Event_WritingSFX
+        ObjectType: 3
+        guid: 29ca5b884acc634d9d2c11cb4c1fad8e
+      Path: Events/SFX/Event_WritingSFX
+      maxAttenuation: 0
+      maxDuration: 2.9362812
+      minDuration: 2.9362812
   RtpcWwu:
   - PhysicalPath: Game Parameters/Default Work Unit.wwu
     PathAndIcons:
