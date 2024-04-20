@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 033ae9bc3205de4f958035f6f2b06e57
     GuidInternal: 
-    m_lastTime: -8584880246722288572
+    m_lastTime: -8584880243086070804
     List:
     - name: SFX_Soundbank
       guid: 814744e96deada44be0bc829252c19fa
@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Events\SFX
     guid: 380ca8262e8d6545a178d6745499f3a4
     GuidInternal: 
-    m_lastTime: -8584880246726534870
+    m_lastTime: -8584880243089443651
     List:
     - name: Event_WritingSFX
       guid: 29ca5b884acc634d9d2c11cb4c1fad8e

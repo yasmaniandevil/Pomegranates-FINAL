@@ -986,7 +986,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MeshFormatVersion: 0
+  m_MeshFormatVersion: 2
   m_Faces: []
   m_SharedVertices: []
   m_SharedTextures: []
@@ -1004,7 +1004,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 0
+  m_VersionIndex: 10
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -1506,6 +1506,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f93b6409a82775044a0c3ad41c001121, type: 3}
       propertyPath: m_Name
       value: carpa playera
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f93b6409a82775044a0c3ad41c001121, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f93b6409a82775044a0c3ad41c001121, type: 3}
