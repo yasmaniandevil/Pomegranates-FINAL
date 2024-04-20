@@ -31,4 +31,15 @@ public class Mound : MonoBehaviour
             gameObject.GetComponent<Renderer>().material = newMaterial;
         }
     }
+
+    public void RaiseRadish()
+    {
+        Invoke("ChangeTag", 1f);
+        gameObject.AddComponent<Artifact>();
+    }
+
+    void ChangeTag()
+    {
+        gameObject.tag = "Vegetable";
+    }
 }

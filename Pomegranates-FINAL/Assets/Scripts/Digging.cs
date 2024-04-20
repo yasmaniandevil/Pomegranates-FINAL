@@ -33,6 +33,11 @@ public class Digging : MonoBehaviour
                     Debug.Log("D I G");
                 }
 
+                if (hit.collider.CompareTag("FarmMound")) //if one of the farm mounds
+                {
+                    hit.collider.gameObject.GetComponent<Mound>().RaiseRadish();
+                }
+
                 if(hit.collider.CompareTag("Vegetable")) //if hit veggie
                 {
                     Destroy(hit.collider.gameObject); //destroy gameobject

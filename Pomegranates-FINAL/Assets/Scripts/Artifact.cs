@@ -9,10 +9,10 @@ public class Artifact : MonoBehaviour
 
     private Vector3 finalPosition;
     
-    public float speed = 2f; // Adjust the speed as needed
+    public float speed = 1f; // Adjust the speed as needed
     private float startTime;
-    public float amplitude;
-    public float offset;
+    public float amplitude = 0.1f;
+    public float offset = 0.1f;
     
     void Start()
     {

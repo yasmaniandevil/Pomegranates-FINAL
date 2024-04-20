@@ -13,6 +13,7 @@ TagManager:
   - Spawner
   - Memory
   - Father
+  - FarmMound
   layers:
   - Default
   - TransparentFX

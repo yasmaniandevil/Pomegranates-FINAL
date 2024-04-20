@@ -100,6 +100,7 @@ public class Narrative : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && bookOn == true )
         {
             book.SetActive(false);
+            book.SetActive(false);
             particles.SetActive(true);
             player.SetActive(true);
             reticle.SetActive(true);
@@ -126,11 +127,11 @@ public class Narrative : MonoBehaviour
             ActivateTextBox(1);
             father.tag = "Untagged";
         }
-        else if (amount >= 2 && player.GetComponent<Digging>().veggiesCollected < 4)
+        else if (amount >= 2 && player.GetComponent<Digging>().veggiesCollected < 7)
         {
             ActivateTextBox(3);
         }
-        else if (amount >= 2 && player.GetComponent<Digging>().veggiesCollected == 4)
+        else if (amount >= 2 && player.GetComponent<Digging>().veggiesCollected == 7)
         {
             ActivateTextBox(4);
         }

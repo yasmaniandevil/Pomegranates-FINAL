@@ -30,6 +30,10 @@ public class UI : MonoBehaviour
             {
                 reticle.GetComponent<Image>().sprite = open;
             }
+            if (hit.collider.CompareTag("FarmMound")) //if it farmmound
+            {
+                reticle.GetComponent<Image>().sprite = open;
+            }
 
             if (hit.collider.CompareTag("Vegetable")) //if hit veggie
             {
