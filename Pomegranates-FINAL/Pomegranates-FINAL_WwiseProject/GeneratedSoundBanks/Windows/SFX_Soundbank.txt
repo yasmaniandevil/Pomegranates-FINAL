@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	562259991	Event_WritingSFX			\SFX\Event_WritingSFX	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	181114169	WritingSFX	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Windows\SFX\WritingSFX_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\WritingSFX		518056
+

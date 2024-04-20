@@ -42,7 +42,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{F0D7D7C0-9C11-16AF-3AF4-29D1E65B7637}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{CA72E249-E630-8E8F-C7CE-D08367A24816}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -82,6 +82,26 @@
 					</PluginRefs>
 				</AuxBus>
 			</AuxBusses>
+			<GameParameters>
+				<GameParameter Id="513275970" Name="FadeOutStreetAudio"/>
+			</GameParameters>
+		</SoundBank>
+		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{7173104C-44A3-7A21-336A-5674E5F8FE78}">
+			<ShortName>SFX_Soundbank</ShortName>
+			<Path>SFX_Soundbank.bnk</Path>
+			<Media>
+				<File Id="181114169" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>WritingSFX.wav</ShortName>
+					<CachePath>SFX/WritingSFX_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="562259991" Name="Event_WritingSFX" DurationType="OneShot" DurationMin="2.9362812" DurationMax="2.9362812">
+					<MediaRefs>
+						<MediaRef Id="181114169"/>
+					</MediaRefs>
+				</Event>
+			</Events>
 		</SoundBank>
 		<SoundBank Id="2963256630" Type="User" Language="SFX" Hash="{F4945691-139C-B722-82F3-FF943A35066A}">
 			<ShortName>AdanSoundBank</ShortName>
@@ -108,7 +128,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3481854762" Type="User" Language="SFX" Hash="{D762908C-8B5F-5AEA-9768-3571BEC8B9F3}">
+		<SoundBank Id="3481854762" Type="User" Language="SFX" Hash="{27923473-F64E-F299-6FFD-C8D93DF26028}">
 			<ShortName>StreetAudioContainerSoundbank</ShortName>
 			<Path>StreetAudioContainerSoundbank.bnk</Path>
 			<Media>
@@ -174,7 +194,10 @@
 					</MediaRefs>
 				</Event>
 			</Events>
+			<GameParameters>
+				<GameParameter Id="513275970" Name="FadeOutStreetAudio"/>
+			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{ACDD213D-EED0-BD2C-8BFF-5861BE1EC98C}</FileHash>
+	<FileHash>{1DA50E45-D4FB-8604-24BB-A9AC6673CA45}</FileHash>
 </SoundBanksInfo>
