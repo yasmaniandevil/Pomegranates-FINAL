@@ -7,8 +7,6 @@ public class Mound : MonoBehaviour
     public GameObject artifact;
     private bool moundDug;
     private Vector3 moundPos;
-
-    public Material newMaterial;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +26,6 @@ public class Mound : MonoBehaviour
         {
             Instantiate(artifact, moundPos, transform.rotation); //instantiate artifact from mound position
             moundDug = true; //turn to true to not be clicked again
-            gameObject.GetComponent<Renderer>().material = newMaterial;
         }
     }
 
