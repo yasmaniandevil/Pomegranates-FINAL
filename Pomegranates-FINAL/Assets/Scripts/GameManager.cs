@@ -77,6 +77,12 @@ public class GameManager : MonoBehaviour
             PauseMenuCanvas.SetActive(true);
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
+            player.SetActive(false);
+            reticle.SetActive(false);
+            canvas.SetActive(false);
+
+
+
 
         }
         else
@@ -86,6 +92,10 @@ public class GameManager : MonoBehaviour
             PauseMenuCanvas.SetActive(false);
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
+            player.SetActive(true);
+            reticle.SetActive(true);
+            canvas.SetActive(true);
+
             //I want the cursor to go away when you unpause idk if this is how it is just in editor or build too, got to make test build
             //and the first person camera got to be turned off
         }

@@ -12,6 +12,7 @@ public class GameManagerPast : MonoBehaviour
     public GameObject player;
     public GameObject canvas;
     public GameObject reticle;
+    public GameObject UI;
 
     private string mosque = "mosque";
     private string church = "church";
@@ -33,6 +34,10 @@ public class GameManagerPast : MonoBehaviour
     public TextMeshProUGUI flyerTextBox;
 
     public TextMeshProUGUI[] bookTextBox;
+    public GameObject PauseMenuCanvas;
+    public static bool paused;
+
+    
 
     //public AudioSource journalWriting;
     
@@ -61,13 +66,14 @@ public class GameManagerPast : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Debug.Log("hit R");
-            //MemoryManager();
-            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            PauseGame();
+            //PauseAudio();
+            //set active pause menu ui
+            //lock camera
+            //unlock cursor
         }
-        
         //turns on the light in whichever place you are supposed to look at
         if (currentLocation == churchSpawner)
         {
@@ -172,4 +178,51 @@ public class GameManagerPast : MonoBehaviour
     {
         currentLocation.SetActive(true);
     }
+    
+    public void PauseGame()
+    {
+        paused = !paused;
+        Time.timeScale = 1.0f - Time.timeScale;
+       
+
+        // pause or unpause the music
+        if (paused)
+        {
+            print("Game Paused");
+            AkSoundEngine.Suspend();
+            PauseMenuCanvas.SetActive(true);
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+            player.SetActive(false);
+            UI.SetActive(false);
+
+
+
+
+        }
+        else
+        {
+            print("Game Resumed");
+            AkSoundEngine.WakeupFromSuspend();
+            PauseMenuCanvas.SetActive(false);
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+            player.SetActive(true);
+            UI.SetActive(true);
+
+            //I want the cursor to go away when you unpause idk if this is how it is just in editor or build too, got to make test build
+            //and the first person camera got to be turned off
+        }
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
+    public void LoadScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
+    }
+
 }

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using BookCurlPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -11,7 +12,7 @@ public class Digging : MonoBehaviour
     public int veggiesCollected;
     public GameObject gameManager;
     public GameObject book;
-
+    //public BookCurlPro.AutoFlip autoFlip;
     public GameObject flyerCanvas;
     public GameObject reticleCanvas;
     public GameObject player;
@@ -47,8 +48,12 @@ public class Digging : MonoBehaviour
                 if (hit.collider.CompareTag("Book")) //if hit book
                 {
                     Destroy(hit.collider.gameObject);
+                    Debug.Log("bookoff");
                     book.SetActive(true);
-                    //book.GetComponent<AutoFlip>().Invoke("FlipRightPage", 2);
+                    Debug.Log("book on");
+                    Debug.Log(book.GetComponent<AutoFlip>());
+                    book.GetComponent<AutoFlip>().Invoke("FlipRightPage", 2);
+                    Debug.Log("page flip");
                     Invoke("TurnBookOn", 3);
                     player.SetActive(false);
                     reticleCanvas.SetActive(false);
