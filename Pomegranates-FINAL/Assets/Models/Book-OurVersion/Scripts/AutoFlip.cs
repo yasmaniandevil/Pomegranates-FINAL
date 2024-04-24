@@ -44,6 +44,7 @@ namespace BookCurlPro
         int targetPaper;
         public void StartFlipping(int target)
         {
+            Debug.Log("is glipping");
             isBookInteractable = ControledBook.interactable;
             ControledBook.interactable = false;
             flippingStarted = true;

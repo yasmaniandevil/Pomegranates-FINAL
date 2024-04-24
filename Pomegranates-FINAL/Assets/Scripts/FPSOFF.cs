@@ -32,31 +32,33 @@ public class FPSOFF : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
             bookOn = true;
-            Debug.Log(currentPage);
-            Debug.Log(book.GetComponent<BookPro>().currentPaper);
-            if (currentPage == book.GetComponent<BookPro>().currentPaper)
+            if (currentPage == 0)
             {
                 book.GetComponent<AutoFlip>().Invoke("FlipRightPage", 1f);
             }
-            else if (currentPage > book.GetComponent<BookPro>().currentPaper)
+            else if (currentPage > 0)
             {
                 book.GetComponent<AutoFlip>().StartFlipping(currentPage);
             }
-           
-            Debug.Log("flip");
+
+            book.GetComponent<BookPro>().interactable = true;
             return;
         }
 
         //turn on FPS
         if(Input.GetKeyUp(KeyCode.J) && bookOn == true)
         {
-            Debug.Log(book.GetComponent<BookPro>().currentPaper);
             currentPage = book.GetComponent<BookPro>().currentPaper;
-            Debug.Log(book.GetComponent<BookPro>().currentPaper);
             book.GetComponent<AutoFlip>().StartFlipping(0);
-            Debug.Log(book.GetComponent<BookPro>().currentPaper);
             Invoke("TurnPlayerOn", currentPage);
         }
+
+        if (Input.GetKeyUp(KeyCode.W))
+        {
+            Debug.Log("Current Paper:" + book.GetComponent<BookPro>().currentPaper);
+            Debug.Log("Current Page:" + currentPage);
+        }
+
     }
 
     void TurnPlayerOn()
