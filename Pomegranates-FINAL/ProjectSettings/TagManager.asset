@@ -14,6 +14,8 @@ TagManager:
   - Memory
   - Father
   - FarmMound
+  - Tree Future 1
+  - Tree Future 2
   layers:
   - Default
   - TransparentFX

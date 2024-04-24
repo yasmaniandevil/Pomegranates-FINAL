@@ -5,6 +5,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 public class GameManagerPast : MonoBehaviour
@@ -34,6 +35,8 @@ public class GameManagerPast : MonoBehaviour
     public TextMeshProUGUI flyerTextBox;
 
     public TextMeshProUGUI[] bookTextBox;
+    public Image[] artifactImage;
+    
     public GameObject PauseMenuCanvas;
     public static bool paused;
 
@@ -151,13 +154,27 @@ public class GameManagerPast : MonoBehaviour
         Debug.Log(location.Count +"," +  currentLocation +"," +  currentLocationString);
     }
 
-    public void ArtifactJournal()
+    public void ArtifactJournal(string text, Sprite artifact)
     {
         for (int i = 0; i < bookTextBox.Length; i++)
         {
-            if (bookTextBox[i].text == "New Text")
+            if (bookTextBox[i].text == " ")
             {
-                bookTextBox[i].text = "Memory Collected";
+                bookTextBox[i].text = text;
+                return;
+            }
+            else
+            {
+                continue;
+            }
+        }
+
+        for (int i = 0; i < artifactImage.Length; i++)
+        {
+            if (artifactImage[i].sprite == null)
+            {
+                artifactImage[i].color = new Color(255f,255f,255f,255f);
+                artifactImage[i].sprite = artifact;
                 return;
             }
             else
@@ -173,11 +190,7 @@ public class GameManagerPast : MonoBehaviour
         flyerTextBox.text = "Next memory at " + currentLocationString;
         //journalWriting.Play();
     }
-
-    public void SpawnPaper()
-    {
-        currentLocation.SetActive(true);
-    }
+    
     
     public void PauseGame()
     {

@@ -17,6 +17,13 @@ public class Digging : MonoBehaviour
     public GameObject reticleCanvas;
     public GameObject player;
 
+    private GameManagerPast script;
+
+    private void Start()
+    {
+        script = gameManager.GetComponent<GameManagerPast>();
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -61,29 +68,32 @@ public class Digging : MonoBehaviour
                     Cursor.lockState = CursorLockMode.None;
                 }
                 
-                if (hit.collider.CompareTag("Memory") && gameManager.GetComponent<GameManagerPast>().location.Count > 0)
+                if (hit.collider.CompareTag("Memory") && script.location.Count > 0)
                 {
+                    var artifact = hit.collider.gameObject.GetComponent<Artifact>();
+                    script.ArtifactJournal(artifact.memoryText, artifact.artifact);
                     Destroy(hit.collider.gameObject);
-                    gameManager.GetComponent<GameManagerPast>().SpawnPaper();
-                    gameManager.GetComponent<GameManagerPast>().MemoryManager();
-                    gameManager.GetComponent<GameManagerPast>().ChangeFlyer();
-                    gameManager.GetComponent<GameManagerPast>().ArtifactJournal();
-                    gameManager.GetComponent<GameManagerPast>().buttonsPressed++;
-                    gameManager.GetComponent<GameManagerPast>().ChangeScene();
+                    script.MemoryManager();
+                    script.ChangeFlyer();
+                    script.buttonsPressed++;
+                    script.ChangeScene();
                 }
-                else if (hit.collider.CompareTag("Memory") && gameManager.GetComponent<GameManagerPast>().location.Count == 0)
+                else if (hit.collider.CompareTag("Memory") && script.location.Count == 0)
                 {
                     Destroy(hit.collider.gameObject);
-                    gameManager.GetComponent<GameManagerPast>().ShowCanvas(
+                    script.ShowCanvas(
                         "It's time to go back to where you came from and save everyone. Bury the book in the town center");
-                    gameManager.GetComponent<GameManagerPast>().buttonsPressed++;
+                    script.buttonsPressed++;
                 }
 
-                if (hit.collider.CompareTag("Tree"))
+                if (hit.collider.CompareTag("Tree Future 1"))
                 {
-                    hit.collider.gameObject.GetComponent<Renderer>().material = null;
-                    gameManager.GetComponent<GameManager>().ShowCanvas(
-                        "As you bury the book full of memories of the past, you see as people and buildings comeback \n The End");
+                    hit.collider.gameObject.GetComponentInChildren<Mound>().SpawnArtifact();
+                }
+                
+                if (hit.collider.CompareTag("Tree Future 2"))
+                {
+                    hit.collider.gameObject.GetComponentInChildren<Mound>().SpawnArtifact();
                 }
 
                 if (hit.collider.CompareTag("Flyer"))

@@ -496,6 +496,23 @@ MonoBehaviour:
   speed: 1
   amplitude: 0.1
   offset: 0.1
+  memoryText: "My days are always the same. I wake up, I brush my teeth, put on my
+    running shoes, and leave the house. I love running. The feeling of the fresh
+    air, finding different paths around the neighborhood, seeing my neighbors, friends,
+    and community wake up. When I met my fianc\xE9, he would always tease me about
+    my running. I think he was jealous he couldn\u2019t keep up. Of course, till
+    one morning he decided to join me. Ya Allah, what was he thinking. It was brutal,
+    yet hilarious. He would stop every few hundred meters, and pant like a dog all
+    hunched over. However, little by little he got better and kept up with me. It
+    became our thing, something we shared together. One day while on a run together,
+    he decided to take a different path by the beach. It was beautiful, but I wanted
+    to turn around. We were going too far, but he was persistent. We stopped in front
+    of the hospital, and this spot was breathtaking. Suddenly I felt very grateful
+    he brought us here. The sun was shinning, the waves were crashing, and the smell\u2026
+    I closed my eyes and took a deep breath to smell the salty air and when I opened
+    them, there he was. Down on one knee with a beautiful ring\u2026 I cried from
+    joy, pure joy\u2026It will be a day I will always remember. "
+  artifact: {fileID: 21300000, guid: c887ed2a931c29040bc544cd8c546e9f, type: 3}
 --- !u!1 &2333101632333486466
 GameObject:
   m_ObjectHideFlags: 0

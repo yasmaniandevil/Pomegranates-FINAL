@@ -13,6 +13,9 @@ public class Artifact : MonoBehaviour
     private float startTime;
     public float amplitude = 0.1f;
     public float offset = 0.1f;
+
+    public string memoryText;
+    public Sprite artifact;
     
     void Start()
     {
@@ -26,16 +29,17 @@ public class Artifact : MonoBehaviour
         if (spawn == true)
         {
             transform.position += Vector3.up * speed * Time.deltaTime;
+                
             finalPosition = transform.position;
             Invoke(nameof(ChangeToFalse), 1f);
         }
-        else
+        else 
         {
             float t = (Time.time - startTime) * speed;
             float y = EaseInSine(t);
 
             // Adjust the amplitude and offset as needed
-
+            
             transform.position = new Vector3(finalPosition.x, finalPosition.y + amplitude * y + offset, finalPosition.z);
 
         }
