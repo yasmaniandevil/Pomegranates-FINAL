@@ -18,7 +18,9 @@ namespace AK
         static const AkUniqueID EVENT_ARTIFACTUP1 = 1969774664U;
         static const AkUniqueID EVENT_ARTIFACTUP2 = 1969774667U;
         static const AkUniqueID EVENT_ARTIFACTUP3 = 1969774666U;
+        static const AkUniqueID EVENT_FIRE_BLEND_CONTAINER = 565798754U;
         static const AkUniqueID EVENT_STREET_AUDIO_SEQUENCE_CONTAINER = 3320485656U;
+        static const AkUniqueID EVENT_WIND_SEGMENT_CONTAINER = 3474846662U;
         static const AkUniqueID EVENT_WRITINGSFX = 562259991U;
     } // namespace EVENTS
 
@@ -31,9 +33,11 @@ namespace AK
     {
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID ADANSOUNDBANK = 2963256630U;
+        static const AkUniqueID FIRESOUNDBANK = 3382285268U;
         static const AkUniqueID MUSIC_ALBINT_SOUNDBANK = 265338097U;
         static const AkUniqueID SFX_SOUNDBANK = 2641024368U;
         static const AkUniqueID STREETAUDIOCONTAINERSOUNDBANK = 3481854762U;
+        static const AkUniqueID WIND_SOUNDBANK = 2981824113U;
     } // namespace BANKS
 
     namespace BUSSES

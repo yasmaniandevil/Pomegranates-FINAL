@@ -25,6 +25,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Event_Wind_Segment_Container" ID="{E41169FD-5085-40C6-941C-06FD9B58B5A6}">
+					<ChildrenList>
+						<Action Name="" ID="{0D2C92EE-8849-4714-AE87-BB59BEE725E4}" ShortID="250983175">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wind Segment Container" ID="{E76E4B6B-4FA0-4AFD-8A97-98A0E5A7DA07}" WorkUnitID="{25BAAE20-9541-404B-9E67-E39E5F724777}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Event_Fire_Blend_Container" ID="{41C7F98B-9D08-4108-BBF7-C2725734E8E0}">
+					<ChildrenList>
+						<Action Name="" ID="{D9647748-9670-4741-918B-3AF5C2C37148}" ShortID="662051983">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Fire Blend Container" ID="{D8BC9F2D-4C1A-4E29-BF35-3DD9F4906781}" WorkUnitID="{3278F05B-D4EB-4DB9-8A0F-7C28D71A4DEE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
