@@ -3,9 +3,5 @@ Event	ID	Name			Wwise Object Path	Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	577671460	WindWhistleClink	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Mac\SFX\WindWhistleClink_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Wind Segment Container\WindWhistleClink		9525760
-	697713957	Howling Wind_1	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Mac\SFX\Howling Wind_1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Wind Segment Container\Howling Wind_1		4762960
 	783158354	Ambience Nature	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Mac\SFX\Ambience Nature_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Wind Segment Container\Ambience Nature		9525760
-	821670171	Ambience Wind Blowing Through	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Mac\SFX\Ambience Wind Blowing Through_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Wind Segment Container\Ambience Wind Blowing Through		5159860
-	841685844	Low-pitched wind	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Mac\SFX\Low-pitched wind_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Wind Segment Container\Low-pitched wind		9525760
-	938990396	High-pitch wind	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Mac\SFX\High-pitch wind_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Wind Segment Container\High-pitch wind		9525760
 

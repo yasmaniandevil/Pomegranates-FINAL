@@ -271,8 +271,8 @@ MonoBehaviour:
         guid: 93e75f65e236b8459bfb77bc38ddf30c
       Path: Events/Environmental Events Work Unit/Event_AdanSequenceContainer
       maxAttenuation: 100
-      maxDuration: 118.36081
-      minDuration: 118.36081
+      maxDuration: 62.833332
+      minDuration: 56.527477
     - name: Event_Fire_Blend_Container
       guid: 8bf9c741089d0841bbf7c2725734e8e0
       id: 565798754
@@ -287,9 +287,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 8bf9c741089d0841bbf7c2725734e8e0
       Path: Events/Environmental Events Work Unit/Event_Fire_Blend_Container
-      maxAttenuation: 0
-      maxDuration: 48.70315
-      minDuration: 48.70315
+      maxAttenuation: 25
+      maxDuration: 39.28753
+      minDuration: 39.28753
     - name: Event_Street_Audio_Sequence_Container
       guid: 829755acb3cbc840894e635428208105
       id: 3320485656

@@ -14,6 +14,9 @@
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
 						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="HPF" ID="{A36B6541-3E0F-4160-B56D-0DFF35945B0C}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
+						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<MusicTrack Name="Ambience Nature" ID="{17D8CE34-ED31-46D2-A12C-1C42E19F0DA7}" ShortID="968057111">
@@ -67,6 +70,13 @@
 							</ObjectLists>
 						</MusicTrack>
 						<MusicTrack Name="Ambience Wind Blowing Through" ID="{CFD1A5B1-784A-415F-AD3D-7E55DDC70F5A}" ShortID="891386884">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
@@ -117,6 +127,18 @@
 							</ObjectLists>
 						</MusicTrack>
 						<MusicTrack Name="High-pitch wind" ID="{1E5F6BCC-8C76-4E9A-BE36-4FF33C0293F2}" ShortID="221524552">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
@@ -155,6 +177,28 @@
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="High-pitch wind" ID="{4884C5C4-8225-4681-B3EC-E31874F35210}"/>
+																	<PropertyCurveList>
+																		<PropertyCurve PropertyName="Lowpass">
+																			<Curve Name="" ID="{4C1300FD-4EA9-4966-A091-2CA6BFA7539B}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																						<SegmentShape>Exp3</SegmentShape>
+																					</Point>
+																					<Point>
+																						<XPos>54</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																	</PropertyCurveList>
 																</MusicClip>
 															</Local>
 														</Reference>
@@ -167,6 +211,13 @@
 							</ObjectLists>
 						</MusicTrack>
 						<MusicTrack Name="Howling Wind_1" ID="{893A563F-7E73-4CB1-A7E9-763ACA2829E3}" ShortID="112631022">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
@@ -217,6 +268,13 @@
 							</ObjectLists>
 						</MusicTrack>
 						<MusicTrack Name="Low-pitched wind" ID="{5BABFA17-AADA-435A-8EC9-FE039E154D0D}" ShortID="357712480">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
@@ -267,6 +325,19 @@
 							</ObjectLists>
 						</MusicTrack>
 						<MusicTrack Name="WindWhistleClink" ID="{7C6F1A8B-288F-4171-B7D0-34F8210AF768}" ShortID="385449990">
+							<PropertyList>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+								<Property Name="UserAuxSendVolume0" Type="Real64">
+									<ValueList>
+										<Value>4</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>

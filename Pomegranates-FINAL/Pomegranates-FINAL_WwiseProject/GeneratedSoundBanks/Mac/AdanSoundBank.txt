@@ -2,6 +2,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	2897767672	Event_AdanSequenceContainer			\Environmental Events Work Unit\Event_AdanSequenceContainer	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	17168514	Adan2	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Mac\SFX\Adan2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enviornmental Work Unit\AdanSequenceContainer\Adan2		6032160
-	707811535	Adan1	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Mac\SFX\Adan1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enviornmental Work Unit\AdanSequenceContainer\Adan1		5426798
+	17168514	Adan2	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Mac\SFX\Adan2_10C4C929.wem		\Actor-Mixer Hierarchy\Enviornmental Work Unit\AdanSequenceContainer\Adan2		6032160
+	707811535	Adan1	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Mac\SFX\Adan1_10C4C929.wem		\Actor-Mixer Hierarchy\Enviornmental Work Unit\AdanSequenceContainer\Adan1		5426798
 
