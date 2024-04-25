@@ -3,7 +3,7 @@
 	<InteractiveMusic>
 		<WorkUnit Name="Default Work Unit" ID="{25BAAE20-9541-404B-9E67-E39E5F724777}" PersistMode="Standalone">
 			<ChildrenList>
-				<MusicSegment Name="New Music Segment" ID="{E76E4B6B-4FA0-4AFD-8A97-98A0E5A7DA07}" ShortID="483848987">
+				<MusicSegment Name="Wind Segment Container" ID="{E76E4B6B-4FA0-4AFD-8A97-98A0E5A7DA07}" ShortID="483848987">
 					<PropertyList>
 						<Property Name="EndPosition" Type="Real64" Value="60338.1962666231"/>
 					</PropertyList>
@@ -16,30 +16,23 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<MusicTrack Name="Ambience Wind Blowing Through01" ID="{1CED42A3-1276-40FA-B7AC-B5E3264C7522}" ShortID="221399568">
+						<MusicTrack Name="Ambience Nature" ID="{17D8CE34-ED31-46D2-A12C-1C42E19F0DA7}" ShortID="968057111">
 							<ReferenceList>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Ambience Wind Blowing Through01" ID="{1F9BE775-0306-44F2-BF36-4303756C2935}">
+								<AudioFileSource Name="Ambience Nature" ID="{2DE11422-6BCD-4B16-A140-3D1B98AFDD87}">
 									<Language>SFX</Language>
-									<AudioFile>Ambience Wind Blowing Through01.wav</AudioFile>
+									<AudioFile>Ambience Nature.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="684955152"/>
-									</MediaIDList>
-								</AudioFileSource>
-								<AudioFileSource Name="Ambience Wind Blowing Through02" ID="{F8C3DA6B-0DE2-4D0B-80B0-ACF11AD14509}">
-									<Language>SFX</Language>
-									<AudioFile>Ambience Wind Blowing Through02.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="259733148"/>
+										<MediaID ID="783158354"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<TransitionList>
-								<MusicTransition Name="Root" ID="{809F121B-5E26-43FD-AB4F-C67BDEE6DA60}">
+								<MusicTransition Name="Root" ID="{CB895645-F318-4E7B-8D26-9A8DB6334014}">
 									<PropertyList>
 										<Property Name="IsFolder" Type="bool" Value="True"/>
 									</PropertyList>
@@ -50,149 +43,18 @@
 								<ObjectList Name="Sequences">
 									<Reference>
 										<Local>
-											<MusicTrackSequence Name="" ID="{22C04F9B-C7A8-4415-A82B-632F64BAA7B2}">
+											<MusicTrackSequence Name="" ID="{6C5A6B05-4E55-4762-B787-55D13BCDFCD0}">
 												<ObjectLists>
 													<ObjectList Name="Clips">
 														<Reference>
 															<Local>
-																<MusicClip Name="Ambience Wind Blowing Through01" ID="{26A31F5A-749E-441A-B277-062F4E96E0BF}">
+																<MusicClip Name="Ambience Nature" ID="{F641B951-3FB9-4B10-81D4-A88F190499D7}">
 																	<PropertyList>
-																		<Property Name="EndTrimOffset" Type="Real64" Value="29296.6280198672"/>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="54000"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																	</PropertyList>
-																	<AudioSourceRef Name="Ambience Wind Blowing Through01" ID="{1F9BE775-0306-44F2-BF36-4303756C2935}"/>
-																	<PropertyCurveList>
-																		<PropertyCurve PropertyName="Highpass">
-																			<Curve Name="" ID="{5CED030D-0E54-40E6-A645-C3DFA870C627}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="1"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>0</YPos>
-																						<Flags>5</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>29.29663</XPos>
-																						<YPos>0</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</PropertyCurve>
-																		<PropertyCurve PropertyName="Lowpass">
-																			<Curve Name="" ID="{222DF808-AFDA-4E94-B066-6133D4FEA235}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="1"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>0</YPos>
-																						<Flags>5</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>29.29663</XPos>
-																						<YPos>0</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</PropertyCurve>
-																		<PropertyCurve PropertyName="Volume">
-																			<Curve Name="" ID="{2FC3E74C-5A1F-4CAF-8B74-ED03DE692E9E}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="3"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>0</YPos>
-																						<Flags>5</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>29.29663</XPos>
-																						<YPos>0</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</PropertyCurve>
-																	</PropertyCurveList>
-																</MusicClip>
-															</Local>
-														</Reference>
-														<Reference>
-															<Local>
-																<MusicClip Name="Ambience Wind Blowing Through02" ID="{3F37C87D-4F21-4B9F-AC86-9F4CCA9AAC65}">
-																	<PropertyList>
-																		<Property Name="EndTrimOffset" Type="Real64" Value="29296.6280198672"/>
-																		<Property Name="FadeInMode" Type="int16" Value="0"/>
-																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																		<Property Name="PlayAt" Type="Real64" Value="29296.6280198672"/>
-																	</PropertyList>
-																	<AudioSourceRef Name="Ambience Wind Blowing Through02" ID="{F8C3DA6B-0DE2-4D0B-80B0-ACF11AD14509}"/>
-																	<PropertyCurveList>
-																		<PropertyCurve PropertyName="Highpass">
-																			<Curve Name="" ID="{EA43835F-81C7-4AE8-BE39-E0A5D08EE0F7}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="1"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>0</YPos>
-																						<Flags>5</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>29.29663</XPos>
-																						<YPos>0</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</PropertyCurve>
-																		<PropertyCurve PropertyName="Lowpass">
-																			<Curve Name="" ID="{699F9745-A1DF-40CA-9701-EBEDC033BF33}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="1"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>0</YPos>
-																						<Flags>5</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>29.29663</XPos>
-																						<YPos>0</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</PropertyCurve>
-																		<PropertyCurve PropertyName="Volume">
-																			<Curve Name="" ID="{A571F0ED-5BDA-4242-AE5C-CA9D55D5B029}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="3"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>0</YPos>
-																						<Flags>5</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>29.29663</XPos>
-																						<YPos>0</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</PropertyCurve>
-																	</PropertyCurveList>
+																	<AudioSourceRef Name="Ambience Nature" ID="{2DE11422-6BCD-4B16-A140-3D1B98AFDD87}"/>
 																</MusicClip>
 															</Local>
 														</Reference>
@@ -204,30 +66,23 @@
 								</ObjectList>
 							</ObjectLists>
 						</MusicTrack>
-						<MusicTrack Name="High-pitch wind02" ID="{F9347E77-1750-44F8-9D6C-99CF09CB494E}" ShortID="481896154">
+						<MusicTrack Name="Ambience Wind Blowing Through" ID="{CFD1A5B1-784A-415F-AD3D-7E55DDC70F5A}" ShortID="891386884">
 							<ReferenceList>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="High-pitch wind02" ID="{3AA6DFAE-6A37-40A3-B63D-21ED719272BE}">
+								<AudioFileSource Name="Ambience Wind Blowing Through" ID="{420077B0-E153-4A40-B13B-D901A034DC84}">
 									<Language>SFX</Language>
-									<AudioFile>High-pitch wind02.wav</AudioFile>
+									<AudioFile>Ambience Wind Blowing Through.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="738243818"/>
-									</MediaIDList>
-								</AudioFileSource>
-								<AudioFileSource Name="High-pitched wind01_1" ID="{760C3101-A585-4D66-B970-33D8EE2BE453}">
-									<Language>SFX</Language>
-									<AudioFile>High-pitched wind01.1.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="212438502"/>
+										<MediaID ID="821670171"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<TransitionList>
-								<MusicTransition Name="Root" ID="{40EA29D0-C32B-43CF-A418-97F42E2AAC7E}">
+								<MusicTransition Name="Root" ID="{E72332FA-C57A-4104-931D-B05254CA6685}">
 									<PropertyList>
 										<Property Name="IsFolder" Type="bool" Value="True"/>
 									</PropertyList>
@@ -238,149 +93,218 @@
 								<ObjectList Name="Sequences">
 									<Reference>
 										<Local>
-											<MusicTrackSequence Name="" ID="{FD5BA152-249E-47A2-B86E-F2E1F2CC875D}">
+											<MusicTrackSequence Name="" ID="{991350DE-09E0-497D-A3AF-D5D7A33C9D92}">
 												<ObjectLists>
 													<ObjectList Name="Clips">
 														<Reference>
 															<Local>
-																<MusicClip Name="High-pitch wind02" ID="{E9827969-D87F-4E5A-9E33-BA9E00176A68}">
+																<MusicClip Name="Ambience Wind Blowing Through" ID="{FF7DCE30-0319-4A43-ABD3-5EEE0B137553}">
 																	<PropertyList>
-																		<Property Name="EndTrimOffset" Type="Real64" Value="29296.6280198672"/>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="58500"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																	</PropertyList>
-																	<AudioSourceRef Name="High-pitch wind02" ID="{3AA6DFAE-6A37-40A3-B63D-21ED719272BE}"/>
-																	<PropertyCurveList>
-																		<PropertyCurve PropertyName="Highpass">
-																			<Curve Name="" ID="{2C555713-3AC4-489E-8379-B9B051C94951}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="1"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>0</YPos>
-																						<Flags>5</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>29.29663</XPos>
-																						<YPos>0</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</PropertyCurve>
-																		<PropertyCurve PropertyName="Lowpass">
-																			<Curve Name="" ID="{16DE39E3-98DD-49E6-93A8-5635AA0A2708}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="1"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>0</YPos>
-																						<Flags>5</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>29.29663</XPos>
-																						<YPos>0</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</PropertyCurve>
-																		<PropertyCurve PropertyName="Volume">
-																			<Curve Name="" ID="{2B396C03-970E-4DB0-9164-6FFDA43E5D6E}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="3"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>0</YPos>
-																						<Flags>5</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>29.29663</XPos>
-																						<YPos>0</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</PropertyCurve>
-																	</PropertyCurveList>
+																	<AudioSourceRef Name="Ambience Wind Blowing Through" ID="{420077B0-E153-4A40-B13B-D901A034DC84}"/>
 																</MusicClip>
 															</Local>
 														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicTrack>
+						<MusicTrack Name="High-pitch wind" ID="{1E5F6BCC-8C76-4E9A-BE36-4FF33C0293F2}" ShortID="221524552">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="High-pitch wind" ID="{4884C5C4-8225-4681-B3EC-E31874F35210}">
+									<Language>SFX</Language>
+									<AudioFile>High-pitch wind.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="938990396"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{53250B48-5ED8-498A-BBEB-3995E055CF59}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ObjectLists>
+								<ObjectList Name="Sequences">
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{A1E36672-D268-493A-8633-108F0D48E701}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
 														<Reference>
 															<Local>
-																<MusicClip Name="High-pitched wind01_1" ID="{D87B701E-8887-4A33-91B0-32B237B2BCC4}">
+																<MusicClip Name="High-pitch wind" ID="{1B6905EE-95C2-4776-9D26-5D97ADA7B5E3}">
 																	<PropertyList>
-																		<Property Name="EndTrimOffset" Type="Real64" Value="29296.6280198672"/>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="54000"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																		<Property Name="PlayAt" Type="Real64" Value="29357.9271362527"/>
 																	</PropertyList>
-																	<AudioSourceRef Name="High-pitched wind01_1" ID="{760C3101-A585-4D66-B970-33D8EE2BE453}"/>
-																	<PropertyCurveList>
-																		<PropertyCurve PropertyName="Highpass">
-																			<Curve Name="" ID="{70683AC4-D56C-49C2-A82A-D41A2861FBA2}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="1"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>0</YPos>
-																						<Flags>5</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>29.29663</XPos>
-																						<YPos>0</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</PropertyCurve>
-																		<PropertyCurve PropertyName="Lowpass">
-																			<Curve Name="" ID="{9E905545-5D9C-488B-9AC8-9BCA3FC8928D}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="1"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>0</YPos>
-																						<Flags>5</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>29.29663</XPos>
-																						<YPos>0</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</PropertyCurve>
-																		<PropertyCurve PropertyName="Volume">
-																			<Curve Name="" ID="{F192B8C3-5079-48A7-B491-8D92978CAF64}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="3"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>0</YPos>
-																						<Flags>5</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>29.29663</XPos>
-																						<YPos>0</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</PropertyCurve>
-																	</PropertyCurveList>
+																	<AudioSourceRef Name="High-pitch wind" ID="{4884C5C4-8225-4681-B3EC-E31874F35210}"/>
+																</MusicClip>
+															</Local>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicTrack>
+						<MusicTrack Name="Howling Wind_1" ID="{893A563F-7E73-4CB1-A7E9-763ACA2829E3}" ShortID="112631022">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Howling Wind_1" ID="{7847371F-7080-4327-8D5B-7BCF23E43CBC}">
+									<Language>SFX</Language>
+									<AudioFile>Howling Wind_1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="697713957"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{A62704D6-35D9-41BC-9AA9-7F7B0D1A89F7}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ObjectLists>
+								<ObjectList Name="Sequences">
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{E2647970-6C3C-4715-999C-6D99D4E02E3D}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<Reference>
+															<Local>
+																<MusicClip Name="Howling Wind_1" ID="{CEF2DC6B-CC3F-4488-BEC7-B11D81E3EC81}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="54000"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="Howling Wind_1" ID="{7847371F-7080-4327-8D5B-7BCF23E43CBC}"/>
+																</MusicClip>
+															</Local>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicTrack>
+						<MusicTrack Name="Low-pitched wind" ID="{5BABFA17-AADA-435A-8EC9-FE039E154D0D}" ShortID="357712480">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Low-pitched wind" ID="{C01B5207-B832-48E7-B79F-662D82FF4A64}">
+									<Language>SFX</Language>
+									<AudioFile>Low-pitched wind.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="841685844"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{9F1654FD-DD16-4DCF-B301-D20AF803B434}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ObjectLists>
+								<ObjectList Name="Sequences">
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{A80328AF-2728-48DB-8614-D007BA9718D3}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<Reference>
+															<Local>
+																<MusicClip Name="Low-pitched wind" ID="{6468A94C-1DBB-4CE5-B379-A86F3498CA6F}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="54000"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="Low-pitched wind" ID="{C01B5207-B832-48E7-B79F-662D82FF4A64}"/>
+																</MusicClip>
+															</Local>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicTrack>
+						<MusicTrack Name="WindWhistleClink" ID="{7C6F1A8B-288F-4171-B7D0-34F8210AF768}" ShortID="385449990">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="WindWhistleClink" ID="{E0DD4FF6-A2E5-444E-A6FF-62D7EBA3253B}">
+									<Language>SFX</Language>
+									<AudioFile>WindWhistleClink.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="577671460"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{DB05A4A5-7E47-4F50-9E08-A37659C9B616}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ObjectLists>
+								<ObjectList Name="Sequences">
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{3C3541DA-67E4-4849-AFEF-F3568E054108}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<Reference>
+															<Local>
+																<MusicClip Name="WindWhistleClink" ID="{6CD169A1-D089-441C-86E9-8EA7F032FD6E}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="54000"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="WindWhistleClink" ID="{E0DD4FF6-A2E5-444E-A6FF-62D7EBA3253B}"/>
 																</MusicClip>
 															</Local>
 														</Reference>

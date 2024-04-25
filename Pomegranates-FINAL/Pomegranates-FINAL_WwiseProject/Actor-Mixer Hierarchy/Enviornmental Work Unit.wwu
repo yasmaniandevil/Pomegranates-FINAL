@@ -393,7 +393,7 @@
 						<ItemRef Name="Adan2" ID="{AEAACF78-01D4-46D3-8926-230DB6577428}"/>
 					</Playlist>
 				</RandomSequenceContainer>
-				<BlendContainer Name="PastAmbientSound" ID="{4EEEB815-31EE-4552-B79F-D719ECB94431}" ShortID="537846820">
+				<BlendContainer Name="Fire Blend Container" ID="{D8BC9F2D-4C1A-4E29-BF35-3DD9F4906781}" ShortID="819650177">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{388F345F-C687-4C6D-878F-23220F72DDD5}"/>
@@ -403,7 +403,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="Ambience Nature01" ID="{77143898-5505-4651-8333-04EEFF438469}" ShortID="6551343">
+						<Sound Name="LoudFireMediumBurst" ID="{E754236E-EC6F-4ABF-8D73-B46BDE59B368}" ShortID="63903368">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{388F345F-C687-4C6D-878F-23220F72DDD5}"/>
@@ -413,19 +413,19 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Ambience Nature01" ID="{C13A9718-3093-4151-B6BA-B8ED84841E7F}">
+								<AudioFileSource Name="LoudFireMediumBurst" ID="{54903DE9-04CB-4599-84CD-C8129F040742}">
 									<Language>SFX</Language>
-									<AudioFile>Ambience Nature01.wav</AudioFile>
+									<AudioFile>LoudFireMediumBurst.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="667434022"/>
+										<MediaID ID="60799332"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Ambience Nature01" ID="{C13A9718-3093-4151-B6BA-B8ED84841E7F}" Platform="Linked"/>
+								<ActiveSource Name="LoudFireMediumBurst" ID="{54903DE9-04CB-4599-84CD-C8129F040742}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Ambience Nature02" ID="{6C7C3B43-A78D-4D9A-B74E-3B53EA11F830}" ShortID="456092462">
+						<Sound Name="MediumIntensityFire" ID="{3AA11EBA-1425-4A99-966C-42BC462831DE}" ShortID="656751845">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{388F345F-C687-4C6D-878F-23220F72DDD5}"/>
@@ -435,19 +435,56 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Ambience Nature02" ID="{CD581E7A-973B-464F-AB20-71440688D1BA}">
+								<AudioFileSource Name="MediumIntensityFire" ID="{41843273-D6C6-4395-9517-8C9D9EE4772D}">
 									<Language>SFX</Language>
-									<AudioFile>Ambience Nature02.wav</AudioFile>
+									<AudioFile>MediumIntensityFire.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="970807895"/>
+										<MediaID ID="797389714"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Ambience Nature02" ID="{CD581E7A-973B-464F-AB20-71440688D1BA}" Platform="Linked"/>
+								<ActiveSource Name="MediumIntensityFire" ID="{41843273-D6C6-4395-9517-8C9D9EE4772D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SoftIntensityFire" ID="{4235CA28-CCA5-4EAE-A9A9-01BEC6D457DB}" ShortID="1059781999">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{388F345F-C687-4C6D-878F-23220F72DDD5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SoftIntensityFire" ID="{ED1C2A06-4D88-4706-A58F-E70C4E0DDEEB}">
+									<Language>SFX</Language>
+									<AudioFile>SoftIntensityFire.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="779425590"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SoftIntensityFire" ID="{ED1C2A06-4D88-4706-A58F-E70C4E0DDEEB}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
+					<BlendTrackList>
+						<BlendTrack Name="Fire Blend Track" ID="{568E95C6-8096-4316-BBAD-CB4A5EE24647}" ShortID="147877714">
+							<BlendTrackAssocList>
+								<BlendTrackAssoc>
+									<ItemRef Name="LoudFireMediumBurst" ID="{E754236E-EC6F-4ABF-8D73-B46BDE59B368}"/>
+								</BlendTrackAssoc>
+								<BlendTrackAssoc>
+									<ItemRef Name="MediumIntensityFire" ID="{3AA11EBA-1425-4A99-966C-42BC462831DE}"/>
+								</BlendTrackAssoc>
+								<BlendTrackAssoc>
+									<ItemRef Name="SoftIntensityFire" ID="{4235CA28-CCA5-4EAE-A9A9-01BEC6D457DB}"/>
+								</BlendTrackAssoc>
+							</BlendTrackAssocList>
+						</BlendTrack>
+					</BlendTrackList>
 				</BlendContainer>
 			</ChildrenList>
 		</WorkUnit>
