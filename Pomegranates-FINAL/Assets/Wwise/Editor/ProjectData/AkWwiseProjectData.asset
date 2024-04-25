@@ -144,7 +144,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Enviornmental Work Unit
     guid: 811dc13d89a1484ba7327cd7cc47d6d1
     GuidInternal: 
-    m_lastTime: -8584875904131469846
+    m_lastTime: -8584875824249423288
     List:
     - name: AdanSoundBank
       guid: 82bcb60ed29dd141a2b478a4c0e5c6a2
@@ -160,6 +160,20 @@ MonoBehaviour:
         ObjectType: 7
         guid: 82bcb60ed29dd141a2b478a4c0e5c6a2
       Path: SoundBanks/Enviornmental Work Unit/AdanSoundBank
+    - name: FireSoundbank
+      guid: f7369aba9c6cea4b9555cf301c862630
+      id: 3382285268
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Enviornmental Work Unit
+        ObjectType: 12
+        guid: 811dc13d89a1484ba7327cd7cc47d6d1
+      - ElementName: FireSoundbank
+        ObjectType: 7
+        guid: f7369aba9c6cea4b9555cf301c862630
+      Path: SoundBanks/Enviornmental Work Unit/FireSoundbank
     - name: StreetAudioContainerSoundbank
       guid: 9ba6de72fcaed1478e1afe6f1d08aa87
       id: 3481854762
@@ -174,6 +188,20 @@ MonoBehaviour:
         ObjectType: 7
         guid: 9ba6de72fcaed1478e1afe6f1d08aa87
       Path: SoundBanks/Enviornmental Work Unit/StreetAudioContainerSoundbank
+    - name: Wind_Soundbank
+      guid: 0ea40fde164b6b4eb433488a5093ed44
+      id: 2981824113
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Enviornmental Work Unit
+        ObjectType: 12
+        guid: 811dc13d89a1484ba7327cd7cc47d6d1
+      - ElementName: Wind_Soundbank
+        ObjectType: 7
+        guid: 0ea40fde164b6b4eb433488a5093ed44
+      Path: SoundBanks/Enviornmental Work Unit/Wind_Soundbank
   - PhysicalPath: SoundBanks/Music Work Unit.wwu
     PathAndIcons:
     - ElementName: SoundBanks
@@ -213,7 +241,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 8097cb23c1290d4c9b41229fb2bf76ca
     GuidInternal: 
-    m_lastTime: -8584875843586156843
+    m_lastTime: -8584875824249353188
     List: []
   - PhysicalPath: Events/Environmental Events Work Unit.wwu
     PathAndIcons:
@@ -226,7 +254,7 @@ MonoBehaviour:
     ParentPath: Events/Environmental Events Work Unit
     guid: 88fa32bd4d1aa14b85d1e735b565316a
     GuidInternal: 
-    m_lastTime: -8584875904135167262
+    m_lastTime: -8584875824249376925
     List:
     - name: Event_AdanSequenceContainer
       guid: 93e75f65e236b8459bfb77bc38ddf30c
@@ -245,6 +273,23 @@ MonoBehaviour:
       maxAttenuation: 100
       maxDuration: 118.36081
       minDuration: 118.36081
+    - name: Event_Fire_Blend_Container
+      guid: 8bf9c741089d0841bbf7c2725734e8e0
+      id: 565798754
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Environmental Events Work Unit
+        ObjectType: 12
+        guid: 88fa32bd4d1aa14b85d1e735b565316a
+      - ElementName: Event_Fire_Blend_Container
+        ObjectType: 3
+        guid: 8bf9c741089d0841bbf7c2725734e8e0
+      Path: Events/Environmental Events Work Unit/Event_Fire_Blend_Container
+      maxAttenuation: 0
+      maxDuration: 48.70315
+      minDuration: 48.70315
     - name: Event_Street_Audio_Sequence_Container
       guid: 829755acb3cbc840894e635428208105
       id: 3320485656
@@ -262,6 +307,23 @@ MonoBehaviour:
       maxAttenuation: 80
       maxDuration: -1
       minDuration: -1
+    - name: Event_Wind_Segment_Container
+      guid: fd6911e48550c640941c06fd9b58b5a6
+      id: 3474846662
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Environmental Events Work Unit
+        ObjectType: 12
+        guid: 88fa32bd4d1aa14b85d1e735b565316a
+      - ElementName: Event_Wind_Segment_Container
+        ObjectType: 3
+        guid: fd6911e48550c640941c06fd9b58b5a6
+      Path: Events/Environmental Events Work Unit/Event_Wind_Segment_Container
+      maxAttenuation: 0
+      maxDuration: 58.5
+      minDuration: 58.5
   - PhysicalPath: Events/Music Events Work Unit.wwu
     PathAndIcons:
     - ElementName: Events
@@ -273,7 +335,7 @@ MonoBehaviour:
     ParentPath: Events/Music Events Work Unit
     guid: bb625751613f284e8f36db8b35422e0b
     GuidInternal: 
-    m_lastTime: -8584875904135164878
+    m_lastTime: -8584875824249334844
     List:
     - name: Event_ALBint
       guid: d33cfcdbb033cf408f9abac76efdce4c

@@ -155,6 +155,75 @@
 				</Event>
 			</Events>
 		</SoundBank>
+		<SoundBank Id="2981824113" Type="User" Language="SFX" Hash="{6E01CF83-4418-F56A-08C8-CB03FFA46C81}">
+			<ShortName>Wind_Soundbank</ShortName>
+			<Path>Wind_Soundbank.bnk</Path>
+			<Media>
+				<File Id="577671460" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>WindWhistleClink.wav</ShortName>
+					<CachePath>SFX/WindWhistleClink_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="697713957" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Howling Wind_1.wav</ShortName>
+					<CachePath>SFX/Howling Wind_1_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="783158354" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ambience Nature.wav</ShortName>
+					<CachePath>SFX/Ambience Nature_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="821670171" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ambience Wind Blowing Through.wav</ShortName>
+					<CachePath>SFX/Ambience Wind Blowing Through_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="841685844" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Low-pitched wind.wav</ShortName>
+					<CachePath>SFX/Low-pitched wind_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="938990396" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>High-pitch wind.wav</ShortName>
+					<CachePath>SFX/High-pitch wind_D79FB2B7.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3474846662" Name="Event_Wind_Segment_Container" DurationType="OneShot" DurationMin="58.5" DurationMax="58.5">
+					<MediaRefs>
+						<MediaRef Id="577671460"/>
+						<MediaRef Id="697713957"/>
+						<MediaRef Id="783158354"/>
+						<MediaRef Id="821670171"/>
+						<MediaRef Id="841685844"/>
+						<MediaRef Id="938990396"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="3382285268" Type="User" Language="SFX" Hash="{754E4394-CC64-F1A9-BF37-3701BF8C3461}">
+			<ShortName>FireSoundbank</ShortName>
+			<Path>FireSoundbank.bnk</Path>
+			<Media>
+				<File Id="60799332" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>LoudFireMediumBurst.wav</ShortName>
+					<CachePath>SFX/LoudFireMediumBurst_10C4C929.wem</CachePath>
+				</File>
+				<File Id="779425590" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SoftIntensityFire.wav</ShortName>
+					<CachePath>SFX/SoftIntensityFire_10C4C929.wem</CachePath>
+				</File>
+				<File Id="797389714" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MediumIntensityFire.wav</ShortName>
+					<CachePath>SFX/MediumIntensityFire_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="565798754" Name="Event_Fire_Blend_Container" DurationType="OneShot" DurationMin="48.70315" DurationMax="48.70315">
+					<MediaRefs>
+						<MediaRef Id="60799332"/>
+						<MediaRef Id="779425590"/>
+						<MediaRef Id="797389714"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
 		<SoundBank Id="3481854762" Type="User" Language="SFX" Hash="{27923473-F64E-F299-6FFD-C8D93DF26028}">
 			<ShortName>StreetAudioContainerSoundbank</ShortName>
 			<Path>StreetAudioContainerSoundbank.bnk</Path>
@@ -226,5 +295,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{446319DE-FD51-A7C3-AD01-009883DB71F6}</FileHash>
+	<FileHash>{616AD197-6388-8059-A680-7F43FF2808AA}</FileHash>
 </SoundBanksInfo>
