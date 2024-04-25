@@ -68,21 +68,13 @@ public class Digging : MonoBehaviour
                     Cursor.lockState = CursorLockMode.None;
                 }
                 
-                if (hit.collider.CompareTag("Memory") && script.location.Count > 0)
+                if (hit.collider.CompareTag("Memory"))
                 {
                     var artifact = hit.collider.gameObject.GetComponent<Artifact>();
                     script.ArtifactJournal(artifact.memoryText, artifact.artifact);
                     Destroy(hit.collider.gameObject);
                     script.MemoryManager();
                     script.ChangeFlyer();
-                    script.buttonsPressed++;
-                    script.ChangeScene();
-                }
-                else if (hit.collider.CompareTag("Memory") && script.location.Count == 0)
-                {
-                    Destroy(hit.collider.gameObject);
-                    script.ShowCanvas(
-                        "It's time to go back to where you came from and save everyone. Bury the book in the town center");
                     script.buttonsPressed++;
                 }
 

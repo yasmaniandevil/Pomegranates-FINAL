@@ -40,6 +40,8 @@ public class GameManagerPast : MonoBehaviour
     public GameObject PauseMenuCanvas;
     public static bool paused;
 
+    public GameObject continueButton;
+
     
 
     //public AudioSource journalWriting;
@@ -104,6 +106,9 @@ public class GameManagerPast : MonoBehaviour
         {
             mosqueLight.SetActive(false);
         }
+
+        continueButton.SetActive(true);
+        
     }
 
 
@@ -116,16 +121,7 @@ public class GameManagerPast : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         currentLocation.SetActive(true);
     }
-
-    public void ShowCanvas(string text) //does opposite and calls text from digging script
-    {
-        canvas.SetActive(true);
-        player.SetActive(false);
-        reticle.SetActive(false);
-        flyerTextBox.text = text;
-        Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.None;
-    }
+    
 
     public void ChangeScene() //changes scene
     {
@@ -151,7 +147,6 @@ public class GameManagerPast : MonoBehaviour
         
         location.Remove(randomKey);
         
-        Debug.Log(location.Count +"," +  currentLocation +"," +  currentLocationString);
     }
 
     public void ArtifactJournal(string text, Sprite artifact)
@@ -161,7 +156,7 @@ public class GameManagerPast : MonoBehaviour
             if (bookTextBox[i].text == " ")
             {
                 bookTextBox[i].text = text;
-                return;
+                break;
             }
             else
             {
@@ -175,7 +170,7 @@ public class GameManagerPast : MonoBehaviour
             {
                 artifactImage[i].color = new Color(255f,255f,255f,255f);
                 artifactImage[i].sprite = artifact;
-                return;
+                break;
             }
             else
             {
@@ -188,7 +183,7 @@ public class GameManagerPast : MonoBehaviour
     {
         currentLocation.SetActive(true);
         flyerTextBox.text = "Next memory at " + currentLocationString;
-        //journalWriting.Play();
+        //AkSoundEngine.PostEvent()
     }
     
     

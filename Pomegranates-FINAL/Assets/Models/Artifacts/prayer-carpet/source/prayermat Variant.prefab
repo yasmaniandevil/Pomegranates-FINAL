@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &8511129856491441547
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 455c304f180d22244b5f3eb2a9dd4c1f, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 455c304f180d22244b5f3eb2a9dd4c1f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 110.218704
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 455c304f180d22244b5f3eb2a9dd4c1f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 110.218704
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 455c304f180d22244b5f3eb2a9dd4c1f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 110.218704
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 455c304f180d22244b5f3eb2a9dd4c1f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 23.595827
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 455c304f180d22244b5f3eb2a9dd4c1f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9.85
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 455c304f180d22244b5f3eb2a9dd4c1f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -64.78032
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 455c304f180d22244b5f3eb2a9dd4c1f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 455c304f180d22244b5f3eb2a9dd4c1f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 455c304f180d22244b5f3eb2a9dd4c1f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 455c304f180d22244b5f3eb2a9dd4c1f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 455c304f180d22244b5f3eb2a9dd4c1f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 455c304f180d22244b5f3eb2a9dd4c1f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 455c304f180d22244b5f3eb2a9dd4c1f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 455c304f180d22244b5f3eb2a9dd4c1f, type: 3}
+      propertyPath: m_Name
+      value: prayermat Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 455c304f180d22244b5f3eb2a9dd4c1f, type: 3}
+--- !u!1 &8853217407165657306 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 455c304f180d22244b5f3eb2a9dd4c1f, type: 3}
+  m_PrefabInstance: {fileID: 8511129856491441547}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6642277283327388937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8853217407165657306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae408babb0c8f7a45a9b6989b02087fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+  amplitude: 0.1
+  offset: 0.1
+  memoryText: "Essam, my beautiful boy. Some call him my shadow, and they aren\u2019t
+    wrong. He always wants to join me wherever I go. You can hear his little feet
+    running to catch up. He loves reading the Quran and praying with me. When I do
+    my prayers he tries to copy everything I do. I stand up, he stands, I sit, he
+    sits, all while muttering suras to the best of his abilities. I take him to the
+    mosque with me on Fridays where he tries to follow along with prayers but gets
+    distracted and runs around with other kids. On Mondays I return to work for the
+    week, which is the worst part of my day since I\u2019m saying goodbye to his
+    adorable little face. When I get home he runs to the door to open it for me jumping
+    from joy and starts excitedly telling me about his day and how he helped his
+    mother. I love watching him grow into the great man I know he will be someday.
+    For his birthday this year we got him his first ever prayer rug, its child size
+    and adorable. He is going to be so excited, I can\u2019t wait to give it to him. "
+  artifact: {fileID: 21300000, guid: e5600378dd761e64d9423790c482bf36, type: 3}

@@ -1,0 +1,152 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3279802844345264658
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3485410160160170327}
+  - component: {fileID: 365811893359912471}
+  - component: {fileID: 1855198592557101603}
+  m_Layer: 0
+  m_Name: Ring 1
+  m_TagString: Memory
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3485410160160170327
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3279802844345264658}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -70.730446, y: 12.825517, z: 1.8037826}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6520153768261413122}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &365811893359912471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3279802844345264658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae408babb0c8f7a45a9b6989b02087fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+  amplitude: 0.1
+  offset: 0.1
+  memoryText: "My days are always the same. I wake up, I brush my teeth, put on my
+    running shoes, and leave the house. I love running. The feeling of the fresh
+    air, finding different paths around the neighborhood, seeing my neighbors, friends,
+    and community wake up. When I met my fianc\xE9, he would always tease me about
+    my running. I think he was jealous he couldn\u2019t keep up. Of course, till
+    one morning he decided to join me. Ya Allah, what was he thinking. It was brutal,
+    yet hilarious. He would stop every few hundred meters, and pant like a dog all
+    hunched over. However, little by little he got better and kept up with me. It
+    became our thing, something we shared together. One day while on a run together,
+    he decided to take a different path by the beach. It was beautiful, but I wanted
+    to turn around. We were going too far, but he was persistent. We stopped in front
+    of the hospital, and this spot was breathtaking. Suddenly I felt very grateful
+    he brought us here. The sun was shinning, the waves were crashing, and the smell\u2026
+    I closed my eyes and took a deep breath to smell the salty air and when I opened
+    them, there he was. Down on one knee with a beautiful ring\u2026 I cried from
+    joy, pure joy\u2026It will be a day I will always remember. "
+  artifact: {fileID: 21300000, guid: c887ed2a931c29040bc544cd8c546e9f, type: 3}
+--- !u!65 &1855198592557101603
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3279802844345264658}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.15, y: 0.13, z: 0.14}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1001 &5237057895506757829
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3485410160160170327}
+    m_Modifications:
+    - target: {fileID: 1356138905492038087, guid: 31a0478b35b07314f9626e690e3be2fc, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1356138905492038087, guid: 31a0478b35b07314f9626e690e3be2fc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1356138905492038087, guid: 31a0478b35b07314f9626e690e3be2fc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1356138905492038087, guid: 31a0478b35b07314f9626e690e3be2fc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1356138905492038087, guid: 31a0478b35b07314f9626e690e3be2fc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1356138905492038087, guid: 31a0478b35b07314f9626e690e3be2fc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1356138905492038087, guid: 31a0478b35b07314f9626e690e3be2fc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1356138905492038087, guid: 31a0478b35b07314f9626e690e3be2fc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1356138905492038087, guid: 31a0478b35b07314f9626e690e3be2fc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1356138905492038087, guid: 31a0478b35b07314f9626e690e3be2fc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1356138905492038087, guid: 31a0478b35b07314f9626e690e3be2fc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844832672816364413, guid: 31a0478b35b07314f9626e690e3be2fc, type: 3}
+      propertyPath: m_Name
+      value: Ring
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844832672816364413, guid: 31a0478b35b07314f9626e690e3be2fc, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 5107703452231799683, guid: 31a0478b35b07314f9626e690e3be2fc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5592102181084226489, guid: 31a0478b35b07314f9626e690e3be2fc, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 31a0478b35b07314f9626e690e3be2fc, type: 3}
+--- !u!4 &6520153768261413122 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1356138905492038087, guid: 31a0478b35b07314f9626e690e3be2fc, type: 3}
+  m_PrefabInstance: {fileID: 5237057895506757829}
+  m_PrefabAsset: {fileID: 0}
