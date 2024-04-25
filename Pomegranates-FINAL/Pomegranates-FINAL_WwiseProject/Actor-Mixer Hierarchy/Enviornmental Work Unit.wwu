@@ -393,6 +393,106 @@
 						<ItemRef Name="Adan2" ID="{AEAACF78-01D4-46D3-8926-230DB6577428}"/>
 					</Playlist>
 				</RandomSequenceContainer>
+				<BlendContainer Name="PastAmbientSound" ID="{4EEEB815-31EE-4552-B79F-D719ECB94431}" ShortID="537846820">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{388F345F-C687-4C6D-878F-23220F72DDD5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Ambience Countryside Planes Over Head01" ID="{34045634-609E-4648-8958-E920480EF95B}" ShortID="162901407">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{388F345F-C687-4C6D-878F-23220F72DDD5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ambience Countryside Planes Over Head01" ID="{543AC442-6EF2-43B0-AE81-55E6849A6CFC}">
+									<Language>SFX</Language>
+									<AudioFile>Ambience Countryside Planes Over Head01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="632423233"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Ambience Countryside Planes Over Head01" ID="{543AC442-6EF2-43B0-AE81-55E6849A6CFC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Ambience Countryside Planes Over Head02" ID="{97BDD0C7-A833-4413-A045-C66BDFA7D7E5}" ShortID="384209290">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{388F345F-C687-4C6D-878F-23220F72DDD5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ambience Countryside Planes Over Head02" ID="{58BFE442-3501-4DE9-87D3-DBFE13FE3446}">
+									<Language>SFX</Language>
+									<AudioFile>Ambience Countryside Planes Over Head02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="738250278"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Ambience Countryside Planes Over Head02" ID="{58BFE442-3501-4DE9-87D3-DBFE13FE3446}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Ambience Nature01" ID="{77143898-5505-4651-8333-04EEFF438469}" ShortID="6551343">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{388F345F-C687-4C6D-878F-23220F72DDD5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ambience Nature01" ID="{C13A9718-3093-4151-B6BA-B8ED84841E7F}">
+									<Language>SFX</Language>
+									<AudioFile>Ambience Nature01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="667434022"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Ambience Nature01" ID="{C13A9718-3093-4151-B6BA-B8ED84841E7F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Ambience Nature02" ID="{6C7C3B43-A78D-4D9A-B74E-3B53EA11F830}" ShortID="456092462">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{388F345F-C687-4C6D-878F-23220F72DDD5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ambience Nature02" ID="{CD581E7A-973B-464F-AB20-71440688D1BA}">
+									<Language>SFX</Language>
+									<AudioFile>Ambience Nature02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="970807895"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Ambience Nature02" ID="{CD581E7A-973B-464F-AB20-71440688D1BA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</BlendContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
