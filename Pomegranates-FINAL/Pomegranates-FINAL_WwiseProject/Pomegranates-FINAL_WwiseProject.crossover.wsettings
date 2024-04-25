@@ -3,7 +3,10 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{429576B5-ED9F-4BBA-B292-03B4C01889B7}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="Y:\Documents\NYU\Spring 24\Thesis\Audio\Logic2Wwise\WindSoundsCross\"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="Y:\Documents\NYU\Spring 24\Thesis\Audio\Logic2Wwise\Artifact Float\"/>
+				<Property Name="Event Action List\{150B34E1-6AE4-4392-962B-7859EE722F13}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{2F40C2CA-09E9-4943-A9CF-0BE6E8B1E14F}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{5A802F84-F506-4CE4-86A4-5E5DC32616F2}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{655FE793-36E2-45B8-9BFB-77BC38DDF30C}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{885BCA29-CC4A-4D63-9D2C-11CB4C1FAD8E}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{943D65C7-949E-4E9D-8B0F-516DB0E9DEEE}\x64_Expand States" Type="string" Value=""/>

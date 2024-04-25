@@ -1,6 +1,12 @@
 Event	ID	Name			Wwise Object Path	Notes
 	562259991	Event_WritingSFX			\SFX\Event_WritingSFX	
+	1969774664	Event_ArtifactUp1			\SFX\Event_ArtifactUp1	
+	1969774666	Event_ArtifactUp3			\SFX\Event_ArtifactUp3	
+	1969774667	Event_ArtifactUp2			\SFX\Event_ArtifactUp2	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	181114169	WritingSFX	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Windows\SFX\WritingSFX_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\WritingSFX		518056
+	344708579	ArtifactUp1	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Windows\SFX\Action_Pop Up_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\ArtifactUp1		216160
+	494818398	ArtifactUp2	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Windows\SFX\Glockenspiel Selection Sound 02_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\ArtifactUp2		672160
+	720925955	ArtifactUp3	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Windows\SFX\Indian Woodwind Notification Sound 03_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\ArtifactUp3		528160
 

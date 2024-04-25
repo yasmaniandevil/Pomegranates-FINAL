@@ -15,6 +15,9 @@ namespace AK
     {
         static const AkUniqueID EVENT_ADANSEQUENCECONTAINER = 2897767672U;
         static const AkUniqueID EVENT_ALBINT = 3204538988U;
+        static const AkUniqueID EVENT_ARTIFACTUP1 = 1969774664U;
+        static const AkUniqueID EVENT_ARTIFACTUP2 = 1969774667U;
+        static const AkUniqueID EVENT_ARTIFACTUP3 = 1969774666U;
         static const AkUniqueID EVENT_STREET_AUDIO_SEQUENCE_CONTAINER = 3320485656U;
         static const AkUniqueID EVENT_WRITINGSFX = 562259991U;
     } // namespace EVENTS
