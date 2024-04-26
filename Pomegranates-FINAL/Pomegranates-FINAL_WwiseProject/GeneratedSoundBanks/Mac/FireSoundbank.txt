@@ -1,0 +1,7 @@
+Event	ID	Name			Wwise Object Path	Notes
+	565798754	Event_Fire_Blend_Container			\Environmental Events Work Unit\Event_Fire_Blend_Container	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	779425590	SoftIntensityFire	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Mac\SFX\SoftIntensityFire_D79FB2B7.wem		\Actor-Mixer Hierarchy\Enviornmental Work Unit\Fire Blend Container\SoftIntensityFire		6652796
+	797389714	MediumIntensityFire	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Mac\SFX\MediumIntensityFire_D79FB2B7.wem		\Actor-Mixer Hierarchy\Enviornmental Work Unit\Fire Blend Container\MediumIntensityFire		6930480
+

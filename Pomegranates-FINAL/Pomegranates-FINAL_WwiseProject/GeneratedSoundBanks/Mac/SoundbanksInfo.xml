@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="265338097" Type="User" Language="SFX" Hash="{2D8CF33D-59CA-3AE3-DF90-0DCD98387EF6}">
+		<SoundBank Id="265338097" Type="User" Language="SFX" Hash="{9F8112D2-7DE9-3244-B8D9-5E5AB2387EBE}">
 			<ShortName>Music_ALBint_Soundbank</ShortName>
 			<Path>Music_ALBint_Soundbank.bnk</Path>
 			<Media>
@@ -86,7 +86,7 @@
 				<GameParameter Id="513275970" Name="FadeOutStreetAudio"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{7173104C-44A3-7A21-336A-5674E5F8FE78}">
+		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{67AE9DF3-9630-41A2-760B-AC9BF61E1222}">
 			<ShortName>SFX_Soundbank</ShortName>
 			<Path>SFX_Soundbank.bnk</Path>
 			<Media>
@@ -94,8 +94,35 @@
 					<ShortName>WritingSFX.wav</ShortName>
 					<CachePath>SFX/WritingSFX_10C4C929.wem</CachePath>
 				</File>
+				<File Id="344708579" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Action_Pop Up.wav</ShortName>
+					<CachePath>SFX/Action_Pop Up_10C4C929.wem</CachePath>
+				</File>
+				<File Id="494818398" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Glockenspiel Selection Sound 02.wav</ShortName>
+					<CachePath>SFX/Glockenspiel Selection Sound 02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="720925955" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Indian Woodwind Notification Sound 03.wav</ShortName>
+					<CachePath>SFX/Indian Woodwind Notification Sound 03_10C4C929.wem</CachePath>
+				</File>
 			</Media>
 			<Events>
+				<Event Id="1969774664" Name="Event_ArtifactUp1" DurationType="OneShot" DurationMin="1.125" DurationMax="1.125">
+					<MediaRefs>
+						<MediaRef Id="344708579"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1969774667" Name="Event_ArtifactUp2" DurationType="OneShot" DurationMin="3.5" DurationMax="3.5">
+					<MediaRefs>
+						<MediaRef Id="494818398"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1969774666" Name="Event_ArtifactUp3" DurationType="OneShot" DurationMin="2.75" DurationMax="2.75">
+					<MediaRefs>
+						<MediaRef Id="720925955"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="562259991" Name="Event_WritingSFX" DurationType="OneShot" DurationMin="2.9362812" DurationMax="2.9362812">
 					<MediaRefs>
 						<MediaRef Id="181114169"/>
@@ -103,7 +130,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2963256630" Type="User" Language="SFX" Hash="{F4945691-139C-B722-82F3-FF943A35066A}">
+		<SoundBank Id="2963256630" Type="User" Language="SFX" Hash="{889A3BFE-088D-5C1A-FF0C-F9D960241E01}">
 			<ShortName>AdanSoundBank</ShortName>
 			<Path>AdanSoundBank.bnk</Path>
 			<Media>
@@ -117,7 +144,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="2897767672" Name="Event_AdanSequenceContainer" MaxAttenuation="100" DurationType="OneShot" DurationMin="118.36081" DurationMax="118.36081">
+				<Event Id="2897767672" Name="Event_AdanSequenceContainer" MaxAttenuation="100" DurationType="OneShot" DurationMin="56.527477" DurationMax="62.833332">
 					<MediaRefs>
 						<MediaRef Id="17168514"/>
 						<MediaRef Id="707811535"/>
@@ -128,7 +155,54 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3481854762" Type="User" Language="SFX" Hash="{27923473-F64E-F299-6FFD-C8D93DF26028}">
+		<SoundBank Id="2981824113" Type="User" Language="SFX" Hash="{C17DB7F5-4DC1-DE35-12F1-1588CD7E1B42}">
+			<ShortName>Wind_Soundbank</ShortName>
+			<Path>Wind_Soundbank.bnk</Path>
+			<Media>
+				<File Id="577671460" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>WindWhistleClink.wav</ShortName>
+					<CachePath>SFX/WindWhistleClink_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="783158354" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ambience Nature.wav</ShortName>
+					<CachePath>SFX/Ambience Nature_D79FB2B7.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3474846662" Name="Event_Wind_Segment_Container" DurationType="OneShot" DurationMin="58.5" DurationMax="58.5">
+					<MediaRefs>
+						<MediaRef Id="577671460"/>
+						<MediaRef Id="783158354"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="730513497" Name="HPF"/>
+					</AuxBusRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="3382285268" Type="User" Language="SFX" Hash="{4B327F43-605D-CF21-E7D8-FA1FB666842A}">
+			<ShortName>FireSoundbank</ShortName>
+			<Path>FireSoundbank.bnk</Path>
+			<Media>
+				<File Id="779425590" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SoftIntensityFire.wav</ShortName>
+					<CachePath>SFX/SoftIntensityFire_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="797389714" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MediumIntensityFire.wav</ShortName>
+					<CachePath>SFX/MediumIntensityFire_D79FB2B7.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="565798754" Name="Event_Fire_Blend_Container" MaxAttenuation="25" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="779425590"/>
+						<MediaRef Id="797389714"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="3481854762" Type="User" Language="SFX" Hash="{8EBAE2B6-85AE-4781-289A-DE3336B9E8EB}">
 			<ShortName>StreetAudioContainerSoundbank</ShortName>
 			<Path>StreetAudioContainerSoundbank.bnk</Path>
 			<Media>
@@ -199,5 +273,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{DEF2591F-AA6F-C687-2E95-364CF18CFAF6}</FileHash>
+	<FileHash>{F9CC6D34-0285-390C-E9CE-845D79DA0ABF}</FileHash>
 </SoundBanksInfo>

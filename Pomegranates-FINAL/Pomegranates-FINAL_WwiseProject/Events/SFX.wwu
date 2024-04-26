@@ -14,6 +14,39 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Event_ArtifactUp2" ID="{150B34E1-6AE4-4392-962B-7859EE722F13}">
+					<ChildrenList>
+						<Action Name="" ID="{D2442026-B5E8-4119-A13E-DC5FE6BB7D5A}" ShortID="340224608">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ArtifactUp2" ID="{6686BE6E-694E-4BD0-8607-DC6D0AD0D615}" WorkUnitID="{31E94F87-8316-4810-90FF-73AD6464BEB5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Event_ArtifactUp1" ID="{2F40C2CA-09E9-4943-A9CF-0BE6E8B1E14F}">
+					<ChildrenList>
+						<Action Name="" ID="{7028491A-8836-4BCB-829D-BC12406169ED}" ShortID="507274890">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ArtifactUp1" ID="{ED3C8B97-A745-4FC0-AF81-DAED02B45FFF}" WorkUnitID="{31E94F87-8316-4810-90FF-73AD6464BEB5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Event_ArtifactUp3" ID="{5A802F84-F506-4CE4-86A4-5E5DC32616F2}">
+					<ChildrenList>
+						<Action Name="" ID="{74412DFD-F499-4F43-A05F-10258B6D379F}" ShortID="129473142">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ArtifactUp3" ID="{B6EB4043-09D3-4C98-ACC3-02B873740F4F}" WorkUnitID="{31E94F87-8316-4810-90FF-73AD6464BEB5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

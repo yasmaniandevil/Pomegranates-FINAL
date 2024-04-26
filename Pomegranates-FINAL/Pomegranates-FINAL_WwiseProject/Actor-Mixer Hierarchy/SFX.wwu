@@ -25,6 +25,72 @@
 						<ActiveSource Name="WritingSFX" ID="{7F713561-2334-4CF2-A40D-DFBDDB90DE5F}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="ArtifactUp1" ID="{ED3C8B97-A745-4FC0-AF81-DAED02B45FFF}" ShortID="1022678024">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{388F345F-C687-4C6D-878F-23220F72DDD5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Action_Pop Up" ID="{817100AB-D60E-4F5E-91C9-1FCDAC18D7EE}">
+							<Language>SFX</Language>
+							<AudioFile>Action_Pop Up.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="344708579"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Action_Pop Up" ID="{817100AB-D60E-4F5E-91C9-1FCDAC18D7EE}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="ArtifactUp2" ID="{6686BE6E-694E-4BD0-8607-DC6D0AD0D615}" ShortID="348556896">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{388F345F-C687-4C6D-878F-23220F72DDD5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Glockenspiel Selection Sound 02" ID="{628B3278-B601-4E08-B7BA-FC891B803CDD}">
+							<Language>SFX</Language>
+							<AudioFile>Glockenspiel Selection Sound 02.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="494818398"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Glockenspiel Selection Sound 02" ID="{628B3278-B601-4E08-B7BA-FC891B803CDD}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="ArtifactUp3" ID="{B6EB4043-09D3-4C98-ACC3-02B873740F4F}" ShortID="817314820">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{388F345F-C687-4C6D-878F-23220F72DDD5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Indian Woodwind Notification Sound 03" ID="{44CB48C9-38B4-4C6E-A9A0-D1161FA7448B}">
+							<Language>SFX</Language>
+							<AudioFile>Indian Woodwind Notification Sound 03.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="720925955"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Indian Woodwind Notification Sound 03" ID="{44CB48C9-38B4-4C6E-A9A0-D1161FA7448B}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

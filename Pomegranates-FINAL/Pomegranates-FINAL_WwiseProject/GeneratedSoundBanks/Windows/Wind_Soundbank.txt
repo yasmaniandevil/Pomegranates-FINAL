@@ -1,0 +1,7 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3474846662	Event_Wind_Segment_Container			\Environmental Events Work Unit\Event_Wind_Segment_Container	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	577671460	WindWhistleClink	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Windows\SFX\WindWhistleClink_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Wind Segment Container\WindWhistleClink		9525760
+	783158354	Ambience Nature	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Windows\SFX\Ambience Nature_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Wind Segment Container\Ambience Nature		9525760
+
