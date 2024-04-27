@@ -5,8 +5,10 @@ using UnityEngine;
 public class Mound : MonoBehaviour
 {
     public GameObject artifact;
+    public GameObject bookSpawner;
     private bool moundDug;
     private Vector3 moundPos;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +24,11 @@ public class Mound : MonoBehaviour
 
     public void SpawnArtifact()
     {
+        if (gameObject.CompareTag("Tree Future 1") || gameObject.CompareTag("Tree Future 2"))
+        {
+            moundPos = new Vector3(bookSpawner.transform.position.x, bookSpawner.transform.position.y,
+                bookSpawner.transform.position.z);
+        }
         if (moundDug == false) //if it hasnt been clicked
         {
             Instantiate(artifact, moundPos, transform.rotation); //instantiate artifact from mound position

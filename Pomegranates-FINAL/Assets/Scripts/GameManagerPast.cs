@@ -139,6 +139,7 @@ public class GameManagerPast : MonoBehaviour
             Debug.Log("All memories collected. Deleting dictionary...");
             continueButton.SetActive(true);
             currentLocation = null; //makes it null to turn off all lights
+            ChangeFlyer();
             return; // Exit the function since there's nothing else to do
         }
         
@@ -189,7 +190,15 @@ public class GameManagerPast : MonoBehaviour
 
     public void ChangeFlyer()
     {
-        currentLocation.SetActive(true);
+        if (currentLocation == null)
+        {
+            flyerTextBox.text =
+                "Good, you have recovered the memories of the lost. Bring this book back to the future and return it where you found it.";
+        }
+        else
+        {
+            currentLocation.SetActive(true);
+        }
         if (currentLocation == mosqueSpawner)
         {
             flyerTextBox.text = "You will find what you need where the call takes you.";
@@ -203,11 +212,7 @@ public class GameManagerPast : MonoBehaviour
             flyerTextBox.text = "You will find what you need in the place where man heals man, where life begins and ends. ";
         }
 
-        if (currentLocation == null)
-        {
-            flyerTextBox.text =
-                "Good, you have recovered the memories of the lost. Bring this book back to the future and return it where you found it.";
-        }
+       
         
         //AkSoundEngine.PostEvent()
     }

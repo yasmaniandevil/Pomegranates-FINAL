@@ -22,11 +22,14 @@ public class GameManager : MonoBehaviour
 
     public GameObject birdEyeViewCam;
     
+    public GameObject UI;
+    
     // Start is called before the first frame update
     void Start()
     {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+        Invoke("CameraOff", 3f);
     }
 
     // Update is called once per frame
@@ -80,8 +83,8 @@ public class GameManager : MonoBehaviour
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
             player.SetActive(false);
-            reticle.SetActive(false);
-            canvas.SetActive(false);
+            UI.SetActive(false);
+            
 
 
 
@@ -95,8 +98,8 @@ public class GameManager : MonoBehaviour
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
             player.SetActive(true);
-            reticle.SetActive(true);
-            canvas.SetActive(true);
+            UI.SetActive(true);
+           
 
             //I want the cursor to go away when you unpause idk if this is how it is just in editor or build too, got to make test build
             //and the first person camera got to be turned off
@@ -121,6 +124,7 @@ public class GameManager : MonoBehaviour
     public void CameraOn()
     {
         player.SetActive(false);
+        reticle.SetActive(false);
         birdEyeViewCam.SetActive(true);
     }
    

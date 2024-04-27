@@ -42,8 +42,8 @@ public class Narrative : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Invoke("BeginningText", 2);
-        Invoke("ChangeCamera", 3);
+        Invoke("BeginningText", 7);
+        Invoke("ChangeCamera", 8);
     }
 
     private void Update()

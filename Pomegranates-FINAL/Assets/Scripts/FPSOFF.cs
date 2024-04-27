@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using BookCurlPro;
@@ -14,15 +15,35 @@ public class FPSOFF : MonoBehaviour
     private int currentPage;
     private bool bookOn = false;
 
+    public static FPSOFF Instance;
+
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(bookCanvas);
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+
     }
+    
 
     // Update is called once per frame
     void Update()
     {
+        if (reticle == null)
+        {
+            reticle = GameObject.Find("Reticle");
+            book = GameObject.Find("BookPro");
+            FPS = GameObject.Find("PlayerCapsule");
+            TurnPlayerOn();
+        }
         //turn off FPS
         if(Input.GetKeyUp(KeyCode.J) && bookOn == false)
         {

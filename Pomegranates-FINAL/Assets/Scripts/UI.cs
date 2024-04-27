@@ -10,8 +10,7 @@ public class UI : MonoBehaviour
     
     public Sprite open;
     public Sprite closed; 
-
-    public GameObject narrativeTextBox;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -50,7 +49,11 @@ public class UI : MonoBehaviour
                 reticle.GetComponent<Image>().sprite = open;
             }
 
-            if (hit.collider.CompareTag("Tree"))
+            if (hit.collider.CompareTag("Tree Future 1"))
+            {
+                reticle.GetComponent<Image>().sprite = open;
+            }
+            if (hit.collider.CompareTag("Tree Future 2"))
             {
                 reticle.GetComponent<Image>().sprite = open;
             }
