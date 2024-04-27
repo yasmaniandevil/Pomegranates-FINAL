@@ -106,8 +106,7 @@ public class GameManagerPast : MonoBehaviour
         {
             mosqueLight.SetActive(false);
         }
-
-        continueButton.SetActive(true);
+        
         
     }
 
@@ -125,17 +124,26 @@ public class GameManagerPast : MonoBehaviour
 
     public void ChangeScene() //changes scene
     {
-        if (buttonsPressed == 3) //if the button has been pressed
-        {
+        
             SceneManager.LoadScene("Future End");
-        }
         
     }
 
     public void MemoryManager()
     {
-        //convert dictionary keys to a list
         List<string> keysList = new List<string>(location.Keys);
+        
+        if (keysList.Count == 0)
+        {
+            
+            Debug.Log("All memories collected. Deleting dictionary...");
+            continueButton.SetActive(true);
+            currentLocation = null; //makes it null to turn off all lights
+            return; // Exit the function since there's nothing else to do
+        }
+        
+        //convert dictionary keys to a list
+        
         
         // Select a random Key
         string randomKey = keysList[Random.Range(0, keysList.Count)];
@@ -182,7 +190,25 @@ public class GameManagerPast : MonoBehaviour
     public void ChangeFlyer()
     {
         currentLocation.SetActive(true);
-        flyerTextBox.text = "Next memory at " + currentLocationString;
+        if (currentLocation == mosqueSpawner)
+        {
+            flyerTextBox.text = "You will find what you need where the call takes you.";
+        }
+        if (currentLocation == churchSpawner)
+        {
+            flyerTextBox.text = "You will find what you need where you wash away your sins and eat the flesh of god.";
+        }
+        if (currentLocation == hospitalSpawner)
+        {
+            flyerTextBox.text = "You will find what you need in the place where man heals man, where life begins and ends. ";
+        }
+
+        if (currentLocation == null)
+        {
+            flyerTextBox.text =
+                "Good, you have recovered the memories of the lost. Bring this book back to the future and return it where you found it.";
+        }
+        
         //AkSoundEngine.PostEvent()
     }
     

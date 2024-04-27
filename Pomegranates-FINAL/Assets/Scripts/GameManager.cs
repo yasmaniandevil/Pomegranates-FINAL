@@ -19,6 +19,8 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI canvasTextBox;
 
     public GameObject PauseMenuCanvas;
+
+    public GameObject birdEyeViewCam;
     
     // Start is called before the first frame update
     void Start()
@@ -111,6 +113,16 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
+    public void CameraOff()
+    {
+        birdEyeViewCam.SetActive(false);
+    }
+
+    public void CameraOn()
+    {
+        player.SetActive(false);
+        birdEyeViewCam.SetActive(true);
+    }
    
 
 }

@@ -73,9 +73,13 @@ public class Digging : MonoBehaviour
                     var artifact = hit.collider.gameObject.GetComponent<Artifact>();
                     script.ArtifactJournal(artifact.memoryText, artifact.artifact);
                     Destroy(hit.collider.gameObject);
+                    Debug.Log("memory Change");
                     script.MemoryManager();
+                    Debug.Log("memory Change");
                     script.ChangeFlyer();
+                    Debug.Log("memory Change");
                     script.buttonsPressed++;
+                    Debug.Log(script.buttonsPressed);
                 }
 
                 if (hit.collider.CompareTag("Tree Future 1"))
@@ -86,6 +90,7 @@ public class Digging : MonoBehaviour
                 if (hit.collider.CompareTag("Tree Future 2"))
                 {
                     hit.collider.gameObject.GetComponentInChildren<Mound>().SpawnArtifact();
+                    gameManager.GetComponent<GameManager>().CameraOn();
                 }
 
                 if (hit.collider.CompareTag("Flyer"))
