@@ -47,6 +47,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Event_DigSound" ID="{EA394301-A5C3-43B3-BF0B-1309EDBBD469}">
+					<ChildrenList>
+						<Action Name="" ID="{A4F30901-4191-41FB-BE99-2E2C376F5828}" ShortID="911866054">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="DigSound" ID="{1A9D762D-B358-40D2-816D-75E32DA1A78B}" WorkUnitID="{31E94F87-8316-4810-90FF-73AD6464BEB5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

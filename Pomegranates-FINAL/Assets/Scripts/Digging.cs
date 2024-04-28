@@ -20,9 +20,14 @@ public class Digging : MonoBehaviour
 
     private GameManagerPast script;
 
+    /*string SFX_Soundbank;
+    AK.Wwise.Event Event_DigSound;
+    AK.Wwise.Bank SFXSoundbank;*/
+
     private void Start()
     {
         script = gameManager.GetComponent<GameManagerPast>();
+        
     }
 
     // Update is called once per frame
@@ -38,6 +43,10 @@ public class Digging : MonoBehaviour
             {
                 if (hit.collider.CompareTag("Mound")) //if it mound
                 {
+             
+                    //AkSoundEngine.LoadBank("SFX_Soundbank");
+                    //AkSoundEngine.PostEvent("Event_DigSound", gameObject);
+                    //Debug.Log(Event_DigSound + "sound");
                     hit.collider.gameObject.GetComponent<Mound>().SpawnArtifact(); //spawn artifact
                     Debug.Log("D I G");
                 }
