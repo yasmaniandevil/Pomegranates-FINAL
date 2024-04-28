@@ -42,10 +42,8 @@ public class GameManagerPast : MonoBehaviour
 
     public GameObject continueButton;
 
-    
-
-    //public AudioSource journalWriting;
-    
+    public AK.Wwise.Event Event_WritingSFX;
+   
     
     // Start is called before the first frame update
     void Start()
@@ -190,6 +188,7 @@ public class GameManagerPast : MonoBehaviour
 
     public void ChangeFlyer()
     {
+
         if (currentLocation == null)
         {
             flyerTextBox.text =
@@ -212,9 +211,8 @@ public class GameManagerPast : MonoBehaviour
             flyerTextBox.text = "You will find what you need in the place where man heals man, where life begins and ends. ";
         }
 
-       
-        
-        //AkSoundEngine.PostEvent()
+
+        AkSoundEngine.PostEvent("Event_WritingSFX", gameObject);
     }
     
     

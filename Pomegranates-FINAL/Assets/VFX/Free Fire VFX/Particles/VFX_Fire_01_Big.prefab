@@ -33913,9 +33913,9 @@ GameObject:
   - component: {fileID: 8829451551789304537}
   - component: {fileID: 8829451551789304536}
   - component: {fileID: 8829451551789304543}
-  - component: {fileID: 5379531996988371887}
-  - component: {fileID: 8817462274866324203}
-  - component: {fileID: 1223535584650048255}
+  - component: {fileID: 1841513773309379853}
+  - component: {fileID: 9056866915249359249}
+  - component: {fileID: 2957109456996999233}
   m_Layer: 0
   m_Name: VFX_Fire_01_Big
   m_TagString: Untagged
@@ -38723,7 +38723,7 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
---- !u!114 &5379531996988371887
+--- !u!114 &1841513773309379853
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -38740,14 +38740,14 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 181092f198166435d85b1036043a9cf3, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 4554643b8650b4bc6bc0fdcd645294f2, type: 2}
   decodeBank: 0
   loadAsynchronous: 0
   saveDecodedBank: 0
   unloadTriggerList: 958ca0ea
   bankNameInternal: 
   valueGuidInternal: 
---- !u!114 &8817462274866324203
+--- !u!114 &9056866915249359249
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -38769,7 +38769,7 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
---- !u!114 &1223535584650048255
+--- !u!114 &2957109456996999233
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -38778,7 +38778,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8829451551789304542}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e36c42ad3f814a66852ba67931476c5, type: 3}
+  m_Script: {fileID: 11500000, guid: dea7f285146e74e389f07b5d7ae7d0e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   triggerList: f7e1664c
@@ -38798,8 +38798,3 @@ MonoBehaviour:
   eventIdInternal: 0
   valueGuidInternal: 
   m_callbackDataInternal: {fileID: 0}
-  MultiPositionType: 1
-  multiPositionTypeLabel: 0
-  attenuationSphereColor: {r: 1, g: 0, b: 0, a: 0.1}
-  LargeModePositions: []
-  multiPositionArray: []

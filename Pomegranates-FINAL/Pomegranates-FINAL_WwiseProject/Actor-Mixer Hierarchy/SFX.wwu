@@ -4,6 +4,13 @@
 		<WorkUnit Name="SFX" ID="{31E94F87-8316-4810-90FF-73AD6464BEB5}" PersistMode="Standalone">
 			<ChildrenList>
 				<Sound Name="WritingSFX" ID="{E5BED7C6-53A3-4A63-88DB-777164076DF5}" ShortID="387462021">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{388F345F-C687-4C6D-878F-23220F72DDD5}"/>

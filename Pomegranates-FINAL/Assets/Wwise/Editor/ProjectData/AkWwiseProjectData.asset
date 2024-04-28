@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: 033ae9bc3205de4f958035f6f2b06e57
     GuidInternal: 
-    m_lastTime: -8584875843586103592
+    m_lastTime: -8584874528121076271
     List:
     - name: SFX_Soundbank
       guid: 814744e96deada44be0bc829252c19fa
@@ -144,7 +144,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Enviornmental Work Unit
     guid: 811dc13d89a1484ba7327cd7cc47d6d1
     GuidInternal: 
-    m_lastTime: -8584875824249423288
+    m_lastTime: -8584874528121075065
     List:
     - name: AdanSoundBank
       guid: 82bcb60ed29dd141a2b478a4c0e5c6a2
@@ -254,7 +254,7 @@ MonoBehaviour:
     ParentPath: Events/Environmental Events Work Unit
     guid: 88fa32bd4d1aa14b85d1e735b565316a
     GuidInternal: 
-    m_lastTime: -8584875824249376925
+    m_lastTime: -8584874528129520566
     List:
     - name: Event_AdanSequenceContainer
       guid: 93e75f65e236b8459bfb77bc38ddf30c
@@ -288,8 +288,8 @@ MonoBehaviour:
         guid: 8bf9c741089d0841bbf7c2725734e8e0
       Path: Events/Environmental Events Work Unit/Event_Fire_Blend_Container
       maxAttenuation: 25
-      maxDuration: 39.28753
-      minDuration: 39.28753
+      maxDuration: -1
+      minDuration: -1
     - name: Event_Street_Audio_Sequence_Container
       guid: 829755acb3cbc840894e635428208105
       id: 3320485656
@@ -365,7 +365,7 @@ MonoBehaviour:
     ParentPath: Events/SFX
     guid: 380ca8262e8d6545a178d6745499f3a4
     GuidInternal: 
-    m_lastTime: -8584875843586132650
+    m_lastTime: -8584874528129519522
     List:
     - name: Event_ArtifactUp1
       guid: cac2402fe9094349a9cf0be6e8b1e14f
@@ -506,7 +506,7 @@ MonoBehaviour:
     m_lastTime: -8584894592093036433
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 06000000080000000b0000000d00000014000000150000001600000017000000190000001a000000
+  ExpandedWaapiItemIds: 050000000600000007000000080000000e0000000f00000015000000160000001700000018000000190000001d000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
