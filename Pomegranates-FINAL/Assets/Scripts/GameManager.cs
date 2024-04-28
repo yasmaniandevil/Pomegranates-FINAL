@@ -57,17 +57,6 @@ public class GameManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
     }
 
-    public void ShowCanvas(string text) //does opposite and calls text from digging script
-    {
-        canvas.SetActive(true);
-        player.SetActive(false);
-        reticle.SetActive(false);
-        canvasTextBox.text = text;
-        buttonsPressed++; // adds to button pressed
-        Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.None;
-    }
-
     public void PauseGame()
     {
         paused = !paused;

@@ -53,6 +53,7 @@ public class Digging : MonoBehaviour
 
                 if (hit.collider.CompareTag("FarmMound")) //if one of the farm mounds
                 {
+                    //digging sound
                     hit.collider.gameObject.GetComponent<Mound>().RaiseRadish();
                 }
 
@@ -65,47 +66,42 @@ public class Digging : MonoBehaviour
                 if (hit.collider.CompareTag("Book")) //if hit book
                 {
                     Destroy(hit.collider.gameObject);
-                    Debug.Log("bookoff");
                     book.SetActive(true);
-                    Debug.Log("book on");
                     Debug.Log(book.GetComponent<AutoFlip>());
                     book.GetComponent<AutoFlip>().Invoke("FlipRightPage", 2);
-                    Debug.Log("page flip");
-                    Invoke("TurnBookOn", 3);
                     player.SetActive(false);
                     reticleCanvas.SetActive(false);
                     Cursor.visible = true;
                     Cursor.lockState = CursorLockMode.None;
                 }
                 
-                if (hit.collider.CompareTag("Memory"))
+                if (hit.collider.CompareTag("Memory")) //if memory
                 {
-                    var artifact = hit.collider.gameObject.GetComponent<Artifact>();
-                    script.ArtifactJournal(artifact.memoryText, artifact.artifact);
-                    Destroy(hit.collider.gameObject);
-                    script.ChangeFlyer();
-                    script.MemoryManager();
-                    script.ChangeFlyer();
-                    script.buttonsPressed++;
+                    var artifact = hit.collider.gameObject.GetComponent<Artifact>(); //create a variable that called artifact component
+                    script.ArtifactJournal(artifact.memoryText, artifact.artifact); //grab the memory and artifact from component
+                    Destroy(hit.collider.gameObject); //destroy the object
+                    script.ChangeFlyer(); 
+                    script.MemoryManager(); //change location
+                    script.ChangeFlyer();//change flyer to next riddle
+                    script.buttonsPressed++; //add to buttons pressed
                     
                 }
 
-                if (hit.collider.CompareTag("Tree Future 1"))
+                if (hit.collider.CompareTag("Tree Future 1")) //if its the tree in the first scene
                 {
-                    hit.collider.gameObject.GetComponentInChildren<Mound>().SpawnArtifact();
+                    hit.collider.gameObject.GetComponentInChildren<Mound>().SpawnArtifact(); //spawn artifact
                 }
                 
-                if (hit.collider.CompareTag("Tree Future 2"))
+                if (hit.collider.CompareTag("Tree Future 2")) //if its the second scene
                 {
-                    hit.collider.gameObject.GetComponentInChildren<Mound>().SpawnArtifact();
-                    gameManager.GetComponent<GameManager>().Invoke("CameraOn", 4f);
+                    hit.collider.gameObject.GetComponentInChildren<Mound>().SpawnArtifact(); //spawn artifatc
+                    gameManager.GetComponent<GameManager>().Invoke("CameraOn", 4f); //change camera in 4 seconds
                 }
 
-                if (hit.collider.CompareTag("Flyer"))
+                if (hit.collider.CompareTag("Flyer")) //if hit flyer
                 {
-                    Destroy(hit.collider.gameObject);
-                    flyerCanvas.SetActive(true);
-                    gameManager.GetComponent<Narrative>().flyerOn = true;
+                    Destroy(hit.collider.gameObject); //destory 
+                    flyerCanvas.SetActive(true); //turn on canvas
                     player.SetActive(false);
                     reticleCanvas.SetActive(false);
 
@@ -117,9 +113,6 @@ public class Digging : MonoBehaviour
      
     }
 
-    void TurnBookOn()
-    {
-        gameManager.GetComponent<Narrative>().bookOn = true;
-    }
+   
     
 }

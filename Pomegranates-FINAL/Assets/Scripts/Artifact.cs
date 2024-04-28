@@ -24,7 +24,7 @@ public class Artifact : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void Update() //this is just swaying up and down
     {
         if (spawn == true)
         {

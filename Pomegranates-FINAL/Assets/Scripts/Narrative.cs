@@ -34,9 +34,7 @@ public class Narrative : MonoBehaviour
     public GameObject flyer;
     public GameObject book;
     public  GameObject particles;
-
-    public bool flyerOn;
-    public bool bookOn;
+    
     
 
     // Start is called before the first frame update
@@ -58,82 +56,65 @@ public class Narrative : MonoBehaviour
                 if (hit.collider.CompareTag("Father")) //if hit father
                 { 
                     Debug.Log(timesTalkedToFather);
-                   timesTalkedToFather++; 
+                   timesTalkedToFather++; //add to times talked 
                    Debug.Log(timesTalkedToFather);
-                  FatherConvo(timesTalkedToFather);
+                  FatherConvo(timesTalkedToFather); //activate father combo with the amount of times talked
                    
                 }
             }
 
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space)) //when pressing space
         {
-            DeactivateTextBox();
-            if(currentDialogue == dialogue[1])
+            DeactivateTextBox(); //deactivate box
+            if(currentDialogue == dialogue[1]) //if its the first dialogue
             {
-                ActivateTextBox(2);
+                ActivateTextBox(2);//activate with the second box
                 return;
             }
 
-            if (currentDialogue == dialogue[2])
+            if (currentDialogue == dialogue[2]) //if its the second
             {
-                MoveFather();
+                MoveFather(); //move the dad
             }
 
-            if (currentDialogue == dialogue[4])
+            if (currentDialogue == dialogue[4]) //if its the 4th
             {
-                DeleteFather();
+                DeleteFather(); //delete dad
                 Cursor.visible = true;
                 Cursor.lockState = CursorLockMode.None;
-                PaperDrop();
+                PaperDrop(); //call this function
                 currentDialogue = null;
             }
         }
-        if (Input.GetKeyDown(KeyCode.Space) && flyerOn == true )
-        {
-            flyer.SetActive(false);
-            flyerOn = false;
-            player.SetActive(true);
-            reticle.SetActive(true);
-        }
-        if (Input.GetKeyDown(KeyCode.Space) && bookOn == true )
-        {
-            book.SetActive(false);
-            book.SetActive(false);
-            particles.SetActive(true);
-            player.SetActive(true);
-            reticle.SetActive(true);
-            Cursor.visible = false;
-            Cursor.lockState = CursorLockMode.Locked;
-            Invoke("ChangeScene", 4);
-        }
+        
     }
 
-    void ChangeCamera()
+    void ChangeCamera() //turns of first cam to switch perspective
     { 
         camera.SetActive(false);
     }
 
-    private void BeginningText()
+    private void BeginningText() //puts first text box
     {
         ActivateTextBox(0);
     }
 
     private void FatherConvo(int amount)
     {
-        if (amount == 1)
+        if (amount == 1) //if its the first convo, then activates first box
         {
             ActivateTextBox(1);
             father.tag = "Untagged";
         }
-        else if (amount >= 2 && player.GetComponent<Digging>().veggiesCollected < 7)
+        else if (amount >= 2 && player.GetComponent<Digging>().veggiesCollected < 7) //if its more than 2 but not all veggies are collected
         {
-            ActivateTextBox(3);
+            ActivateTextBox(3); //activate the 3rd one
         }
-        else if (amount >= 2 && player.GetComponent<Digging>().veggiesCollected == 7)
+        else if (amount >= 2 && player.GetComponent<Digging>().veggiesCollected == 7) //if all veggies collected
         {
-            ActivateTextBox(4);
+            ActivateTextBox(4); //activate 4th
         }
        
     }
@@ -141,7 +122,7 @@ public class Narrative : MonoBehaviour
 
     private void ActivateTextBox(int dialogueSprite)
     {
-        dialogueBox.gameObject.GetComponent<Image>().sprite =dialogue[dialogueSprite];
+        dialogueBox.gameObject.GetComponent<Image>().sprite =dialogue[dialogueSprite]; //changes dialogue box to whatever the next dialogue is
         narrativeCanvas.SetActive(true);
         player.SetActive(false);
         reticle.SetActive(false);
@@ -149,32 +130,34 @@ public class Narrative : MonoBehaviour
         Debug.Log(currentDialogue);
     }
 
-    private void DeactivateTextBox()
+    private void DeactivateTextBox() 
     {
         reticle.SetActive(true);
         narrativeCanvas.SetActive(false);
         player.SetActive(true);
     }
     
-    private void MoveFather()
+    private void MoveFather() //moves father
     {
         father.transform.position = fatherMove.transform.position;
         father.transform.rotation = fatherMove.transform.rotation;
         father.tag = "Father";
     }
 
-    void PaperDrop()
+    void PaperDrop() 
     {
-        paperDrop.SetActive(true);
+        paperDrop.SetActive(true); //will activate flyer particles
+        //sounds of flyers falling and being teleported
+        //code for all the people disappearing goes here which includes turning the sound off
         Invoke("SpawnPaper", 4);
     }
 
-    void DeleteFather()
+    void DeleteFather() //will delete the father
     {
         Destroy(father);
     }
 
-    void SpawnPaper()
+    void SpawnPaper()//will spawn the floating flyer for the player
     {
         Vector3 paperPos = new Vector3(paperSpawn.transform.position.x, paperSpawn.transform.position.y,
             paperSpawn.transform.position.z);
@@ -185,6 +168,22 @@ public class Narrative : MonoBehaviour
     {
         SceneManager.LoadScene("Past Final");
     }
-    
-    
+
+    public void PlayerOn() //will turn off all the canvases and activate the player
+    {
+        book.SetActive(false);
+        book.SetActive(false);
+        flyer.SetActive(true);
+        player.SetActive(true);
+        reticle.SetActive(true);
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    public void EndScene() //will turn off all canvases + turn on particles and change scene in 4 seconds
+    {
+        PlayerOn();
+        particles.SetActive(true);
+        Invoke("ChangeScene", 4);
+    }
 }

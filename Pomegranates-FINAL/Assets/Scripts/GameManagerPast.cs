@@ -61,8 +61,8 @@ public class GameManagerPast : MonoBehaviour
         
         Debug.Log(location.Count);
         
-        MemoryManager();
-        ChangeFlyer();
+        MemoryManager(); //start of the game calls memory manager
+        ChangeFlyer(); //changes the flyer
         
     }
 
@@ -72,10 +72,6 @@ public class GameManagerPast : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             PauseGame();
-            //PauseAudio();
-            //set active pause menu ui
-            //lock camera
-            //unlock cursor
         }
         //turns on the light in whichever place you are supposed to look at
         if (currentLocation == churchSpawner)
@@ -129,7 +125,7 @@ public class GameManagerPast : MonoBehaviour
 
     public void MemoryManager()
     {
-        List<string> keysList = new List<string>(location.Keys);
+        List<string> keysList = new List<string>(location.Keys); //make a list
         
         if (keysList.Count == 0)
         {
@@ -158,9 +154,9 @@ public class GameManagerPast : MonoBehaviour
 
     public void ArtifactJournal(string text, Sprite artifact)
     {
-        for (int i = 0; i < bookTextBox.Length; i++)
+        for (int i = 0; i < bookTextBox.Length; i++) //goes through loop
         {
-            if (bookTextBox[i].text == " ")
+            if (bookTextBox[i].text == " ") //goes to the next textbox to chnage text
             {
                 bookTextBox[i].text = text;
                 break;
@@ -171,7 +167,7 @@ public class GameManagerPast : MonoBehaviour
             }
         }
 
-        for (int i = 0; i < artifactImage.Length; i++)
+        for (int i = 0; i < artifactImage.Length; i++) //goes to next image to change image
         {
             if (artifactImage[i].sprite == null)
             {
@@ -189,14 +185,14 @@ public class GameManagerPast : MonoBehaviour
     public void ChangeFlyer()
     {
 
-        if (currentLocation == null)
+        if (currentLocation == null) //if location is null
         {
             flyerTextBox.text =
-                "Good, you have recovered the memories of the lost. Bring this book back to the future and return it where you found it.";
+                "Good, you have recovered the memories of the lost. Bring this book back to the future and return it where you found it."; //will say this
         }
         else
         {
-            currentLocation.SetActive(true);
+            currentLocation.SetActive(true); //else it will activate the current location
         }
         if (currentLocation == mosqueSpawner)
         {
@@ -246,9 +242,7 @@ public class GameManagerPast : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
             player.SetActive(true);
             UI.SetActive(true);
-
-            //I want the cursor to go away when you unpause idk if this is how it is just in editor or build too, got to make test build
-            //and the first person camera got to be turned off
+            
         }
     }
 

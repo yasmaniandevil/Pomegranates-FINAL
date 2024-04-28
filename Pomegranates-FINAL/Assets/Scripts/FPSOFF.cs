@@ -20,7 +20,7 @@ public class FPSOFF : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        if (Instance == null)
+        if (Instance == null) //make ssingleton
         {
             Instance = this;
             DontDestroyOnLoad(bookCanvas);
@@ -37,15 +37,15 @@ public class FPSOFF : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (reticle == null)
+        if (reticle == null) //if there is nothing on reticle
         {
-            reticle = GameObject.Find("Reticle");
+            reticle = GameObject.Find("Reticle"); //it will find these game objects
             book = GameObject.Find("BookPro");
             FPS = GameObject.Find("PlayerCapsule");
             TurnPlayerOn();
         }
         //turn off FPS
-        if(Input.GetKeyUp(KeyCode.J) && bookOn == false)
+        if(Input.GetKeyUp(KeyCode.J) && bookOn == false) //when pressing f and bookon is false, it will open the book
         {
             FPS.SetActive(false);
             reticle.SetActive(false);
@@ -53,12 +53,12 @@ public class FPSOFF : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
             bookOn = true;
-            book.GetComponent<AutoFlip>().enabled = true;
-            if (currentPage == 0)
+            book.GetComponent<AutoFlip>().enabled = true; //it will enable auto flip
+            if (currentPage == 0) //if page is the cover it will flip once
             {
                 book.GetComponent<AutoFlip>().Invoke("FlipRightPage", 1f);
             }
-            else if (currentPage > 0)
+            else if (currentPage > 0) //if its another page, it will go to that page
             {
                 book.GetComponent<AutoFlip>().StartFlipping(currentPage);
             }
@@ -68,12 +68,12 @@ public class FPSOFF : MonoBehaviour
         }
 
         //turn on FPS
-        if(Input.GetKeyUp(KeyCode.J) && bookOn == true)
+        if(Input.GetKeyUp(KeyCode.J) && bookOn == true) //if book is open
         {
             currentPage = book.GetComponent<BookPro>().currentPaper;
             book.GetComponent<AutoFlip>().enabled = true; 
-            book.GetComponent<AutoFlip>().StartFlipping(0);
-            Invoke("TurnPlayerOn", currentPage/2);
+            book.GetComponent<AutoFlip>().StartFlipping(0); //flip to the cover page
+            Invoke("TurnPlayerOn", currentPage/2); //turn player on
         }
 
     }
