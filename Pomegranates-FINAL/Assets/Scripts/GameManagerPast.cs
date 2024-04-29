@@ -34,8 +34,8 @@ public class GameManagerPast : MonoBehaviour
 
     public TextMeshProUGUI flyerTextBox;
 
-    public TextMeshProUGUI[] bookTextBox;
-    public Image[] artifactImage;
+    [FormerlySerializedAs("bookTextBox")] public Image[] leftPage;
+    [FormerlySerializedAs("artifactImage")] public Image[] rightPage;
     
     public GameObject PauseMenuCanvas;
     public static bool paused;
@@ -152,13 +152,14 @@ public class GameManagerPast : MonoBehaviour
         
     }
 
-    public void ArtifactJournal(string text, Sprite artifact)
+    public void ArtifactJournal(Sprite rightPageSprite, Sprite leftPageSprite)
     {
-        for (int i = 0; i < bookTextBox.Length; i++) //goes through loop
+        for (int i = 0; i < leftPage.Length; i++) //goes through loop
         {
-            if (bookTextBox[i].text == " ") //goes to the next textbox to chnage text
+            if (leftPage[i].sprite == null) //goes to the next image to change image
             {
-                bookTextBox[i].text = text;
+                leftPage[i].color = new Color(255f,255f,255f,255f); //makes image non transparent
+                leftPage[i].sprite = leftPageSprite; //changes it with the artifact of the 
                 break;
             }
             else
@@ -167,12 +168,12 @@ public class GameManagerPast : MonoBehaviour
             }
         }
 
-        for (int i = 0; i < artifactImage.Length; i++) //goes to next image to change image
+        for (int i = 0; i < rightPage.Length; i++) //goes to next image to change image
         {
-            if (artifactImage[i].sprite == null)
+            if (rightPage[i].sprite == null)
             {
-                artifactImage[i].color = new Color(255f,255f,255f,255f);
-                artifactImage[i].sprite = artifact;
+                rightPage[i].color = new Color(255f,255f,255f,255f);
+                rightPage[i].sprite = rightPageSprite;
                 break;
             }
             else

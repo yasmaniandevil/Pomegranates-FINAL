@@ -49,20 +49,8 @@ MonoBehaviour:
   speed: 1
   amplitude: 0.1
   offset: 0.1
-  memoryText: "Essam, my beautiful boy. Some call him my shadow, and they aren\u2019t
-    wrong. He always wants to join me wherever I go. You can hear his little feet
-    running to catch up. He loves reading the Quran and praying with me. When I do
-    my prayers he tries to copy everything I do. I stand up, he stands, I sit, he
-    sits, all while muttering suras to the best of his abilities. I take him to the
-    mosque with me on Fridays where he tries to follow along with prayers but gets
-    distracted and runs around with other kids. On Mondays I return to work for the
-    week, which is the worst part of my day since I\u2019m saying goodbye to his
-    adorable little face. When I get home he runs to the door to open it for me jumping
-    from joy and starts excitedly telling me about his day and how he helped his
-    mother. I love watching him grow into the great man I know he will be someday.
-    For his birthday this year we got him his first ever prayer rug, its child size
-    and adorable. He is going to be so excited, I can\u2019t wait to give it to him. "
-  artifact: {fileID: 21300000, guid: e5600378dd761e64d9423790c482bf36, type: 3}
+  rightPage: {fileID: 21300000, guid: 5a0dedc73b52db147b0005c43939eec9, type: 3}
+  leftPage: {fileID: 21300000, guid: ca4c525045aeb884f90cb14591c49bd2, type: 3}
 --- !u!65 &7503872308604278505
 BoxCollider:
   m_ObjectHideFlags: 0

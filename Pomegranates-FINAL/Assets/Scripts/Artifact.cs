@@ -14,8 +14,8 @@ public class Artifact : MonoBehaviour
     public float amplitude = 0.1f;
     public float offset = 0.1f;
 
-    public string memoryText;
-    public Sprite artifact;
+    public Sprite rightPage;
+    public Sprite leftPage;
     
     void Start()
     {

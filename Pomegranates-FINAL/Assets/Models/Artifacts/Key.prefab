@@ -49,21 +49,8 @@ MonoBehaviour:
   speed: 1
   amplitude: 0.1
   offset: 0.1
-  memoryText: "Today I turn thirteen, my parents threw me a big birthday party and
-    invited all of my friends and our family (and some of their friends too of course\u2026).
-    They even rented a bouncy house! I was about to go in before the party started
-    but then my mother told me she wanted to show me something first. She said she
-    had been waiting since I was born to show me this, and as her only child it was
-    extremely important for me to understand it. It was a key, but it was different.
-    I\u2019ve never seen a key like it before. She explained that this key had been
-    in our family for generations, how our family was kicked out of our home during
-    the Nakba and forced to flee to Gaza. When we got to Gaza this church took my
-    family in, fed and sheltered us. My family originally thought that they could
-    return in a few weeks after things had settled, but weeks turned into years,
-    years into decades, decades into generations. My mother helped me find a special
-    place in my room to put it away. I know I must keep it safe because this key
-    is a symbol. Not of loss, but a symbol of our return."
-  artifact: {fileID: 21300000, guid: f8c9467a892580344bb697526dac0d13, type: 3}
+  rightPage: {fileID: 21300000, guid: add55dd8c34a335449c194c89ea504d5, type: 3}
+  leftPage: {fileID: 21300000, guid: 3c79d0f8a004c9940bb2d2d160a36d4f, type: 3}
 --- !u!65 &7303556800056516323
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -14,10 +14,6 @@ public class GameManager : MonoBehaviour
 
     public static bool paused;
 
-    public int buttonsPressed;
-
-    public TextMeshProUGUI canvasTextBox;
-
     public GameObject PauseMenuCanvas;
 
     public GameObject birdEyeViewCam;

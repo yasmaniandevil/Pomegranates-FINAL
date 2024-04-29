@@ -78,7 +78,7 @@ public class Digging : MonoBehaviour
                 if (hit.collider.CompareTag("Memory")) //if memory
                 {
                     var artifact = hit.collider.gameObject.GetComponent<Artifact>(); //create a variable that called artifact component
-                    script.ArtifactJournal(artifact.memoryText, artifact.artifact); //grab the memory and artifact from component
+                    script.ArtifactJournal(artifact.rightPage, artifact.leftPage); //grab the memory and artifact from component
                     Destroy(hit.collider.gameObject); //destroy the object
                     script.ChangeFlyer(); 
                     script.MemoryManager(); //change location

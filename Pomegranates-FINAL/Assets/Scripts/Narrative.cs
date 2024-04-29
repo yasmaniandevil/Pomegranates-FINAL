@@ -173,7 +173,7 @@ public class Narrative : MonoBehaviour
     {
         book.SetActive(false);
         book.SetActive(false);
-        flyer.SetActive(true);
+        flyer.SetActive(false);
         player.SetActive(true);
         reticle.SetActive(true);
         Cursor.visible = false;
