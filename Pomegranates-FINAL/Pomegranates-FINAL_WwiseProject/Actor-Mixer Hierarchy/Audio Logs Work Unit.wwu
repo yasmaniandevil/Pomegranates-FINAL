@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{E559762A-6A4C-4EDF-B257-D5D21382E67D}" SchemaVersion="110" RootDocumentID="{47A5CEF6-CF96-4712-BB98-D6BCAD61398D}" ParentDocumentID="{47A5CEF6-CF96-4712-BB98-D6BCAD61398D}">
+<WwiseDocument Type="WorkUnit" ID="{E559762A-6A4C-4EDF-B257-D5D21382E67D}" SchemaVersion="110">
 	<AudioObjects>
-		<WorkUnit Name="Audio Logs Work Unit" ID="{E559762A-6A4C-4EDF-B257-D5D21382E67D}" OwnerID="{47A5CEF6-CF96-4712-BB98-D6BCAD61398D}" PersistMode="Nested">
+		<WorkUnit Name="Audio Logs Work Unit" ID="{E559762A-6A4C-4EDF-B257-D5D21382E67D}" PersistMode="Standalone">
 			<ChildrenList>
 				<Sound Name="IntroAudioLog" ID="{5B771B28-1557-46A8-AE23-D9B2106B1333}" ShortID="357157411">
 					<ReferenceList>

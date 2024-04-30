@@ -15,7 +15,9 @@
 					<GameSyncExclusionList/>
 				</SoundBank>
 				<SoundBank Name="AudioLogsSoundbank" ID="{D504A4A1-2B21-4DED-BAF3-533D73CB1F51}">
-					<ObjectInclusionList/>
+					<ObjectInclusionList>
+						<ObjectRef Name="Event_IntroAudioLog" ID="{56A5F3DE-B51B-4598-87C8-66DA6681AE78}" WorkUnitID="{2E0749A2-AD43-4C86-8E17-FFA439A2EAA9}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>

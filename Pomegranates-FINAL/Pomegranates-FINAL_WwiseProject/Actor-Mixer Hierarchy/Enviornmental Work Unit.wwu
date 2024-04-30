@@ -10,7 +10,7 @@
 						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>1</Value>
+								<Value>2</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -480,12 +480,6 @@
 							<BlendTrackAssocList>
 								<BlendTrackAssoc>
 									<ItemRef Name="MediumIntensityFire" ID="{3AA11EBA-1425-4A99-966C-42BC462831DE}"/>
-									<CrossfadingInfo>
-										<LeftEdgePos>0</LeftEdgePos>
-										<LeftFadingMode>Automatic</LeftFadingMode>
-										<RightEdgePos>0</RightEdgePos>
-										<RightFadingMode>Automatic</RightFadingMode>
-									</CrossfadingInfo>
 								</BlendTrackAssoc>
 								<BlendTrackAssoc>
 									<ItemRef Name="SoftIntensityFire" ID="{4235CA28-CCA5-4EAE-A9A9-01BEC6D457DB}"/>

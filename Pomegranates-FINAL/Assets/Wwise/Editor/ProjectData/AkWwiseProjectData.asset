@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: 033ae9bc3205de4f958035f6f2b06e57
     GuidInternal: 
-    m_lastTime: -8584871642336699698
+    m_lastTime: -8584871630542272327
     List:
     - name: AudioLogsSoundbank
       guid: a1a404d5212bed4dbaf3533d73cb1f51
@@ -255,8 +255,25 @@ MonoBehaviour:
     ParentPath: Events/AudioLogsWorkUnit
     guid: a249072e43ad864c8e17ffa439a2eaa9
     GuidInternal: 
-    m_lastTime: -8584871641709002082
-    List: []
+    m_lastTime: -8584871630542240265
+    List:
+    - name: Event_IntroAudioLog
+      guid: def3a5561bb5984587c866da6681ae78
+      id: 1053017616
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: AudioLogsWorkUnit
+        ObjectType: 12
+        guid: a249072e43ad864c8e17ffa439a2eaa9
+      - ElementName: Event_IntroAudioLog
+        ObjectType: 3
+        guid: def3a5561bb5984587c866da6681ae78
+      Path: Events/AudioLogsWorkUnit/Event_IntroAudioLog
+      maxAttenuation: 0
+      maxDuration: 35.98044
+      minDuration: 35.98044
   - PhysicalPath: Events/Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Events
@@ -268,7 +285,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 8097cb23c1290d4c9b41229fb2bf76ca
     GuidInternal: 
-    m_lastTime: -8584871641799404758
+    m_lastTime: -8584871630542375183
     List: []
   - PhysicalPath: Events/Environmental Events Work Unit.wwu
     PathAndIcons:

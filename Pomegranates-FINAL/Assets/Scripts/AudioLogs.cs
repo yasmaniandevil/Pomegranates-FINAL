@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class AudioLogs : MonoBehaviour
 {
+    public string Event;
+
+    private bool hasPlayed = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +22,11 @@ public class AudioLogs : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        AkSoundEngine.PostEvent("Event_IntroAudioLog", gameObject);
+        if(!hasPlayed && other.CompareTag("Player"))
+        {
+            AkSoundEngine.PostEvent(Event, gameObject);
+            hasPlayed = true;
+        }
+        
     }
 }
