@@ -65,6 +65,8 @@ public class Digging : MonoBehaviour
                     Destroy(hit.collider.gameObject);
                     book.SetActive(true);
                     Debug.Log(book.GetComponent<AutoFlip>());
+                    AkSoundEngine.PostEvent("Event_PageFlip", gameObject);
+                    Debug.Log("EventPlayed");
                     book.GetComponent<AutoFlip>().Invoke("FlipRightPage", 2);
                     player.SetActive(false);
                     reticleCanvas.SetActive(false);

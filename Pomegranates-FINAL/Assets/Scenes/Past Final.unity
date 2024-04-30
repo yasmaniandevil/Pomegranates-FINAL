@@ -56971,10 +56971,6 @@ MonoBehaviour:
   - {fileID: 2122400686}
   PauseMenuCanvas: {fileID: 1659907620}
   continueButton: {fileID: 1806244080}
-  Event_WritingSFX:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
 --- !u!114 &1321232671
 MonoBehaviour:
   m_ObjectHideFlags: 0
