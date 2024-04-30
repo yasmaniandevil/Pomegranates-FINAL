@@ -477,8 +477,8 @@ MonoBehaviour:
         guid: 014339eac3a5b343bf0b1309edbbd469
       Path: Events/SFX/Event_DigSound
       maxAttenuation: 0
-      maxDuration: 16.802229
-      minDuration: 16.802229
+      maxDuration: 4.1249886
+      minDuration: 4.1249886
     - name: Event_WritingSFX
       guid: 29ca5b884acc634d9d2c11cb4c1fad8e
       id: 562259991
