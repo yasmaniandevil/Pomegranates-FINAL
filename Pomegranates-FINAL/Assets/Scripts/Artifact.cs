@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using AK.Wwise;
 
 public class Artifact : MonoBehaviour
 {
@@ -16,11 +17,21 @@ public class Artifact : MonoBehaviour
 
     public Sprite rightPage;
     public Sprite leftPage;
-    
+
+    public AK.Wwise.Event SFX_floatUp;
+    uint playingID;
+    bool DecodedBank = true;
+    bool SaveDecodedBank = false;
+
+
     void Start()
     {
+      
+
         spawn = true;
         startTime = Time.time;
+
+        //AkSoundEngine.LoadBank("SFX_Soundbank", decodedBank, SaveDecodedBank, out playingID, null);
     }
 
     // Update is called once per frame
@@ -28,6 +39,7 @@ public class Artifact : MonoBehaviour
     {
         if (spawn == true)
         {
+            
             transform.position += Vector3.up * speed * Time.deltaTime;
                 
             finalPosition = transform.position;

@@ -86,10 +86,14 @@
 				<GameParameter Id="513275970" Name="FadeOutStreetAudio"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{D5B983C9-9FE6-B03E-0B2A-5ACF8738EB1D}">
+		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{D326A460-E5ED-0330-496D-31B13E29E292}">
 			<ShortName>SFX_Soundbank</ShortName>
 			<Path>SFX_Soundbank.bnk</Path>
 			<Media>
+				<File Id="32953512" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>page-flip-2.wav</ShortName>
+					<CachePath>SFX/page-flip-2_10C4C929.wem</CachePath>
+				</File>
 				<File Id="181114169" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WritingSFX.wav</ShortName>
 					<CachePath>SFX/WritingSFX_10C4C929.wem</CachePath>
@@ -109,6 +113,10 @@
 				<File Id="766905104" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_DigSound.wav</ShortName>
 					<CachePath>SFX/SFX_DigSound_10C4C929.wem</CachePath>
+				</File>
+				<File Id="773833868" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Arriving.wav</ShortName>
+					<CachePath>SFX/Arriving_10C4C929.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -135,6 +143,16 @@
 						<AuxBusRef Id="730513497" Name="HPF"/>
 						<AuxBusRef Id="864145949" Name="LPF"/>
 					</AuxBusRefs>
+				</Event>
+				<Event Id="103810202" Name="Event_PageFlip" DurationType="OneShot" DurationMin="0.66735417" DurationMax="0.66735417">
+					<MediaRefs>
+						<MediaRef Id="32953512"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1480077435" Name="Event_Teleport2Past" DurationType="OneShot" DurationMin="44.3835" DurationMax="44.3835">
+					<MediaRefs>
+						<MediaRef Id="773833868"/>
+					</MediaRefs>
 				</Event>
 				<Event Id="562259991" Name="Event_WritingSFX" DurationType="OneShot" DurationMin="2.9362812" DurationMax="2.9362812">
 					<MediaRefs>
@@ -303,5 +321,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{FE633736-CB79-FCEF-334C-D5E5D348C504}</FileHash>
+	<FileHash>{B917552E-D66B-BA09-9702-2270F12F488D}</FileHash>
 </SoundBanksInfo>

@@ -158,8 +158,7 @@ public class GameManagerPast : MonoBehaviour
         {
             if (leftPage[i].sprite == null) //goes to the next image to change image
             {
-                AkSoundEngine.PostEvent("Event_PageFlip", gameObject);
-                Debug.Log("EventPlayed");
+                
                 leftPage[i].color = new Color(255f,255f,255f,255f); //makes image non transparent
                 leftPage[i].sprite = leftPageSprite; //changes it with the artifact of the 
                 break;

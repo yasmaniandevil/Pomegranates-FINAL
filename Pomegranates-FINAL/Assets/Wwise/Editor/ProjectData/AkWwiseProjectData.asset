@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: 033ae9bc3205de4f958035f6f2b06e57
     GuidInternal: 
-    m_lastTime: -8584871630542272327
+    m_lastTime: -8584871580174511465
     List:
     - name: AudioLogsSoundbank
       guid: a1a404d5212bed4dbaf3533d73cb1f51
@@ -285,7 +285,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 8097cb23c1290d4c9b41229fb2bf76ca
     GuidInternal: 
-    m_lastTime: -8584871630542375183
+    m_lastTime: -8584871580174577555
     List: []
   - PhysicalPath: Events/Environmental Events Work Unit.wwu
     PathAndIcons:
@@ -409,7 +409,7 @@ MonoBehaviour:
     ParentPath: Events/SFX
     guid: 380ca8262e8d6545a178d6745499f3a4
     GuidInternal: 
-    m_lastTime: -8584872895773494399
+    m_lastTime: -8584871580174541157
     List:
     - name: Event_ArtifactUp1
       guid: cac2402fe9094349a9cf0be6e8b1e14f
@@ -479,6 +479,40 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 4.1249886
       minDuration: 4.1249886
+    - name: Event_PageFlip
+      guid: e9a745ecca3fd343b58b1942209e96de
+      id: 103810202
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: SFX
+        ObjectType: 12
+        guid: 380ca8262e8d6545a178d6745499f3a4
+      - ElementName: Event_PageFlip
+        ObjectType: 3
+        guid: e9a745ecca3fd343b58b1942209e96de
+      Path: Events/SFX/Event_PageFlip
+      maxAttenuation: 0
+      maxDuration: 0.66735417
+      minDuration: 0.66735417
+    - name: Event_Teleport2Past
+      guid: f289c3e1195dd645a1f51b77beb2594a
+      id: 1480077435
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: SFX
+        ObjectType: 12
+        guid: 380ca8262e8d6545a178d6745499f3a4
+      - ElementName: Event_Teleport2Past
+        ObjectType: 3
+        guid: f289c3e1195dd645a1f51b77beb2594a
+      Path: Events/SFX/Event_Teleport2Past
+      maxAttenuation: 0
+      maxDuration: 44.3835
+      minDuration: 44.3835
     - name: Event_WritingSFX
       guid: 29ca5b884acc634d9d2c11cb4c1fad8e
       id: 562259991
