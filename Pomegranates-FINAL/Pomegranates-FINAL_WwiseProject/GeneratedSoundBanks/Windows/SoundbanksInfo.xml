@@ -86,7 +86,7 @@
 				<GameParameter Id="513275970" Name="FadeOutStreetAudio"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{6956605A-E362-D5DE-0509-AFDBCA17104B}">
+		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{D5B983C9-9FE6-B03E-0B2A-5ACF8738EB1D}">
 			<ShortName>SFX_Soundbank</ShortName>
 			<Path>SFX_Soundbank.bnk</Path>
 			<Media>
@@ -303,5 +303,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{144FA023-18CF-A847-6BC6-F2A028DF7797}</FileHash>
+	<FileHash>{C5B5E155-629D-F3C8-6078-3B6616CC69D5}</FileHash>
 </SoundBanksInfo>
