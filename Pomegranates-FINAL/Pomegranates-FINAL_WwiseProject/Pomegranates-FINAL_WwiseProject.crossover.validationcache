@@ -35,7 +35,7 @@
 	<ValidationCacheItem File="Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\SoundBanks\Music Work Unit.wwu" DateLow="1712974257" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\SoundBanks\Enviornmental Work Unit.wwu" DateLow="1714154073" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\SoundBanks\Enviornmental Soundbank.wwu" DateLow="1712968354" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1714442328" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1714442651" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\Queries\Factory Queries.wwu" DateLow="1712147676" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1712147676" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\Presets\Factory Spatial Audio.wwu" DateLow="1712147676" DateHigh="0"/>
@@ -50,9 +50,10 @@
 	<ValidationCacheItem File="Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1714154072" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1714016471" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\Events\SFX.wwu" DateLow="1714317308" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\Events\Music Events Work Unit.wwu" DateLow="1714024460" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\Events\Environmental Events Work Unit.wwu" DateLow="1714154072" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\Events\Default Work Unit.wwu" DateLow="1714442328" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\Events\Music Events Work Unit.wwu" DateLow="1714442651" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\Events\Environmental Events Work Unit.wwu" DateLow="1714442651" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\Events\Default Work Unit.wwu" DateLow="1714442705" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\Events\AudioLogsWorkUnit.wwu" DateLow="1714442714" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\Effects\Factory Effects.wwu" DateLow="1714016471" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1712147676" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1712147676" DateHigh="0"/>
@@ -65,5 +66,6 @@
 	<ValidationCacheItem File="Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\Actor-Mixer Hierarchy\Music Work Unit.wwu" DateLow="1714154072" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\Actor-Mixer Hierarchy\Enviornmental Work Unit.wwu" DateLow="1714154072" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\Actor-Mixer Hierarchy\Enviornmental Audio.wwu" DateLow="1712968426" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1714016471" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1714442651" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\Actor-Mixer Hierarchy\Audio Logs Work Unit.wwu" DateLow="1714442651" DateHigh="0"/>
 </ValidationCache>
