@@ -86,7 +86,7 @@
 				<GameParameter Id="513275970" Name="FadeOutStreetAudio"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{46323059-C02D-C686-E3C7-3C6FD42D2005}">
+		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{D5B983C9-9FE6-B03E-0B2A-5ACF8738EB1D}">
 			<ShortName>SFX_Soundbank</ShortName>
 			<Path>SFX_Soundbank.bnk</Path>
 			<Media>
@@ -102,13 +102,13 @@
 					<ShortName>Glockenspiel Selection Sound 02.wav</ShortName>
 					<CachePath>SFX/Glockenspiel Selection Sound 02_10C4C929.wem</CachePath>
 				</File>
-				<File Id="688447647" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Industry Tool Shovel Digging In Dirt 01.wav</ShortName>
-					<CachePath>SFX/Industry Tool Shovel Digging In Dirt 01_10C4C929.wem</CachePath>
-				</File>
 				<File Id="720925955" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Indian Woodwind Notification Sound 03.wav</ShortName>
 					<CachePath>SFX/Indian Woodwind Notification Sound 03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="766905104" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_DigSound.wav</ShortName>
+					<CachePath>SFX/SFX_DigSound_10C4C929.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -127,9 +127,9 @@
 						<MediaRef Id="720925955"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="40698207" Name="Event_DigSound" DurationType="OneShot" DurationMin="16.802229" DurationMax="16.802229">
+				<Event Id="40698207" Name="Event_DigSound" DurationType="OneShot" DurationMin="4.1249886" DurationMax="4.1249886">
 					<MediaRefs>
-						<MediaRef Id="688447647"/>
+						<MediaRef Id="766905104"/>
 					</MediaRefs>
 					<AuxBusRefs>
 						<AuxBusRef Id="730513497" Name="HPF"/>
@@ -303,5 +303,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{66BC9358-F5E7-C5FA-C89E-C0165D21DCC3}</FileHash>
+	<FileHash>{FE633736-CB79-FCEF-334C-D5E5D348C504}</FileHash>
 </SoundBanksInfo>

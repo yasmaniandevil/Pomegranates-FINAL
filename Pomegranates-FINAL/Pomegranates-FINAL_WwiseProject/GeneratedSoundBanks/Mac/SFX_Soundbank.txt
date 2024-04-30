@@ -9,6 +9,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	181114169	WritingSFX	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Mac\SFX\WritingSFX_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\WritingSFX		518056
 	344708579	ArtifactUp1	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Mac\SFX\Action_Pop Up_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\ArtifactUp1		216160
 	494818398	ArtifactUp2	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Mac\SFX\Glockenspiel Selection Sound 02_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\ArtifactUp2		672160
-	688447647	DigSound	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Mac\SFX\Industry Tool Shovel Digging In Dirt 01_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\DigSound		1613110
 	720925955	ArtifactUp3	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Mac\SFX\Indian Woodwind Notification Sound 03_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\ArtifactUp3		528160
+	766905104	DigSound	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Mac\SFX\SFX_DigSound_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\DigSound		363984
 

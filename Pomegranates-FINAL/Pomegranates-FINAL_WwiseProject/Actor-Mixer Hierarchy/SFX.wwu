@@ -122,6 +122,16 @@
 				</Sound>
 				<Sound Name="DigSound" ID="{1A9D762D-B358-40D2-816D-75E32DA1A78B}" ShortID="647654577">
 					<PropertyList>
+						<Property Name="UserAuxSendVolume0" Type="Real64">
+							<ValueList>
+								<Value>2</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UserAuxSendVolume1" Type="Real64">
+							<ValueList>
+								<Value>2</Value>
+							</ValueList>
+						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-4</Value>
@@ -143,16 +153,16 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="Industry Tool Shovel Digging In Dirt 01" ID="{5F6AEFF4-E57C-4574-8D69-8EFA8260D158}">
+						<AudioFileSource Name="SFX_DigSound" ID="{87D095BF-C236-495E-986D-C07B5ADF65A2}">
 							<Language>SFX</Language>
-							<AudioFile>Industry Tool Shovel Digging In Dirt 01.wav</AudioFile>
+							<AudioFile>SFX_DigSound.wav</AudioFile>
 							<MediaIDList>
-								<MediaID ID="688447647"/>
+								<MediaID ID="766905104"/>
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
 					<ActiveSourceList>
-						<ActiveSource Name="Industry Tool Shovel Digging In Dirt 01" ID="{5F6AEFF4-E57C-4574-8D69-8EFA8260D158}" Platform="Linked"/>
+						<ActiveSource Name="SFX_DigSound" ID="{87D095BF-C236-495E-986D-C07B5ADF65A2}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>
