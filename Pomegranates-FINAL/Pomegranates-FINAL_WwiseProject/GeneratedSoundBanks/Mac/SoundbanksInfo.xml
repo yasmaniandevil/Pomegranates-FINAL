@@ -86,7 +86,7 @@
 				<GameParameter Id="513275970" Name="FadeOutStreetAudio"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{CFF38450-30F4-5F93-51CE-BB484D6F4689}">
+		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{46323059-C02D-C686-E3C7-3C6FD42D2005}">
 			<ShortName>SFX_Soundbank</ShortName>
 			<Path>SFX_Soundbank.bnk</Path>
 			<Media>
@@ -131,6 +131,10 @@
 					<MediaRefs>
 						<MediaRef Id="688447647"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="730513497" Name="HPF"/>
+						<AuxBusRef Id="864145949" Name="LPF"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="562259991" Name="Event_WritingSFX" DurationType="OneShot" DurationMin="2.9362812" DurationMax="2.9362812">
 					<MediaRefs>
@@ -211,7 +215,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3481854762" Type="User" Language="SFX" Hash="{8EBAE2B6-85AE-4781-289A-DE3336B9E8EB}">
+		<SoundBank Id="3481854762" Type="User" Language="SFX" Hash="{FDB1A7A0-173D-47CD-F0B3-68D77F07EF8B}">
 			<ShortName>StreetAudioContainerSoundbank</ShortName>
 			<Path>StreetAudioContainerSoundbank.bnk</Path>
 			<Media>
@@ -299,5 +303,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{129A7499-E9CF-8018-06AF-DB46BBC47492}</FileHash>
+	<FileHash>{66BC9358-F5E7-C5FA-C89E-C0165D21DCC3}</FileHash>
 </SoundBanksInfo>

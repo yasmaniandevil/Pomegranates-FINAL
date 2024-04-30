@@ -121,12 +121,25 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="DigSound" ID="{1A9D762D-B358-40D2-816D-75E32DA1A78B}" ShortID="647654577">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-4</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{388F345F-C687-4C6D-878F-23220F72DDD5}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="LPF" ID="{C62EA054-8931-49A9-AE8B-A820BAA8B3D9}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
+						</Reference>
+						<Reference Name="UserAuxSend1">
+							<ObjectRef Name="HPF" ID="{A36B6541-3E0F-4160-B56D-0DFF35945B0C}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
