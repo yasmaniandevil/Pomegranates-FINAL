@@ -86,7 +86,7 @@
 				<GameParameter Id="513275970" Name="FadeOutStreetAudio"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{3EF61686-DA92-3584-C322-4534050C9B4B}">
+		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{CFF38450-30F4-5F93-51CE-BB484D6F4689}">
 			<ShortName>SFX_Soundbank</ShortName>
 			<Path>SFX_Soundbank.bnk</Path>
 			<Media>
@@ -101,6 +101,10 @@
 				<File Id="494818398" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Glockenspiel Selection Sound 02.wav</ShortName>
 					<CachePath>SFX/Glockenspiel Selection Sound 02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="688447647" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Industry Tool Shovel Digging In Dirt 01.wav</ShortName>
+					<CachePath>SFX/Industry Tool Shovel Digging In Dirt 01_10C4C929.wem</CachePath>
 				</File>
 				<File Id="720925955" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Indian Woodwind Notification Sound 03.wav</ShortName>
@@ -121,6 +125,11 @@
 				<Event Id="1969774666" Name="Event_ArtifactUp3" DurationType="OneShot" DurationMin="2.75" DurationMax="2.75">
 					<MediaRefs>
 						<MediaRef Id="720925955"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="40698207" Name="Event_DigSound" DurationType="OneShot" DurationMin="16.802229" DurationMax="16.802229">
+					<MediaRefs>
+						<MediaRef Id="688447647"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="562259991" Name="Event_WritingSFX" DurationType="OneShot" DurationMin="2.9362812" DurationMax="2.9362812">
@@ -272,6 +281,23 @@
 				<GameParameter Id="513275970" Name="FadeOutStreetAudio"/>
 			</GameParameters>
 		</SoundBank>
+		<SoundBank Id="4228271703" Type="User" Language="SFX" Hash="{8E2AE2A3-ED8A-A3CA-B483-A012F6BA50EC}">
+			<ShortName>AudioLogsSoundbank</ShortName>
+			<Path>AudioLogsSoundbank.bnk</Path>
+			<Media>
+				<File Id="792931137" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>IntroAudio.wav</ShortName>
+					<CachePath>SFX/IntroAudio_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1053017616" Name="Event_IntroAudioLog" DurationType="OneShot" DurationMin="35.98044" DurationMax="35.98044">
+					<MediaRefs>
+						<MediaRef Id="792931137"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
 	</SoundBanks>
-	<FileHash>{7FA992C9-0668-6CC5-BFE8-11D04B26E836}</FileHash>
+	<FileHash>{A26D5897-17C1-BCF8-A8C6-A929BE9A91E1}</FileHash>
 </SoundBanksInfo>
