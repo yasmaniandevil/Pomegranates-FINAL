@@ -134,7 +134,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-4</Value>
+								<Value>-15</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -163,6 +163,138 @@
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="SFX_DigSound" ID="{87D095BF-C236-495E-986D-C07B5ADF65A2}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Arriving" ID="{A7192F0A-DD22-4EEC-9277-F62AFC614110}" ShortID="699710057">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{388F345F-C687-4C6D-878F-23220F72DDD5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Arriving" ID="{FE62B8A4-411C-40C6-A137-F42671304D89}">
+							<Language>SFX</Language>
+							<AudioFile>Arriving.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="773833868"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Arriving" ID="{FE62B8A4-411C-40C6-A137-F42671304D89}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Production Element Title Transition Bell Chime 02" ID="{A07604A9-45FF-422A-B9CF-CA2239725D0C}" ShortID="883801086">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{388F345F-C687-4C6D-878F-23220F72DDD5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Production Element Title Transition Bell Chime 02" ID="{5E8BDE15-7CB3-429E-8CD5-13FDC1BF2930}">
+							<Language>SFX</Language>
+							<AudioFile>Production Element Title Transition Bell Chime 02.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="357324208"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Production Element Title Transition Bell Chime 02" ID="{5E8BDE15-7CB3-429E-8CD5-13FDC1BF2930}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Production Element Title Transition Whoosh Warble 01" ID="{9A13CEAE-05E4-408A-BE37-0ABEB7151DD1}" ShortID="507048322">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{388F345F-C687-4C6D-878F-23220F72DDD5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Production Element Title Transition Whoosh Warble 01" ID="{08B98643-D6BA-47AF-A60C-E763ABF9637D}">
+							<Language>SFX</Language>
+							<AudioFile>Production Element Title Transition Whoosh Warble 01.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="888996960"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Production Element Title Transition Whoosh Warble 01" ID="{08B98643-D6BA-47AF-A60C-E763ABF9637D}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Production Element Title Transition Whoosh Warble 07" ID="{01C95AA8-0A5C-44A4-B204-286345B0C047}" ShortID="1003860450">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{388F345F-C687-4C6D-878F-23220F72DDD5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Production Element Title Transition Whoosh Warble 07" ID="{4CB6B617-74BF-41C8-B0CE-A336051674C4}">
+							<Language>SFX</Language>
+							<AudioFile>Production Element Title Transition Whoosh Warble 07.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="1012850297"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Production Element Title Transition Whoosh Warble 07" ID="{4CB6B617-74BF-41C8-B0CE-A336051674C4}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Production Element Title Transition Whoosh Warble 17" ID="{8D9C18F1-2AF0-4793-ABB4-F5415FD372BF}" ShortID="744944081">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{388F345F-C687-4C6D-878F-23220F72DDD5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Production Element Title Transition Whoosh Warble 17" ID="{5E83129D-64ED-43CD-9221-2C8828797B2D}">
+							<Language>SFX</Language>
+							<AudioFile>Production Element Title Transition Whoosh Warble 17.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="91605869"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Production Element Title Transition Whoosh Warble 17" ID="{5E83129D-64ED-43CD-9221-2C8828797B2D}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Whoosh_05" ID="{CAF1021D-FB09-4C33-BA84-3A824C66D4A8}" ShortID="898969949">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{388F345F-C687-4C6D-878F-23220F72DDD5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Whoosh_05" ID="{D2B63EE9-36EB-4254-A495-732DBD3CD495}">
+							<Language>SFX</Language>
+							<AudioFile>Whoosh_05.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="793448443"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Whoosh_05" ID="{D2B63EE9-36EB-4254-A495-732DBD3CD495}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

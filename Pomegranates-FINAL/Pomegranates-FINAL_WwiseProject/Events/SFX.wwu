@@ -58,6 +58,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Event_PageFlip" ID="{EC45A7E9-3FCA-43D3-B58B-1942209E96DE}">
+					<ChildrenList>
+						<Action Name="" ID="{0292C3F9-2F7C-4ADA-A592-221BE57343D2}" ShortID="552683043">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PageFlip" ID="{A6D7014F-489B-452D-B3C7-B680EE6D1306}" WorkUnitID="{31E94F87-8316-4810-90FF-73AD6464BEB5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Event_Teleport2Past" ID="{E1C389F2-5D19-45D6-A1F5-1B77BEB2594A}">
+					<ChildrenList>
+						<Action Name="" ID="{654151FD-45FD-43E7-873E-4C242B7E43E5}" ShortID="555929033">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Arriving" ID="{A7192F0A-DD22-4EEC-9277-F62AFC614110}" WorkUnitID="{31E94F87-8316-4810-90FF-73AD6464BEB5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

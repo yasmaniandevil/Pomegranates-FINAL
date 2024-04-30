@@ -147,7 +147,10 @@ public class Narrative : MonoBehaviour
     void PaperDrop() 
     {
         paperDrop.SetActive(true); //will activate flyer particles
+
         AkSoundEngine.PostEvent("Event_Teleport2Past", gameObject);
+        Debug.Log("TeleportSound");
+
         //RTCP for fading out all audio
         Invoke("SpawnPaper", 4);
         //sound for invoking flyeer
