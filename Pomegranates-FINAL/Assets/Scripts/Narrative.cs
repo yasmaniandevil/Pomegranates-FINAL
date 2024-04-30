@@ -147,9 +147,10 @@ public class Narrative : MonoBehaviour
     void PaperDrop() 
     {
         paperDrop.SetActive(true); //will activate flyer particles
-        //sounds of flyers falling and being teleported
-        //code for all the people disappearing goes here which includes turning the sound off
+        AkSoundEngine.PostEvent("Event_Teleport2Past", gameObject);
+        //RTCP for fading out all audio
         Invoke("SpawnPaper", 4);
+        //sound for invoking flyeer
     }
 
     void DeleteFather() //will delete the father
