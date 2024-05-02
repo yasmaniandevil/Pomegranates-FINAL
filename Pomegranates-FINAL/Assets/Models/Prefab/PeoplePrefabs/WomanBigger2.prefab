@@ -1121,6 +1121,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3557144665450668779}
   - component: {fileID: 7475316698868955281}
+  - component: {fileID: 608151921745389757}
   m_Layer: 0
   m_Name: WomanBigger2
   m_TagString: Untagged
@@ -1173,6 +1174,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &608151921745389757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4185625909533653073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d4b89754be0bc5458e64bf608d346a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  offset: 0
+  scale: 0
+  minDelay: 0
+  maxDelay: 0
+  myMats: []
 --- !u!1 &4272389922369165607
 GameObject:
   m_ObjectHideFlags: 0

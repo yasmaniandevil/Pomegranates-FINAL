@@ -2267,6 +2267,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7365673238643720769}
   - component: {fileID: 3519576430126569531}
+  - component: {fileID: -4038819412130915826}
   m_Layer: 0
   m_Name: ManSmallWhite
   m_TagString: Untagged
@@ -2317,6 +2318,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &-4038819412130915826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7886911691223832827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d4b89754be0bc5458e64bf608d346a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  offset: 0
+  scale: 0
+  minDelay: 0
+  maxDelay: 0
+  myMats: []
 --- !u!1 &8135893420520326555
 GameObject:
   m_ObjectHideFlags: 0

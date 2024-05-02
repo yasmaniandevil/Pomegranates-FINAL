@@ -427,6 +427,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2300663817238040698}
   - component: {fileID: 5264062937138235904}
+  - component: {fileID: -4137994738548125939}
   m_Layer: 0
   m_Name: ManBigger2
   m_TagString: Untagged
@@ -478,6 +479,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &-4137994738548125939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1487957137213688512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d4b89754be0bc5458e64bf608d346a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  offset: 0
+  scale: 0
+  minDelay: 0
+  maxDelay: 0
+  myMats: []
 --- !u!1 &1583734662890023862
 GameObject:
   m_ObjectHideFlags: 0

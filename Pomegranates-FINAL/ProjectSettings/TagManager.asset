@@ -16,6 +16,8 @@ TagManager:
   - FarmMound
   - Tree Future 1
   - Tree Future 2
+  - People
+  - Buildings
   layers:
   - Default
   - TransparentFX

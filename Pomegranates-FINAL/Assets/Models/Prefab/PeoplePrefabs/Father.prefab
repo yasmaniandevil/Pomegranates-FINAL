@@ -1505,6 +1505,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4699393978792249482}
   - component: {fileID: 1718041036480598768}
+  - component: {fileID: -8030345846710853069}
   m_Layer: 0
   m_Name: Father
   m_TagString: Untagged
@@ -1558,6 +1559,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &-8030345846710853069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5367245396340232752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d4b89754be0bc5458e64bf608d346a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  offset: 0
+  scale: 0
+  minDelay: 0
+  maxDelay: 0
+  myMats: []
 --- !u!1 &5413483060112700230
 GameObject:
   m_ObjectHideFlags: 0

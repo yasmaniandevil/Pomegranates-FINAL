@@ -1006,6 +1006,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2975609425841645947}
   - component: {fileID: 9199536640797029121}
+  - component: {fileID: 5422851612603455753}
   m_Layer: 0
   m_Name: ManSmallerTraditional
   m_TagString: Untagged
@@ -1058,6 +1059,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &5422851612603455753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2450149157896729537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d4b89754be0bc5458e64bf608d346a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  offset: 0
+  scale: 0
+  minDelay: 0
+  maxDelay: 0
+  myMats: []
 --- !u!1 &2458383750722014275
 GameObject:
   m_ObjectHideFlags: 0

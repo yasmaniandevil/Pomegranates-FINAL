@@ -431,6 +431,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1185836564063191968}
   - component: {fileID: 5085932626461972954}
+  - component: {fileID: -3261171839658215371}
   m_Layer: 0
   m_Name: ManMedium2
   m_TagString: Untagged
@@ -483,6 +484,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &-3261171839658215371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963323966732392730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d4b89754be0bc5458e64bf608d346a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  offset: 0
+  scale: 0
+  minDelay: 0
+  maxDelay: 0
+  myMats: []
 --- !u!1 &2085320707364796095
 GameObject:
   m_ObjectHideFlags: 0
