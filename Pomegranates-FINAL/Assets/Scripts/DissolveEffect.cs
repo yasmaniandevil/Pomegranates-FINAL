@@ -12,14 +12,70 @@ public class DissolveEffect : MonoBehaviour
     //how long till its called
     public float minDelay;
     public float maxDelay;
-    
-    public Material[] myMats;
+
+    public MeshRenderer[] objs;
+    public SkinnedMeshRenderer[] skinObjs;
+    public List<Material> myMats = new List<Material>();
     
     // Start is called before the first frame update
     void Start()
     {
+        speed = 0.1f;
         //finds all materials in the game object
-        myMats = GetComponent<MeshRenderer>().materials; 
+        if (gameObject.CompareTag("Buildings"))
+        {
+            objs = GetComponentsInChildren<MeshRenderer>();
+            foreach (MeshRenderer obj in objs)
+            {
+                foreach (Material mat in obj.materials)
+                {
+                    myMats.Add(mat);  
+                }
+            }
+            minDelay = 2;
+            maxDelay = 15;
+        }
+
+        if (gameObject.CompareTag("People"))
+        {
+            skinObjs = GetComponentsInChildren<SkinnedMeshRenderer>();
+            foreach (SkinnedMeshRenderer obj in skinObjs)
+            {
+                foreach (Material mat in obj.materials)
+                {
+                    myMats.Add(mat);  
+                }
+            }
+            minDelay = 2;
+            maxDelay = 15;
+        }
+
+        if (gameObject.CompareTag("landmark"))
+        {
+            objs = GetComponents<MeshRenderer>();
+            foreach (MeshRenderer obj in objs)
+            {
+                foreach (Material mat in obj.materials)
+                {
+                    myMats.Add(mat);  
+                }
+            }
+            minDelay = 2;
+            maxDelay = 15;
+        }
+        if (gameObject.CompareTag("Father"))
+        {
+            skinObjs = GetComponentsInChildren<SkinnedMeshRenderer>();
+            foreach (SkinnedMeshRenderer obj in skinObjs)
+            {
+                foreach (Material mat in obj.materials)
+                {
+                    myMats.Add(mat);  
+                }
+            }
+            minDelay = 0;
+            maxDelay = 0;
+        }
         
     }
 

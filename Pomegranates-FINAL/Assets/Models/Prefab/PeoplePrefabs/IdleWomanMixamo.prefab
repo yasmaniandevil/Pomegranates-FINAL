@@ -1571,7 +1571,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6546400671443620736}
   - component: {fileID: 880823633218062842}
-  - component: {fileID: -5840817101782908035}
+  - component: {fileID: -3122669724876901590}
   m_Layer: 0
   m_Name: IdleWomanMixamo
   m_TagString: Untagged
@@ -1622,7 +1622,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!114 &-5840817101782908035
+--- !u!114 &-3122669724876901590
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

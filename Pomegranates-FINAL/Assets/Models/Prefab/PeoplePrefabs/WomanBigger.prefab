@@ -2017,7 +2017,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7672624243585535467}
   - component: {fileID: 4366960902013622161}
-  - component: {fileID: 5340301593295789800}
+  - component: {fileID: -660510992905690779}
   m_Layer: 0
   m_Name: WomanBigger
   m_TagString: Untagged
@@ -2070,7 +2070,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!114 &5340301593295789800
+--- !u!114 &-660510992905690779
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

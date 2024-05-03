@@ -2267,7 +2267,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7365673238643720769}
   - component: {fileID: 3519576430126569531}
-  - component: {fileID: -4038819412130915826}
+  - component: {fileID: -8484521272801751404}
   m_Layer: 0
   m_Name: ManSmallWhite
   m_TagString: Untagged
@@ -2318,7 +2318,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!114 &-4038819412130915826
+--- !u!114 &-8484521272801751404
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

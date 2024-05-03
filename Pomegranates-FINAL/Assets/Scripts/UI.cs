@@ -20,6 +20,11 @@ public class UI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (reticle == null)
+        {
+            reticle = GameObject.Find("ReticleImage");
+        }
+        
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
 

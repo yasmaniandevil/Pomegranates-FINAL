@@ -1122,7 +1122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3722392295549638247}
   - component: {fileID: 7298281961328397341}
-  - component: {fileID: -6107327032629532522}
+  - component: {fileID: 5616906516544855112}
   m_Layer: 0
   m_Name: Sitting Idle
   m_TagString: Untagged
@@ -1173,7 +1173,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!114 &-6107327032629532522
+--- !u!114 &5616906516544855112
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

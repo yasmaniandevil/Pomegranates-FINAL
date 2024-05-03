@@ -132,7 +132,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 543450653410284682, guid: 4b4e4bb53cc7adf4190ec0dd40acd042, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 543450653410284682, guid: 4b4e4bb53cc7adf4190ec0dd40acd042, type: 3}
       propertyPath: m_LocalScale.y
@@ -148,7 +148,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7441815126671557121, guid: 4b4e4bb53cc7adf4190ec0dd40acd042, type: 3}
       propertyPath: delay
-      value: 10
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7441815126671557121, guid: 4b4e4bb53cc7adf4190ec0dd40acd042, type: 3}
       propertyPath: speed

@@ -359,7 +359,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2016581634792944318}
   - component: {fileID: 5556450749888932036}
-  - component: {fileID: -4501828474517710859}
+  - component: {fileID: 5481250006483174465}
   m_Layer: 0
   m_Name: WomanSmallerHijabi2
   m_TagString: Untagged
@@ -412,7 +412,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!114 &-4501828474517710859
+--- !u!114 &5481250006483174465
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

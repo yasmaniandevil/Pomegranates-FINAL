@@ -9,8 +9,10 @@ public class GameManager : MonoBehaviour
 {
     
     public GameObject player;
+    public GameObject playerRoot;
     public GameObject canvas;
     public GameObject reticle;
+    public GameObject particles;
 
     public static bool paused;
 
@@ -20,17 +22,34 @@ public class GameManager : MonoBehaviour
     
     public GameObject UI;
     
+    public DissolveEffect[] dissolveObjects;
+    
     // Start is called before the first frame update
     void Start()
     {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         Invoke("CameraOff", 3f);
+        
+        //DontDestroyOnLoad(playerRoot);
+        
+        dissolveObjects = FindObjectsOfType<DissolveEffect>(); //finds all the game objects with the dissolve effect and puts them in an array
+        foreach(DissolveEffect obj in dissolveObjects)
+        {
+            Debug.Log(obj.gameObject.name); //shows all thw game objects in the inspector
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (player == null)
+        {
+            player = GameObject.Find("PlayerCapsule");
+            playerRoot = GameObject.Find("NestedParent_Unpack (1)");
+            particles = GameObject.Find("Teleport Particles");
+            particles.SetActive(false);
+        }
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -108,6 +127,10 @@ public class GameManager : MonoBehaviour
 
     public void CameraOn()
     {
+        foreach (DissolveEffect obj in dissolveObjects) //people and buildings will dissolve here
+        {
+            obj.gameObject.GetComponent<DissolveEffect>().startRessolveTrigger();
+        }
         player.SetActive(false);
         reticle.SetActive(false);
         birdEyeViewCam.SetActive(true);

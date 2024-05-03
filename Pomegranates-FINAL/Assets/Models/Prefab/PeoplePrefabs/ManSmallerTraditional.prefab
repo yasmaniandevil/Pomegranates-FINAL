@@ -1006,7 +1006,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2975609425841645947}
   - component: {fileID: 9199536640797029121}
-  - component: {fileID: 5422851612603455753}
+  - component: {fileID: 7776152079325554848}
   m_Layer: 0
   m_Name: ManSmallerTraditional
   m_TagString: Untagged
@@ -1059,7 +1059,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!114 &5422851612603455753
+--- !u!114 &7776152079325554848
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

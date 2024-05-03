@@ -2301,7 +2301,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7810819128039351905}
   - component: {fileID: 4216977053148347419}
-  - component: {fileID: 3362707415147671453}
+  - component: {fileID: 6126073744378002845}
   m_Layer: 0
   m_Name: ManSmallBrown
   m_TagString: Untagged
@@ -2351,7 +2351,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!114 &3362707415147671453
+--- !u!114 &6126073744378002845
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

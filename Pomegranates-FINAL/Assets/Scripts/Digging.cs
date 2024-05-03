@@ -31,7 +31,12 @@ public class Digging : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (reticleCanvas == null)
+        {
+            gameManager = GameObject.Find("GameManager");
+            book = GameObject.Find("BookCanvas");
+            reticleCanvas = GameObject.Find("Reticle");
+        }
         if (Input.GetMouseButtonDown(0)) //when left mouse button pressed
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);

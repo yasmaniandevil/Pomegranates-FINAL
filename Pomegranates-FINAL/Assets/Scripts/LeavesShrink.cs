@@ -30,23 +30,27 @@ public class LeavesShrink : MonoBehaviour
     {
         Vector3 leafsize = gameObject.transform.localScale; //makes vector3 to store xyz data
         Vector3 target = new Vector3(100f, 100f, 100f); //makes the target size
-        while (gameObject.transform.localScale.x < target.x) //if leaf size is less than target size
+        while (gameObject.transform.localScale.y < target.y) //if leaf size is less than target size
         {
+            speed = Random.Range(1, 5);
             Vector3 currentSize = leafsize; //store current leaf size
-            gameObject.transform.localScale += currentSize * speed; //add speed to current size
+            var scale = gameObject.transform.localScale;
+            scale.y += currentSize.y * speed;
+            scale.z += currentSize.z * speed;
+            gameObject.transform.localScale = scale; //add speed to current size
 
             yield return new WaitForSeconds(speed /delay); //do again in speed divided by 100
         }
     }
 
-    private IEnumerator LeafMaterialShrink()
+    public IEnumerator LeafMaterialShrink()
     {
-        while (transparency.color.a < 255)
+        while (transparency.color.a > 0)
         {
             float currentTransparency = transparency.color.a;
             var color = transparency.color;
             color.a = currentTransparency;
-            transparency.color += color;
+            transparency.color -= color;
             
             yield return new WaitForSeconds(speed /delay); //do again in speed divided by 100
         }

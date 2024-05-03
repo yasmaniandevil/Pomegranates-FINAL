@@ -431,7 +431,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1185836564063191968}
   - component: {fileID: 5085932626461972954}
-  - component: {fileID: -3261171839658215371}
+  - component: {fileID: 7016726666152264173}
   m_Layer: 0
   m_Name: ManMedium2
   m_TagString: Untagged
@@ -484,7 +484,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!114 &-3261171839658215371
+--- !u!114 &7016726666152264173
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

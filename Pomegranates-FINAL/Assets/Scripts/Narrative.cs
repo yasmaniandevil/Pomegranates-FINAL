@@ -27,25 +27,38 @@ public class Narrative : MonoBehaviour
     private Sprite currentDialogue;
 
     public GameObject dialogueBox;
-
-    public GameObject paperPrefab;
-    public GameObject paperSpawn;
     
     public GameObject flyer;
     public GameObject book;
     public  GameObject particles;
+
+    public DissolveEffect[] dissolveObjects;
+
+    public GameObject leaves;
     
     
 
     // Start is called before the first frame update
     void Start()
     {
-        Invoke("BeginningText", 7);
-        Invoke("ChangeCamera", 8);
+       
+        Invoke("BeginningText", 7); //calls beginning text
+        Invoke("ChangeCamera", 8); //changes camera
+
+        dissolveObjects = FindObjectsOfType<DissolveEffect>(); //finds all the game objects with the dissolve effect and puts them in an array
+        foreach(DissolveEffect obj in dissolveObjects)
+        {
+            Debug.Log(obj.gameObject.name); //shows all thw game objects in the inspector
+        }
+        
     }
 
     private void Update()
     {
+        if (player == null)
+        {
+            player = GameObject.Find("PlayerCapsule");
+        }
         if (Input.GetMouseButtonDown(0)) //when left mouse button pressed
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -56,9 +69,9 @@ public class Narrative : MonoBehaviour
                 if (hit.collider.CompareTag("Father")) //if hit father
                 { 
                     Debug.Log(timesTalkedToFather);
-                   timesTalkedToFather++; //add to times talked 
-                   Debug.Log(timesTalkedToFather);
-                  FatherConvo(timesTalkedToFather); //activate father combo with the amount of times talked
+                    timesTalkedToFather++; //add to times talked 
+                    Debug.Log(timesTalkedToFather);
+                    FatherConvo(timesTalkedToFather); //activate father combo with the amount of times talked
                    
                 }
             }
@@ -81,12 +94,29 @@ public class Narrative : MonoBehaviour
 
             if (currentDialogue == dialogue[4]) //if its the 4th
             {
-                DeleteFather(); //delete dad
-                Cursor.visible = true;
-                Cursor.lockState = CursorLockMode.None;
-                PaperDrop(); //call this function
+                 //dissolve dad
+                foreach (DissolveEffect obj in dissolveObjects) //people and buildings will dissolve here
+                {
+                    obj.gameObject.GetComponent<DissolveEffect>().startDissolveTrigger();
+                }
+                //turn off people talking around here 
+                leaves.GetComponent<LeavesShrink>().LeafMaterialShrink();
+                Cursor.visible = false;
+                Cursor.lockState = CursorLockMode.Locked;
+                Invoke("PaperDrop", 15); //call this function
                 currentDialogue = null;
             }
+        }
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            foreach (DissolveEffect obj in dissolveObjects) //people and buildings will dissolve here
+            {
+                obj.gameObject.GetComponent<DissolveEffect>().startDissolveTrigger();
+            }
+            Invoke("PaperDrop", 15); //call this function
+            leaves.GetComponent<LeavesShrink>().LeafMaterialShrink();
+            currentDialogue = null;
         }
         
     }
@@ -108,11 +138,11 @@ public class Narrative : MonoBehaviour
             ActivateTextBox(1);
             father.tag = "Untagged";
         }
-        else if (amount >= 2 && player.GetComponent<Digging>().veggiesCollected < 7) //if its more than 2 but not all veggies are collected
+        else if (amount >= 2 && player.GetComponent<Digging>().veggiesCollected < 3) //if its more than 2 but not all veggies are collected
         {
             ActivateTextBox(3); //activate the 3rd one
         }
-        else if (amount >= 2 && player.GetComponent<Digging>().veggiesCollected == 7) //if all veggies collected
+        else if (amount >= 2 && player.GetComponent<Digging>().veggiesCollected == 3) //if all veggies collected
         {
             ActivateTextBox(4); //activate 4th
         }
@@ -153,19 +183,17 @@ public class Narrative : MonoBehaviour
 
         //RTCP for fading out all audio
         Invoke("SpawnPaper", 4);
-        //sound for invoking flyeer
+        //sound for papers dropping should go here. quick teleport sound
     }
-
-    void DeleteFather() //will delete the father
-    {
-        Destroy(father);
-    }
+    
 
     void SpawnPaper()//will spawn the floating flyer for the player
     {
-        Vector3 paperPos = new Vector3(paperSpawn.transform.position.x, paperSpawn.transform.position.y,
-            paperSpawn.transform.position.z);
-        Instantiate(paperPrefab, paperPos, transform.rotation);
+        flyer.SetActive(true); //turn on canvas
+        player.SetActive(false);
+        reticle.SetActive(false);
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
     }
     
     public void ChangeScene() //changes scene
@@ -187,6 +215,7 @@ public class Narrative : MonoBehaviour
     public void EndScene() //will turn off all canvases + turn on particles and change scene in 4 seconds
     {
         PlayerOn();
+        //teleport to past should go here
         particles.SetActive(true);
         Invoke("ChangeScene", 4);
     }

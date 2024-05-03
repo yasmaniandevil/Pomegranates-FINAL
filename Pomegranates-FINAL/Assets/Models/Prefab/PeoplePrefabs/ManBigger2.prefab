@@ -427,7 +427,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2300663817238040698}
   - component: {fileID: 5264062937138235904}
-  - component: {fileID: -4137994738548125939}
+  - component: {fileID: 2461655924227869}
   m_Layer: 0
   m_Name: ManBigger2
   m_TagString: Untagged
@@ -479,7 +479,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!114 &-4137994738548125939
+--- !u!114 &2461655924227869
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

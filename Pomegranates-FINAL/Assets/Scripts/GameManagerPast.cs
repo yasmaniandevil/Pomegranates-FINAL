@@ -11,9 +11,12 @@ using Random = UnityEngine.Random;
 public class GameManagerPast : MonoBehaviour
 {
     public GameObject player;
+    public GameObject playerRoot;
     public GameObject canvas;
     public GameObject reticle;
     public GameObject UI;
+    public GameObject particles;
+    public GameObject book;
 
     private string mosque = "mosque";
     private string church = "church";
@@ -64,11 +67,20 @@ public class GameManagerPast : MonoBehaviour
         MemoryManager(); //start of the game calls memory manager
         ChangeFlyer(); //changes the flyer
         
+        //DontDestroyOnLoad(playerRoot);
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (player == null)
+        {
+            player = GameObject.Find("PlayerCapsule");
+            playerRoot = GameObject.Find("NestedParent_Unpack (1)");
+            particles = GameObject.Find("Teleport Particles");
+            particles.SetActive(false);
+        }
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             PauseGame();
@@ -256,6 +268,23 @@ public class GameManagerPast : MonoBehaviour
     public void LoadScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
+    }
+    
+    public void EndScene() //will turn off all canvases + turn on particles and change scene in 4 seconds
+    {
+        PlayerOn();
+        //teleport to past should go here
+        particles.SetActive(true);
+        Invoke("ChangeScene", 4);
+    }
+    
+    public void PlayerOn() //will turn off all the canvases and activate the player
+    {
+        book.SetActive(false);
+        player.SetActive(true);
+        reticle.SetActive(true);
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
 }
