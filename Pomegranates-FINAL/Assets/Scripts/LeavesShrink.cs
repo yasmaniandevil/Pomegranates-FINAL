@@ -8,6 +8,8 @@ public class LeavesShrink : MonoBehaviour
     public float delay;
 
     private Material transparency;
+
+    public GameObject[] Pomegranates;
     
     // Start is called before the first frame update
     void Start()
@@ -21,38 +23,80 @@ public class LeavesShrink : MonoBehaviour
         
     }
 
-    public void ShrinkLeaves()
+    public void UnshrinkLeaves()
     {
         StartCoroutine(LeafShrink());
     }
 
+    public void TransparentLeaves()
+    {
+        StartCoroutine(LeafMaterialShrink());
+    }
+
     private IEnumerator LeafShrink()
     {
+        Vector3 pomegranateSize = default;
         Vector3 leafsize = gameObject.transform.localScale; //makes vector3 to store xyz data
+        foreach (GameObject pom in Pomegranates)
+        {
+            pomegranateSize = pom.transform.localScale;
+        }
         Vector3 target = new Vector3(100f, 100f, 100f); //makes the target size
+        
         while (gameObject.transform.localScale.y < target.y) //if leaf size is less than target size
         {
             speed = Random.Range(1, 5);
             Vector3 currentSize = leafsize; //store current leaf size
             var scale = gameObject.transform.localScale;
             scale.y += currentSize.y * speed;
-            scale.z += currentSize.z * speed;
             gameObject.transform.localScale = scale; //add speed to current size
-
+            
             yield return new WaitForSeconds(speed /delay); //do again in speed divided by 100
+        }
+
+        while (Pomegranates[0].transform.localScale.y < 36)
+        {
+            foreach (var pom in Pomegranates)
+            {
+                Vector3 currentPomSize = pomegranateSize; //store current Pom size
+                var pomScale = pom.transform.localScale;
+                pomScale.y += currentPomSize.y * speed;
+                pomScale.x += currentPomSize.x * speed;
+                pomScale.z += currentPomSize.z * speed;
+                pom.transform.localScale = pomScale; //add speed to current size
+            }
+            
+            yield return new WaitForSeconds(speed /delay);
+
         }
     }
 
     public IEnumerator LeafMaterialShrink()
     {
-        while (transparency.color.a > 0)
+        float targetAlpha = 0f; // Target alpha value (fully transparent)
+        float currentAlpha = transparency.color.a; // Current alpha value
+
+// Calculate the time needed to reach the target alpha
+        float totalTime = (currentAlpha - targetAlpha) / speed;
+
+// Interpolate alpha value gradually over time
+        float elapsedTime = 0f;
+        while (elapsedTime < totalTime)
         {
-            float currentTransparency = transparency.color.a;
-            var color = transparency.color;
-            color.a = currentTransparency;
-            transparency.color -= color;
-            
-            yield return new WaitForSeconds(speed /delay); //do again in speed divided by 100
+            // Calculate the new alpha value based on elapsed time
+            float newAlpha = Mathf.Lerp(currentAlpha, targetAlpha, elapsedTime / totalTime);
+    
+            // Assign the new alpha value to the color
+            transparency.color = new Color(transparency.color.r, transparency.color.g, transparency.color.b, newAlpha);
+    
+            // Increment elapsed time
+            elapsedTime += Time.deltaTime;
+    
+            // Wait for the next frame
+            yield return null;
         }
+
+// Ensure the final alpha value is set to the target alpha
+        transparency.color = new Color(transparency.color.r, transparency.color.g, transparency.color.b, targetAlpha);
     }
 }

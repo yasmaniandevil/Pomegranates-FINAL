@@ -82,46 +82,48 @@ public class Narrative : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space)) //when pressing space
         {
-            DeactivateTextBox(); //deactivate box
-            if(currentDialogue == dialogue[1]) //if its the first dialogue
+            if (!book.activeSelf)
             {
-                ActivateTextBox(2);//activate with the second box
-                return;
-            }
-
-            if (currentDialogue == dialogue[2]) //if its the second
-            {
-                MoveFather(); //move the dad
-            }
-
-            if (currentDialogue == dialogue[4]) //if its the 4th
-            {
-                 //dissolve dad
-                foreach (DissolveEffect obj in dissolveObjects) //people and buildings will dissolve here
+                DeactivateTextBox(); //deactivate box
+                if(currentDialogue == dialogue[1]) //if its the first dialogue
                 {
-                    obj.gameObject.GetComponent<DissolveEffect>().startDissolveTrigger();
+                    ActivateTextBox(2);//activate with the second box
+                    return;
                 }
-                father.tag = "Untagged";
-                //turn off people talking around here 
-                leaves.GetComponent<LeavesShrink>().LeafMaterialShrink();
-                Cursor.visible = false;
-                Cursor.lockState = CursorLockMode.Locked;
-                Invoke("PaperDrop", 15); //call this function
-                currentDialogue = null;
+
+                if (currentDialogue == dialogue[2]) //if its the second
+                {
+                    MoveFather(); //move the dad
+                }
+
+                if (currentDialogue == dialogue[4]) //if its the 4th
+                {
+                    //dissolve dad
+                    foreach (DissolveEffect obj in dissolveObjects) //people and buildings will dissolve here
+                    {
+                        obj.gameObject.GetComponent<DissolveEffect>().startDissolveTrigger();
+                    }
+                    father.tag = "Untagged";
+                    //turn off people talking around here 
+                    leaves.GetComponent<LeavesShrink>().TransparentLeaves();
+                    Invoke("PaperDrop", 15); //call this function
+                    currentDialogue = null;
+                } 
             }
+            
             
         }
 
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            foreach (DissolveEffect obj in dissolveObjects) //people and buildings will dissolve here
-            {
-                obj.gameObject.GetComponent<DissolveEffect>().startDissolveTrigger();
-            }
-            Invoke("PaperDrop", 15); //call this function
-            leaves.GetComponent<LeavesShrink>().LeafMaterialShrink();
-            currentDialogue = null;
-        }
+        // if (Input.GetKeyDown(KeyCode.P))
+        // {
+        //     foreach (DissolveEffect obj in dissolveObjects) //people and buildings will dissolve here
+        //     {
+        //         obj.gameObject.GetComponent<DissolveEffect>().startDissolveTrigger();
+        //     }
+        //     Invoke("PaperDrop", 15); //call this function
+        //     leaves.GetComponent<LeavesShrink>().LeafMaterialShrink();
+        //     currentDialogue = null;
+        // }
         
     }
 
@@ -168,6 +170,8 @@ public class Narrative : MonoBehaviour
         narrativeCanvas.SetActive(false);
         flyer.SetActive(false);
         player.SetActive(true);
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
     
     private void MoveFather() //moves father

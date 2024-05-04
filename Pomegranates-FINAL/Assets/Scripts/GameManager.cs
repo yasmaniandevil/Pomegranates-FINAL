@@ -23,6 +23,8 @@ public class GameManager : MonoBehaviour
     public GameObject UI;
     
     public DissolveEffect[] dissolveObjects;
+
+    public GameObject leaves;
     
     // Start is called before the first frame update
     void Start()
@@ -31,13 +33,12 @@ public class GameManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Invoke("CameraOff", 3f);
         
-        //DontDestroyOnLoad(playerRoot);
-        
         dissolveObjects = FindObjectsOfType<DissolveEffect>(); //finds all the game objects with the dissolve effect and puts them in an array
         foreach(DissolveEffect obj in dissolveObjects)
         {
             Debug.Log(obj.gameObject.name); //shows all thw game objects in the inspector
         }
+        DontDestroyOnLoad(playerRoot);
     }
 
     // Update is called once per frame
@@ -51,13 +52,15 @@ public class GameManager : MonoBehaviour
             particles.SetActive(false);
         }
 
+        if (PauseMenuCanvas == null)
+        {
+            PauseMenuCanvas = GameObject.Find("PauseMenuCanvas");
+
+        }
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             PauseGame();
-            //PauseAudio();
-            //set active pause menu ui
-            //lock camera
-            //unlock cursor
         }
 
     }

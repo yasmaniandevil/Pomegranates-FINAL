@@ -14,9 +14,7 @@ public class Digging : MonoBehaviour
     public GameObject book;
     //public BookCurlPro.AutoFlip autoFlip;
     public GameObject flyerCanvas;
-    public GameObject reticleCanvas;
     public GameObject player;
-    public GameObject bookSpawner;
 
     private int bookPage = 1;
     private GameManagerPast script;
@@ -35,7 +33,8 @@ public class Digging : MonoBehaviour
         if (gameManager == null)
         {
             gameManager = GameObject.Find("GameManager");
-            book = GameObject.Find("BookCanvas");
+            book = GameObject.Find("BookPro");
+            script = gameManager.GetComponent<GameManagerPast>();
         }
         if (Input.GetMouseButtonDown(0)) //when left mouse button pressed
         {
@@ -88,25 +87,28 @@ public class Digging : MonoBehaviour
                     Debug.Log(bookPage);
                     bookPage += 1;
                     Debug.Log(bookPage);
-                    book.GetComponent<AutoFlip>().enabled = true; //it will enable auto flip
-                    book.GetComponent<BookPro>().interactable = true;
+                    script.book.GetComponent<AutoFlip>().enabled = true; //it will enable auto flip
+                    script.book.GetComponent<BookPro>().interactable = true;
                     script.book.GetComponent<AutoFlip>().StartFlipping(bookPage);
                     script.PlayerOff();
                     script.ChangeFlyer(); 
                     script.MemoryManager(); //change location
                     script.ChangeFlyer();//change flyer to next riddle
-                    script.buttonsPressed++; //add to buttons pressed
+                    //script.buttonsPressed++; //add to buttons pressed
                     
                 }
 
                 if (hit.collider.CompareTag("Tree Future 1")) //if its the tree in the first scene
                 {
                     hit.collider.gameObject.GetComponentInChildren<Mound>().SpawnArtifact(); //spawn artifact
+                    gameManager.GetComponent<Narrative>().tree.tag = "Untagged";
                 }
                 
                 if (hit.collider.CompareTag("Tree Future 2")) //if its the second scene
                 {
-                    hit.collider.gameObject.GetComponentInChildren<Mound>().SpawnArtifact(); //spawn artifatc
+                    hit.collider.gameObject.GetComponentInChildren<Mound>().SpawnArtifact();
+                    gameManager.GetComponent<GameManager>().leaves.SetActive(true);
+                    gameManager.GetComponent<GameManager>().leaves.GetComponent<LeavesShrink>().UnshrinkLeaves();
                     gameManager.GetComponent<GameManager>().Invoke("CameraOn", 4f); //change camera in 4 seconds
                 }
 

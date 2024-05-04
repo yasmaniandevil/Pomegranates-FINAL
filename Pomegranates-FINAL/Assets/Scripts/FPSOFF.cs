@@ -40,12 +40,16 @@ public class FPSOFF : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (reticle == null) //if there is nothing on reticle
+        if (FPS == null) //if there is nothing on reticle
         {
             reticle = GameObject.Find("Reticle"); //it will find these game objects
-            book = GameObject.Find("BookPro");
             FPS = GameObject.Find("PlayerCapsule");
             TurnPlayerOn();
+        }
+
+        if (book == null)
+        {
+            book = GameObject.Find("BookPro");
         }
 
         if (firstStart == 0)

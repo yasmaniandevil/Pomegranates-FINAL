@@ -12,7 +12,6 @@ public class GameManagerPast : MonoBehaviour
 {
     public GameObject player;
     public GameObject playerRoot;
-    public GameObject canvas;
     public GameObject reticle;
     public GameObject UI;
     public GameObject particles;
@@ -32,8 +31,7 @@ public class GameManagerPast : MonoBehaviour
     public GameObject hospitalSpawner;
 
     public GameObject mosqueLight, churchLight, hospitalLight;
-
-    public int buttonsPressed;
+    
 
     public TextMeshProUGUI flyerTextBox;
 
@@ -67,7 +65,7 @@ public class GameManagerPast : MonoBehaviour
         MemoryManager(); //start of the game calls memory manager
         ChangeFlyer(); //changes the flyer
         
-        //DontDestroyOnLoad(playerRoot);
+        DontDestroyOnLoad(playerRoot);
         
     }
 
@@ -78,8 +76,11 @@ public class GameManagerPast : MonoBehaviour
         {
             player = GameObject.Find("PlayerCapsule");
             playerRoot = GameObject.Find("NestedParent_Unpack");
-            //particles = GameObject.Find("Teleport Particles");
-            //particles.SetActive(false);
+            particles = GameObject.Find("Teleport Particles");
+            PauseMenuCanvas = GameObject.Find("PauseMenuCanvas");
+            reticle = GameObject.Find("Reticle");
+            particles.SetActive(false);
+            
         }
         if (Input.GetKeyDown(KeyCode.Escape))
         {
