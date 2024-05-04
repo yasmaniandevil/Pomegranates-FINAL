@@ -44,15 +44,24 @@ namespace BookCurlPro
         int targetPaper;
         public void StartFlipping(int target)
         {
-            Debug.Log("is glipping");
+            Debug.Log("StartFlipping - Target: " + target);
             isBookInteractable = ControledBook.interactable;
             ControledBook.interactable = false;
             flippingStarted = true;
             elapsedTime = 0;
             nextPageCountDown = 0;
             targetPaper = target;
-            if (target > ControledBook.CurrentPaper) Mode = FlipMode.RightToLeft;
-            else if (target < ControledBook.currentPaper) Mode = FlipMode.LeftToRight;
+            if (target > ControledBook.CurrentPaper)
+            {
+                Debug.Log("StartFlipping - Mode: RightToLeft");
+                Mode = FlipMode.RightToLeft;
+            } 
+            else if (target < ControledBook.currentPaper)
+            {
+                Debug.Log("StartFlipping - Mode: LeftToRight");
+                Mode = FlipMode.LeftToRight;
+            }
+            Debug.Log("After Flipping - CurrentPaper: " + ControledBook.CurrentPaper);
         }
         void Update()
         {

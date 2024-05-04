@@ -77,9 +77,9 @@ public class GameManagerPast : MonoBehaviour
         if (player == null)
         {
             player = GameObject.Find("PlayerCapsule");
-            playerRoot = GameObject.Find("NestedParent_Unpack (1)");
-            particles = GameObject.Find("Teleport Particles");
-            particles.SetActive(false);
+            playerRoot = GameObject.Find("NestedParent_Unpack");
+            //particles = GameObject.Find("Teleport Particles");
+            //particles.SetActive(false);
         }
         if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -115,17 +115,7 @@ public class GameManagerPast : MonoBehaviour
         
         
     }
-
-
-    public void TurnPlayerOn() //function turns player movement off, reticle off, and cnavas with text on
-    {
-        player.SetActive(true);
-        canvas.SetActive(false);
-        reticle.SetActive(true);
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
-        currentLocation.SetActive(true);
-    }
+    
     
 
     public void ChangeScene() //changes scene
@@ -285,6 +275,14 @@ public class GameManagerPast : MonoBehaviour
         reticle.SetActive(true);
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+    }
+    public void PlayerOff() //will turn off all the canvases and activate the player
+    {
+        book.SetActive(true);
+        player.SetActive(false);
+        reticle.SetActive(false);
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
     }
 
 }

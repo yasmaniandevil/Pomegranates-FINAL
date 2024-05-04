@@ -14,10 +14,10 @@ public class Narrative : MonoBehaviour
     public GameObject player;
     
     public GameObject narrativeCanvas;
-    public GameObject reticle;
 
     public GameObject father;
     public GameObject fatherMove;
+    public GameObject tree;
     int timesTalkedToFather = 0;
 
     public GameObject paperDrop;
@@ -35,6 +35,8 @@ public class Narrative : MonoBehaviour
     public DissolveEffect[] dissolveObjects;
 
     public GameObject leaves;
+
+    private bool flyerOn;
     
     
 
@@ -99,6 +101,7 @@ public class Narrative : MonoBehaviour
                 {
                     obj.gameObject.GetComponent<DissolveEffect>().startDissolveTrigger();
                 }
+                father.tag = "Untagged";
                 //turn off people talking around here 
                 leaves.GetComponent<LeavesShrink>().LeafMaterialShrink();
                 Cursor.visible = false;
@@ -106,6 +109,7 @@ public class Narrative : MonoBehaviour
                 Invoke("PaperDrop", 15); //call this function
                 currentDialogue = null;
             }
+            
         }
 
         if (Input.GetKeyDown(KeyCode.P))
@@ -142,7 +146,7 @@ public class Narrative : MonoBehaviour
         {
             ActivateTextBox(3); //activate the 3rd one
         }
-        else if (amount >= 2 && player.GetComponent<Digging>().veggiesCollected == 3) //if all veggies collected
+        else if (amount >= 2 && player.GetComponent<Digging>().veggiesCollected >= 3) //if all veggies collected
         {
             ActivateTextBox(4); //activate 4th
         }
@@ -155,15 +159,14 @@ public class Narrative : MonoBehaviour
         dialogueBox.gameObject.GetComponent<Image>().sprite =dialogue[dialogueSprite]; //changes dialogue box to whatever the next dialogue is
         narrativeCanvas.SetActive(true);
         player.SetActive(false);
-        reticle.SetActive(false);
         currentDialogue = dialogue[dialogueSprite];
         Debug.Log(currentDialogue);
     }
 
     private void DeactivateTextBox() 
     {
-        reticle.SetActive(true);
         narrativeCanvas.SetActive(false);
+        flyer.SetActive(false);
         player.SetActive(true);
     }
     
@@ -177,7 +180,7 @@ public class Narrative : MonoBehaviour
     void PaperDrop() 
     {
         paperDrop.SetActive(true); //will activate flyer particles
-
+        
         AkSoundEngine.PostEvent("Event_Teleport2Past", gameObject);
         Debug.Log("TeleportSound");
 
@@ -191,7 +194,7 @@ public class Narrative : MonoBehaviour
     {
         flyer.SetActive(true); //turn on canvas
         player.SetActive(false);
-        reticle.SetActive(false);
+        tree.tag = "Tree Future 1";
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
     }
@@ -207,7 +210,6 @@ public class Narrative : MonoBehaviour
         book.SetActive(false);
         flyer.SetActive(false);
         player.SetActive(true);
-        reticle.SetActive(true);
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }

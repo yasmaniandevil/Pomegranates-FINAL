@@ -18,6 +18,7 @@ public class Digging : MonoBehaviour
     public GameObject player;
     public GameObject bookSpawner;
 
+    private int bookPage = 1;
     private GameManagerPast script;
 
     
@@ -31,11 +32,10 @@ public class Digging : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (reticleCanvas == null)
+        if (gameManager == null)
         {
             gameManager = GameObject.Find("GameManager");
             book = GameObject.Find("BookCanvas");
-            reticleCanvas = GameObject.Find("Reticle");
         }
         if (Input.GetMouseButtonDown(0)) //when left mouse button pressed
         {
@@ -75,7 +75,6 @@ public class Digging : MonoBehaviour
                     Debug.Log("EventPlayed");
 
                     player.SetActive(false);
-                    reticleCanvas.SetActive(false);
                     Cursor.visible = true;
                     Cursor.lockState = CursorLockMode.None;
                 }
@@ -85,6 +84,14 @@ public class Digging : MonoBehaviour
                     var artifact = hit.collider.gameObject.GetComponent<Artifact>(); //create a variable that called artifact component
                     script.ArtifactJournal(artifact.rightPage, artifact.leftPage); //grab the memory and artifact from component
                     Destroy(hit.collider.gameObject); //destroy the object
+                    script.book.SetActive(true);
+                    Debug.Log(bookPage);
+                    bookPage += 1;
+                    Debug.Log(bookPage);
+                    book.GetComponent<AutoFlip>().enabled = true; //it will enable auto flip
+                    book.GetComponent<BookPro>().interactable = true;
+                    script.book.GetComponent<AutoFlip>().StartFlipping(bookPage);
+                    script.PlayerOff();
                     script.ChangeFlyer(); 
                     script.MemoryManager(); //change location
                     script.ChangeFlyer();//change flyer to next riddle
@@ -108,7 +115,6 @@ public class Digging : MonoBehaviour
                     Destroy(hit.collider.gameObject); //destory 
                     flyerCanvas.SetActive(true); //turn on canvas
                     player.SetActive(false);
-                    reticleCanvas.SetActive(false);
 
                 }
                 

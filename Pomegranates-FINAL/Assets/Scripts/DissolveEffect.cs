@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DissolveEffect : MonoBehaviour
 {
+    public bool isVisible;
     //cutoff modifiers
     public float speed;
     //noise texture
@@ -77,6 +78,18 @@ public class DissolveEffect : MonoBehaviour
             maxDelay = 0;
         }
         
+        UpdateVisibility();
+        
+    }
+    private void UpdateVisibility()
+    {
+        foreach (Material mat in myMats)
+        {
+            // Set the material's dissolve amount based on the visibility state
+            float cutoff = isVisible ? 0 : 1; // Set cutoff to 0 for visible, 1 for invisible
+            //the ? is like a mini ifelse statement. if its true, its truem it will be 0. false. 1
+            mat.SetFloat("_Cutoff", cutoff);
+        }
     }
 
     // Update is called once per frame

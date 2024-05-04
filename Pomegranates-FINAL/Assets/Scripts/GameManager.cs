@@ -46,7 +46,7 @@ public class GameManager : MonoBehaviour
         if (player == null)
         {
             player = GameObject.Find("PlayerCapsule");
-            playerRoot = GameObject.Find("NestedParent_Unpack (1)");
+            playerRoot = GameObject.Find("NestedParent_Unpack");
             particles = GameObject.Find("Teleport Particles");
             particles.SetActive(false);
         }
@@ -67,7 +67,6 @@ public class GameManager : MonoBehaviour
     {
         player.SetActive(true);
         canvas.SetActive(false);
-        reticle.SetActive(true);
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }
@@ -132,7 +131,6 @@ public class GameManager : MonoBehaviour
             obj.gameObject.GetComponent<DissolveEffect>().startRessolveTrigger();
         }
         player.SetActive(false);
-        reticle.SetActive(false);
         birdEyeViewCam.SetActive(true);
     }
    
