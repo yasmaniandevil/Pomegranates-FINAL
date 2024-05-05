@@ -37,6 +37,11 @@ public class Narrative : MonoBehaviour
     public GameObject leaves;
 
     private bool flyerOn;
+
+    public float fadeDuration = 15f;
+    float startVolume;
+    float endVolume = 0f;
+    int type = 0;
     
     
 
@@ -52,6 +57,8 @@ public class Narrative : MonoBehaviour
         {
             Debug.Log(obj.gameObject.name); //shows all thw game objects in the inspector
         }
+
+        AkSoundEngine.GetRTPCValue("FadeOutStreetAudio", gameObject, 0, out startVolume, ref type);
         
     }
 
@@ -104,7 +111,10 @@ public class Narrative : MonoBehaviour
                         obj.gameObject.GetComponent<DissolveEffect>().startDissolveTrigger();
                     }
                     father.tag = "Untagged";
-                    //turn off people talking around here 
+                    father.GetComponent<CapsuleCollider>().enabled = false;
+
+                    StartCoroutine(FadeOutAudio());
+
                     leaves.GetComponent<LeavesShrink>().TransparentLeaves();
                     Invoke("PaperDrop", 15); //call this function
                     currentDialogue = null;
@@ -112,6 +122,24 @@ public class Narrative : MonoBehaviour
             }
             
             
+        }
+
+        IEnumerator FadeOutAudio()
+        {
+            float currentTime = 0.0f;
+
+            while(currentTime < fadeDuration)
+            {
+                currentTime += Time.deltaTime;
+                float t = currentTime / fadeDuration;
+
+                float newVolume = Mathf.Lerp(startVolume, endVolume, t);
+                AkSoundEngine.SetRTPCValue("FadeOutStreetAudo", newVolume);
+                Debug.Log("New Volume: " + newVolume);
+                yield return null;
+            }
+
+            AkSoundEngine.SetRTPCValue("FadeOutStreetAudio", endVolume);
         }
 
         // if (Input.GetKeyDown(KeyCode.P))
