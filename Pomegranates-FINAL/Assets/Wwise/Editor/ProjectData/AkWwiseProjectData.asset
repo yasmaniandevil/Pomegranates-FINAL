@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 868b0f289a08fa4ea01b6c613ad74508
     GuidInternal: 
-    m_lastTime: -8584885801076484563
+    m_lastTime: -8584885657929622922
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: f732e3d294baae4b9e44cb31b07d54a0
     GuidInternal: 
-    m_lastTime: -8584885800780709860
+    m_lastTime: -8584885657933061921
     List:
     - name: HPF
       guid: 41656ba30f3e6041b56d0dff35945b0c
@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 033ae9bc3205de4f958035f6f2b06e57
     GuidInternal: 
-    m_lastTime: -8584870047835285186
+    m_lastTime: -8584870060918339246
     List:
     - name: AudioLogsSoundbank
       guid: a1a404d5212bed4dbaf3533d73cb1f51
@@ -158,7 +158,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Enviornmental Work Unit
     guid: 811dc13d89a1484ba7327cd7cc47d6d1
     GuidInternal: 
-    m_lastTime: -8584873752930098042
+    m_lastTime: -8584872041077844664
     List:
     - name: AdanSoundBank
       guid: 82bcb60ed29dd141a2b478a4c0e5c6a2
@@ -227,7 +227,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Music Work Unit
     guid: c18c34e12c7e7d44877328d2d89e2c2d
     GuidInternal: 
-    m_lastTime: -8584885800778115280
+    m_lastTime: -8584885657929683054
     List:
     - name: Music_ALBint_Soundbank
       guid: f2e71fddc7aeb6458658b8e863ae6fe3
@@ -255,7 +255,7 @@ MonoBehaviour:
     ParentPath: Events\AudioLogsWorkUnit
     guid: a249072e43ad864c8e17ffa439a2eaa9
     GuidInternal: 
-    m_lastTime: -8584870047840739423
+    m_lastTime: -8584870060925326355
     List:
     - name: Event_IntroAudioLog
       guid: def3a5561bb5984587c866da6681ae78
@@ -285,7 +285,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 8097cb23c1290d4c9b41229fb2bf76ca
     GuidInternal: 
-    m_lastTime: -8584885800784569064
+    m_lastTime: -8584885657937120875
     List: []
   - PhysicalPath: Events\Environmental Events Work Unit.wwu
     PathAndIcons:
@@ -298,7 +298,7 @@ MonoBehaviour:
     ParentPath: Events\Environmental Events Work Unit
     guid: 88fa32bd4d1aa14b85d1e735b565316a
     GuidInternal: 
-    m_lastTime: -8584873752949630170
+    m_lastTime: -8584872041119286320
     List:
     - name: Event_AdanSequenceContainer
       guid: 93e75f65e236b8459bfb77bc38ddf30c
@@ -379,7 +379,7 @@ MonoBehaviour:
     ParentPath: Events\Music Events Work Unit
     guid: bb625751613f284e8f36db8b35422e0b
     GuidInternal: 
-    m_lastTime: -8584879789494982355
+    m_lastTime: -8584885559245543995
     List:
     - name: Event_ALBint
       guid: d33cfcdbb033cf408f9abac76efdce4c
@@ -409,7 +409,7 @@ MonoBehaviour:
     ParentPath: Events\SFX
     guid: 380ca8262e8d6545a178d6745499f3a4
     GuidInternal: 
-    m_lastTime: -8584870047840729420
+    m_lastTime: -8584870060925326355
     List:
     - name: Event_ArtifactUp1
       guid: cac2402fe9094349a9cf0be6e8b1e14f
@@ -542,7 +542,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 0bde763b5c2f9c469235495d31c2db59
     GuidInternal: 
-    m_lastTime: -8584879789494972342
+    m_lastTime: -8584885559245503162
     List:
     - name: FadeOutStreetAudio
       guid: dc31beb644483546a2a980262065b2b3
@@ -570,7 +570,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 9ef0202bdd36fb48887a9f6ad307d292
     GuidInternal: 
-    m_lastTime: -8584885801076529722
+    m_lastTime: -8584885657929652985
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -584,7 +584,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 6cb65ca27d5f944089a431d4eb5cfa48
     GuidInternal: 
-    m_lastTime: -8584885801076514692
+    m_lastTime: -8584885657929642912
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -598,7 +598,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 8bfdb2b6d85eed459e7556f95bf7d976
     GuidInternal: 
-    m_lastTime: -8584885801076504569
+    m_lastTime: -8584885657929642912
     List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 
