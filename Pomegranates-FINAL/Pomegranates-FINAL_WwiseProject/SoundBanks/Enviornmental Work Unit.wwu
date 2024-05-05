@@ -17,16 +17,16 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
-				<SoundBank Name="Wind_Soundbank" ID="{DE0FA40E-4B16-4E6B-B433-488A5093ED44}">
+				<SoundBank Name="FireSoundbank" ID="{BA9A36F7-6C9C-4BEA-9555-CF301C862630}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Event_Wind_Segment_Container" ID="{E41169FD-5085-40C6-941C-06FD9B58B5A6}" WorkUnitID="{BD32FA88-1A4D-4BA1-85D1-E735B565316A}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Event_Fire_Blend_Container" ID="{41C7F98B-9D08-4108-BBF7-C2725734E8E0}" WorkUnitID="{BD32FA88-1A4D-4BA1-85D1-E735B565316A}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
-				<SoundBank Name="FireSoundbank" ID="{BA9A36F7-6C9C-4BEA-9555-CF301C862630}">
+				<SoundBank Name="Wind_SoundBank" ID="{8752705D-1C56-47E6-866A-496D614DE272}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Event_Fire_Blend_Container" ID="{41C7F98B-9D08-4108-BBF7-C2725734E8E0}" WorkUnitID="{BD32FA88-1A4D-4BA1-85D1-E735B565316A}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Event_Wind_Blend_Container" ID="{E41169FD-5085-40C6-941C-06FD9B58B5A6}" WorkUnitID="{BD32FA88-1A4D-4BA1-85D1-E735B565316A}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

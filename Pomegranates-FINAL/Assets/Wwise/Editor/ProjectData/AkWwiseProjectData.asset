@@ -158,7 +158,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Enviornmental Work Unit
     guid: 811dc13d89a1484ba7327cd7cc47d6d1
     GuidInternal: 
-    m_lastTime: -8584866568338583583
+    m_lastTime: -8584866534840231637
     List:
     - name: AdanSoundBank
       guid: 82bcb60ed29dd141a2b478a4c0e5c6a2
@@ -202,8 +202,8 @@ MonoBehaviour:
         ObjectType: 7
         guid: 9ba6de72fcaed1478e1afe6f1d08aa87
       Path: SoundBanks/Enviornmental Work Unit/StreetAudioContainerSoundbank
-    - name: Wind_Soundbank
-      guid: 0ea40fde164b6b4eb433488a5093ed44
+    - name: Wind_SoundBank
+      guid: 5d705287561ce647866a496d614de272
       id: 2981824113
       PathAndIcons:
       - ElementName: SoundBanks
@@ -212,10 +212,10 @@ MonoBehaviour:
       - ElementName: Enviornmental Work Unit
         ObjectType: 12
         guid: 811dc13d89a1484ba7327cd7cc47d6d1
-      - ElementName: Wind_Soundbank
+      - ElementName: Wind_SoundBank
         ObjectType: 7
-        guid: 0ea40fde164b6b4eb433488a5093ed44
-      Path: SoundBanks/Enviornmental Work Unit/Wind_Soundbank
+        guid: 5d705287561ce647866a496d614de272
+      Path: SoundBanks/Enviornmental Work Unit/Wind_SoundBank
   - PhysicalPath: SoundBanks/Music Work Unit.wwu
     PathAndIcons:
     - ElementName: SoundBanks
@@ -477,8 +477,8 @@ MonoBehaviour:
         guid: 014339eac3a5b343bf0b1309edbbd469
       Path: Events/SFX/Event_DigSound
       maxAttenuation: 0
-      maxDuration: 4.1249886
-      minDuration: 4.1249886
+      maxDuration: 2.8124924
+      minDuration: 2.8124924
     - name: Event_PageFlip
       guid: e9a745ecca3fd343b58b1942209e96de
       id: 103810202
@@ -528,8 +528,8 @@ MonoBehaviour:
         guid: 29ca5b884acc634d9d2c11cb4c1fad8e
       Path: Events/SFX/Event_WritingSFX
       maxAttenuation: 0
-      maxDuration: 2.9362812
-      minDuration: 2.9362812
+      maxDuration: 0.884221
+      minDuration: 0.884221
   RtpcWwu:
   - PhysicalPath: Game Parameters/Default Work Unit.wwu
     PathAndIcons:

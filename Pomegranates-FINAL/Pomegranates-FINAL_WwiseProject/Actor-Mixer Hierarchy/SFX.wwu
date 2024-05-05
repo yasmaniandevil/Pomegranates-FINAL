@@ -5,9 +5,19 @@
 			<ChildrenList>
 				<Sound Name="WritingSFX" ID="{E5BED7C6-53A3-4A63-88DB-777164076DF5}" ShortID="387462021">
 					<PropertyList>
+						<Property Name="UserAuxSendVolume0" Type="Real64">
+							<ValueList>
+								<Value>4</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UserAuxSendVolume1" Type="Real64">
+							<ValueList>
+								<Value>4</Value>
+							</ValueList>
+						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-15</Value>
+								<Value>-17</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -18,9 +28,20 @@
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
 						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="HPF" ID="{A36B6541-3E0F-4160-B56D-0DFF35945B0C}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
+						</Reference>
+						<Reference Name="UserAuxSend1">
+							<ObjectRef Name="LPF" ID="{C62EA054-8931-49A9-AE8B-A820BAA8B3D9}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
+						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="WritingSFX" ID="{7F713561-2334-4CF2-A40D-DFBDDB90DE5F}">
+							<PropertyList>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.556113859685289"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.88422103689961"/>
+							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>WritingSFX.wav</AudioFile>
 							<MediaIDList>
@@ -134,7 +155,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-15</Value>
+								<Value>-17</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -154,6 +175,11 @@
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="SFX_DigSound" ID="{87D095BF-C236-495E-986D-C07B5ADF65A2}">
+							<PropertyList>
+								<Property Name="FadeOutDuration" Type="Real64" Value="2.7109300487872"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimEnd" Type="Real64" Value="2.81249226963513"/>
+							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>SFX_DigSound.wav</AudioFile>
 							<MediaIDList>
@@ -166,12 +192,43 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="TelportSound" ID="{A7192F0A-DD22-4EEC-9277-F62AFC614110}" ShortID="699710057">
+					<PropertyList>
+						<Property Name="UserAuxSendVolume0" Type="Real64">
+							<ValueList>
+								<Value>3</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UserAuxSendVolume1" Type="Real64">
+							<ValueList>
+								<Value>-2</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UserAuxSendVolume2" Type="Real64">
+							<ValueList>
+								<Value>2</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-23</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{388F345F-C687-4C6D-878F-23220F72DDD5}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="HPF" ID="{A36B6541-3E0F-4160-B56D-0DFF35945B0C}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
+						</Reference>
+						<Reference Name="UserAuxSend1">
+							<ObjectRef Name="LPF" ID="{C62EA054-8931-49A9-AE8B-A820BAA8B3D9}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
+						</Reference>
+						<Reference Name="UserAuxSend2">
+							<ObjectRef Name="Reverb" ID="{BC10D2A4-6C05-4D5F-89D4-E252BC7FFB84}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -207,28 +264,6 @@
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="Production Element Title Transition Bell Chime 02" ID="{5E8BDE15-7CB3-429E-8CD5-13FDC1BF2930}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="Production Element Title Transition Whoosh Warble 01" ID="{9A13CEAE-05E4-408A-BE37-0ABEB7151DD1}" ShortID="507048322">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{388F345F-C687-4C6D-878F-23220F72DDD5}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Production Element Title Transition Whoosh Warble 01" ID="{08B98643-D6BA-47AF-A60C-E763ABF9637D}">
-							<Language>SFX</Language>
-							<AudioFile>Production Element Title Transition Whoosh Warble 01.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="888996960"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Production Element Title Transition Whoosh Warble 01" ID="{08B98643-D6BA-47AF-A60C-E763ABF9637D}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="Production Element Title Transition Whoosh Warble 07" ID="{01C95AA8-0A5C-44A4-B204-286345B0C047}" ShortID="1003860450">

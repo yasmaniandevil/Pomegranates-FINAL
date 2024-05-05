@@ -488,6 +488,168 @@
 						</BlendTrack>
 					</BlendTrackList>
 				</BlendContainer>
+				<BlendContainer Name="Wind Blend Container" ID="{DC9EAECD-47C8-482C-A923-8F0DBADFB913}" ShortID="574202820">
+					<PropertyList>
+						<Property Name="BlendBehavior" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{388F345F-C687-4C6D-878F-23220F72DDD5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Ambience Nature01" ID="{96B950AD-3217-438D-BCC3-1F9ED14D88D0}" ShortID="702251143">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{388F345F-C687-4C6D-878F-23220F72DDD5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ambience Nature01" ID="{746A673F-66A5-47D2-9F97-280EFDCE631D}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="2.09043496186354"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="5.13898594791454"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Ambience Nature01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="182088314"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Ambience Nature01" ID="{746A673F-66A5-47D2-9F97-280EFDCE631D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Ambience Nature02" ID="{654643EC-44B5-4E92-AA73-57CB506C7E2C}" ShortID="701169617">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{388F345F-C687-4C6D-878F-23220F72DDD5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ambience Nature02" ID="{3104EAEA-7A36-46E5-8A9E-A5D99B419E2E}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="3.34260805332236"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="2.4233908386587"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Ambience Nature02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="654604851"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Ambience Nature02" ID="{3104EAEA-7A36-46E5-8A9E-A5D99B419E2E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="WindWhistleClink_102" ID="{462A0806-958F-4B02-88A3-5BB1DDB0155E}" ShortID="88019508">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{388F345F-C687-4C6D-878F-23220F72DDD5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="WindWhistleClink_102" ID="{AE8BBCD7-2E48-4775-A142-02A1CE7CEAAA}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="13.6851495825603"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="20.2151194341373"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>WindWhistleClink.102.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="331379972"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="WindWhistleClink_102" ID="{AE8BBCD7-2E48-4775-A142-02A1CE7CEAAA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="WindWhistleClink01" ID="{B951072E-C8C9-4EC1-9F35-11130EE98932}" ShortID="860902609">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{388F345F-C687-4C6D-878F-23220F72DDD5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="WindWhistleClink01" ID="{F15760FF-F586-430E-9E9D-9FD9319E16E5}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="14"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="15.7575757575758"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>WindWhistleClink01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="590393547"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="WindWhistleClink01" ID="{F15760FF-F586-430E-9E9D-9FD9319E16E5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<BlendTrackList>
+						<BlendTrack Name="Wind Blend Track" ID="{125A938D-F6F0-4D50-9663-38226B1016E1}" ShortID="366143662">
+							<PropertyList>
+								<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+							</PropertyList>
+							<BlendTrackAssocList>
+								<BlendTrackAssoc>
+									<ItemRef Name="Ambience Nature01" ID="{96B950AD-3217-438D-BCC3-1F9ED14D88D0}"/>
+								</BlendTrackAssoc>
+								<BlendTrackAssoc>
+									<ItemRef Name="Ambience Nature02" ID="{654643EC-44B5-4E92-AA73-57CB506C7E2C}"/>
+									<CrossfadingInfo>
+										<LeftEdgePos>0</LeftEdgePos>
+										<LeftFadingMode>Automatic</LeftFadingMode>
+										<RightEdgePos>0</RightEdgePos>
+										<RightFadingMode>Automatic</RightFadingMode>
+									</CrossfadingInfo>
+								</BlendTrackAssoc>
+								<BlendTrackAssoc>
+									<ItemRef Name="WindWhistleClink01" ID="{B951072E-C8C9-4EC1-9F35-11130EE98932}"/>
+								</BlendTrackAssoc>
+								<BlendTrackAssoc>
+									<ItemRef Name="WindWhistleClink_102" ID="{462A0806-958F-4B02-88A3-5BB1DDB0155E}"/>
+								</BlendTrackAssoc>
+							</BlendTrackAssocList>
+						</BlendTrack>
+					</BlendTrackList>
+				</BlendContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
