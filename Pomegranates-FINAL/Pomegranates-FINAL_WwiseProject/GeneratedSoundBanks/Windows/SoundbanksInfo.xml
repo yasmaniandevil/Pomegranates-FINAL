@@ -42,7 +42,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{CA72E249-E630-8E8F-C7CE-D08367A24816}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{910FB9FE-1BBD-9534-518C-F1FA90DEC898}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -86,7 +86,7 @@
 				<GameParameter Id="513275970" Name="FadeOutStreetAudio"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{D326A460-E5ED-0330-496D-31B13E29E292}">
+		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{FCFFA315-F26B-4EC4-63EB-CE47776CF0B5}">
 			<ShortName>SFX_Soundbank</ShortName>
 			<Path>SFX_Soundbank.bnk</Path>
 			<Media>
@@ -96,7 +96,7 @@
 				</File>
 				<File Id="181114169" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WritingSFX.wav</ShortName>
-					<CachePath>SFX/WritingSFX_10C4C929.wem</CachePath>
+					<CachePath>SFX/WritingSFX_0F60DCF7.wem</CachePath>
 				</File>
 				<File Id="344708579" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Action_Pop Up.wav</ShortName>
@@ -154,10 +154,14 @@
 						<MediaRef Id="773833868"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="562259991" Name="Event_WritingSFX" DurationType="OneShot" DurationMin="2.9362812" DurationMax="2.9362812">
+				<Event Id="562259991" Name="Event_WritingSFX" DurationType="OneShot" DurationMin="0.884221" DurationMax="0.884221">
 					<MediaRefs>
 						<MediaRef Id="181114169"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="730513497" Name="HPF"/>
+						<AuxBusRef Id="864145949" Name="LPF"/>
+					</AuxBusRefs>
 				</Event>
 			</Events>
 		</SoundBank>
@@ -186,28 +190,35 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2981824113" Type="User" Language="SFX" Hash="{C17DB7F5-4DC1-DE35-12F1-1588CD7E1B42}">
+		<SoundBank Id="2981824113" Type="User" Language="SFX" Hash="{AFEE6300-68DA-C998-15EE-7F2244AAE6E7}">
 			<ShortName>Wind_Soundbank</ShortName>
 			<Path>Wind_Soundbank.bnk</Path>
 			<Media>
-				<File Id="577671460" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>WindWhistleClink.wav</ShortName>
-					<CachePath>SFX/WindWhistleClink_D79FB2B7.wem</CachePath>
+				<File Id="182088314" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ambience Nature01.wav</ShortName>
+					<CachePath>SFX/Ambience Nature01_35BC1FD5.wem</CachePath>
 				</File>
-				<File Id="783158354" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Ambience Nature.wav</ShortName>
-					<CachePath>SFX/Ambience Nature_D79FB2B7.wem</CachePath>
+				<File Id="331379972" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>WindWhistleClink.102.wav</ShortName>
+					<CachePath>SFX/WindWhistleClink.102_79147400.wem</CachePath>
+				</File>
+				<File Id="590393547" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>WindWhistleClink01.wav</ShortName>
+					<CachePath>SFX/WindWhistleClink01_1912AACA.wem</CachePath>
+				</File>
+				<File Id="654604851" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ambience Nature02.wav</ShortName>
+					<CachePath>SFX/Ambience Nature02_132F087D.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
-				<Event Id="3474846662" Name="Event_Wind_Segment_Container" DurationType="OneShot" DurationMin="58.5" DurationMax="58.5">
+				<Event Id="1618216908" Name="Event_Wind_Blend_Container" DurationType="Infinite">
 					<MediaRefs>
-						<MediaRef Id="577671460"/>
-						<MediaRef Id="783158354"/>
+						<MediaRef Id="182088314"/>
+						<MediaRef Id="331379972"/>
+						<MediaRef Id="590393547"/>
+						<MediaRef Id="654604851"/>
 					</MediaRefs>
-					<AuxBusRefs>
-						<AuxBusRef Id="730513497" Name="HPF"/>
-					</AuxBusRefs>
 				</Event>
 			</Events>
 		</SoundBank>
@@ -321,5 +332,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{A79AFE5A-5F1C-8E6D-F93E-2F8CBF2770F3}</FileHash>
+	<FileHash>{005F1648-6D03-958C-9AFA-18399B532729}</FileHash>
 </SoundBanksInfo>

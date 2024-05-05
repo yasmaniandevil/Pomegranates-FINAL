@@ -19,7 +19,7 @@
 				</SoundBank>
 				<SoundBank Name="Wind_Soundbank" ID="{DE0FA40E-4B16-4E6B-B433-488A5093ED44}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Event_Wind_Segment_Container" ID="{E41169FD-5085-40C6-941C-06FD9B58B5A6}" WorkUnitID="{BD32FA88-1A4D-4BA1-85D1-E735B565316A}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Event_Wind_Blend_Container" ID="{E41169FD-5085-40C6-941C-06FD9B58B5A6}" WorkUnitID="{BD32FA88-1A4D-4BA1-85D1-E735B565316A}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
