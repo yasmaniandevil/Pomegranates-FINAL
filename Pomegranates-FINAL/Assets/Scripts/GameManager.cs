@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     public GameObject PauseMenuCanvas;
 
     public GameObject birdEyeViewCam;
+    public GameObject treeCam;
     
     public GameObject UI;
     
@@ -127,13 +128,19 @@ public class GameManager : MonoBehaviour
         birdEyeViewCam.SetActive(false);
     }
 
-    public void CameraOn()
+    public void TreeCamOn()
+    {
+        treeCam.SetActive(true);
+        player.SetActive(false);
+        Invoke("EndCameraOn", 4f);
+    }
+
+    public void EndCameraOn()
     {
         foreach (DissolveEffect obj in dissolveObjects) //people and buildings will dissolve here
         {
             obj.gameObject.GetComponent<DissolveEffect>().startRessolveTrigger();
         }
-        player.SetActive(false);
         birdEyeViewCam.SetActive(true);
     }
    

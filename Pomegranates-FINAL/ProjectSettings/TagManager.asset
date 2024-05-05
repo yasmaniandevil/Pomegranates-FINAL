@@ -19,6 +19,7 @@ TagManager:
   - People
   - Buildings
   - landmark
+  - Landmarks
   layers:
   - Default
   - TransparentFX

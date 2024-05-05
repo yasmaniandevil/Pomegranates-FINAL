@@ -33,8 +33,21 @@ public class DissolveEffect : MonoBehaviour
                     myMats.Add(mat);  
                 }
             }
-            minDelay = 2;
+            minDelay = 5;
             maxDelay = 15;
+        }
+        if (gameObject.CompareTag("Landmarks"))
+        {
+            objs = GetComponentsInChildren<MeshRenderer>();
+            foreach (MeshRenderer obj in objs)
+            {
+                foreach (Material mat in obj.materials)
+                {
+                    myMats.Add(mat);  
+                }
+            }
+            minDelay = 1;
+            maxDelay = 5;
         }
 
         if (gameObject.CompareTag("People"))
@@ -61,8 +74,8 @@ public class DissolveEffect : MonoBehaviour
                     myMats.Add(mat);  
                 }
             }
-            minDelay = 2;
-            maxDelay = 15;
+            minDelay = 1;
+            maxDelay = 5;
         }
         if (gameObject.CompareTag("Father"))
         {
@@ -120,7 +133,6 @@ public class DissolveEffect : MonoBehaviour
 
     public IEnumerator Disappear(Material myMat)
     {
-        Debug.Log("disappear");
         while (myMat.GetFloat("_Cutoff") < 1) // while material's dissolve amount is smaller than one
         {
             
@@ -135,7 +147,6 @@ public class DissolveEffect : MonoBehaviour
 
     public IEnumerator Reappear(Material myMat)
     {
-        Debug.Log("reappear");
         while (myMat.GetFloat("_Cutoff") > 0) //same thing but opposite
         {
             float currentCutOff = myMat.GetFloat("_Cutoff");

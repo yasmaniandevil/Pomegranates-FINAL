@@ -107,9 +107,8 @@ public class Digging : MonoBehaviour
                 if (hit.collider.CompareTag("Tree Future 2")) //if its the second scene
                 {
                     hit.collider.gameObject.GetComponentInChildren<Mound>().SpawnArtifact();
-                    gameManager.GetComponent<GameManager>().leaves.SetActive(true);
-                    gameManager.GetComponent<GameManager>().leaves.GetComponent<LeavesShrink>().UnshrinkLeaves();
-                    gameManager.GetComponent<GameManager>().Invoke("CameraOn", 4f); //change camera in 4 seconds
+                    gameManager.GetComponent<GameManager>().leaves.GetComponent<LeavesShrink>().Invoke("UnshrinkLeaves", 2f);
+                    gameManager.GetComponent<GameManager>().Invoke("TreeCamOn", 1f); //change camera in 1 second
                 }
 
                 if (hit.collider.CompareTag("Flyer")) //if hit flyer

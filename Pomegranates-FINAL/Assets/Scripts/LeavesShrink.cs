@@ -25,6 +25,7 @@ public class LeavesShrink : MonoBehaviour
 
     public void UnshrinkLeaves()
     {
+        gameObject.SetActive(true);
         StartCoroutine(LeafShrink());
     }
 
@@ -35,6 +36,7 @@ public class LeavesShrink : MonoBehaviour
 
     private IEnumerator LeafShrink()
     {
+        Debug.Log("gworing");
         Vector3 pomegranateSize = default;
         Vector3 leafsize = gameObject.transform.localScale; //makes vector3 to store xyz data
         foreach (GameObject pom in Pomegranates)
@@ -45,6 +47,7 @@ public class LeavesShrink : MonoBehaviour
         
         while (gameObject.transform.localScale.y < target.y) //if leaf size is less than target size
         {
+            Debug.Log("gworing2");
             speed = Random.Range(1, 5);
             Vector3 currentSize = leafsize; //store current leaf size
             var scale = gameObject.transform.localScale;
@@ -56,6 +59,7 @@ public class LeavesShrink : MonoBehaviour
 
         while (Pomegranates[0].transform.localScale.y < 36)
         {
+            Debug.Log("gworing3");
             foreach (var pom in Pomegranates)
             {
                 Vector3 currentPomSize = pomegranateSize; //store current Pom size
