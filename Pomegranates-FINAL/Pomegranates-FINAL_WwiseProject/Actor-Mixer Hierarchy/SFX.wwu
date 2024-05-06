@@ -193,6 +193,11 @@
 				</Sound>
 				<Sound Name="TelportSound" ID="{A7192F0A-DD22-4EEC-9277-F62AFC614110}" ShortID="699710057">
 					<PropertyList>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>60</Value>
+							</ValueList>
+						</Property>
 						<Property Name="UserAuxSendVolume0" Type="Real64">
 							<ValueList>
 								<Value>3</Value>
@@ -210,7 +215,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-23</Value>
+								<Value>-29</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -330,6 +335,64 @@
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="Whoosh_05" ID="{D2B63EE9-36EB-4254-A495-732DBD3CD495}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="PaperFalling" ID="{FAAC14FB-AFF0-4C19-B9B4-8F0B39DA83B4}" ShortID="993974084">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>5</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{388F345F-C687-4C6D-878F-23220F72DDD5}"/>
+						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+							<ObjectRef Name="High_Pass_60Hz" ID="{F9627628-0B10-4272-BC30-D4C20423CB38}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="Effect1" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+							<ObjectRef Name="Low_Pass_20KHz" ID="{830124FB-B9D5-4AE8-846E-E94A74652666}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="PaperFalling" ID="{03D4369D-8651-4D6A-BA2B-FD3F0D768C48}">
+							<Language>SFX</Language>
+							<AudioFile>PaperFalling.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="67495303"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="PaperFalling" ID="{03D4369D-8651-4D6A-BA2B-FD3F0D768C48}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Ambience Countryside Planes Over Head01" ID="{53319AFF-1ED3-45DD-AED8-4A54C4F42209}" ShortID="507992475">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{388F345F-C687-4C6D-878F-23220F72DDD5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Ambience Countryside Planes Over Head01" ID="{F4CE5D97-69A5-4B89-8B6D-9241E83F1FF6}">
+							<Language>SFX</Language>
+							<AudioFile>Ambience Countryside Planes Over Head01.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="903713644"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Ambience Countryside Planes Over Head01" ID="{F4CE5D97-69A5-4B89-8B6D-9241E83F1FF6}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

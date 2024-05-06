@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: 033ae9bc3205de4f958035f6f2b06e57
     GuidInternal: 
-    m_lastTime: -8584871548570805910
+    m_lastTime: -8584866485163709880
     List:
     - name: AudioLogsSoundbank
       guid: a1a404d5212bed4dbaf3533d73cb1f51
@@ -285,7 +285,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 8097cb23c1290d4c9b41229fb2bf76ca
     GuidInternal: 
-    m_lastTime: -8584871580174577555
+    m_lastTime: -8584866485163771256
     List: []
   - PhysicalPath: Events/Environmental Events Work Unit.wwu
     PathAndIcons:
@@ -409,8 +409,25 @@ MonoBehaviour:
     ParentPath: Events/SFX
     guid: 380ca8262e8d6545a178d6745499f3a4
     GuidInternal: 
-    m_lastTime: -8584871548574142621
+    m_lastTime: -8584866485163740261
     List:
+    - name: Event_AmbienceWindPlane
+      guid: 58fa56745517fd48b569ffa7b21b6d49
+      id: 1512012398
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: SFX
+        ObjectType: 12
+        guid: 380ca8262e8d6545a178d6745499f3a4
+      - ElementName: Event_AmbienceWindPlane
+        ObjectType: 3
+        guid: 58fa56745517fd48b569ffa7b21b6d49
+      Path: Events/SFX/Event_AmbienceWindPlane
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Event_ArtifactUp1
       guid: cac2402fe9094349a9cf0be6e8b1e14f
       id: 1969774664
@@ -496,6 +513,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.66735417
       minDuration: 0.66735417
+    - name: Event_PaperFalling
+      guid: e51d4b119c81ab4baa5c632c23ad409a
+      id: 1721341365
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: SFX
+        ObjectType: 12
+        guid: 380ca8262e8d6545a178d6745499f3a4
+      - ElementName: Event_PaperFalling
+        ObjectType: 3
+        guid: e51d4b119c81ab4baa5c632c23ad409a
+      Path: Events/SFX/Event_PaperFalling
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Event_Teleport2Past
       guid: f289c3e1195dd645a1f51b77beb2594a
       id: 1480077435
@@ -601,7 +635,7 @@ MonoBehaviour:
     m_lastTime: -8584894592093036433
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 0500000010000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

@@ -80,6 +80,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Event_PaperFalling" ID="{114B1DE5-819C-4BAB-AA5C-632C23AD409A}">
+					<ChildrenList>
+						<Action Name="" ID="{5DC8EEE7-1134-4505-B8F5-433169578B70}" ShortID="551701812">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PaperFalling" ID="{FAAC14FB-AFF0-4C19-B9B4-8F0B39DA83B4}" WorkUnitID="{31E94F87-8316-4810-90FF-73AD6464BEB5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Event_AmbienceWindPlane" ID="{7456FA58-1755-48FD-B569-FFA7B21B6D49}">
+					<ChildrenList>
+						<Action Name="" ID="{0713ABCF-0A08-45E5-9D64-5345CB7C3F5F}" ShortID="773078179">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ambience Countryside Planes Over Head01" ID="{53319AFF-1ED3-45DD-AED8-4A54C4F42209}" WorkUnitID="{31E94F87-8316-4810-90FF-73AD6464BEB5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

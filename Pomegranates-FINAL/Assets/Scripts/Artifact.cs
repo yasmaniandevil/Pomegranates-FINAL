@@ -18,10 +18,10 @@ public class Artifact : MonoBehaviour
     public Sprite rightPage;
     public Sprite leftPage;
 
-    public AK.Wwise.Event SFX_floatUp;
-    uint playingID;
-    bool DecodedBank = true;
-    bool SaveDecodedBank = false;
+    //public AK.Wwise.Event SFX_floatUp;
+    //uint playingID;
+    //bool DecodedBank = true;
+    //bool SaveDecodedBank = false;
 
 
     void Start()
