@@ -142,17 +142,17 @@ public class Narrative : MonoBehaviour
             AkSoundEngine.SetRTPCValue("FadeOutStreetAudio", endVolume);
         }
 
-        // if (Input.GetKeyDown(KeyCode.P))
-        // {
-        //     foreach (DissolveEffect obj in dissolveObjects) //people and buildings will dissolve here
-        //     {
-        //         obj.gameObject.GetComponent<DissolveEffect>().startDissolveTrigger();
-        //     }
-        //     Invoke("PaperDrop", 15); //call this function
-        //     leaves.GetComponent<LeavesShrink>().LeafMaterialShrink();
-        //     currentDialogue = null;
-        // }
-        
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            foreach (DissolveEffect obj in dissolveObjects) //people and buildings will dissolve here
+            {
+                obj.gameObject.GetComponent<DissolveEffect>().startDissolveTrigger();
+            }
+            Invoke("PaperDrop", 15); //call this function
+            leaves.GetComponent<LeavesShrink>().LeafMaterialShrink();
+            currentDialogue = null;
+        }
+
     }
 
     void ChangeCamera() //turns of first cam to switch perspective
@@ -212,11 +212,14 @@ public class Narrative : MonoBehaviour
     void PaperDrop() 
     {
         paperDrop.SetActive(true); //will activate flyer particles
-        
-        AkSoundEngine.PostEvent("Event_Teleport2Past", gameObject);
-        Debug.Log("TeleportSound");
 
-        //RTCP for fading out all audio
+        AkSoundEngine.PostEvent("Event_PaperFalling", gameObject);
+
+        AkSoundEngine.PostEvent("Event_AmbienceWindPlane", gameObject);
+        //Debug.Log("TeleportSound");
+
+        
+        Debug.Log("papers played");
         Invoke("SpawnPaper", 4);
         //sound for papers dropping should go here. quick teleport sound
     }

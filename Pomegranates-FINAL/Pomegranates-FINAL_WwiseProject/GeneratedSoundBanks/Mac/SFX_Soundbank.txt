@@ -13,6 +13,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	344708579	ArtifactUp1	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Mac\SFX\Action_Pop Up_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\ArtifactUp1		216160
 	494818398	ArtifactUp2	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Mac\SFX\Glockenspiel Selection Sound 02_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\ArtifactUp2		672160
 	720925955	ArtifactUp3	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Mac\SFX\Indian Woodwind Notification Sound 03_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\ArtifactUp3		528160
-	766905104	DigSound	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Mac\SFX\SFX_DigSound_A117B417.wem		\Actor-Mixer Hierarchy\SFX\DigSound		248222
+	766905104	DigSound	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Mac\SFX\SFX_DigSound_9B3CC253.wem		\Actor-Mixer Hierarchy\SFX\DigSound		248222
 	773833868	TelportSound	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Mac\SFX\Arriving_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\TelportSound		8521728
 

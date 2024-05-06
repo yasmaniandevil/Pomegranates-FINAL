@@ -42,7 +42,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{910FB9FE-1BBD-9534-518C-F1FA90DEC898}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{CA72E249-E630-8E8F-C7CE-D08367A24816}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -86,7 +86,7 @@
 				<GameParameter Id="513275970" Name="FadeOutStreetAudio"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{5F8C5777-1D5F-04DD-1DA2-4D94BE1FCF17}">
+		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{6F0411FD-3132-076D-830B-43449A17988A}">
 			<ShortName>SFX_Soundbank</ShortName>
 			<Path>SFX_Soundbank.bnk</Path>
 			<Media>
@@ -112,7 +112,7 @@
 				</File>
 				<File Id="766905104" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_DigSound.wav</ShortName>
-					<CachePath>SFX/SFX_DigSound_A117B417.wem</CachePath>
+					<CachePath>SFX/SFX_DigSound_9B3CC253.wem</CachePath>
 				</File>
 				<File Id="773833868" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Arriving.wav</ShortName>
@@ -195,35 +195,28 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2981824113" Type="User" Language="SFX" Hash="{BA7A4330-0F96-BE5F-3B9A-BA8CD70EBAA2}">
+		<SoundBank Id="2981824113" Type="User" Language="SFX" Hash="{C17DB7F5-4DC1-DE35-12F1-1588CD7E1B42}">
 			<ShortName>Wind_SoundBank</ShortName>
 			<Path>Wind_SoundBank.bnk</Path>
 			<Media>
-				<File Id="182088314" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Ambience Nature01.wav</ShortName>
-					<CachePath>SFX/Ambience Nature01_B83B3F35.wem</CachePath>
+				<File Id="577671460" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>WindWhistleClink.wav</ShortName>
+					<CachePath>SFX/WindWhistleClink_D79FB2B7.wem</CachePath>
 				</File>
-				<File Id="331379972" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>WindWhistleClink.102.wav</ShortName>
-					<CachePath>SFX/WindWhistleClink.102_0B5E8ED2.wem</CachePath>
-				</File>
-				<File Id="590393547" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>WindWhistleClink01.wav</ShortName>
-					<CachePath>SFX/WindWhistleClink01_60C5C683.wem</CachePath>
-				</File>
-				<File Id="654604851" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Ambience Nature02.wav</ShortName>
-					<CachePath>SFX/Ambience Nature02_72497501.wem</CachePath>
+				<File Id="783158354" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ambience Nature.wav</ShortName>
+					<CachePath>SFX/Ambience Nature_D79FB2B7.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
-				<Event Id="1618216908" Name="Event_Wind_Blend_Container" DurationType="Infinite">
+				<Event Id="3474846662" Name="Event_Wind_Segment_Container" DurationType="OneShot" DurationMin="58.5" DurationMax="58.5">
 					<MediaRefs>
-						<MediaRef Id="182088314"/>
-						<MediaRef Id="331379972"/>
-						<MediaRef Id="590393547"/>
-						<MediaRef Id="654604851"/>
+						<MediaRef Id="577671460"/>
+						<MediaRef Id="783158354"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="730513497" Name="HPF"/>
+					</AuxBusRefs>
 				</Event>
 			</Events>
 		</SoundBank>
@@ -337,5 +330,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{1A2AA063-6593-D6C3-8D20-32016EEEE0CF}</FileHash>
+	<FileHash>{C77D3871-0210-C8AF-B841-E551EF7F725B}</FileHash>
 </SoundBanksInfo>

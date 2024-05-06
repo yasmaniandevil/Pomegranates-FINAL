@@ -24,7 +24,7 @@ namespace AK
         static const AkUniqueID EVENT_PAGEFLIP = 103810202U;
         static const AkUniqueID EVENT_STREET_AUDIO_SEQUENCE_CONTAINER = 3320485656U;
         static const AkUniqueID EVENT_TELEPORT2PAST = 1480077435U;
-        static const AkUniqueID EVENT_WIND_BLEND_CONTAINER = 1618216908U;
+        static const AkUniqueID EVENT_WIND_SEGMENT_CONTAINER = 3474846662U;
         static const AkUniqueID EVENT_WRITINGSFX = 562259991U;
     } // namespace EVENTS
 
