@@ -426,8 +426,8 @@ MonoBehaviour:
         guid: 58fa56745517fd48b569ffa7b21b6d49
       Path: Events/SFX/Event_AmbienceWindPlane
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 45.89583
+      minDuration: 45.89583
     - name: Event_ArtifactUp1
       guid: cac2402fe9094349a9cf0be6e8b1e14f
       id: 1969774664
@@ -528,8 +528,8 @@ MonoBehaviour:
         guid: e51d4b119c81ab4baa5c632c23ad409a
       Path: Events/SFX/Event_PaperFalling
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 54.5
+      minDuration: 54.5
     - name: Event_Teleport2Past
       guid: f289c3e1195dd645a1f51b77beb2594a
       id: 1480077435

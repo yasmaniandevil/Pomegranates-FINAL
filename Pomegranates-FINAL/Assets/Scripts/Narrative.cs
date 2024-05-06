@@ -214,9 +214,11 @@ public class Narrative : MonoBehaviour
         paperDrop.SetActive(true); //will activate flyer particles
 
         AkSoundEngine.PostEvent("Event_PaperFalling", gameObject);
+        Debug.Log("papersound");
+
 
         AkSoundEngine.PostEvent("Event_AmbienceWindPlane", gameObject);
-        //Debug.Log("TeleportSound");
+        Debug.Log("wind");
 
         
         Debug.Log("papers played");
@@ -237,6 +239,7 @@ public class Narrative : MonoBehaviour
     public void ChangeScene() //changes scene
     {
         SceneManager.LoadScene("Past Final");
+        AkSoundEngine.Suspend();
     }
 
     public void PlayerOn() //will turn off all the canvases and activate the player

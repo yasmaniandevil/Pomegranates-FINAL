@@ -142,7 +142,7 @@
 						<Value Platform="Mac"></Value>
 					</ValueList>
 				</Property>
-				<Property Name="SoundEngine\BusMapping\{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" Type="string" Value="{9F0FDABE-3A91-4294-942E-43EB0625D9FC}171638824"/>
+				<Property Name="SoundEngine\BusMapping\{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" Type="string" Value="{9F0FDABE-3A91-4294-942E-43EB0625D9FC}101060180"/>
 			</PropertyList>
 		</UserProjectSettings>
 	</UserProjectSettingsInfo>

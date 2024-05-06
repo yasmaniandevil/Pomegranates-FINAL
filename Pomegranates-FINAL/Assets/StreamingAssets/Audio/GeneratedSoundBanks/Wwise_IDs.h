@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID EVENT_ADANSEQUENCECONTAINER = 2897767672U;
         static const AkUniqueID EVENT_ALBINT = 3204538988U;
+        static const AkUniqueID EVENT_AMBIENCEWINDPLANE = 1512012398U;
         static const AkUniqueID EVENT_ARTIFACTUP1 = 1969774664U;
         static const AkUniqueID EVENT_ARTIFACTUP2 = 1969774667U;
         static const AkUniqueID EVENT_ARTIFACTUP3 = 1969774666U;
@@ -22,9 +23,9 @@ namespace AK
         static const AkUniqueID EVENT_FIRE_BLEND_CONTAINER = 565798754U;
         static const AkUniqueID EVENT_INTROAUDIOLOG = 1053017616U;
         static const AkUniqueID EVENT_PAGEFLIP = 103810202U;
+        static const AkUniqueID EVENT_PAPERFALLING = 1721341365U;
         static const AkUniqueID EVENT_STREET_AUDIO_SEQUENCE_CONTAINER = 3320485656U;
         static const AkUniqueID EVENT_TELEPORT2PAST = 1480077435U;
-        static const AkUniqueID EVENT_WIND_SEGMENT_CONTAINER = 3474846662U;
         static const AkUniqueID EVENT_WRITINGSFX = 562259991U;
     } // namespace EVENTS
 

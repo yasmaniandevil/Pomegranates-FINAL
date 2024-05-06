@@ -42,7 +42,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{CA72E249-E630-8E8F-C7CE-D08367A24816}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{1EA88598-43CF-8AA3-893F-7EEC254199EE}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -86,13 +86,17 @@
 				<GameParameter Id="513275970" Name="FadeOutStreetAudio"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{6F0411FD-3132-076D-830B-43449A17988A}">
+		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{087E07AB-EC84-1493-7760-E35F1919AE37}">
 			<ShortName>SFX_Soundbank</ShortName>
 			<Path>SFX_Soundbank.bnk</Path>
 			<Media>
 				<File Id="32953512" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>page-flip-2.wav</ShortName>
 					<CachePath>SFX/page-flip-2_10C4C929.wem</CachePath>
+				</File>
+				<File Id="67495303" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>PaperFalling.wav</ShortName>
+					<CachePath>SFX/PaperFalling_10C4C929.wem</CachePath>
 				</File>
 				<File Id="181114169" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WritingSFX.wav</ShortName>
@@ -118,8 +122,23 @@
 					<ShortName>Arriving.wav</ShortName>
 					<CachePath>SFX/Arriving_10C4C929.wem</CachePath>
 				</File>
+				<File Id="903713644" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ambience Countryside Planes Over Head01.wav</ShortName>
+					<CachePath>SFX/Ambience Countryside Planes Over Head01_10C4C929.wem</CachePath>
+				</File>
 			</Media>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="1008402193" Name="Low_Pass_20KHz" LibName="Wwise Parametric EQ" LibId="6881283"/>
+					<Plugin Id="3604890626" Name="High_Pass_60Hz" LibName="Wwise Parametric EQ" LibId="6881283"/>
+				</ShareSets>
+			</Plugins>
 			<Events>
+				<Event Id="1512012398" Name="Event_AmbienceWindPlane" DurationType="OneShot" DurationMin="45.89583" DurationMax="45.89583">
+					<MediaRefs>
+						<MediaRef Id="903713644"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1969774664" Name="Event_ArtifactUp1" DurationType="OneShot" DurationMin="1.125" DurationMax="1.125">
 					<MediaRefs>
 						<MediaRef Id="344708579"/>
@@ -148,6 +167,17 @@
 					<MediaRefs>
 						<MediaRef Id="32953512"/>
 					</MediaRefs>
+				</Event>
+				<Event Id="1721341365" Name="Event_PaperFalling" DurationType="OneShot" DurationMin="54.5" DurationMax="54.5">
+					<MediaRefs>
+						<MediaRef Id="67495303"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="1008402193"/>
+							<PluginRef Id="3604890626"/>
+						</ShareSets>
+					</PluginRefs>
 				</Event>
 				<Event Id="1480077435" Name="Event_Teleport2Past" DurationType="OneShot" DurationMin="44.3835" DurationMax="44.3835">
 					<MediaRefs>
@@ -195,30 +225,9 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2981824113" Type="User" Language="SFX" Hash="{C17DB7F5-4DC1-DE35-12F1-1588CD7E1B42}">
+		<SoundBank Id="2981824113" Type="User" Language="SFX" Hash="{AC5F53A2-03A0-A739-15F0-9E92703D5BAB}">
 			<ShortName>Wind_SoundBank</ShortName>
 			<Path>Wind_SoundBank.bnk</Path>
-			<Media>
-				<File Id="577671460" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>WindWhistleClink.wav</ShortName>
-					<CachePath>SFX/WindWhistleClink_D79FB2B7.wem</CachePath>
-				</File>
-				<File Id="783158354" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Ambience Nature.wav</ShortName>
-					<CachePath>SFX/Ambience Nature_D79FB2B7.wem</CachePath>
-				</File>
-			</Media>
-			<Events>
-				<Event Id="3474846662" Name="Event_Wind_Segment_Container" DurationType="OneShot" DurationMin="58.5" DurationMax="58.5">
-					<MediaRefs>
-						<MediaRef Id="577671460"/>
-						<MediaRef Id="783158354"/>
-					</MediaRefs>
-					<AuxBusRefs>
-						<AuxBusRef Id="730513497" Name="HPF"/>
-					</AuxBusRefs>
-				</Event>
-			</Events>
 		</SoundBank>
 		<SoundBank Id="3382285268" Type="User" Language="SFX" Hash="{4B327F43-605D-CF21-E7D8-FA1FB666842A}">
 			<ShortName>FireSoundbank</ShortName>
@@ -330,5 +339,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{C77D3871-0210-C8AF-B841-E551EF7F725B}</FileHash>
+	<FileHash>{D93E91DB-33E1-E03F-746F-34F3C4D88F2E}</FileHash>
 </SoundBanksInfo>
