@@ -43,12 +43,17 @@ public class GameManagerPast : MonoBehaviour
 
     public GameObject continueButton;
 
+    
+
    
    
     
     // Start is called before the first frame update
     void Start()
     {
+
+        
+
         //randomizes every time the game starts
         Random.InitState(System.Environment.TickCount);
         
@@ -66,6 +71,7 @@ public class GameManagerPast : MonoBehaviour
         ChangeFlyer(); //changes the flyer
         
         DontDestroyOnLoad(playerRoot);
+        
         
     }
 
@@ -121,8 +127,10 @@ public class GameManagerPast : MonoBehaviour
 
     public void ChangeScene() //changes scene
     {
+
+        SceneManager.LoadScene("Future End");
+        AkSoundEngine.StopAll();
         
-            SceneManager.LoadScene("Future End");
         
     }
 

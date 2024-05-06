@@ -4,8 +4,10 @@
 		<PluginLib LibName="Wwise Parametric EQ" LibId="6881283" Type="Effect" DLL="AkParametricEQ" StaticLib="AkParametricEQFX"/>
 		<PluginLib LibName="Wwise Compressor" LibId="7077891" Type="Effect" DLL="AkCompressor" StaticLib="AkCompressorFX"/>
 		<PluginLib LibName="Wwise RoomVerb" LibId="7733251" Type="Effect" DLL="AkRoomVerb" StaticLib="AkRoomVerbFX"/>
+		<PluginLib LibName="Wwise Time Stretch" LibId="8519683" Type="Effect" DLL="AkTimeStretch" StaticLib="AkTimeStretchFX"/>
+		<PluginLib LibName="Wwise Tremolo" LibId="8585219" Type="Effect" DLL="AkTremolo" StaticLib="AkTremoloFX"/>
 		<PluginLib LibName="System" LibId="11403271" Type="AudioDevice"/>
 		<PluginLib LibName="No Output" LibId="11862023" Type="AudioDevice"/>
 	</PluginLibs>
-	<FileHash>{B3EDE6EC-39EC-47BB-0BAE-4B1F8707AED5}</FileHash>
+	<FileHash>{700CB77E-1D77-7F88-2E42-E591773DA3BE}</FileHash>
 </PluginInfo>

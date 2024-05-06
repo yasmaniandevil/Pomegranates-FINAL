@@ -18,10 +18,7 @@ public class Artifact : MonoBehaviour
     public Sprite rightPage;
     public Sprite leftPage;
 
-    //public AK.Wwise.Event SFX_floatUp;
-    //uint playingID;
-    //bool DecodedBank = true;
-    //bool SaveDecodedBank = false;
+
 
 
     void Start()
@@ -29,9 +26,8 @@ public class Artifact : MonoBehaviour
       
 
         spawn = true;
+        AkSoundEngine.PostEvent("Event_ArtifactUp2", gameObject);
         startTime = Time.time;
-
-        //AkSoundEngine.LoadBank("SFX_Soundbank", decodedBank, SaveDecodedBank, out playingID, null);
     }
 
     // Update is called once per frame

@@ -1,0 +1,9 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1618216908	Event_Wind_Blend_Container			\Environmental Events Work Unit\Event_Wind_Blend_Container	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	182088314	Ambience Nature01	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Mac\SFX\Ambience Nature01_B83B3F35.wem		\Actor-Mixer Hierarchy\Enviornmental Work Unit\Wind Blend Container\Ambience Nature01		8112720
+	331379972	WindWhistleClink_102	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Mac\SFX\WindWhistleClink.102_0B5E8ED2.wem		\Actor-Mixer Hierarchy\Enviornmental Work Unit\Wind Blend Container\WindWhistleClink_102		6470332
+	590393547	WindWhistleClink01	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Mac\SFX\WindWhistleClink01_073C34FC.wem		\Actor-Mixer Hierarchy\Enviornmental Work Unit\Wind Blend Container\WindWhistleClink01		5644960
+	654604851	Ambience Nature02	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Mac\SFX\Ambience Nature02_72497501.wem		\Actor-Mixer Hierarchy\Enviornmental Work Unit\Wind Blend Container\Ambience Nature02		7783356
+

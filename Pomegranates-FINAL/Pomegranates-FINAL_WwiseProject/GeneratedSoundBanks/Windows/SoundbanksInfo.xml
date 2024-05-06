@@ -42,7 +42,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{1EA88598-43CF-8AA3-893F-7EEC254199EE}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{807EBB48-A0D6-51F0-4416-D2FEAF0D390A}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -86,7 +86,7 @@
 				<GameParameter Id="513275970" Name="FadeOutStreetAudio"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{087E07AB-EC84-1493-7760-E35F1919AE37}">
+		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{AEE137BE-88F9-7292-3166-E9002ED2CF49}">
 			<ShortName>SFX_Soundbank</ShortName>
 			<Path>SFX_Soundbank.bnk</Path>
 			<Media>
@@ -108,7 +108,7 @@
 				</File>
 				<File Id="494818398" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Glockenspiel Selection Sound 02.wav</ShortName>
-					<CachePath>SFX/Glockenspiel Selection Sound 02_10C4C929.wem</CachePath>
+					<CachePath>SFX/Glockenspiel Selection Sound 02_3A8F1C63.wem</CachePath>
 				</File>
 				<File Id="720925955" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Indian Woodwind Notification Sound 03.wav</ShortName>
@@ -128,8 +128,12 @@
 				</File>
 			</Media>
 			<Plugins>
+				<Custom>
+					<Plugin Id="310245249" Name="Time Stretch (Custom)" LibName="Wwise Time Stretch" LibId="8519683"/>
+				</Custom>
 				<ShareSets>
 					<Plugin Id="1008402193" Name="Low_Pass_20KHz" LibName="Wwise Parametric EQ" LibId="6881283"/>
+					<Plugin Id="2230265344" Name="Very_Bad_Connection" LibName="Wwise Tremolo" LibId="8585219"/>
 					<Plugin Id="3604890626" Name="High_Pass_60Hz" LibName="Wwise Parametric EQ" LibId="6881283"/>
 				</ShareSets>
 			</Plugins>
@@ -144,10 +148,18 @@
 						<MediaRef Id="344708579"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1969774667" Name="Event_ArtifactUp2" DurationType="OneShot" DurationMin="3.5" DurationMax="3.5">
+				<Event Id="1969774667" Name="Event_ArtifactUp2" DurationType="OneShot" DurationMin="1.5710227" DurationMax="1.5710227">
 					<MediaRefs>
 						<MediaRef Id="494818398"/>
 					</MediaRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="310245249"/>
+						</Custom>
+						<ShareSets>
+							<PluginRef Id="2230265344"/>
+						</ShareSets>
+					</PluginRefs>
 				</Event>
 				<Event Id="1969774666" Name="Event_ArtifactUp3" DurationType="OneShot" DurationMin="2.75" DurationMax="2.75">
 					<MediaRefs>
@@ -225,9 +237,37 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2981824113" Type="User" Language="SFX" Hash="{AC5F53A2-03A0-A739-15F0-9E92703D5BAB}">
+		<SoundBank Id="2981824113" Type="User" Language="SFX" Hash="{0A2D76D2-5AC8-5C3D-EDE7-BD1C5DBC3AFB}">
 			<ShortName>Wind_SoundBank</ShortName>
 			<Path>Wind_SoundBank.bnk</Path>
+			<Media>
+				<File Id="182088314" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ambience Nature01.wav</ShortName>
+					<CachePath>SFX/Ambience Nature01_B83B3F35.wem</CachePath>
+				</File>
+				<File Id="331379972" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>WindWhistleClink.102.wav</ShortName>
+					<CachePath>SFX/WindWhistleClink.102_0B5E8ED2.wem</CachePath>
+				</File>
+				<File Id="590393547" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>WindWhistleClink01.wav</ShortName>
+					<CachePath>SFX/WindWhistleClink01_073C34FC.wem</CachePath>
+				</File>
+				<File Id="654604851" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ambience Nature02.wav</ShortName>
+					<CachePath>SFX/Ambience Nature02_72497501.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1618216908" Name="Event_Wind_Blend_Container" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="182088314"/>
+						<MediaRef Id="331379972"/>
+						<MediaRef Id="590393547"/>
+						<MediaRef Id="654604851"/>
+					</MediaRefs>
+				</Event>
+			</Events>
 		</SoundBank>
 		<SoundBank Id="3382285268" Type="User" Language="SFX" Hash="{4B327F43-605D-CF21-E7D8-FA1FB666842A}">
 			<ShortName>FireSoundbank</ShortName>
@@ -339,5 +379,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{D93E91DB-33E1-E03F-746F-34F3C4D88F2E}</FileHash>
+	<FileHash>{E241F8E0-4805-6003-F3A4-83FCEB47439E}</FileHash>
 </SoundBanksInfo>

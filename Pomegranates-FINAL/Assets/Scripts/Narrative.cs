@@ -239,7 +239,7 @@ public class Narrative : MonoBehaviour
     public void ChangeScene() //changes scene
     {
         SceneManager.LoadScene("Past Final");
-        AkSoundEngine.Suspend();
+        AkSoundEngine.StopAll();
     }
 
     public void PlayerOn() //will turn off all the canvases and activate the player

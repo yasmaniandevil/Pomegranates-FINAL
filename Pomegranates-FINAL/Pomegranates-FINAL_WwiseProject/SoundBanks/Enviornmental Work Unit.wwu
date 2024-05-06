@@ -25,7 +25,9 @@
 					<GameSyncExclusionList/>
 				</SoundBank>
 				<SoundBank Name="Wind_SoundBank" ID="{8752705D-1C56-47E6-866A-496D614DE272}">
-					<ObjectInclusionList/>
+					<ObjectInclusionList>
+						<ObjectRef Name="Event_Wind_Blend_Container" ID="{3D67FC9A-0D11-4CDB-91E0-5A33CF65E583}" WorkUnitID="{BD32FA88-1A4D-4BA1-85D1-E735B565316A}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
