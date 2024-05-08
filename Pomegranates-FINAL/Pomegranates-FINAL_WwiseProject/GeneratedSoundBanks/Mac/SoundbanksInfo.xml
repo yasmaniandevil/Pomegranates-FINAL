@@ -42,7 +42,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{576AFC74-D795-2A64-2678-ABCA9D927956}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{129B80D1-7381-378A-8905-603D1DB7DF39}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -86,7 +86,7 @@
 				<GameParameter Id="513275970" Name="FadeOutStreetAudio"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{AEE137BE-88F9-7292-3166-E9002ED2CF49}">
+		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{087E07AB-EC84-1493-7760-E35F1919AE37}">
 			<ShortName>SFX_Soundbank</ShortName>
 			<Path>SFX_Soundbank.bnk</Path>
 			<Media>
@@ -108,7 +108,7 @@
 				</File>
 				<File Id="494818398" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Glockenspiel Selection Sound 02.wav</ShortName>
-					<CachePath>SFX/Glockenspiel Selection Sound 02_3A8F1C63.wem</CachePath>
+					<CachePath>SFX/Glockenspiel Selection Sound 02_10C4C929.wem</CachePath>
 				</File>
 				<File Id="720925955" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Indian Woodwind Notification Sound 03.wav</ShortName>
@@ -128,12 +128,8 @@
 				</File>
 			</Media>
 			<Plugins>
-				<Custom>
-					<Plugin Id="310245249" Name="Time Stretch (Custom)" LibName="Wwise Time Stretch" LibId="8519683"/>
-				</Custom>
 				<ShareSets>
 					<Plugin Id="1008402193" Name="Low_Pass_20KHz" LibName="Wwise Parametric EQ" LibId="6881283"/>
-					<Plugin Id="2230265344" Name="Very_Bad_Connection" LibName="Wwise Tremolo" LibId="8585219"/>
 					<Plugin Id="3604890626" Name="High_Pass_60Hz" LibName="Wwise Parametric EQ" LibId="6881283"/>
 				</ShareSets>
 			</Plugins>
@@ -148,18 +144,10 @@
 						<MediaRef Id="344708579"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1969774667" Name="Event_ArtifactUp2" DurationType="OneShot" DurationMin="1.5710227" DurationMax="1.5710227">
+				<Event Id="1969774667" Name="Event_ArtifactUp2" DurationType="OneShot" DurationMin="3.5" DurationMax="3.5">
 					<MediaRefs>
 						<MediaRef Id="494818398"/>
 					</MediaRefs>
-					<PluginRefs>
-						<Custom>
-							<PluginRef Id="310245249"/>
-						</Custom>
-						<ShareSets>
-							<PluginRef Id="2230265344"/>
-						</ShareSets>
-					</PluginRefs>
 				</Event>
 				<Event Id="1969774666" Name="Event_ArtifactUp3" DurationType="OneShot" DurationMin="2.75" DurationMax="2.75">
 					<MediaRefs>
@@ -379,5 +367,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{E8747B47-FF5C-DDE8-0C29-09DCB92C009D}</FileHash>
+	<FileHash>{8049ED4D-8D8E-DE5F-0BC4-ACDEA12FF09A}</FileHash>
 </SoundBanksInfo>
