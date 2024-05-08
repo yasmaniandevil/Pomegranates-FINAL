@@ -272,7 +272,7 @@ public class GameManagerPast : MonoBehaviour
     public void EndScene() //will turn off all canvases + turn on particles and change scene in 4 seconds
     {
         PlayerOn();
-        //teleport to past should go here
+        AkSoundEngine.PostEvent("Event_Teleport2Past", gameObject);
         particles.SetActive(true);
         Invoke("ChangeScene", 4);
     }

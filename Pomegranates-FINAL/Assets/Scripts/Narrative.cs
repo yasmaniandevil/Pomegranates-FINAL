@@ -114,6 +114,7 @@ public class Narrative : MonoBehaviour
                     father.GetComponent<CapsuleCollider>().enabled = false;
 
                     StartCoroutine(FadeOutAudio());
+                    
 
                     leaves.GetComponent<LeavesShrink>().TransparentLeaves();
                     Invoke("PaperDrop", 15); //call this function
@@ -140,6 +141,7 @@ public class Narrative : MonoBehaviour
             }
 
             AkSoundEngine.SetRTPCValue("FadeOutStreetAudio", endVolume);
+            
         }
 
         if (Input.GetKeyDown(KeyCode.P))
@@ -223,7 +225,7 @@ public class Narrative : MonoBehaviour
         
         Debug.Log("papers played");
         Invoke("SpawnPaper", 4);
-        //sound for papers dropping should go here. quick teleport sound
+        AkSoundEngine.PostEvent("Event_Teleport2Past", gameObject);
     }
     
 
