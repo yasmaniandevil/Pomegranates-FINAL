@@ -44,7 +44,7 @@
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="jMRPpEHkPUq/VXu/oPy5rrsClMpOz3tGqvVhUyZX7D8="/>
 				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="oaQE1SEr7U2681M9c8sfUYFHROlt6tpEvgvIKSUsGfqCvLYO0p3RQaK0eKTA5cai9zaaupxs6kuVVc8wHIYmMJum3nL8rtFHjhr+bx0IqoddcFKHVhzmR4ZqSW1hTeJy8ucf3ceutkWGWLjoY65v4w=="/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}"/>
-				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups_v2" Type="string" Value="lCTJLYcQE02DJrOCVW4wSQEAsAwAAAAANRN7AAAAAABIqVgDAAAAAEipWAMAAAAAwJTQAQAAAAAElWYAAAAAAEAbsAwAAAAAkNRADQAAAAAIAAAAAAAAAPjjEQAAAAAAwBJ7AAAAAADfE3sAAAAAAMASewAAAAAAwJTQAQAAAADAlNABAAAAAEipWAMAAAAAAQAAAPCwJV17eQJCugPKjGMkg2kBALAMAAAAADUTewAAAAAASKlYAwAAAABIqVgDAAAAAMCU0AEAAAAABJVmAAAAAABAG7AMAAAAAJDUQA0AAAAACAAAAAAAAAD44xEAAAAAAMASewAAAAAA3xN7AAAAAADAEnsAAAAAAMCU0AEAAAAAwJTQAQAAAABIqVgDAAAAAAEAAAA="/>
+				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups_v2" Type="string" Value="lCTJLYcQE02DJrOCVW4wSQEA4QwAAAAANRN7AAAAAABIqVgDAAAAAEipWAMAAAAAwJTQAQAAAAAElWYAAAAAACBU4QwAAAAA0Do2DQAAAAAIAAAAAAAAAPjjEQAAAAAAwBJ7AAAAAADfE3sAAAAAAMASewAAAAAAwJTQAQAAAADAlNABAAAAAEipWAMAAAAAAQAAAPCwJV17eQJCugPKjGMkg2kBAOEMAAAAADUTewAAAAAASKlYAwAAAABIqVgDAAAAAMCU0AEAAAAABJVmAAAAAAAgVOEMAAAAANA6Ng0AAAAACAAAAAAAAAD44xEAAAAAAMASewAAAAAA3xN7AAAAAADAEnsAAAAAAMCU0AEAAAAAwJTQAQAAAABIqVgDAAAAAAEAAAA="/>
 				<Property Name="Interactive Music\x64_{040E9A67-4194-4F49-93AE-2867F6B18596} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwP3d3d3d39zdAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\x64_{36222881-2F65-44F2-8594-16A2F49A5EB8} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwP3d3d3d39zdAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\x64_{E76E4B6B-4FA0-4AFD-8A97-98A0E5A7DA07} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D/aflr78S3/P0OphJrhtStAPvjggw8+4D8AAAAAAAAAAAAAAAAAAAAA"/>
@@ -72,10 +72,10 @@
 				<Property Name="Music Transition List\{F8CB8612-B48F-47F3-878C-42882B67B90F}\Scroll Position" Type="int32" Value="0"/>
 				<Property Name="Music Transition List\{F8CB8612-B48F-47F3-878C-42882B67B90F}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="ObjectTabPanel\x64_CurrentObjects_{031E1E2C-DC25-4332-80C3-FFCC371AC803}" Type="string" Value="ewA4ADcANQAyADcAMAA1AEQALQAxAEMANQA2AC0ANAA3AEUANgAtADgANgA2AEEALQA0ADkANgBEADYAMQA0AEQARQAyADcAMgB9AAAAAAE="/>
-				<Property Name="ObjectTabPanel\x64_CurrentObjects_{D5805147-985E-4C5B-B817-369AF1B7184D}" Type="string" Value="ewAyAEEAOAA2ADAAOAA5ADQALQA3AEYANgAxAC0ANAA5ADcARgAtAEIARQA4ADAALQA5ADIAQwBBADUANwBCAEIANgA4ADgAOAB9AAAAAQF7AEUAMQBDADMAOAA5AEYAMgAtADUARAAxADkALQA0ADUARAA2AC0AQQAxAEYANQAtADEAQgA3ADcAQgBFAEIAMgA1ADkANABBAH0AAAABAXsARABDADkARQBBAEUAQwBEAC0ANAA3AEMAOAAtADQAOAAyAEMALQBBADkAMgAzAC0AOABGADAARABCAEEARABGAEIAOQAxADMAfQAAAAABewAxADEANABCADEARABFADUALQA4ADEAOQBDAC0ANABCAEEAQgAtAEEAQQA1AEMALQA2ADMAMgBDADIAMwBBAEQANAAwADkAQQB9AAAAAQF7AEUAQQAzADkANAAzADAAMQAtAEEANQBDADMALQA0ADMAQgAzAC0AQgBGADAAQgAtADEAMwAwADkARQBEAEIAQgBEADQANgA5AH0AAAABAQ=="/>
+				<Property Name="ObjectTabPanel\x64_CurrentObjects_{D5805147-985E-4C5B-B817-369AF1B7184D}" Type="string" Value="ewAyAEEAOAA2ADAAOAA5ADQALQA3AEYANgAxAC0ANAA5ADcARgAtAEIARQA4ADAALQA5ADIAQwBBADUANwBCAEIANgA4ADgAOAB9AAAAAQF7AEUAMQBDADMAOAA5AEYAMgAtADUARAAxADkALQA0ADUARAA2AC0AQQAxAEYANQAtADEAQgA3ADcAQgBFAEIAMgA1ADkANABBAH0AAAABAXsAMAAwAEIAQwA0ADMAQgA3AC0AOQA1ADQAOAAtADQAOQAwAEUALQBCADgAOAA4AC0AQgBDAEYAMQA0ADMANAA5ADQARQA5ADEAfQAAAAABewAxADEANABCADEARABFADUALQA4ADEAOQBDAC0ANABCAEEAQgAtAEEAQQA1AEMALQA2ADMAMgBDADIAMwBBAEQANAAwADkAQQB9AAAAAQF7AEUAQQAzADkANAAzADAAMQAtAEEANQBDADMALQA0ADMAQgAzAC0AQgBGADAAQgAtADEAMwAwADkARQBEAEIAQgBEADQANgA5AH0AAAABAQ=="/>
 				<Property Name="ProjectExplorer\AudioSelectionChannel1\ProjectExplorer2LastScrollState" Type="int32" Value="0"/>
 				<Property Name="ProjectExplorer\AudioSelectionChannel1\x64_ProjectExplorer2LastExpandedState" Type="string" Value="iC8JJ1oiVBFnJcijTz1EguraiCN1l8ZGou3FIio5d1b3MuPSlLquS55EyzGwfVSg+LunXsBkUEqIIaB+i+IdaFvweDLr1LlNig98KNcaTe7Nrp7cyEcsSKkjjw2637kTh0/pMRaDEEiQ/3OtZGS+tWbT/kkwtahCmTuSSHOqtwc="/>
-				<Property Name="ProjectExplorer\AudioSelectionChannel2\ProjectExplorer2LastScrollState" Type="int32" Value="1"/>
+				<Property Name="ProjectExplorer\AudioSelectionChannel2\ProjectExplorer2LastScrollState" Type="int32" Value="0"/>
 				<Property Name="ProjectExplorer\AudioSelectionChannel2\x64_ProjectExplorer2LastExpandedState" Type="string" Value="iC8JJ1oiVBFnJcijTz1EguraiCN1l8ZGou3FIio5d1b4u6dewGRQSoghoH6L4h1oW/B4MuvUuU2KD3wo1xpN7i2fvNgaTClOvzU92fSQZ4HNrp7cyEcsSKkjjw2637kTCSxHnKuJ10aHxyDx0qvPhIdP6TEWgxBIkP9zrWRkvrVm0/5JMLWoQpk7kkhzqrcH"/>
 				<Property Name="ProjectExplorer\EventsSelectionChannel1\ProjectExplorer2LastScrollState" Type="int32" Value="0"/>
 				<Property Name="ProjectExplorer\EventsSelectionChannel1\x64_ProjectExplorer2LastExpandedState" Type="string" Value="/PCbpkrYfEir3Vb3HLKhJqJJBy5DrYZMjhf/pDmi6qmI+jK9TRqhS4XR5zW1ZTFqu2JXUWE/KE6PNtuLNUIuCzgMqCYujWVFoXjWdFSZ86Te9ZowHwPgTJubwKU2J1ND"/>
@@ -90,7 +90,7 @@
 				<Property Name="ProjectExplorer\QueriesSelectionChannel2\ProjectExplorer2LastScrollState" Type="int32" Value="0"/>
 				<Property Name="ProjectExplorer\QueriesSelectionChannel2\x64_ProjectExplorer2LastExpandedState" Type="string" Value="4y3sI9g+gkusmZLiXy5Maw=="/>
 				<Property Name="ProjectExplorer\SelectionChannel1\CurrentSearch" Type="string" Value=""/>
-				<Property Name="ProjectExplorer\SelectionChannel1\CurrentTab" Type="int32" Value="2"/>
+				<Property Name="ProjectExplorer\SelectionChannel1\CurrentTab" Type="int32" Value="0"/>
 				<Property Name="ProjectExplorer\SelectionChannel2\CurrentSearch" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\SelectionChannel2\CurrentTab" Type="int32" Value="0"/>
 				<Property Name="ProjectExplorer\SessionsSelectionChannel1\ProjectExplorer2LastScrollState" Type="int32" Value="0"/>
