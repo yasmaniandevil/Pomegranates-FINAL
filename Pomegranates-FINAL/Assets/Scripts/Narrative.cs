@@ -135,7 +135,7 @@ public class Narrative : MonoBehaviour
                 float t = currentTime / fadeDuration;
 
                 float newVolume = Mathf.Lerp(startVolume, endVolume, t);
-                AkSoundEngine.SetRTPCValue("FadeOutStreetAudo", newVolume);
+                AkSoundEngine.SetRTPCValue("FadeOutStreetAudio", newVolume);
                 Debug.Log("New Volume: " + newVolume);
                 yield return null;
             }
