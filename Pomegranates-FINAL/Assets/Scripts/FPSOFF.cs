@@ -17,7 +17,7 @@ public class FPSOFF : MonoBehaviour
 
     public static FPSOFF Instance;
 
-    private int firstStart;
+    public int firstStart;
 
     // Start is called before the first frame update
     void Awake()
@@ -52,7 +52,7 @@ public class FPSOFF : MonoBehaviour
             book = GameObject.Find("BookPro");
         }
 
-        if (firstStart == 0)
+        if (firstStart == 1)
         {
             FPS.SetActive(false);
             reticle.SetActive(false);
@@ -62,7 +62,7 @@ public class FPSOFF : MonoBehaviour
             book.GetComponent<AutoFlip>().enabled = true; //it will enable auto flip
             book.GetComponent<AutoFlip>().Invoke("FlipRightPage", 1f);
             book.GetComponent<BookPro>().interactable = true;
-            firstStart = 1;
+            firstStart = 2;
         }
         //turn off FPS
         if (book.activeSelf)

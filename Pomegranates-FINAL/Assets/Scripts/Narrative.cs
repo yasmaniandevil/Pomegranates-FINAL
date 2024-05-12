@@ -44,13 +44,14 @@ public class Narrative : MonoBehaviour
     int type = 0;
     
     
+    
 
     // Start is called before the first frame update
     void Start()
     {
        
-        Invoke("BeginningText", 7); //calls beginning text
-        Invoke("ChangeCamera", 8); //changes camera
+        Invoke("BeginningText", 12); //calls beginning text
+        Invoke("ChangeCamera", 13); //changes camera
 
         dissolveObjects = FindObjectsOfType<DissolveEffect>(); //finds all the game objects with the dissolve effect and puts them in an array
         foreach(DissolveEffect obj in dissolveObjects)
@@ -120,6 +121,11 @@ public class Narrative : MonoBehaviour
                     Invoke("PaperDrop", 15); //call this function
                     currentDialogue = null;
                 } 
+            }
+
+            if (book.activeSelf)
+            {
+                Invoke("EndScene",0f);
             }
             
             

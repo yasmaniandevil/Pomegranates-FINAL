@@ -26,13 +26,16 @@ public class GameManager : MonoBehaviour
     public DissolveEffect[] dissolveObjects;
 
     public GameObject leaves;
+
+    public GameObject year;
     
     // Start is called before the first frame update
     void Start()
     {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
-        Invoke("CameraOff", 3f);
+        Invoke("TurnOffYearCanvas", 5f);
+        Invoke("CameraOff", 8f);
         
         dissolveObjects = FindObjectsOfType<DissolveEffect>(); //finds all the game objects with the dissolve effect and puts them in an array
         foreach(DissolveEffect obj in dissolveObjects)
@@ -143,6 +146,10 @@ public class GameManager : MonoBehaviour
         }
         birdEyeViewCam.SetActive(true);
     }
-   
+
+    void TurnOffYearCanvas()
+    {
+        year.SetActive(false);
+    }
 
 }

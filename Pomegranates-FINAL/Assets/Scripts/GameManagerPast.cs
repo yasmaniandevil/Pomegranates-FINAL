@@ -17,12 +17,7 @@ public class GameManagerPast : MonoBehaviour
     public GameObject particles;
     public GameObject book;
 
-    private string mosque = "mosque";
-    private string church = "church";
-    private string hospital = "hospital";
-
-    private GameObject currentLocation;
-    public string currentLocationString;
+    public GameObject currentLocation;
 
     public Dictionary<string,GameObject> location;
 
@@ -43,6 +38,11 @@ public class GameManagerPast : MonoBehaviour
 
     public GameObject continueButton;
 
+    public int buttonPressed;
+
+    public GameObject year;
+    
+    public GameObject bookScript;
     
 
    
@@ -57,21 +57,9 @@ public class GameManagerPast : MonoBehaviour
         //randomizes every time the game starts
         Random.InitState(System.Environment.TickCount);
         
-        //dictionary to connect name and spawner
-        location = new Dictionary<string, GameObject>()
-        {
-            {mosque,mosqueSpawner},
-            {church, churchSpawner},
-            {hospital, hospitalSpawner}
-        };
         
-        Debug.Log(location.Count);
-        
-        MemoryManager(); //start of the game calls memory manager
-        ChangeFlyer(); //changes the flyer
         
         DontDestroyOnLoad(playerRoot);
-        
         
     }
 
@@ -83,43 +71,28 @@ public class GameManagerPast : MonoBehaviour
             player = GameObject.Find("PlayerCapsule");
             playerRoot = GameObject.Find("NestedParent_Unpack");
             particles = GameObject.Find("Teleport Particles");
-            PauseMenuCanvas = GameObject.Find("PauseMenuCanvas");
             reticle = GameObject.Find("Reticle");
             particles.SetActive(false);
             
+        }
+
+        if (year.activeSelf)
+        {
+            Invoke("TurnOffYearCanvas",5f);
         }
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             PauseGame();
         }
         //turns on the light in whichever place you are supposed to look at
-        if (currentLocation == churchSpawner)
-        {
-            churchLight.SetActive(true);
-        }
-        else
-        {
-            churchLight.SetActive(false);
-        }
 
-        if (currentLocation == hospitalSpawner)
+        if (buttonPressed == 3)
         {
-            hospitalLight.SetActive(true);
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                EndScene();
+            }
         }
-        else
-        {
-            hospitalLight.SetActive(false);
-        }
-
-        if (currentLocation == mosqueSpawner)
-        {
-            mosqueLight.SetActive(true);
-        }
-        else
-        {
-            mosqueLight.SetActive(false);
-        }
-        
         
     }
     
@@ -127,41 +100,12 @@ public class GameManagerPast : MonoBehaviour
 
     public void ChangeScene() //changes scene
     {
-
         SceneManager.LoadScene("Future End");
         AkSoundEngine.StopAll();
         
-        
     }
 
-    public void MemoryManager()
-    {
-        List<string> keysList = new List<string>(location.Keys); //make a list
-        
-        if (keysList.Count == 0)
-        {
-            
-            Debug.Log("All memories collected. Deleting dictionary...");
-            continueButton.SetActive(true);
-            currentLocation = null; //makes it null to turn off all lights
-            ChangeFlyer();
-            return; // Exit the function since there's nothing else to do
-        }
-        
-        //convert dictionary keys to a list
-        
-        
-        // Select a random Key
-        string randomKey = keysList[Random.Range(0, keysList.Count)];
 
-        GameObject randomValue = location[randomKey];
-
-        currentLocationString = randomKey;
-        currentLocation = randomValue;
-        
-        location.Remove(randomKey);
-        
-    }
 
     public void ArtifactJournal(Sprite rightPageSprite, Sprite leftPageSprite)
     {
@@ -197,30 +141,25 @@ public class GameManagerPast : MonoBehaviour
 
     public void ChangeFlyer()
     {
-
-        if (currentLocation == null) //if location is null
+        if(buttonPressed == 3)
         {
             flyerTextBox.text =
                 "Good, you have recovered the memories of the lost. Bring this book back to the future and return it where you found it."; //will say this
+            continueButton.SetActive(true);
         }
-        else
-        {
-            currentLocation.SetActive(true); //else it will activate the current location
-        }
+
         if (currentLocation == mosqueSpawner)
         {
-            flyerTextBox.text = "You will find what you need where the call takes you.";
+            mosqueLight.SetActive(false);
         }
         if (currentLocation == churchSpawner)
         {
-            flyerTextBox.text = "You will find what you need where you wash away your sins and eat the flesh of god.";
+            churchLight.SetActive(false);
         }
         if (currentLocation == hospitalSpawner)
         {
-            flyerTextBox.text = "You will find what you need in the place where man heals man, where life begins and ends. ";
+            hospitalLight.SetActive(false);
         }
-
-
         AkSoundEngine.PostEvent("Event_WritingSFX", gameObject);
     }
     
@@ -293,5 +232,9 @@ public class GameManagerPast : MonoBehaviour
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
     }
-
+    void TurnOffYearCanvas()
+    {
+        year.SetActive(false);
+        bookScript.GetComponent<FPSOFF>().firstStart++;
+    }
 }

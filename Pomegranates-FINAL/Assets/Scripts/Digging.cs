@@ -47,6 +47,8 @@ public class Digging : MonoBehaviour
                 {
              
                     hit.collider.gameObject.GetComponent<Mound>().SpawnArtifact(); //spawn artifact
+                    script.currentLocation = hit.collider.gameObject;
+                    hit.collider.gameObject.tag = "Untagged";
                     Debug.Log("D I G");
                 }
 
@@ -91,10 +93,10 @@ public class Digging : MonoBehaviour
                     script.book.GetComponent<BookPro>().interactable = true;
                     script.book.GetComponent<AutoFlip>().StartFlipping(bookPage);
                     script.PlayerOff();
-                    script.ChangeFlyer(); 
-                    script.MemoryManager(); //change location
+                    script.buttonPressed++; //add to buttons pressed
+                    script.buttonPressed++; //add to buttons pressed
                     script.ChangeFlyer();//change flyer to next riddle
-                    //script.buttonsPressed++; //add to buttons pressed
+                    
                     
                 }
 
