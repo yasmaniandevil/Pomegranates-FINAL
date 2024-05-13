@@ -210,14 +210,9 @@
 				</Sound>
 				<Sound Name="TelportSound" ID="{A7192F0A-DD22-4EEC-9277-F62AFC614110}" ShortID="699710057">
 					<PropertyList>
-						<Property Name="Lowpass" Type="int16">
-							<ValueList>
-								<Value>60</Value>
-							</ValueList>
-						</Property>
 						<Property Name="UserAuxSendVolume0" Type="Real64">
 							<ValueList>
-								<Value>3</Value>
+								<Value>2</Value>
 							</ValueList>
 						</Property>
 						<Property Name="UserAuxSendVolume1" Type="Real64">
@@ -232,7 +227,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-18</Value>
+								<Value>-12</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -243,18 +238,13 @@
 						<Reference Name="OutputBus">
 							<ObjectRef Name="TeleportBus" ID="{08238823-C320-43D8-A292-FE64BC9E0B0E}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
 						</Reference>
-						<Reference Name="UserAuxSend0">
-							<ObjectRef Name="HPF" ID="{A36B6541-3E0F-4160-B56D-0DFF35945B0C}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
-						</Reference>
-						<Reference Name="UserAuxSend1">
-							<ObjectRef Name="LPF" ID="{C62EA054-8931-49A9-AE8B-A820BAA8B3D9}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
-						</Reference>
-						<Reference Name="UserAuxSend2">
-							<ObjectRef Name="Reverb" ID="{BC10D2A4-6C05-4D5F-89D4-E252BC7FFB84}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
-						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="Arriving" ID="{FE62B8A4-411C-40C6-A137-F42671304D89}">
+							<PropertyList>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="30.1014866220736"/>
+							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>Arriving.wav</AudioFile>
 							<MediaIDList>
@@ -332,13 +322,13 @@
 						<ActiveSource Name="Production Element Title Transition Whoosh Warble 17" ID="{5E83129D-64ED-43CD-9221-2C8828797B2D}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="Whoosh_05" ID="{CAF1021D-FB09-4C33-BA84-3A824C66D4A8}" ShortID="898969949">
+				<Sound Name="TelportSound2" ID="{CAF1021D-FB09-4C33-BA84-3A824C66D4A8}" ShortID="898969949">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{388F345F-C687-4C6D-878F-23220F72DDD5}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
+							<ObjectRef Name="TeleportBus" ID="{08238823-C320-43D8-A292-FE64BC9E0B0E}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>

@@ -72,8 +72,8 @@ public class Digging : MonoBehaviour
                     Debug.Log(book.GetComponent<AutoFlip>());
                     book.GetComponent<AutoFlip>().Invoke("FlipRightPage", 2);
 
-                    AkSoundEngine.PostEvent("Event_PageFlip", gameObject);
-                    Debug.Log("EventPlayed");
+                    //AkSoundEngine.PostEvent("Event_PageFlip", gameObject);
+                    //Debug.Log("EventPlayed");
 
                     player.SetActive(false);
                     Cursor.visible = true;

@@ -88,7 +88,7 @@
 								<DuckItem>
 									<BusRef Name="EnviornmentBus" ID="{D4C5AAF5-1453-4F45-AA46-93A702C6DA3F}"/>
 									<DuckingParam>
-										<Volume>-6</Volume>
+										<Volume>-8</Volume>
 										<FadeInTime>1</FadeInTime>
 										<FadeOutTime>1</FadeOutTime>
 										<FadeCurve>FadeLinear</FadeCurve>

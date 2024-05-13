@@ -102,6 +102,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Event_TeleportSound2" ID="{CD0F0449-139C-46E6-B7B8-FFAE437A8FF4}">
+					<ChildrenList>
+						<Action Name="" ID="{941D1F82-C2BD-4A8F-BB59-ACF128D7B0B7}" ShortID="899704528">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TelportSound2" ID="{CAF1021D-FB09-4C33-BA84-3A824C66D4A8}" WorkUnitID="{31E94F87-8316-4810-90FF-73AD6464BEB5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

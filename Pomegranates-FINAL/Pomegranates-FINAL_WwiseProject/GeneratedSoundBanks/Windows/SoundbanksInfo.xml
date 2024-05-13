@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{7D4A9610-258D-2592-0967-6434CDC3F0D5}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{D4F62042-580D-F105-69CD-8E1569149C69}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -63,7 +63,7 @@
 				<GameParameter Id="513275970" Name="FadeOutStreetAudio"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{A9F05A30-9BC2-2022-E739-070F97BA988E}">
+		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{57467DEC-2B24-70EE-9679-854E51C08F45}">
 			<ShortName>SFX_Soundbank</ShortName>
 			<Path>SFX_Soundbank.bnk</Path>
 			<Media>
@@ -98,10 +98,6 @@
 				<File Id="773833868" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Arriving.wav</ShortName>
 					<CachePath>SFX/Arriving_10C4C929.wem</CachePath>
-				</File>
-				<File Id="793448443" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Whoosh_05.wav</ShortName>
-					<CachePath>SFX/Whoosh_05_10C4C929.wem</CachePath>
 				</File>
 				<File Id="903713644" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ambience Countryside Planes Over Head01.wav</ShortName>
@@ -164,11 +160,11 @@
 					<MediaRefs>
 						<MediaRef Id="773833868"/>
 					</MediaRefs>
-				</Event>
-				<Event Id="2241038274" Name="Event_TeleportSound2" DurationType="OneShot" DurationMin="5.8769894" DurationMax="5.8769894">
-					<MediaRefs>
-						<MediaRef Id="793448443"/>
-					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="348963605" Name="Reverb"/>
+						<AuxBusRef Id="730513497" Name="HPF"/>
+						<AuxBusRef Id="864145949" Name="LPF"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="562259991" Name="Event_WritingSFX" DurationType="OneShot" DurationMin="0.884221" DurationMax="0.884221">
 					<MediaRefs>
@@ -330,17 +326,17 @@
 				<GameParameter Id="513275970" Name="FadeOutStreetAudio"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3589812408" Type="User" Language="SFX" Hash="{E52E2E75-6BEF-D5BA-232D-48F777EAA99A}">
+		<SoundBank Id="3589812408" Type="User" Language="SFX" Hash="{19CBEE68-AE97-7D04-D50A-DECBA10F6382}">
 			<ShortName>Music_Soundbank</ShortName>
 			<Path>Music_Soundbank.bnk</Path>
 			<Media>
 				<File Id="159575214" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>StartMusic2wav.wav</ShortName>
-					<CachePath>SFX/StartMusic2wav_B75F9EDF.wem</CachePath>
+					<CachePath>SFX/StartMusic2wav_FCFFF15B.wem</CachePath>
 				</File>
 				<File Id="583924016" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>StartScene1.wav</ShortName>
-					<CachePath>SFX/StartScene1_3EF49445.wem</CachePath>
+					<CachePath>SFX/StartScene1_A716F73D.wem</CachePath>
 				</File>
 				<File Id="771506818" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ALBINT2.wav</ShortName>
@@ -395,5 +391,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{AE9AD728-91DF-D025-9D9B-C93A301D908B}</FileHash>
+	<FileHash>{53FD90DD-23DC-44A1-22D0-4B8922B004EC}</FileHash>
 </SoundBanksInfo>

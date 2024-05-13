@@ -42,7 +42,8 @@ public class Narrative : MonoBehaviour
     float startVolume;
     float endVolume = 0f;
     int type = 0;
-    //private List<uint> audioEventsStop = new List<uint>();
+    uint stopPapers;
+    uint stopPlane;
 
 
 
@@ -223,23 +224,13 @@ public class Narrative : MonoBehaviour
     {
         paperDrop.SetActive(true); //will activate flyer particles
 
-        uint stopPapers = AkSoundEngine.PostEvent("Event_PaperFalling", gameObject);
-        //Debug.Log("papersound");
-        //audioEventsStop.Add(stopPapers);
+        stopPapers = AkSoundEngine.PostEvent("Event_PaperFalling", gameObject);
         
-        uint stopPlane = AkSoundEngine.PostEvent("Event_AmbienceWindPlane", gameObject);
-        Debug.Log("wind");
-        //audioEventsStop.Add(stopPlane);
-        //Debug.Log("added event to list");
+        stopPlane = AkSoundEngine.PostEvent("Event_AmbienceWindPlane", gameObject);
 
-
-        Debug.Log("papers played");
+        
         Invoke("SpawnPaper", 4);
-
-        Invoke("PlayTeleport", 5);
-        Debug.Log("playteleportInvoked");
         
-
     }
 
     void SpawnPaper()//will spawn the floating flyer for the player
@@ -254,8 +245,7 @@ public class Narrative : MonoBehaviour
     public void ChangeScene() //changes scene
     {
         SceneManager.LoadScene("Past Final");
-        AkSoundEngine.StopAll();
-        //StopAllAudio(); 
+        StopAllAudio(); 
         Debug.Log("called stop all audio function");
     }
 
@@ -272,37 +262,24 @@ public class Narrative : MonoBehaviour
     public void EndScene() //will turn off all canvases + turn on particles and change scene in 4 seconds
     {
         PlayerOn();
-        //teleport to past should go here
+        //Invoke("PlayTeleport", 2);
+        PlayTeleport();
         particles.SetActive(true);
         Invoke("ChangeScene", 4);
     }
 
-    /*public void StopAllAudio()
+    public void StopAllAudio()
     {
-        foreach(uint eventID in audioEventsStop)
-        {
-            Debug.Log(audioEventsStop);
-            if(eventID != AkSoundEngine.AK_INVALID_PLAYING_ID)
-            {
-                Debug.Log(eventID);
-                AkSoundEngine.ExecuteActionOnEvent(eventID, AkActionOnEventType.AkActionOnEventType_Stop,
-                    gameObject, 0, AkCurveInterpolation.AkCurveInterpolation_Linear);
-         
-            }
-            else
-            {
-                Debug.Log("nah");
-            }
+        AkSoundEngine.StopPlayingID(stopPlane);
+        AkSoundEngine.StopPlayingID(stopPapers);
 
-            //AkSoundEngine.StopAll();
-            Debug.Log("STOP function running");
-        }
-    }*/
+    }
 
     public void PlayTeleport()
     {
+        //AkSoundEngine.PostEvent("Event_TeleportSound2", gameObject);
         AkSoundEngine.PostEvent("Event_Teleport2Past", gameObject);
-       
+
     }
 
 }

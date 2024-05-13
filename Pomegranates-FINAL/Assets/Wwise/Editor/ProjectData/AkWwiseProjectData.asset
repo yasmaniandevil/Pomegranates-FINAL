@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy/Default Work Unit
     guid: f732e3d294baae4b9e44cb31b07d54a0
     GuidInternal: 
-    m_lastTime: -8584859737209130571
+    m_lastTime: -8584859635944028980
     List:
     - name: EnviornmentBus
       guid: f5aac5d45314454faa4693a702c6da3f
@@ -151,7 +151,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: 033ae9bc3205de4f958035f6f2b06e57
     GuidInternal: 
-    m_lastTime: -8584861991741755529
+    m_lastTime: -8584859635943883353
     List:
     - name: AudioLogsSoundbank
       guid: a1a404d5212bed4dbaf3533d73cb1f51
@@ -319,7 +319,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 8097cb23c1290d4c9b41229fb2bf76ca
     GuidInternal: 
-    m_lastTime: -8584859809955772050
+    m_lastTime: -8584859635943934773
     List: []
   - PhysicalPath: Events/Environmental Events Work Unit.wwu
     PathAndIcons:
@@ -460,7 +460,7 @@ MonoBehaviour:
     ParentPath: Events/SFX
     guid: 380ca8262e8d6545a178d6745499f3a4
     GuidInternal: 
-    m_lastTime: -8584861991746173612
+    m_lastTime: -8584859635943912658
     List:
     - name: Event_AmbienceWindPlane
       guid: 58fa56745517fd48b569ffa7b21b6d49
@@ -598,6 +598,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 44.3835
       minDuration: 44.3835
+    - name: Event_TeleportSound2
+      guid: 49040fcd9c13e646b7b8ffae437a8ff4
+      id: 2241038274
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: SFX
+        ObjectType: 12
+        guid: 380ca8262e8d6545a178d6745499f3a4
+      - ElementName: Event_TeleportSound2
+        ObjectType: 3
+        guid: 49040fcd9c13e646b7b8ffae437a8ff4
+      Path: Events/SFX/Event_TeleportSound2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Event_WritingSFX
       guid: 29ca5b884acc634d9d2c11cb4c1fad8e
       id: 562259991

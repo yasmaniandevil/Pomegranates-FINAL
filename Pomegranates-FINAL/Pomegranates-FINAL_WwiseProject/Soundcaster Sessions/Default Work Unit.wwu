@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{0101E5F7-7C7A-436B-8CB1-BE7FEFFE7903}" SchemaVersion="110">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{0101E5F7-7C7A-436B-8CB1-BE7FEFFE7903}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{0101E5F7-7C7A-436B-8CB1-BE7FEFFE7903}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Test" ID="{9F6ED795-CB09-4DBA-BBE1-54C40A13AA12}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Event_PaperFalling" ID="{114B1DE5-819C-4BAB-AA5C-632C23AD409A}" WorkUnitID="{26A80C38-8D2E-4565-A178-D6745499F3A4}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Event_AmbienceWindPlane" ID="{7456FA58-1755-48FD-B569-FFA7B21B6D49}" WorkUnitID="{26A80C38-8D2E-4565-A178-D6745499F3A4}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Event_Teleport2Past" ID="{E1C389F2-5D19-45D6-A1F5-1B77BEB2594A}" WorkUnitID="{26A80C38-8D2E-4565-A178-D6745499F3A4}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="TelportSound2" ID="{CAF1021D-FB09-4C33-BA84-3A824C66D4A8}" WorkUnitID="{31E94F87-8316-4810-90FF-73AD6464BEB5}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>
