@@ -60,6 +60,77 @@
 						<ActiveSource Name="ALBINT2" ID="{444EF07B-EDA8-49B9-9253-DCF8D06F49B4}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<BlendContainer Name="StartMusic" ID="{89240AD5-945A-490E-A5D2-F97708C135BC}" ShortID="904599036">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{388F345F-C687-4C6D-878F-23220F72DDD5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="StartMusic2wav" ID="{B97E8266-627B-4EFE-8881-0D6B3A881085}" ShortID="323355205">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{388F345F-C687-4C6D-878F-23220F72DDD5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="StartMusic2wav" ID="{B139777E-1D01-4EDD-A04A-DCC89204C0A3}">
+									<Language>SFX</Language>
+									<AudioFile>StartMusic2wav.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="159575214"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="StartMusic2wav" ID="{B139777E-1D01-4EDD-A04A-DCC89204C0A3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="StartScene1" ID="{1C8C6E8E-1F41-4C22-849F-F9B7901CED9E}" ShortID="186959075">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{388F345F-C687-4C6D-878F-23220F72DDD5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="StartScene1" ID="{72870E1F-384F-411B-8C6E-D71D9B2F4272}">
+									<Language>SFX</Language>
+									<AudioFile>StartScene1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="583924016"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="StartScene1" ID="{72870E1F-384F-411B-8C6E-D71D9B2F4272}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<BlendTrackList>
+						<BlendTrack Name="StartMusic" ID="{16DCA4BB-184F-40C7-BD31-CAFACD211FDC}" ShortID="786330981">
+							<PropertyList>
+								<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+							</PropertyList>
+							<BlendTrackAssocList>
+								<BlendTrackAssoc>
+									<ItemRef Name="StartScene1" ID="{1C8C6E8E-1F41-4C22-849F-F9B7901CED9E}"/>
+								</BlendTrackAssoc>
+								<BlendTrackAssoc>
+									<ItemRef Name="StartMusic2wav" ID="{B97E8266-627B-4EFE-8881-0D6B3A881085}"/>
+								</BlendTrackAssoc>
+							</BlendTrackAssocList>
+						</BlendTrack>
+					</BlendTrackList>
+				</BlendContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
