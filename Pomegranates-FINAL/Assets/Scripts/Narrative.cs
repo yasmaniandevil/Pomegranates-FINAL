@@ -12,7 +12,7 @@ public class Narrative : MonoBehaviour
 {
     public GameObject camera;
     public GameObject player;
-    
+
     public GameObject narrativeCanvas;
 
     public GameObject father;
@@ -27,10 +27,10 @@ public class Narrative : MonoBehaviour
     private Sprite currentDialogue;
 
     public GameObject dialogueBox;
-    
+
     public GameObject flyer;
     public GameObject book;
-    public  GameObject particles;
+    public GameObject particles;
 
     public DissolveEffect[] dissolveObjects;
 
@@ -42,28 +42,27 @@ public class Narrative : MonoBehaviour
     float startVolume;
     float endVolume = 0f;
     int type = 0;
-    float EnviornmentBusDuckOut;
-    
-    
-    
+    //private List<uint> audioEventsStop = new List<uint>();
+
+
+
 
     // Start is called before the first frame update
     void Start()
     {
-       
+
         Invoke("BeginningText", 12); //calls beginning text
         Invoke("ChangeCamera", 13); //changes camera
 
         dissolveObjects = FindObjectsOfType<DissolveEffect>(); //finds all the game objects with the dissolve effect and puts them in an array
-        foreach(DissolveEffect obj in dissolveObjects)
+        foreach (DissolveEffect obj in dissolveObjects)
         {
             Debug.Log(obj.gameObject.name); //shows all thw game objects in the inspector
         }
 
         AkSoundEngine.GetRTPCValue("FadeOutStreetAudio", gameObject, 0, out startVolume, ref type);
-        //AkSoundEngine.GetRTPCValue("Teleport_Sound", gameObject, 0, out EnviornmentBusDuckOut, ref type);
-        //Debug.Log("EnviBusAudioStart " + EnviornmentBusDuckOut);
-        
+       
+
     }
 
     private void Update()
@@ -80,12 +79,12 @@ public class Narrative : MonoBehaviour
             if (Physics.Raycast(ray, out hit, 5)) //shoot ray
             {
                 if (hit.collider.CompareTag("Father")) //if hit father
-                { 
+                {
                     Debug.Log(timesTalkedToFather);
                     timesTalkedToFather++; //add to times talked 
                     Debug.Log(timesTalkedToFather);
                     FatherConvo(timesTalkedToFather); //activate father combo with the amount of times talked
-                   
+
                 }
             }
 
@@ -96,7 +95,7 @@ public class Narrative : MonoBehaviour
             if (!book.activeSelf)
             {
                 DeactivateTextBox(); //deactivate box
-                if(currentDialogue == dialogue[1]) //if its the first dialogue
+                if (currentDialogue == dialogue[1]) //if its the first dialogue
                 {
                     ActivateTextBox(2);//activate with the second box
                     return;
@@ -118,27 +117,27 @@ public class Narrative : MonoBehaviour
                     father.GetComponent<CapsuleCollider>().enabled = false;
 
                     StartCoroutine(FadeOutAudio());
-                    
+
 
                     leaves.GetComponent<LeavesShrink>().TransparentLeaves();
                     Invoke("PaperDrop", 15); //call this function
                     currentDialogue = null;
-                } 
+                }
             }
 
             if (book.activeSelf)
             {
-                Invoke("EndScene",0f);
+                Invoke("EndScene", 0f);
             }
-            
-            
+
+
         }
 
         IEnumerator FadeOutAudio()
         {
             float currentTime = 0.0f;
 
-            while(currentTime < fadeDuration)
+            while (currentTime < fadeDuration)
             {
                 currentTime += Time.deltaTime;
                 float t = currentTime / fadeDuration;
@@ -150,7 +149,7 @@ public class Narrative : MonoBehaviour
             }
 
             AkSoundEngine.SetRTPCValue("FadeOutStreetAudio", endVolume);
-            
+
         }
 
         if (Input.GetKeyDown(KeyCode.P))
@@ -167,7 +166,7 @@ public class Narrative : MonoBehaviour
     }
 
     void ChangeCamera() //turns of first cam to switch perspective
-    { 
+    {
         camera.SetActive(false);
     }
 
@@ -191,20 +190,20 @@ public class Narrative : MonoBehaviour
         {
             ActivateTextBox(4); //activate 4th
         }
-       
+
     }
-    
+
 
     private void ActivateTextBox(int dialogueSprite)
     {
-        dialogueBox.gameObject.GetComponent<Image>().sprite =dialogue[dialogueSprite]; //changes dialogue box to whatever the next dialogue is
+        dialogueBox.gameObject.GetComponent<Image>().sprite = dialogue[dialogueSprite]; //changes dialogue box to whatever the next dialogue is
         narrativeCanvas.SetActive(true);
         player.SetActive(false);
         currentDialogue = dialogue[dialogueSprite];
         Debug.Log(currentDialogue);
     }
 
-    private void DeactivateTextBox() 
+    private void DeactivateTextBox()
     {
         narrativeCanvas.SetActive(false);
         flyer.SetActive(false);
@@ -212,7 +211,7 @@ public class Narrative : MonoBehaviour
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }
-    
+
     private void MoveFather() //moves father
     {
         father.transform.position = fatherMove.transform.position;
@@ -220,28 +219,28 @@ public class Narrative : MonoBehaviour
         father.tag = "Father";
     }
 
-    void PaperDrop() 
+    void PaperDrop()
     {
         paperDrop.SetActive(true); //will activate flyer particles
 
-        AkSoundEngine.PostEvent("Event_PaperFalling", gameObject);
-        Debug.Log("papersound");
-
-
-        AkSoundEngine.PostEvent("Event_AmbienceWindPlane", gameObject);
-        Debug.Log("wind");
-
+        uint stopPapers = AkSoundEngine.PostEvent("Event_PaperFalling", gameObject);
+        //Debug.Log("papersound");
+        //audioEventsStop.Add(stopPapers);
         
+        uint stopPlane = AkSoundEngine.PostEvent("Event_AmbienceWindPlane", gameObject);
+        Debug.Log("wind");
+        //audioEventsStop.Add(stopPlane);
+        //Debug.Log("added event to list");
+
+
         Debug.Log("papers played");
         Invoke("SpawnPaper", 4);
 
-        //AkSoundEngine.SetRTPCValue("Teleport_Playing", EnviornmentBusDuckOut, gameObject);
-        //Debug.Log("SetRTCPBUS" + EnviornmentBusDuckOut);
-        AkSoundEngine.PostEvent("Event_Teleport2Past", gameObject);
-        Debug.Log("Teleport Sound");
+        Invoke("PlayTeleport", 5);
+        Debug.Log("playteleportInvoked");
         
+
     }
-    
 
     void SpawnPaper()//will spawn the floating flyer for the player
     {
@@ -251,11 +250,13 @@ public class Narrative : MonoBehaviour
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
     }
-    
+
     public void ChangeScene() //changes scene
     {
         SceneManager.LoadScene("Past Final");
         AkSoundEngine.StopAll();
+        //StopAllAudio(); 
+        Debug.Log("called stop all audio function");
     }
 
     public void PlayerOn() //will turn off all the canvases and activate the player
@@ -275,4 +276,33 @@ public class Narrative : MonoBehaviour
         particles.SetActive(true);
         Invoke("ChangeScene", 4);
     }
+
+    /*public void StopAllAudio()
+    {
+        foreach(uint eventID in audioEventsStop)
+        {
+            Debug.Log(audioEventsStop);
+            if(eventID != AkSoundEngine.AK_INVALID_PLAYING_ID)
+            {
+                Debug.Log(eventID);
+                AkSoundEngine.ExecuteActionOnEvent(eventID, AkActionOnEventType.AkActionOnEventType_Stop,
+                    gameObject, 0, AkCurveInterpolation.AkCurveInterpolation_Linear);
+         
+            }
+            else
+            {
+                Debug.Log("nah");
+            }
+
+            //AkSoundEngine.StopAll();
+            Debug.Log("STOP function running");
+        }
+    }*/
+
+    public void PlayTeleport()
+    {
+        AkSoundEngine.PostEvent("Event_Teleport2Past", gameObject);
+       
+    }
+
 }

@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{92647B54-2FB8-9506-146D-39B248C0FFAD}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{88AF5962-24B0-525A-CC61-DDB5F3914F30}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -63,7 +63,7 @@
 				<GameParameter Id="513275970" Name="FadeOutStreetAudio"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{57467DEC-2B24-70EE-9679-854E51C08F45}">
+		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{A9F05A30-9BC2-2022-E739-070F97BA988E}">
 			<ShortName>SFX_Soundbank</ShortName>
 			<Path>SFX_Soundbank.bnk</Path>
 			<Media>
@@ -98,6 +98,10 @@
 				<File Id="773833868" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Arriving.wav</ShortName>
 					<CachePath>SFX/Arriving_10C4C929.wem</CachePath>
+				</File>
+				<File Id="793448443" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Whoosh_05.wav</ShortName>
+					<CachePath>SFX/Whoosh_05_10C4C929.wem</CachePath>
 				</File>
 				<File Id="903713644" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ambience Countryside Planes Over Head01.wav</ShortName>
@@ -160,11 +164,11 @@
 					<MediaRefs>
 						<MediaRef Id="773833868"/>
 					</MediaRefs>
-					<AuxBusRefs>
-						<AuxBusRef Id="348963605" Name="Reverb"/>
-						<AuxBusRef Id="730513497" Name="HPF"/>
-						<AuxBusRef Id="864145949" Name="LPF"/>
-					</AuxBusRefs>
+				</Event>
+				<Event Id="2241038274" Name="Event_TeleportSound2" DurationType="OneShot" DurationMin="5.8769894" DurationMax="5.8769894">
+					<MediaRefs>
+						<MediaRef Id="793448443"/>
+					</MediaRefs>
 				</Event>
 				<Event Id="562259991" Name="Event_WritingSFX" DurationType="OneShot" DurationMin="0.884221" DurationMax="0.884221">
 					<MediaRefs>
@@ -391,5 +395,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{BE08E673-52A9-1716-4813-B1CCDEFB1EE0}</FileHash>
+	<FileHash>{C0DF90AF-8970-5531-3A3C-AACF1641CCCF}</FileHash>
 </SoundBanksInfo>

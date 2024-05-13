@@ -23,10 +23,9 @@ public class Artifact : MonoBehaviour
 
     void Start()
     {
-      
-
         spawn = true;
-        AkSoundEngine.PostEvent("Event_ArtifactUp2", gameObject);
+        AkSoundEngine.PostEvent("Event_DigSound", gameObject);
+        Debug.Log("dig sound");
         startTime = Time.time;
     }
 
