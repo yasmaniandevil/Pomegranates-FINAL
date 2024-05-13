@@ -84,6 +84,17 @@
 									<ObjectRef Name="Teleport_Meter" ID="{139FD522-AB32-440A-A042-D42C8ADD5DD7}" WorkUnitID="{C1236D6B-E98A-4F51-A537-436E722ADC66}"/>
 								</Reference>
 							</ReferenceList>
+							<DuckingList>
+								<DuckItem>
+									<BusRef Name="EnviornmentBus" ID="{D4C5AAF5-1453-4F45-AA46-93A702C6DA3F}"/>
+									<DuckingParam>
+										<Volume>-6</Volume>
+										<FadeInTime>1</FadeInTime>
+										<FadeOutTime>1</FadeOutTime>
+										<FadeCurve>FadeLinear</FadeCurve>
+									</DuckingParam>
+								</DuckItem>
+							</DuckingList>
 						</Bus>
 					</ChildrenList>
 				</Bus>

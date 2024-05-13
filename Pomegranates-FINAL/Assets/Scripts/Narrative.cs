@@ -61,8 +61,8 @@ public class Narrative : MonoBehaviour
         }
 
         AkSoundEngine.GetRTPCValue("FadeOutStreetAudio", gameObject, 0, out startVolume, ref type);
-        AkSoundEngine.GetRTPCValue("Teleport_Sound", gameObject, 0, out EnviornmentBusDuckOut, ref type);
-        Debug.Log("EnviBusAudioStart " + EnviornmentBusDuckOut);
+        //AkSoundEngine.GetRTPCValue("Teleport_Sound", gameObject, 0, out EnviornmentBusDuckOut, ref type);
+        //Debug.Log("EnviBusAudioStart " + EnviornmentBusDuckOut);
         
     }
 
@@ -235,9 +235,10 @@ public class Narrative : MonoBehaviour
         Debug.Log("papers played");
         Invoke("SpawnPaper", 4);
 
-        AkSoundEngine.SetRTPCValue("Teleport_Playing", EnviornmentBusDuckOut, gameObject);
-        Debug.Log("SetRTCPBUS" + EnviornmentBusDuckOut);
+        //AkSoundEngine.SetRTPCValue("Teleport_Playing", EnviornmentBusDuckOut, gameObject);
+        //Debug.Log("SetRTCPBUS" + EnviornmentBusDuckOut);
         AkSoundEngine.PostEvent("Event_Teleport2Past", gameObject);
+        Debug.Log("Teleport Sound");
         
     }
     

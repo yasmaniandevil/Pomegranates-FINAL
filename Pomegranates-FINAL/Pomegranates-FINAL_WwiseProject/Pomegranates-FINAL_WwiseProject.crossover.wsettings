@@ -51,7 +51,7 @@
 				<Property Name="Interactive Music\x64_{36222881-2F65-44F2-8594-16A2F49A5EB8} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwP3d3d3d39zdAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\x64_{E76E4B6B-4FA0-4AFD-8A97-98A0E5A7DA07} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D/aflr78S3/P0OphJrhtStAPvjggw8+4D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\x64_{ED031510-B528-4B5C-BC38-603BDB5132B3} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwPwAAAAAAeGZAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
-				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
+				<Property Name="MeterView\LastObject1" Type="string" Value="{D4C5AAF5-1453-4F45-AA46-93A702C6DA3F}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
 				<Property Name="MeterView\MeterMode1Viewpoint0" Type="int32" Value="1"/>
 				<Property Name="MeterView\MeterMode1Viewpoint1" Type="int32" Value="2"/>

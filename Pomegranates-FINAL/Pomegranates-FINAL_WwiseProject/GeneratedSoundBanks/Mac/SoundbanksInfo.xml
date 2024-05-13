@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{9947AF2F-8850-F967-F2A1-6EC1D954443C}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{92647B54-2FB8-9506-146D-39B248C0FFAD}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -326,17 +326,17 @@
 				<GameParameter Id="513275970" Name="FadeOutStreetAudio"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3589812408" Type="User" Language="SFX" Hash="{19CBEE68-AE97-7D04-D50A-DECBA10F6382}">
+		<SoundBank Id="3589812408" Type="User" Language="SFX" Hash="{E52E2E75-6BEF-D5BA-232D-48F777EAA99A}">
 			<ShortName>Music_Soundbank</ShortName>
 			<Path>Music_Soundbank.bnk</Path>
 			<Media>
 				<File Id="159575214" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>StartMusic2wav.wav</ShortName>
-					<CachePath>SFX/StartMusic2wav_FCFFF15B.wem</CachePath>
+					<CachePath>SFX/StartMusic2wav_B75F9EDF.wem</CachePath>
 				</File>
 				<File Id="583924016" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>StartScene1.wav</ShortName>
-					<CachePath>SFX/StartScene1_A716F73D.wem</CachePath>
+					<CachePath>SFX/StartScene1_3EF49445.wem</CachePath>
 				</File>
 				<File Id="771506818" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ALBINT2.wav</ShortName>
@@ -391,5 +391,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{A105E7DD-E648-CD1E-0044-5A80C7D8D152}</FileHash>
+	<FileHash>{BE08E673-52A9-1716-4813-B1CCDEFB1EE0}</FileHash>
 </SoundBanksInfo>
