@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d78f4ef5424c5482cb4bcfee5d143223, type: 3}
   m_Name: DD1FE7F2-AEC7-45B6-8658-B8E863AE6FE3
   m_EditorClassIdentifier: 
-  objectName: Music_ALBint_Soundbank
-  id: 265338097
+  objectName: Music_Soundbank
+  id: 3589812408
   guid: DD1FE7F2-AEC7-45B6-8658-B8E863AE6FE3

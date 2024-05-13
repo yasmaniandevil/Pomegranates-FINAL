@@ -1,4 +1,9 @@
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	406806935	Teleport_Playing			\Default Work Unit\Teleport_Playing	
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	3519813714	TeleportBus			\Default Work Unit\Master Audio Bus\TeleportBus	
+	3630164972	EnviornmentBus			\Default Work Unit\Master Audio Bus\EnviornmentBus	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
@@ -10,6 +15,7 @@ Effect plug-ins	ID	Name	Type				Notes
 	1008402193	Low_Pass_20KHz	Wwise Parametric EQ			
 	1990128658	Room_Medium	Wwise RoomVerb			
 	3604890626	High_Pass_60Hz	Wwise Parametric EQ			
+	3683540822	Teleport_Meter	Wwise Meter			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

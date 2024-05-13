@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{C1236D6B-E98A-4F51-A537-436E722ADC66}" SchemaVersion="110">
 	<Effects>
-		<WorkUnit Name="Default Work Unit" ID="{C1236D6B-E98A-4F51-A537-436E722ADC66}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{C1236D6B-E98A-4F51-A537-436E722ADC66}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="Teleport_Meter" ID="{139FD522-AB32-440A-A042-D42C8ADD5DD7}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">					<PluginData>
+	<GameParameter Name="Teleport_Playing" ID="{64CD1469-9502-4D91-B364-4FA53573E9C6}"/>
+</PluginData>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
 	</Effects>
 </WwiseDocument>

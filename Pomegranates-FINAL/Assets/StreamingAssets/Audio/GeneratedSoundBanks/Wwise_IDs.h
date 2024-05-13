@@ -24,6 +24,7 @@ namespace AK
         static const AkUniqueID EVENT_INTROAUDIOLOG = 1053017616U;
         static const AkUniqueID EVENT_PAGEFLIP = 103810202U;
         static const AkUniqueID EVENT_PAPERFALLING = 1721341365U;
+        static const AkUniqueID EVENT_STARTMUSICSEQUENCECONTAINER = 2459759789U;
         static const AkUniqueID EVENT_STREET_AUDIO_SEQUENCE_CONTAINER = 3320485656U;
         static const AkUniqueID EVENT_TELEPORT2PAST = 1480077435U;
         static const AkUniqueID EVENT_WIND_BLEND_CONTAINER = 1618216908U;
@@ -33,6 +34,7 @@ namespace AK
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID FADEOUTSTREETAUDIO = 513275970U;
+        static const AkUniqueID TELEPORT_PLAYING = 406806935U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS
@@ -41,7 +43,7 @@ namespace AK
         static const AkUniqueID ADANSOUNDBANK = 2963256630U;
         static const AkUniqueID AUDIOLOGSSOUNDBANK = 4228271703U;
         static const AkUniqueID FIRESOUNDBANK = 3382285268U;
-        static const AkUniqueID MUSIC_ALBINT_SOUNDBANK = 265338097U;
+        static const AkUniqueID MUSIC_SOUNDBANK = 3589812408U;
         static const AkUniqueID SFX_SOUNDBANK = 2641024368U;
         static const AkUniqueID STREETAUDIOCONTAINERSOUNDBANK = 3481854762U;
         static const AkUniqueID WIND_SOUNDBANK = 2981824113U;
@@ -49,7 +51,9 @@ namespace AK
 
     namespace BUSSES
     {
+        static const AkUniqueID ENVIORNMENTBUS = 3630164972U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID TELEPORTBUS = 3519813714U;
     } // namespace BUSSES
 
     namespace AUX_BUSSES

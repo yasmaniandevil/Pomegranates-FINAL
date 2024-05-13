@@ -42,6 +42,7 @@ public class Narrative : MonoBehaviour
     float startVolume;
     float endVolume = 0f;
     int type = 0;
+    float EnviornmentBusDuckOut;
     
     
     
@@ -60,6 +61,8 @@ public class Narrative : MonoBehaviour
         }
 
         AkSoundEngine.GetRTPCValue("FadeOutStreetAudio", gameObject, 0, out startVolume, ref type);
+        AkSoundEngine.GetRTPCValue("Teleport_Sound", gameObject, 0, out EnviornmentBusDuckOut, ref type);
+        Debug.Log("EnviBusAudioStart " + EnviornmentBusDuckOut);
         
     }
 
@@ -142,7 +145,7 @@ public class Narrative : MonoBehaviour
 
                 float newVolume = Mathf.Lerp(startVolume, endVolume, t);
                 AkSoundEngine.SetRTPCValue("FadeOutStreetAudio", newVolume);
-                Debug.Log("New Volume: " + newVolume);
+                //Debug.Log("New Volume: " + newVolume);
                 yield return null;
             }
 
@@ -231,7 +234,11 @@ public class Narrative : MonoBehaviour
         
         Debug.Log("papers played");
         Invoke("SpawnPaper", 4);
+
+        AkSoundEngine.SetRTPCValue("Teleport_Playing", EnviornmentBusDuckOut, gameObject);
+        Debug.Log("SetRTCPBUS" + EnviornmentBusDuckOut);
         AkSoundEngine.PostEvent("Event_Teleport2Past", gameObject);
+        
     }
     
 

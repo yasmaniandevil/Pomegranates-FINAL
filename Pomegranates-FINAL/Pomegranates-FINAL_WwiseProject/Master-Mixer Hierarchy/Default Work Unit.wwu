@@ -31,6 +31,60 @@
 								</Reference>
 							</ReferenceList>
 						</AuxBus>
+						<Bus Name="EnviornmentBus" ID="{D4C5AAF5-1453-4F45-AA46-93A702C6DA3F}">
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{F678575D-DA45-47C1-8F52-02EE4AA4F3CF}" ShortID="99101187">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Teleport_Playing" ID="{64CD1469-9502-4D91-B364-4FA53573E9C6}" WorkUnitID="{3B76DE0B-2F5C-469C-9235-495D31C2DB59}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{59721E0B-B74A-4731-805A-801173180F2D}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>-48</XPos>
+																		<YPos>-0.03612</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>-21.57798</XPos>
+																		<YPos>0.06957</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>Log1</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</Bus>
+						<Bus Name="TeleportBus" ID="{08238823-C320-43D8-A292-FE64BC9E0B0E}">
+							<ReferenceList>
+								<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+									<ObjectRef Name="Teleport_Meter" ID="{139FD522-AB32-440A-A042-D42C8ADD5DD7}" WorkUnitID="{C1236D6B-E98A-4F51-A537-436E722ADC66}"/>
+								</Reference>
+							</ReferenceList>
+						</Bus>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>

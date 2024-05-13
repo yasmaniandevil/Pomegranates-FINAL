@@ -4,6 +4,13 @@
 		<WorkUnit Name="Default Work Unit" ID="{3B76DE0B-2F5C-469C-9235-495D31C2DB59}" PersistMode="Standalone">
 			<ChildrenList>
 				<GameParameter Name="FadeOutStreetAudio" ID="{B6BE31DC-4844-4635-A2A9-80262065B2B3}"/>
+				<GameParameter Name="Teleport_Playing" ID="{64CD1469-9502-4D91-B364-4FA53573E9C6}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="-48"/>
+						<Property Name="Max" Type="Real64" Value="0"/>
+						<Property Name="Min" Type="Real64" Value="-48"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

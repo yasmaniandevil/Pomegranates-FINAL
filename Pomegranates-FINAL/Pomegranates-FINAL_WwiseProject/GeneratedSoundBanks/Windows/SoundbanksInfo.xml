@@ -9,40 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="265338097" Type="User" Language="SFX" Hash="{9F8112D2-7DE9-3244-B8D9-5E5AB2387EBE}">
-			<ShortName>Music_ALBint_Soundbank</ShortName>
-			<Path>Music_ALBint_Soundbank.bnk</Path>
-			<Media>
-				<File Id="771506818" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>ALBINT2.wav</ShortName>
-					<CachePath>SFX/ALBINT2_D79FB2B7.wem</CachePath>
-				</File>
-			</Media>
-			<Plugins>
-				<ShareSets>
-					<Plugin Id="2171939413" Name="Dialog_Leveler_Hard" LibName="Wwise Compressor" LibId="7077891"/>
-					<Plugin Id="4286906788" Name="Gentle_Program_Compressor_Minus_20dB_RMS" LibName="Wwise Compressor" LibId="7077891"/>
-				</ShareSets>
-			</Plugins>
-			<Events>
-				<Event Id="3204538988" Name="Event_ALBint" MaxAttenuation="20" DurationType="Infinite">
-					<MediaRefs>
-						<MediaRef Id="771506818"/>
-					</MediaRefs>
-					<PluginRefs>
-						<ShareSets>
-							<PluginRef Id="2171939413"/>
-							<PluginRef Id="4286906788"/>
-						</ShareSets>
-					</PluginRefs>
-					<AuxBusRefs>
-						<AuxBusRef Id="348963605" Name="Reverb"/>
-						<AuxBusRef Id="730513497" Name="HPF"/>
-					</AuxBusRefs>
-				</Event>
-			</Events>
-		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{1EA88598-43CF-8AA3-893F-7EEC254199EE}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{B87DA765-0E3B-9819-212D-EFE6D6A28834}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -50,6 +17,7 @@
 					<Plugin Id="1008402193" Name="Low_Pass_20KHz" LibName="Wwise Parametric EQ" LibId="6881283"/>
 					<Plugin Id="1990128658" Name="Room_Medium" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="3604890626" Name="High_Pass_60Hz" LibName="Wwise Parametric EQ" LibId="6881283"/>
+					<Plugin Id="3683540822" Name="Teleport_Meter" LibName="Wwise Meter" LibId="8454147"/>
 				</ShareSets>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
@@ -57,6 +25,14 @@
 				</AudioDevices>
 			</Plugins>
 			<Busses>
+				<Bus Id="3519813714" Name="TeleportBus">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="3683540822"/>
+						</ShareSets>
+					</PluginRefs>
+				</Bus>
+				<Bus Id="3630164972" Name="EnviornmentBus"/>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 			<AuxBusses>
@@ -83,10 +59,11 @@
 				</AuxBus>
 			</AuxBusses>
 			<GameParameters>
+				<GameParameter Id="406806935" Name="Teleport_Playing"/>
 				<GameParameter Id="513275970" Name="FadeOutStreetAudio"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{087E07AB-EC84-1493-7760-E35F1919AE37}">
+		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{57467DEC-2B24-70EE-9679-854E51C08F45}">
 			<ShortName>SFX_Soundbank</ShortName>
 			<Path>SFX_Soundbank.bnk</Path>
 			<Media>
@@ -144,7 +121,7 @@
 						<MediaRef Id="344708579"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1969774667" Name="Event_ArtifactUp2" DurationType="OneShot" DurationMin="3.5" DurationMax="3.5">
+				<Event Id="1969774667" Name="Event_ArtifactUp2" DurationType="OneShot" DurationMin="3.5202754" DurationMax="3.5202754">
 					<MediaRefs>
 						<MediaRef Id="494818398"/>
 					</MediaRefs>
@@ -349,6 +326,53 @@
 				<GameParameter Id="513275970" Name="FadeOutStreetAudio"/>
 			</GameParameters>
 		</SoundBank>
+		<SoundBank Id="3589812408" Type="User" Language="SFX" Hash="{19CBEE68-AE97-7D04-D50A-DECBA10F6382}">
+			<ShortName>Music_Soundbank</ShortName>
+			<Path>Music_Soundbank.bnk</Path>
+			<Media>
+				<File Id="159575214" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>StartMusic2wav.wav</ShortName>
+					<CachePath>SFX/StartMusic2wav_FCFFF15B.wem</CachePath>
+				</File>
+				<File Id="583924016" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>StartScene1.wav</ShortName>
+					<CachePath>SFX/StartScene1_A716F73D.wem</CachePath>
+				</File>
+				<File Id="771506818" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ALBINT2.wav</ShortName>
+					<CachePath>SFX/ALBINT2_D79FB2B7.wem</CachePath>
+				</File>
+			</Media>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="2171939413" Name="Dialog_Leveler_Hard" LibName="Wwise Compressor" LibId="7077891"/>
+					<Plugin Id="4286906788" Name="Gentle_Program_Compressor_Minus_20dB_RMS" LibName="Wwise Compressor" LibId="7077891"/>
+				</ShareSets>
+			</Plugins>
+			<Events>
+				<Event Id="3204538988" Name="Event_ALBint" MaxAttenuation="20" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="771506818"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2171939413"/>
+							<PluginRef Id="4286906788"/>
+						</ShareSets>
+					</PluginRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="348963605" Name="Reverb"/>
+						<AuxBusRef Id="730513497" Name="HPF"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="2459759789" Name="Event_StartMusicSequenceContainer" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="159575214"/>
+						<MediaRef Id="583924016"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
 		<SoundBank Id="4228271703" Type="User" Language="SFX" Hash="{8E2AE2A3-ED8A-A3CA-B483-A012F6BA50EC}">
 			<ShortName>AudioLogsSoundbank</ShortName>
 			<Path>AudioLogsSoundbank.bnk</Path>
@@ -367,5 +391,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{80395F61-25E2-3085-88D8-D43A2E37345E}</FileHash>
+	<FileHash>{055E2878-B877-6654-FD92-FF14E095ED85}</FileHash>
 </SoundBanksInfo>
