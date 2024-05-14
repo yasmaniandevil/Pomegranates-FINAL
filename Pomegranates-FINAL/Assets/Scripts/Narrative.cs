@@ -44,6 +44,7 @@ public class Narrative : MonoBehaviour
     int type = 0;
     uint stopPapers;
     uint stopPlane;
+    uint stopTeleport1;
 
 
 
@@ -118,6 +119,9 @@ public class Narrative : MonoBehaviour
                     father.GetComponent<CapsuleCollider>().enabled = false;
 
                     StartCoroutine(FadeOutAudio());
+                    //not sure about this but would like ambient track or something 
+                    //when people start dissapearing
+                    //stopTeleport1 = AkSoundEngine.PostEvent("Event_Teleport2Past", gameObject);
 
 
                     leaves.GetComponent<LeavesShrink>().TransparentLeaves();
@@ -229,6 +233,7 @@ public class Narrative : MonoBehaviour
         stopPlane = AkSoundEngine.PostEvent("Event_AmbienceWindPlane", gameObject);
 
         
+
         Invoke("SpawnPaper", 4);
         
     }
@@ -262,8 +267,7 @@ public class Narrative : MonoBehaviour
     public void EndScene() //will turn off all canvases + turn on particles and change scene in 4 seconds
     {
         PlayerOn();
-        //Invoke("PlayTeleport", 2);
-        PlayTeleport();
+        Invoke("PlayTeleport2", 2);
         particles.SetActive(true);
         Invoke("ChangeScene", 4);
     }
@@ -272,13 +276,14 @@ public class Narrative : MonoBehaviour
     {
         AkSoundEngine.StopPlayingID(stopPlane);
         AkSoundEngine.StopPlayingID(stopPapers);
+        AkSoundEngine.StopPlayingID(stopTeleport1);
 
     }
 
-    public void PlayTeleport()
+    public void PlayTeleport2()
     {
-        //AkSoundEngine.PostEvent("Event_TeleportSound2", gameObject);
-        AkSoundEngine.PostEvent("Event_Teleport2Past", gameObject);
+        AkSoundEngine.PostEvent("Event_TeleportSound2", gameObject);
+        
 
     }
 

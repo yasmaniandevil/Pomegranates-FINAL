@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{B5D7EC5E-9104-99AA-F08E-703577ECD988}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{2E229632-FCCD-7AF2-728B-8BB8A628224E}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -25,6 +25,7 @@
 				</AudioDevices>
 			</Plugins>
 			<Busses>
+				<Bus Id="318962753" Name="MysterySoundBus"/>
 				<Bus Id="3519813714" Name="TeleportBus">
 					<PluginRefs>
 						<ShareSets>
@@ -63,7 +64,7 @@
 				<GameParameter Id="513275970" Name="FadeOutStreetAudio"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{57467DEC-2B24-70EE-9679-854E51C08F45}">
+		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{BA841D01-D9DB-778E-65DF-9E4B6CCE1302}">
 			<ShortName>SFX_Soundbank</ShortName>
 			<Path>SFX_Soundbank.bnk</Path>
 			<Media>
@@ -97,7 +98,11 @@
 				</File>
 				<File Id="773833868" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Arriving.wav</ShortName>
-					<CachePath>SFX/Arriving_10C4C929.wem</CachePath>
+					<CachePath>SFX/Arriving_1B59F1F5.wem</CachePath>
+				</File>
+				<File Id="793448443" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Whoosh_05.wav</ShortName>
+					<CachePath>SFX/Whoosh_05_10C4C929.wem</CachePath>
 				</File>
 				<File Id="903713644" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ambience Countryside Planes Over Head01.wav</ShortName>
@@ -156,15 +161,15 @@
 						</ShareSets>
 					</PluginRefs>
 				</Event>
-				<Event Id="1480077435" Name="Event_Teleport2Past" DurationType="OneShot" DurationMin="44.3835" DurationMax="44.3835">
+				<Event Id="1480077435" Name="Event_Teleport2Past" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="773833868"/>
 					</MediaRefs>
-					<AuxBusRefs>
-						<AuxBusRef Id="348963605" Name="Reverb"/>
-						<AuxBusRef Id="730513497" Name="HPF"/>
-						<AuxBusRef Id="864145949" Name="LPF"/>
-					</AuxBusRefs>
+				</Event>
+				<Event Id="2241038274" Name="Event_TeleportSound2" DurationType="OneShot" DurationMin="5.8769894" DurationMax="5.8769894">
+					<MediaRefs>
+						<MediaRef Id="793448443"/>
+					</MediaRefs>
 				</Event>
 				<Event Id="562259991" Name="Event_WritingSFX" DurationType="OneShot" DurationMin="0.884221" DurationMax="0.884221">
 					<MediaRefs>
@@ -391,5 +396,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{B94AA2EA-9432-EE91-2811-3C761C880A44}</FileHash>
+	<FileHash>{F10C7011-5E9B-2A60-5A9D-C5022FD0C1F1}</FileHash>
 </SoundBanksInfo>

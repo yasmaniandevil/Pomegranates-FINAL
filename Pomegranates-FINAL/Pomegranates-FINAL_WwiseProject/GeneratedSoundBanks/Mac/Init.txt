@@ -2,6 +2,7 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	406806935	Teleport_Playing			\Default Work Unit\Teleport_Playing	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	318962753	MysterySoundBus			\Default Work Unit\Master Audio Bus\MysterySoundBus	
 	3519813714	TeleportBus			\Default Work Unit\Master Audio Bus\TeleportBus	
 	3630164972	EnviornmentBus			\Default Work Unit\Master Audio Bus\EnviornmentBus	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	

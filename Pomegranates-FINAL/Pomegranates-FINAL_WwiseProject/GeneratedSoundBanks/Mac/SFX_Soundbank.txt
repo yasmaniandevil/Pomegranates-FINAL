@@ -8,6 +8,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1969774664	Event_ArtifactUp1			\SFX\Event_ArtifactUp1	
 	1969774666	Event_ArtifactUp3			\SFX\Event_ArtifactUp3	
 	1969774667	Event_ArtifactUp2			\SFX\Event_ArtifactUp2	
+	2241038274	Event_TeleportSound2			\SFX\Event_TeleportSound2	
 
 Effect plug-ins	ID	Name	Type				Notes
 	1008402193	Low_Pass_20KHz	Wwise Parametric EQ			
@@ -21,6 +22,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	494818398	ArtifactUp2	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Mac\SFX\Glockenspiel Selection Sound 02_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\ArtifactUp2		672160
 	720925955	ArtifactUp3	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Mac\SFX\Indian Woodwind Notification Sound 03_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\ArtifactUp3		528160
 	766905104	DigSound	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Mac\SFX\SFX_DigSound_9B3CC253.wem		\Actor-Mixer Hierarchy\SFX\DigSound		248222
-	773833868	TelportSound	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Mac\SFX\Arriving_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\TelportSound		8521728
+	773833868	MysterySound	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Mac\SFX\Arriving_1B59F1F5.wem		\Actor-Mixer Hierarchy\SFX\MysterySound		8521728
+	793448443	TelportSound2	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Mac\SFX\Whoosh_05_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\TelportSound2		1128476
 	903713644	Ambience Countryside Planes Over Head01	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Mac\SFX\Ambience Countryside Planes Over Head01_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Ambience Countryside Planes Over Head01		8096184
 

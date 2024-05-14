@@ -596,8 +596,8 @@ MonoBehaviour:
         guid: f289c3e1195dd645a1f51b77beb2594a
       Path: Events/SFX/Event_Teleport2Past
       maxAttenuation: 0
-      maxDuration: 44.3835
-      minDuration: 44.3835
+      maxDuration: 14.282013
+      minDuration: 14.282013
     - name: Event_TeleportSound2
       guid: 49040fcd9c13e646b7b8ffae437a8ff4
       id: 2241038274
@@ -613,8 +613,8 @@ MonoBehaviour:
         guid: 49040fcd9c13e646b7b8ffae437a8ff4
       Path: Events/SFX/Event_TeleportSound2
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 5.8769894
+      minDuration: 5.8769894
     - name: Event_WritingSFX
       guid: 29ca5b884acc634d9d2c11cb4c1fad8e
       id: 562259991

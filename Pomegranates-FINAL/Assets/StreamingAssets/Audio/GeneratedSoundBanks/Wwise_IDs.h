@@ -27,6 +27,7 @@ namespace AK
         static const AkUniqueID EVENT_STARTMUSICSEQUENCECONTAINER = 2459759789U;
         static const AkUniqueID EVENT_STREET_AUDIO_SEQUENCE_CONTAINER = 3320485656U;
         static const AkUniqueID EVENT_TELEPORT2PAST = 1480077435U;
+        static const AkUniqueID EVENT_TELEPORTSOUND2 = 2241038274U;
         static const AkUniqueID EVENT_WIND_BLEND_CONTAINER = 1618216908U;
         static const AkUniqueID EVENT_WRITINGSFX = 562259991U;
     } // namespace EVENTS
@@ -53,6 +54,7 @@ namespace AK
     {
         static const AkUniqueID ENVIORNMENTBUS = 3630164972U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID MYSTERYSOUNDBUS = 318962753U;
         static const AkUniqueID TELEPORTBUS = 3519813714U;
     } // namespace BUSSES
 
