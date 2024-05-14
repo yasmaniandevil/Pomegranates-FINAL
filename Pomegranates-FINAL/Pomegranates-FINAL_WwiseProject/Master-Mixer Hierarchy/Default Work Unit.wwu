@@ -77,6 +77,17 @@
 									</Reference>
 								</ObjectList>
 							</ObjectLists>
+							<DuckingList>
+								<DuckItem>
+									<BusRef Name="MysterySoundBus" ID="{05D53784-357E-4282-A4BB-467223C6CC4A}"/>
+									<DuckingParam>
+										<Volume>-9</Volume>
+										<FadeInTime>1</FadeInTime>
+										<FadeOutTime>1</FadeOutTime>
+										<FadeCurve>FadeLinear</FadeCurve>
+									</DuckingParam>
+								</DuckItem>
+							</DuckingList>
 						</Bus>
 						<Bus Name="TeleportBus" ID="{08238823-C320-43D8-A292-FE64BC9E0B0E}">
 							<ReferenceList>
@@ -94,8 +105,18 @@
 										<FadeCurve>FadeLinear</FadeCurve>
 									</DuckingParam>
 								</DuckItem>
+								<DuckItem>
+									<BusRef Name="MysterySoundBus" ID="{05D53784-357E-4282-A4BB-467223C6CC4A}"/>
+									<DuckingParam>
+										<Volume>-9</Volume>
+										<FadeInTime>2</FadeInTime>
+										<FadeOutTime>2</FadeOutTime>
+										<FadeCurve>FadeLinear</FadeCurve>
+									</DuckingParam>
+								</DuckItem>
 							</DuckingList>
 						</Bus>
+						<Bus Name="MysterySoundBus" ID="{05D53784-357E-4282-A4BB-467223C6CC4A}"/>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>

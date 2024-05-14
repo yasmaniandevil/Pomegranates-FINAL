@@ -208,8 +208,14 @@
 						<ActiveSource Name="SFX_DigSound" ID="{87D095BF-C236-495E-986D-C07B5ADF65A2}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="TelportSound" ID="{A7192F0A-DD22-4EEC-9277-F62AFC614110}" ShortID="699710057">
+				<Sound Name="MysterySound" ID="{A7192F0A-DD22-4EEC-9277-F62AFC614110}" ShortID="699710057">
 					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>40</Value>
+							</ValueList>
+						</Property>
 						<Property Name="UserAuxSendVolume0" Type="Real64">
 							<ValueList>
 								<Value>2</Value>
@@ -236,14 +242,17 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{388F345F-C687-4C6D-878F-23220F72DDD5}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="TeleportBus" ID="{08238823-C320-43D8-A292-FE64BC9E0B0E}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
+							<ObjectRef Name="MysterySoundBus" ID="{05D53784-357E-4282-A4BB-467223C6CC4A}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="Arriving" ID="{FE62B8A4-411C-40C6-A137-F42671304D89}">
 							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="19.5940535117057"/>
+								<Property Name="FadeInShape" Type="int16" Value="4"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="8.75794816053512"/>
+								<Property Name="FadeOutShape" Type="int16" Value="4"/>
 								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-								<Property Name="TrimBegin" Type="Real64" Value="30.1014866220736"/>
 							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>Arriving.wav</AudioFile>

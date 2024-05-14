@@ -74,7 +74,7 @@
 						<Action Name="" ID="{654151FD-45FD-43E7-873E-4C242B7E43E5}" ShortID="555929033">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="TelportSound" ID="{A7192F0A-DD22-4EEC-9277-F62AFC614110}" WorkUnitID="{31E94F87-8316-4810-90FF-73AD6464BEB5}"/>
+									<ObjectRef Name="MysterySound" ID="{A7192F0A-DD22-4EEC-9277-F62AFC614110}" WorkUnitID="{31E94F87-8316-4810-90FF-73AD6464BEB5}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

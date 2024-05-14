@@ -18,7 +18,7 @@
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="TelportSound2" ID="{CAF1021D-FB09-4C33-BA84-3A824C66D4A8}" WorkUnitID="{31E94F87-8316-4810-90FF-73AD6464BEB5}"/>
+							<ObjectRef Name="Event_TeleportSound2" ID="{CD0F0449-139C-46E6-B7B8-FFAE437A8FF4}" WorkUnitID="{26A80C38-8D2E-4565-A178-D6745499F3A4}"/>
 							<Position X="1" Y="1"/>
 						</Module>
 					</ModuleList>
