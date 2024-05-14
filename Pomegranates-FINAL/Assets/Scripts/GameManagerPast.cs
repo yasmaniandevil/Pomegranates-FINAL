@@ -86,12 +86,9 @@ public class GameManagerPast : MonoBehaviour
         }
         //turns on the light in whichever place you are supposed to look at
 
-        if (buttonPressed == 3)
+        if (buttonPressed == 6 && Input.GetKeyDown(KeyCode.Space))
         {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                EndScene();
-            }
+            EndScene();
         }
         
     }
@@ -141,7 +138,7 @@ public class GameManagerPast : MonoBehaviour
 
     public void ChangeFlyer()
     {
-        if(buttonPressed == 3)
+        if(buttonPressed >= 6)
         {
             flyerTextBox.text =
                 "Good, you have recovered the memories of the lost. Bring this book back to the future and return it where you found it."; //will say this
@@ -161,6 +158,7 @@ public class GameManagerPast : MonoBehaviour
             hospitalLight.SetActive(false);
         }
         AkSoundEngine.PostEvent("Event_WritingSFX", gameObject);
+        Debug.Log(buttonPressed);
     }
     
     
