@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy/Default Work Unit
     guid: f732e3d294baae4b9e44cb31b07d54a0
     GuidInternal: 
-    m_lastTime: -8584859611028905770
+    m_lastTime: -8584857955573271584
     List:
     - name: EnviornmentBus
       guid: f5aac5d45314454faa4693a702c6da3f
@@ -105,6 +105,23 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus
+    - name: MemoryBus
+      guid: 8548ab6cc47dbf43a50fef7e831b5b5a
+      id: 3477029586
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f732e3d294baae4b9e44cb31b07d54a0
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: MemoryBus
+        ObjectType: 2
+        guid: 8548ab6cc47dbf43a50fef7e831b5b5a
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/MemoryBus
     - name: MysterySoundBus
       guid: 8437d5057e358242a4bb467223c6cc4a
       id: 318962753
@@ -122,6 +139,23 @@ MonoBehaviour:
         ObjectType: 2
         guid: 8437d5057e358242a4bb467223c6cc4a
       Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/MysterySoundBus
+    - name: PastEnviornmentBus
+      guid: 9ce569a311534e40b4dbf72b024a7833
+      id: 3408353000
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f732e3d294baae4b9e44cb31b07d54a0
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: PastEnviornmentBus
+        ObjectType: 2
+        guid: 9ce569a311534e40b4dbf72b024a7833
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/PastEnviornmentBus
     - name: Reverb
       guid: a4d210bc056c5f4d89d4e252bc7ffb84
       id: 348963605
