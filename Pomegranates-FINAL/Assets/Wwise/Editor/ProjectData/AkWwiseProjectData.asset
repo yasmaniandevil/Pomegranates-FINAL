@@ -168,7 +168,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: 033ae9bc3205de4f958035f6f2b06e57
     GuidInternal: 
-    m_lastTime: -8584859611028688991
+    m_lastTime: -8584858043235209726
     List:
     - name: AudioLogsSoundbank
       guid: a1a404d5212bed4dbaf3533d73cb1f51
@@ -336,7 +336,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 8097cb23c1290d4c9b41229fb2bf76ca
     GuidInternal: 
-    m_lastTime: -8584859635943934773
+    m_lastTime: -8584858043235268883
     List: []
   - PhysicalPath: Events/Environmental Events Work Unit.wwu
     PathAndIcons:
@@ -477,7 +477,7 @@ MonoBehaviour:
     ParentPath: Events/SFX
     guid: 380ca8262e8d6545a178d6745499f3a4
     GuidInternal: 
-    m_lastTime: -8584859611031251821
+    m_lastTime: -8584858043235238738
     List:
     - name: Event_AmbienceWindPlane
       guid: 58fa56745517fd48b569ffa7b21b6d49
@@ -564,6 +564,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 2.8124924
       minDuration: 2.8124924
+    - name: Event_MemoryRug
+      guid: db0379ec14e8d74a9655877e2eaa009c
+      id: 3428202163
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: SFX
+        ObjectType: 12
+        guid: 380ca8262e8d6545a178d6745499f3a4
+      - ElementName: Event_MemoryRug
+        ObjectType: 3
+        guid: db0379ec14e8d74a9655877e2eaa009c
+      Path: Events/SFX/Event_MemoryRug
+      maxAttenuation: 25
+      maxDuration: 28.766712
+      minDuration: 28.766712
     - name: Event_PageFlip
       guid: e9a745ecca3fd343b58b1942209e96de
       id: 103810202
@@ -734,7 +751,7 @@ MonoBehaviour:
     m_lastTime: -8584894592093036433
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 240000002f000000300000003b000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

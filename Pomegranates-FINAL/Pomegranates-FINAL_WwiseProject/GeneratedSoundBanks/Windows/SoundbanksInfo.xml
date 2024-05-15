@@ -64,10 +64,14 @@
 				<GameParameter Id="513275970" Name="FadeOutStreetAudio"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{BA841D01-D9DB-778E-65DF-9E4B6CCE1302}">
+		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{8AA19105-AD58-250E-B55C-BFCCF7580060}">
 			<ShortName>SFX_Soundbank</ShortName>
 			<Path>SFX_Soundbank.bnk</Path>
 			<Media>
+				<File Id="16442472" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MemoryRug.wav</ShortName>
+					<CachePath>SFX/MemoryRug_10C4C929.wem</CachePath>
+				</File>
 				<File Id="32953512" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>page-flip-2.wav</ShortName>
 					<CachePath>SFX/page-flip-2_10C4C929.wem</CachePath>
@@ -98,7 +102,7 @@
 				</File>
 				<File Id="773833868" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Arriving.wav</ShortName>
-					<CachePath>SFX/Arriving_1B59F1F5.wem</CachePath>
+					<CachePath>SFX/Arriving_8C1E433D.wem</CachePath>
 				</File>
 				<File Id="793448443" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Whoosh_05.wav</ShortName>
@@ -144,6 +148,11 @@
 						<AuxBusRef Id="730513497" Name="HPF"/>
 						<AuxBusRef Id="864145949" Name="LPF"/>
 					</AuxBusRefs>
+				</Event>
+				<Event Id="3428202163" Name="Event_MemoryRug" MaxAttenuation="25" DurationType="OneShot" DurationMin="28.766712" DurationMax="28.766712">
+					<MediaRefs>
+						<MediaRef Id="16442472"/>
+					</MediaRefs>
 				</Event>
 				<Event Id="103810202" Name="Event_PageFlip" DurationType="OneShot" DurationMin="0.66735417" DurationMax="0.66735417">
 					<MediaRefs>
@@ -396,5 +405,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{9FE34002-6CC2-0A87-00F6-DCA6A774259F}</FileHash>
+	<FileHash>{B18191EA-8D2D-1B17-E0A5-E121638DCB99}</FileHash>
 </SoundBanksInfo>

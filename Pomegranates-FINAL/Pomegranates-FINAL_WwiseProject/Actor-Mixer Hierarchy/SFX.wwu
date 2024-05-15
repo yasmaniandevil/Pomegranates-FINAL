@@ -411,6 +411,34 @@
 						<ActiveSource Name="Ambience Countryside Planes Over Head01" ID="{F4CE5D97-69A5-4B89-8B6D-9241E83F1FF6}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="MemoryRug" ID="{1B4ED4FF-6055-4021-B1F3-822D626AB476}" ShortID="308247671">
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="SFX_MemoryRug" ID="{27CCCEE7-E61E-44BF-A3C2-D9C04B6A8A4C}" WorkUnitID="{4EBC388F-9987-496A-9AB8-7944951BEB3E}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{388F345F-C687-4C6D-878F-23220F72DDD5}"/>
+						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+							<ObjectRef Name="Have_U_Ever_Been_Outside" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2E332F7-BA94-4BAE-9E44-CB31B07D54A0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="MemoryRug" ID="{CD62A5F8-24E1-4E7E-84E5-BBD7B75BA49A}">
+							<Language>SFX</Language>
+							<AudioFile>MemoryRug.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="16442472"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="MemoryRug" ID="{CD62A5F8-24E1-4E7E-84E5-BBD7B75BA49A}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

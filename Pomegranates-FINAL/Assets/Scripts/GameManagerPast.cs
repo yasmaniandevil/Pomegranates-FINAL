@@ -46,9 +46,9 @@ public class GameManagerPast : MonoBehaviour
     public GameObject bookScript;
 
     uint WritingSound;
-    private int currentSoundIndex;
-    private string[] soundEvents = { "Event_ArtifactUp1", "EventArtifactUp2",
-        "Event_ArtifactUp3"};
+    //private int currentSoundIndex;
+    //private string[] soundEvents = { "Event_ArtifactUp1", "EventArtifactUp2",
+        //"Event_ArtifactUp3"};
 
     
 
@@ -116,9 +116,9 @@ public class GameManagerPast : MonoBehaviour
         {
             if (leftPage[i].sprite == null) //goes to the next image to change image
             {
-                AkSoundEngine.PostEvent(soundEvents[currentSoundIndex], gameObject);
-                currentSoundIndex = (currentSoundIndex + 1) % soundEvents.Length;
-                Debug.Log("Current Sound Index " + currentSoundIndex);
+                //AkSoundEngine.PostEvent(soundEvents[currentSoundIndex], gameObject);
+                //currentSoundIndex = (currentSoundIndex + 1) % soundEvents.Length;
+                //Debug.Log("Current Sound Index " + currentSoundIndex);
 
                 leftPage[i].color = new Color(255f,255f,255f,255f); //makes image non transparent
                 leftPage[i].sprite = leftPageSprite; //changes it with the artifact of the 
@@ -219,7 +219,7 @@ public class GameManagerPast : MonoBehaviour
     
     public void EndScene() //will turn off all canvases + turn on particles and change scene in 4 seconds
     {
-        AkSoundEngine.PostEvent("Event_TeleportSound2", gameObject);
+        Invoke("TeleportSound", 2);
         PlayerOn();
         StopAllAudio();
         particles.SetActive(true);
@@ -255,6 +255,10 @@ public class GameManagerPast : MonoBehaviour
     {
         AkSoundEngine.StopPlayingID(WritingSound);
        
+    }
 
+    public void TeleportSound()
+    {
+        AkSoundEngine.PostEvent("Event_TeleportSound2", gameObject);
     }
 }

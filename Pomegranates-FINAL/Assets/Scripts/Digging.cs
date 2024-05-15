@@ -59,6 +59,7 @@ public class Digging : MonoBehaviour
                     AkSoundEngine.PostEvent("Event_DigSound", gameObject);
                     Debug.Log("dig sound");
                     hit.collider.gameObject.GetComponent<Mound>().RaiseRadish();
+                    
                 }
 
                 if(hit.collider.CompareTag("Vegetable")) //if hit veggie
@@ -105,12 +106,14 @@ public class Digging : MonoBehaviour
 
                 if (hit.collider.CompareTag("Tree Future 1")) //if its the tree in the first scene
                 {
+                    AkSoundEngine.PostEvent("Event_ArtifactUp2", gameObject);
                     hit.collider.gameObject.GetComponentInChildren<Mound>().SpawnArtifact(); //spawn artifact
                     gameManager.GetComponent<Narrative>().tree.tag = "Untagged";
                 }
                 
                 if (hit.collider.CompareTag("Tree Future 2")) //if its the second scene
                 {
+                    AkSoundEngine.PostEvent("Event_ArtifactUp2", gameObject);
                     hit.collider.gameObject.GetComponentInChildren<Mound>().SpawnArtifact();
                     gameManager.GetComponent<GameManager>().leaves.GetComponent<LeavesShrink>().Invoke("UnshrinkLeaves", 2f);
                     gameManager.GetComponent<GameManager>().Invoke("TreeCamOn", 1f); //change camera in 1 second

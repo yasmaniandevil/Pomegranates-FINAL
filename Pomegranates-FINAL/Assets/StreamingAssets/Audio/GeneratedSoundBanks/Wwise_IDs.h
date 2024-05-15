@@ -22,6 +22,7 @@ namespace AK
         static const AkUniqueID EVENT_DIGSOUND = 40698207U;
         static const AkUniqueID EVENT_FIRE_BLEND_CONTAINER = 565798754U;
         static const AkUniqueID EVENT_INTROAUDIOLOG = 1053017616U;
+        static const AkUniqueID EVENT_MEMORYRUG = 3428202163U;
         static const AkUniqueID EVENT_PAGEFLIP = 103810202U;
         static const AkUniqueID EVENT_PAPERFALLING = 1721341365U;
         static const AkUniqueID EVENT_STARTMUSICSEQUENCECONTAINER = 2459759789U;
