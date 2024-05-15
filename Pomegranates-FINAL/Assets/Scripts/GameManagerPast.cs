@@ -44,6 +44,8 @@ public class GameManagerPast : MonoBehaviour
     public GameObject year;
     
     public GameObject bookScript;
+
+    uint WritingSound;
     
 
    
@@ -99,7 +101,6 @@ public class GameManagerPast : MonoBehaviour
     public void ChangeScene() //changes scene
     {
         SceneManager.LoadScene("Future End");
-        AkSoundEngine.StopAll();
         
     }
 
@@ -158,7 +159,7 @@ public class GameManagerPast : MonoBehaviour
         {
             hospitalLight.SetActive(false);
         }
-        AkSoundEngine.PostEvent("Event_WritingSFX", gameObject);
+        WritingSound =  AkSoundEngine.PostEvent("Event_WritingSFX", gameObject);
         Debug.Log(buttonPressed);
     }
     
@@ -210,7 +211,8 @@ public class GameManagerPast : MonoBehaviour
     public void EndScene() //will turn off all canvases + turn on particles and change scene in 4 seconds
     {
         PlayerOn();
-        AkSoundEngine.PostEvent("Event_Teleport2Past", gameObject);
+        StopAllAudio();
+        AkSoundEngine.PostEvent("Event_TeleportSound2", gameObject);
         particles.SetActive(true);
         Invoke("ChangeScene", 4);
     }
@@ -236,5 +238,12 @@ public class GameManagerPast : MonoBehaviour
         year.SetActive(false);
         PlayerOff();
         book.GetComponent<AutoFlip>().StartFlipping(1);
+    }
+
+    public void StopAllAudio()
+    {
+        AkSoundEngine.StopPlayingID(WritingSound);
+       
+
     }
 }

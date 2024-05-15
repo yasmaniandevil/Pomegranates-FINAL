@@ -45,6 +45,7 @@ public class Digging : MonoBehaviour
             {
                 if (hit.collider.CompareTag("Mound")) //if it mound
                 {
+                    AkSoundEngine.PostEvent("Event_ArtifactUp2", gameObject);
              
                     hit.collider.gameObject.GetComponent<Mound>().SpawnArtifact(); //spawn artifact
                     script.currentLocation = hit.collider.gameObject;
