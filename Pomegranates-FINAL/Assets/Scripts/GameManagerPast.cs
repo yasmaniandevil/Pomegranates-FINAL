@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using BookCurlPro;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
@@ -233,6 +234,7 @@ public class GameManagerPast : MonoBehaviour
     void TurnOffYearCanvas()
     {
         year.SetActive(false);
-        bookScript.GetComponent<FPSOFF>().firstStart++;
+        PlayerOff();
+        book.GetComponent<AutoFlip>().StartFlipping(1);
     }
 }

@@ -51,19 +51,7 @@ public class FPSOFF : MonoBehaviour
         {
             book = GameObject.Find("BookPro");
         }
-
-        if (firstStart == 1)
-        {
-            FPS.SetActive(false);
-            reticle.SetActive(false);
-            book.SetActive(true);
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
-            book.GetComponent<AutoFlip>().enabled = true; //it will enable auto flip
-            book.GetComponent<AutoFlip>().Invoke("FlipRightPage", 1f);
-            book.GetComponent<BookPro>().interactable = true;
-            firstStart = 2;
-        }
+        
         //turn off FPS
         if (book.activeSelf)
         {
