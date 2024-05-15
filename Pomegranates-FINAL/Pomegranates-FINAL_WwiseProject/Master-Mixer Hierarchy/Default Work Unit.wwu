@@ -117,6 +117,27 @@
 							</DuckingList>
 						</Bus>
 						<Bus Name="MysterySoundBus" ID="{05D53784-357E-4282-A4BB-467223C6CC4A}"/>
+						<Bus Name="MemoryBus" ID="{6CAB4885-7DC4-43BF-A50F-EF7E831B5B5A}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<DuckingList>
+								<DuckItem>
+									<BusRef Name="PastEnviornmentBus" ID="{A369E59C-5311-404E-B4DB-F72B024A7833}"/>
+									<DuckingParam>
+										<Volume>-6</Volume>
+										<FadeInTime>1</FadeInTime>
+										<FadeOutTime>1</FadeOutTime>
+										<FadeCurve>FadeLinear</FadeCurve>
+									</DuckingParam>
+								</DuckItem>
+							</DuckingList>
+						</Bus>
+						<Bus Name="PastEnviornmentBus" ID="{A369E59C-5311-404E-B4DB-F72B024A7833}"/>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>

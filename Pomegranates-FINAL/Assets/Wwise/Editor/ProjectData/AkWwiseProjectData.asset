@@ -168,7 +168,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: 033ae9bc3205de4f958035f6f2b06e57
     GuidInternal: 
-    m_lastTime: -8584858043235209726
+    m_lastTime: -8584858024818096753
     List:
     - name: AudioLogsSoundbank
       guid: a1a404d5212bed4dbaf3533d73cb1f51
@@ -336,7 +336,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 8097cb23c1290d4c9b41229fb2bf76ca
     GuidInternal: 
-    m_lastTime: -8584858043235268883
+    m_lastTime: -8584858024818144993
     List: []
   - PhysicalPath: Events/Environmental Events Work Unit.wwu
     PathAndIcons:
@@ -477,7 +477,7 @@ MonoBehaviour:
     ParentPath: Events/SFX
     guid: 380ca8262e8d6545a178d6745499f3a4
     GuidInternal: 
-    m_lastTime: -8584858043235238738
+    m_lastTime: -8584858024818120822
     List:
     - name: Event_AmbienceWindPlane
       guid: 58fa56745517fd48b569ffa7b21b6d49
@@ -564,6 +564,40 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 2.8124924
       minDuration: 2.8124924
+    - name: Event_MemoryKey
+      guid: 7d09ad2668d7744cb974cd5e5f965a9e
+      id: 3762224504
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: SFX
+        ObjectType: 12
+        guid: 380ca8262e8d6545a178d6745499f3a4
+      - ElementName: Event_MemoryKey
+        ObjectType: 3
+        guid: 7d09ad2668d7744cb974cd5e5f965a9e
+      Path: Events/SFX/Event_MemoryKey
+      maxAttenuation: 25
+      maxDuration: -1
+      minDuration: -1
+    - name: Event_MemoryRing
+      guid: fd69af40b54cd24b88889a6b500c2211
+      id: 1165152141
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: SFX
+        ObjectType: 12
+        guid: 380ca8262e8d6545a178d6745499f3a4
+      - ElementName: Event_MemoryRing
+        ObjectType: 3
+        guid: fd69af40b54cd24b88889a6b500c2211
+      Path: Events/SFX/Event_MemoryRing
+      maxAttenuation: 25
+      maxDuration: -1
+      minDuration: -1
     - name: Event_MemoryRug
       guid: db0379ec14e8d74a9655877e2eaa009c
       id: 3428202163

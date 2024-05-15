@@ -6,19 +6,19 @@
 				<SoundcasterSession Name="Test" ID="{9F6ED795-CB09-4DBA-BBE1-54C40A13AA12}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="Event_PaperFalling" ID="{114B1DE5-819C-4BAB-AA5C-632C23AD409A}" WorkUnitID="{26A80C38-8D2E-4565-A178-D6745499F3A4}"/>
+							<ObjectRef Name="Event_MemoryKey" ID="{26AD097D-D768-4C74-B974-CD5E5F965A9E}" WorkUnitID="{26A80C38-8D2E-4565-A178-D6745499F3A4}"/>
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Event_AmbienceWindPlane" ID="{7456FA58-1755-48FD-B569-FFA7B21B6D49}" WorkUnitID="{26A80C38-8D2E-4565-A178-D6745499F3A4}"/>
+							<ObjectRef Name="Event_Wind_Blend_Container" ID="{3D67FC9A-0D11-4CDB-91E0-5A33CF65E583}" WorkUnitID="{BD32FA88-1A4D-4BA1-85D1-E735B565316A}"/>
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Event_Teleport2Past" ID="{E1C389F2-5D19-45D6-A1F5-1B77BEB2594A}" WorkUnitID="{26A80C38-8D2E-4565-A178-D6745499F3A4}"/>
+							<ObjectRef Name="Event_MemoryRing" ID="{40AF69FD-4CB5-4BD2-8888-9A6B500C2211}" WorkUnitID="{26A80C38-8D2E-4565-A178-D6745499F3A4}"/>
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Event_TeleportSound2" ID="{CD0F0449-139C-46E6-B7B8-FFAE437A8FF4}" WorkUnitID="{26A80C38-8D2E-4565-A178-D6745499F3A4}"/>
+							<ObjectRef Name="Event_MemoryRug" ID="{EC7903DB-E814-4AD7-9655-877E2EAA009C}" WorkUnitID="{26A80C38-8D2E-4565-A178-D6745499F3A4}"/>
 							<Position X="1" Y="1"/>
 						</Module>
 					</ModuleList>

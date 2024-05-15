@@ -2,6 +2,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	40698207	Event_DigSound			\SFX\Event_DigSound	
 	103810202	Event_PageFlip			\SFX\Event_PageFlip	
 	562259991	Event_WritingSFX			\SFX\Event_WritingSFX	
+	1165152141	Event_MemoryRing			\SFX\Event_MemoryRing	
 	1480077435	Event_Teleport2Past			\SFX\Event_Teleport2Past	
 	1512012398	Event_AmbienceWindPlane			\SFX\Event_AmbienceWindPlane	
 	1721341365	Event_PaperFalling			\SFX\Event_PaperFalling	
@@ -10,18 +11,24 @@ Event	ID	Name			Wwise Object Path	Notes
 	1969774667	Event_ArtifactUp2			\SFX\Event_ArtifactUp2	
 	2241038274	Event_TeleportSound2			\SFX\Event_TeleportSound2	
 	3428202163	Event_MemoryRug			\SFX\Event_MemoryRug	
+	3762224504	Event_MemoryKey			\SFX\Event_MemoryKey	
 
 Effect plug-ins	ID	Name	Type				Notes
 	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
 	1008402193	Low_Pass_20KHz	Wwise Parametric EQ			
 	3604890626	High_Pass_60Hz	Wwise Parametric EQ			
+	4239446561	Dual_Filters_Narrow_Bandwidth	Wwise Parametric EQ			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	16442472	MemoryRug	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Windows\SFX\MemoryRug_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\MemoryRug		5074608
+	16442472	MemoryRug	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Windows\SFX\MemoryRug_D79FB2B7.wem		\Actor-Mixer Hierarchy\SFX\MemoryRug		5074608
 	32953512	PageFlip	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Windows\SFX\page-flip-2_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\PageFlip		128228
 	67495303	PaperFalling	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Windows\SFX\PaperFalling_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\PaperFalling		10464208
+	173665976	MemoryRing2	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Windows\SFX\MemoryRing2_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\MemoryRing\MemoryRing2		2630860
 	181114169	WritingSFX	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Windows\SFX\WritingSFX_3FF3F59B.wem		\Actor-Mixer Hierarchy\SFX\WritingSFX		156072
 	344708579	ArtifactUp1	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Windows\SFX\Action_Pop Up_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\ArtifactUp1		216160
+	400260343	MemoryKey1	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Windows\SFX\MemoryKey1_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\MemoryKey\MemoryKey1		2617508
+	436539238	MemoryRing1	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Windows\SFX\MemoryRing1_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\MemoryRing\MemoryRing1		2937932
+	489261815	MemoryKey2	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Windows\SFX\MemoryKey2_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\MemoryKey\MemoryKey2		2457196
 	494818398	ArtifactUp2	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Windows\SFX\Glockenspiel Selection Sound 02_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\ArtifactUp2		672160
 	720925955	ArtifactUp3	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Windows\SFX\Indian Woodwind Notification Sound 03_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\ArtifactUp3		528160
 	766905104	DigSound	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Windows\SFX\SFX_DigSound_9B3CC253.wem		\Actor-Mixer Hierarchy\SFX\DigSound		248222

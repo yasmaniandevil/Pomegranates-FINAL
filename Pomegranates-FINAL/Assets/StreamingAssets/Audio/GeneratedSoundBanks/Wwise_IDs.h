@@ -22,6 +22,8 @@ namespace AK
         static const AkUniqueID EVENT_DIGSOUND = 40698207U;
         static const AkUniqueID EVENT_FIRE_BLEND_CONTAINER = 565798754U;
         static const AkUniqueID EVENT_INTROAUDIOLOG = 1053017616U;
+        static const AkUniqueID EVENT_MEMORYKEY = 3762224504U;
+        static const AkUniqueID EVENT_MEMORYRING = 1165152141U;
         static const AkUniqueID EVENT_MEMORYRUG = 3428202163U;
         static const AkUniqueID EVENT_PAGEFLIP = 103810202U;
         static const AkUniqueID EVENT_PAPERFALLING = 1721341365U;
@@ -55,7 +57,9 @@ namespace AK
     {
         static const AkUniqueID ENVIORNMENTBUS = 3630164972U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID MEMORYBUS = 3477029586U;
         static const AkUniqueID MYSTERYSOUNDBUS = 318962753U;
+        static const AkUniqueID PASTENVIORNMENTBUS = 3408353000U;
         static const AkUniqueID TELEPORTBUS = 3519813714U;
     } // namespace BUSSES
 

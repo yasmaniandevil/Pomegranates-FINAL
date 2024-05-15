@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{C62C3BA5-C52E-D075-5AB0-47C1E58621D3}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{A0A63ABE-77A5-FFD9-78E3-442FA68F22E7}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -26,6 +26,8 @@
 			</Plugins>
 			<Busses>
 				<Bus Id="318962753" Name="MysterySoundBus"/>
+				<Bus Id="3408353000" Name="PastEnviornmentBus"/>
+				<Bus Id="3477029586" Name="MemoryBus"/>
 				<Bus Id="3519813714" Name="TeleportBus">
 					<PluginRefs>
 						<ShareSets>
@@ -64,13 +66,13 @@
 				<GameParameter Id="513275970" Name="FadeOutStreetAudio"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{1661E869-846C-52A4-318B-FA407C91B757}">
+		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{6E082BBA-B443-0916-6FA4-379BA07F7E4B}">
 			<ShortName>SFX_Soundbank</ShortName>
 			<Path>SFX_Soundbank.bnk</Path>
 			<Media>
 				<File Id="16442472" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MemoryRug.wav</ShortName>
-					<CachePath>SFX/MemoryRug_10C4C929.wem</CachePath>
+					<CachePath>SFX/MemoryRug_D79FB2B7.wem</CachePath>
 				</File>
 				<File Id="32953512" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>page-flip-2.wav</ShortName>
@@ -80,6 +82,10 @@
 					<ShortName>PaperFalling.wav</ShortName>
 					<CachePath>SFX/PaperFalling_10C4C929.wem</CachePath>
 				</File>
+				<File Id="173665976" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MemoryRing2.wav</ShortName>
+					<CachePath>SFX/MemoryRing2_10C4C929.wem</CachePath>
+				</File>
 				<File Id="181114169" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WritingSFX.wav</ShortName>
 					<CachePath>SFX/WritingSFX_3FF3F59B.wem</CachePath>
@@ -87,6 +93,18 @@
 				<File Id="344708579" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Action_Pop Up.wav</ShortName>
 					<CachePath>SFX/Action_Pop Up_10C4C929.wem</CachePath>
+				</File>
+				<File Id="400260343" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MemoryKey1.wav</ShortName>
+					<CachePath>SFX/MemoryKey1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="436539238" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MemoryRing1.wav</ShortName>
+					<CachePath>SFX/MemoryRing1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="489261815" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MemoryKey2.wav</ShortName>
+					<CachePath>SFX/MemoryKey2_10C4C929.wem</CachePath>
 				</File>
 				<File Id="494818398" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Glockenspiel Selection Sound 02.wav</ShortName>
@@ -118,6 +136,7 @@
 					<Plugin Id="48620415" Name="Have_U_Ever_Been_Outside" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="1008402193" Name="Low_Pass_20KHz" LibName="Wwise Parametric EQ" LibId="6881283"/>
 					<Plugin Id="3604890626" Name="High_Pass_60Hz" LibName="Wwise Parametric EQ" LibId="6881283"/>
+					<Plugin Id="4239446561" Name="Dual_Filters_Narrow_Bandwidth" LibName="Wwise Parametric EQ" LibId="6881283"/>
 				</ShareSets>
 			</Plugins>
 			<Events>
@@ -150,7 +169,24 @@
 						<AuxBusRef Id="864145949" Name="LPF"/>
 					</AuxBusRefs>
 				</Event>
-				<Event Id="3428202163" Name="Event_MemoryRug" MaxAttenuation="25" DurationType="OneShot" DurationMin="28.766712" DurationMax="28.766712">
+				<Event Id="3762224504" Name="Event_MemoryKey" MaxAttenuation="25" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="400260343"/>
+						<MediaRef Id="489261815"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1165152141" Name="Event_MemoryRing" MaxAttenuation="25" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="173665976"/>
+						<MediaRef Id="436539238"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="4239446561"/>
+						</ShareSets>
+					</PluginRefs>
+				</Event>
+				<Event Id="3428202163" Name="Event_MemoryRug" MaxAttenuation="25" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="16442472"/>
 					</MediaRefs>
@@ -222,7 +258,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2981824113" Type="User" Language="SFX" Hash="{0A2D76D2-5AC8-5C3D-EDE7-BD1C5DBC3AFB}">
+		<SoundBank Id="2981824113" Type="User" Language="SFX" Hash="{88A0BD37-A140-7C03-54A1-B5FCB2A7332D}">
 			<ShortName>Wind_SoundBank</ShortName>
 			<Path>Wind_SoundBank.bnk</Path>
 			<Media>
@@ -411,5 +447,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{E668C4B2-72C6-806B-DAAC-4C6596864777}</FileHash>
+	<FileHash>{169AD2DB-3F12-7F64-C415-0E0F901302D5}</FileHash>
 </SoundBanksInfo>
