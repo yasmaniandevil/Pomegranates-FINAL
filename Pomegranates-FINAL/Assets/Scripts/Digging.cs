@@ -46,6 +46,7 @@ public class Digging : MonoBehaviour
                 if (hit.collider.CompareTag("Mound")) //if it mound
                 {
                     AkSoundEngine.PostEvent("Event_ArtifactUp2", gameObject);
+                    Debug.Log("Artifact dig sound");
              
                     hit.collider.gameObject.GetComponent<Mound>().SpawnArtifact(); //spawn artifact
                     script.currentLocation = hit.collider.gameObject;
@@ -70,6 +71,7 @@ public class Digging : MonoBehaviour
                 {
                     Destroy(hit.collider.gameObject);
                     book.SetActive(true);
+                    //sound of book being placed
                     Debug.Log(book.GetComponent<AutoFlip>());
                     book.GetComponent<AutoFlip>().Invoke("FlipRightPage", .3f);
 

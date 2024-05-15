@@ -46,6 +46,10 @@ public class GameManagerPast : MonoBehaviour
     public GameObject bookScript;
 
     uint WritingSound;
+    private int currentSoundIndex;
+    private string[] soundEvents = { "Event_ArtifactUp1", "EventArtifactUp2",
+        "Event_ArtifactUp3"};
+
     
 
    
@@ -54,7 +58,6 @@ public class GameManagerPast : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
         
 
         //randomizes every time the game starts
@@ -91,6 +94,7 @@ public class GameManagerPast : MonoBehaviour
 
         if (buttonPressed == 6 && Input.GetKeyDown(KeyCode.Space))
         {
+            //the sound might need to go here
             EndScene();
         }
         
@@ -112,7 +116,10 @@ public class GameManagerPast : MonoBehaviour
         {
             if (leftPage[i].sprite == null) //goes to the next image to change image
             {
-                
+                AkSoundEngine.PostEvent(soundEvents[currentSoundIndex], gameObject);
+                currentSoundIndex = (currentSoundIndex + 1) % soundEvents.Length;
+                Debug.Log("Current Sound Index " + currentSoundIndex);
+
                 leftPage[i].color = new Color(255f,255f,255f,255f); //makes image non transparent
                 leftPage[i].sprite = leftPageSprite; //changes it with the artifact of the 
                 break;
@@ -159,6 +166,8 @@ public class GameManagerPast : MonoBehaviour
         {
             hospitalLight.SetActive(false);
         }
+        //maybe take this out because the book already opens
+        //just add sound of book landing
         WritingSound =  AkSoundEngine.PostEvent("Event_WritingSFX", gameObject);
         Debug.Log(buttonPressed);
     }
@@ -210,9 +219,9 @@ public class GameManagerPast : MonoBehaviour
     
     public void EndScene() //will turn off all canvases + turn on particles and change scene in 4 seconds
     {
+        AkSoundEngine.PostEvent("Event_TeleportSound2", gameObject);
         PlayerOn();
         StopAllAudio();
-        AkSoundEngine.PostEvent("Event_TeleportSound2", gameObject);
         particles.SetActive(true);
         Invoke("ChangeScene", 4);
     }
@@ -225,9 +234,11 @@ public class GameManagerPast : MonoBehaviour
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }
-    public void PlayerOff() //will turn off all the canvases and activate the player
+    public void PlayerOff() //will turn off player and activate canvas
     {
         book.SetActive(true);
+        //sound of the book being placed
+        //AkSoundEngine.PostEvent
         player.SetActive(false);
         reticle.SetActive(false);
         Cursor.visible = true;

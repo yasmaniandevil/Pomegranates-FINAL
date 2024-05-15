@@ -193,6 +193,7 @@ public class Narrative : MonoBehaviour
         }
         else if (amount >= 2 && player.GetComponent<Digging>().veggiesCollected >= 3) //if all veggies collected
         {
+            //sound for collected
             ActivateTextBox(4); //activate 4th
         }
 
