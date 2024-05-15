@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy/Default Work Unit
     guid: f732e3d294baae4b9e44cb31b07d54a0
     GuidInternal: 
-    m_lastTime: -8584859635944028980
+    m_lastTime: -8584859611028905770
     List:
     - name: EnviornmentBus
       guid: f5aac5d45314454faa4693a702c6da3f
@@ -105,6 +105,23 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus
+    - name: MysterySoundBus
+      guid: 8437d5057e358242a4bb467223c6cc4a
+      id: 318962753
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f732e3d294baae4b9e44cb31b07d54a0
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: MysterySoundBus
+        ObjectType: 2
+        guid: 8437d5057e358242a4bb467223c6cc4a
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/MysterySoundBus
     - name: Reverb
       guid: a4d210bc056c5f4d89d4e252bc7ffb84
       id: 348963605
@@ -151,7 +168,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: 033ae9bc3205de4f958035f6f2b06e57
     GuidInternal: 
-    m_lastTime: -8584859635943883353
+    m_lastTime: -8584859611028688991
     List:
     - name: AudioLogsSoundbank
       guid: a1a404d5212bed4dbaf3533d73cb1f51
@@ -261,7 +278,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Music Work Unit
     guid: c18c34e12c7e7d44877328d2d89e2c2d
     GuidInternal: 
-    m_lastTime: -8584859809955705047
+    m_lastTime: -8584859611028686368
     List:
     - name: Music_Soundbank
       guid: f2e71fddc7aeb6458658b8e863ae6fe3
@@ -413,7 +430,7 @@ MonoBehaviour:
     ParentPath: Events/Music Events Work Unit
     guid: bb625751613f284e8f36db8b35422e0b
     GuidInternal: 
-    m_lastTime: -8584859809955736634
+    m_lastTime: -8584859611031254155
     List:
     - name: Event_ALBint
       guid: d33cfcdbb033cf408f9abac76efdce4c
@@ -460,7 +477,7 @@ MonoBehaviour:
     ParentPath: Events/SFX
     guid: 380ca8262e8d6545a178d6745499f3a4
     GuidInternal: 
-    m_lastTime: -8584859635943912658
+    m_lastTime: -8584859611031251821
     List:
     - name: Event_AmbienceWindPlane
       guid: 58fa56745517fd48b569ffa7b21b6d49
@@ -596,8 +613,8 @@ MonoBehaviour:
         guid: f289c3e1195dd645a1f51b77beb2594a
       Path: Events/SFX/Event_Teleport2Past
       maxAttenuation: 0
-      maxDuration: 14.282013
-      minDuration: 14.282013
+      maxDuration: -1
+      minDuration: -1
     - name: Event_TeleportSound2
       guid: 49040fcd9c13e646b7b8ffae437a8ff4
       id: 2241038274
@@ -644,7 +661,7 @@ MonoBehaviour:
     ParentPath: Game Parameters/Default Work Unit
     guid: 0bde763b5c2f9c469235495d31c2db59
     GuidInternal: 
-    m_lastTime: -8584859809955684508
+    m_lastTime: -8584859611031249985
     List:
     - name: FadeOutStreetAudio
       guid: dc31beb644483546a2a980262065b2b3
@@ -717,7 +734,7 @@ MonoBehaviour:
     m_lastTime: -8584894592093036433
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000090000000a0000000e0000000f000000100000001c0000001d0000001e000000210000002500000027000000
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
