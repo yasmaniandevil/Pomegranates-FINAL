@@ -64,7 +64,7 @@
 				<GameParameter Id="513275970" Name="FadeOutStreetAudio"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{8AA19105-AD58-250E-B55C-BFCCF7580060}">
+		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{1661E869-846C-52A4-318B-FA407C91B757}">
 			<ShortName>SFX_Soundbank</ShortName>
 			<Path>SFX_Soundbank.bnk</Path>
 			<Media>
@@ -115,6 +115,7 @@
 			</Media>
 			<Plugins>
 				<ShareSets>
+					<Plugin Id="48620415" Name="Have_U_Ever_Been_Outside" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="1008402193" Name="Low_Pass_20KHz" LibName="Wwise Parametric EQ" LibId="6881283"/>
 					<Plugin Id="3604890626" Name="High_Pass_60Hz" LibName="Wwise Parametric EQ" LibId="6881283"/>
 				</ShareSets>
@@ -153,6 +154,11 @@
 					<MediaRefs>
 						<MediaRef Id="16442472"/>
 					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="48620415"/>
+						</ShareSets>
+					</PluginRefs>
 				</Event>
 				<Event Id="103810202" Name="Event_PageFlip" DurationType="OneShot" DurationMin="0.66735417" DurationMax="0.66735417">
 					<MediaRefs>
@@ -405,5 +411,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{B18191EA-8D2D-1B17-E0A5-E121638DCB99}</FileHash>
+	<FileHash>{E668C4B2-72C6-806B-DAAC-4C6596864777}</FileHash>
 </SoundBanksInfo>

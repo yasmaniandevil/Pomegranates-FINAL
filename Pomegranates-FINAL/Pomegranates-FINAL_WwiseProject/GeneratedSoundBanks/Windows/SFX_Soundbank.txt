@@ -12,6 +12,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3428202163	Event_MemoryRug			\SFX\Event_MemoryRug	
 
 Effect plug-ins	ID	Name	Type				Notes
+	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
 	1008402193	Low_Pass_20KHz	Wwise Parametric EQ			
 	3604890626	High_Pass_60Hz	Wwise Parametric EQ			
 

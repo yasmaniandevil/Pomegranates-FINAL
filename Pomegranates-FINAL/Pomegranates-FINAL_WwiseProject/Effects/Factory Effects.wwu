@@ -654,10 +654,10 @@
 								</Effect>
 								<Effect Name="Dual_Filters_Narrow_Bandwidth" ID="{A24607C6-04E1-4D41-B513-28C0914D138D}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 									<PropertyList>
-										<Property Name="FilterTypeBand1" Type="int32" Value="1"/>
+										<Property Name="FilterTypeBand1" Type="int32" Value="3"/>
 										<Property Name="FilterTypeBand2" Type="int32" Value="3"/>
 										<Property Name="FilterTypeBand3" Type="int32" Value="0"/>
-										<Property Name="FrequencyBand1" Type="Real32" Value="500"/>
+										<Property Name="FrequencyBand1" Type="Real32" Value="800"/>
 										<Property Name="OnOffBand2" Type="bool" Value="False"/>
 									</PropertyList>
 								</Effect>

@@ -124,6 +124,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Event_MemoryKey" ID="{26AD097D-D768-4C74-B974-CD5E5F965A9E}">
+					<ChildrenList>
+						<Action Name="" ID="{432E568D-44A6-4A79-A49C-D86AC01F2871}" ShortID="355820926">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MemoryKey" ID="{1241DA43-D3AD-4BDC-A207-EF55587B9E52}" WorkUnitID="{31E94F87-8316-4810-90FF-73AD6464BEB5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Event_MemoryRing" ID="{40AF69FD-4CB5-4BD2-8888-9A6B500C2211}">
+					<ChildrenList>
+						<Action Name="" ID="{D01589EC-C817-4E14-B1E2-D42098C3A30A}" ShortID="821823406">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MemoryRing" ID="{687D44E0-487B-4779-A4F2-B592F70BDDA1}" WorkUnitID="{31E94F87-8316-4810-90FF-73AD6464BEB5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be3cbdbcbe42544ec867eda460a2f483, type: 3}
+  m_Name: 26AD097D-D768-4C74-B974-CD5E5F965A9E
+  m_EditorClassIdentifier: 
+  objectName: Event_MemoryKey
+  id: 3762224504
+  guid: 26AD097D-D768-4C74-B974-CD5E5F965A9E
