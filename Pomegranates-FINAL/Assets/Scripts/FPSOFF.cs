@@ -17,8 +17,6 @@ public class FPSOFF : MonoBehaviour
 
     public static FPSOFF Instance;
 
-    public int firstStart;
-
     // Start is called before the first frame update
     void Awake()
     {
@@ -62,7 +60,7 @@ public class FPSOFF : MonoBehaviour
             bookOn = false;
         }
         
-        if(Input.GetKeyUp(KeyCode.J) && bookOn == false) //when pressing f and bookon is false, it will open the book
+        if(Input.GetKeyUp(KeyCode.Tab) && bookOn == false) //when pressing f and bookon is false, it will open the book
         {
             FPS.SetActive(false);
             reticle.SetActive(false);
@@ -76,7 +74,7 @@ public class FPSOFF : MonoBehaviour
         }
 
         //turn on FPS
-        if(Input.GetKeyUp(KeyCode.J) && bookOn == true) //if book is open
+        if(Input.GetKeyUp(KeyCode.Tab) && bookOn == true) //if book is open
         {
             currentPage = book.GetComponent<BookPro>().currentPaper;
             book.GetComponent<AutoFlip>().enabled = true; 
