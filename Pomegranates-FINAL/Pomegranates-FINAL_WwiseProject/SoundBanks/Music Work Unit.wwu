@@ -7,6 +7,7 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Event_ALBint" ID="{DBFC3CD3-33B0-40CF-8F9A-BAC76EFDCE4C}" WorkUnitID="{515762BB-3F61-4E28-8F36-DB8B35422E0B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_StartMusicSequenceContainer" ID="{2A411283-887F-4521-AAF4-FAB6A700065A}" WorkUnitID="{515762BB-3F61-4E28-8F36-DB8B35422E0B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Event_EndMusicSequenceContainer" ID="{62D0B6EB-D7A2-4D9A-9178-9B364A4C0562}" WorkUnitID="{515762BB-3F61-4E28-8F36-DB8B35422E0B}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

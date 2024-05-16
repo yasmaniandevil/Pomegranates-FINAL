@@ -348,6 +348,11 @@
 				<Sound Name="MemoryRug" ID="{1B4ED4FF-6055-4021-B1F3-822D626AB476}" ShortID="308247671">
 					<PropertyList>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>2</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">

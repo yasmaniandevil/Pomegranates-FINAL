@@ -277,7 +277,7 @@ public class Narrative : MonoBehaviour
     {
         AkSoundEngine.StopPlayingID(stopPlane);
         AkSoundEngine.StopPlayingID(stopPapers);
-        AkSoundEngine.StopPlayingID(stopTeleport1);
+        
 
     }
 

@@ -312,7 +312,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Music Work Unit
     guid: c18c34e12c7e7d44877328d2d89e2c2d
     GuidInternal: 
-    m_lastTime: -8584859611028686368
+    m_lastTime: -8584857873727369450
     List:
     - name: Music_Soundbank
       guid: f2e71fddc7aeb6458658b8e863ae6fe3
@@ -370,7 +370,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 8097cb23c1290d4c9b41229fb2bf76ca
     GuidInternal: 
-    m_lastTime: -8584858024818144993
+    m_lastTime: -8584857873727430410
     List: []
   - PhysicalPath: Events/Environmental Events Work Unit.wwu
     PathAndIcons:
@@ -464,7 +464,7 @@ MonoBehaviour:
     ParentPath: Events/Music Events Work Unit
     guid: bb625751613f284e8f36db8b35422e0b
     GuidInternal: 
-    m_lastTime: -8584859611031254155
+    m_lastTime: -8584857873727395043
     List:
     - name: Event_ALBint
       guid: d33cfcdbb033cf408f9abac76efdce4c
@@ -481,6 +481,23 @@ MonoBehaviour:
         guid: d33cfcdbb033cf408f9abac76efdce4c
       Path: Events/Music Events Work Unit/Event_ALBint
       maxAttenuation: 20
+      maxDuration: -1
+      minDuration: -1
+    - name: Event_EndMusicSequenceContainer
+      guid: ebb6d062a2d79a4d91789b364a4c0562
+      id: 684185614
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music Events Work Unit
+        ObjectType: 12
+        guid: bb625751613f284e8f36db8b35422e0b
+      - ElementName: Event_EndMusicSequenceContainer
+        ObjectType: 3
+        guid: ebb6d062a2d79a4d91789b364a4c0562
+      Path: Events/Music Events Work Unit/Event_EndMusicSequenceContainer
+      maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
     - name: Event_StartMusicSequenceContainer

@@ -25,6 +25,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Event_EndMusicSequenceContainer" ID="{62D0B6EB-D7A2-4D9A-9178-9B364A4C0562}">
+					<ChildrenList>
+						<Action Name="" ID="{89CDFB31-5D9E-4421-A754-9D68683006B7}" ShortID="698434283">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="EndMusicSequenceContainer" ID="{059606DC-751F-4DA7-B5AE-FCED13699822}" WorkUnitID="{9C472C09-89AB-46D7-87C7-20F1D2ABCF84}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

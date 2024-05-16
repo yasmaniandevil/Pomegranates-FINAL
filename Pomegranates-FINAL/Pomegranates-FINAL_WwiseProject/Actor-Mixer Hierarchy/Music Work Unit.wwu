@@ -137,6 +137,9 @@
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="EndMusicSequenceContainer" ID="{059606DC-751F-4DA7-B5AE-FCED13699822}" ShortID="349144509">
 					<PropertyList>
+						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.2"/>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 					</PropertyList>
 					<ReferenceList>
@@ -281,6 +284,14 @@
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
+					<Playlist>
+						<ItemRef Name="Sama1" ID="{C2E4E727-9BA2-4920-96E8-22E03C4E7A03}"/>
+						<ItemRef Name="Sama2" ID="{6CDF8FCA-9383-41A0-94DC-A60E59880536}"/>
+						<ItemRef Name="Sama3" ID="{8F4A51A1-A6E4-45F8-A1F8-C2723C22674E}"/>
+						<ItemRef Name="Sama4" ID="{4BAFE001-987C-4BF1-A677-9FC566ABF7BA}"/>
+						<ItemRef Name="Sama5" ID="{562DA192-0DA7-4162-A1FF-5FE7F5814FB3}"/>
+						<ItemRef Name="Sama6" ID="{CFDB477A-FEC8-43B1-942A-688B32199748}"/>
+					</Playlist>
 				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
