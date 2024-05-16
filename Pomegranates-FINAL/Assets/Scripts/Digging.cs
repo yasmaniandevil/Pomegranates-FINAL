@@ -56,7 +56,7 @@ public class Digging : MonoBehaviour
 
                 if (hit.collider.CompareTag("FarmMound")) //if one of the farm mounds
                 {
-                    AkSoundEngine.PostEvent("Event_DigSound", gameObject);
+                   
                     Debug.Log("dig sound");
                     hit.collider.gameObject.GetComponent<Mound>().RaiseRadish();
                     
@@ -64,6 +64,7 @@ public class Digging : MonoBehaviour
 
                 if(hit.collider.CompareTag("Vegetable")) //if hit veggie
                 {
+                    AkSoundEngine.PostEvent("Event_DigSound", gameObject);
                     Destroy(hit.collider.gameObject); //destroy gameobject
                     veggiesCollected++; //add to veggies collected
                 }

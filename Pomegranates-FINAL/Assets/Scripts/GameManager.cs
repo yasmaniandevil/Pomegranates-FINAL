@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour
     public GameObject leaves;
 
     public GameObject year;
+    private bool gameEnd = false;
     
     // Start is called before the first frame update
     void Start()
@@ -65,6 +66,14 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             PauseGame();
+        }
+        
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            if(year.activeSelf && gameEnd == true)
+            {
+                LoadScene("StartScreen");
+            }
         }
 
     }
@@ -145,11 +154,18 @@ public class GameManager : MonoBehaviour
             obj.gameObject.GetComponent<DissolveEffect>().startRessolveTrigger();
         }
         birdEyeViewCam.SetActive(true);
+        Invoke("TurnOnEndScreen", 16f);
     }
 
     void TurnOffYearCanvas()
     {
         year.SetActive(false);
+    }
+
+    void TurnOnEndScreen()
+    {
+        year.SetActive(true); //using year as the place holder, but this is called only in the end so end title is put in year in the inspector
+        gameEnd = true;
     }
 
 }
