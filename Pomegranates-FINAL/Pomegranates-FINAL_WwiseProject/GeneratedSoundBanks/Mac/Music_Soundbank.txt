@@ -1,4 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
+	684185614	Event_EndMusicSequenceContainer			\Music Events Work Unit\Event_EndMusicSequenceContainer	
 	2459759789	Event_StartMusicSequenceContainer			\Music Events Work Unit\Event_StartMusicSequenceContainer	
 	3204538988	Event_ALBint			\Music Events Work Unit\Event_ALBint	
 
@@ -8,6 +9,12 @@ Effect plug-ins	ID	Name	Type				Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	159575214	StartScene2	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Mac\SFX\StartMusic2wav_FCFFF15B.wem		\Actor-Mixer Hierarchy\Music Work Unit\StartMusicSequenceContainer\StartScene2		2123352
+	411649524	Sama3	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Mac\SFX\Sama3_10C4C929.wem		\Actor-Mixer Hierarchy\Music Work Unit\EndMusicSequenceContainer\Sama3		5305876
+	488395571	Sama6	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Mac\SFX\Sama6_10C4C929.wem		\Actor-Mixer Hierarchy\Music Work Unit\EndMusicSequenceContainer\Sama6		5285072
 	583924016	StartScene1	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Mac\SFX\StartScene1_A716F73D.wem		\Actor-Mixer Hierarchy\Music Work Unit\StartMusicSequenceContainer\StartScene1		2123352
+	732269496	Sama4	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Mac\SFX\Sama4_10C4C929.wem		\Actor-Mixer Hierarchy\Music Work Unit\EndMusicSequenceContainer\Sama4		5285072
 	771506818	ALBINT	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Mac\SFX\ALBINT2_D79FB2B7.wem		\Actor-Mixer Hierarchy\Music Work Unit\ALBINT		9711800
+	800255054	Sama5	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Mac\SFX\Sama5_10C4C929.wem		\Actor-Mixer Hierarchy\Music Work Unit\EndMusicSequenceContainer\Sama5		5305876
+	824719184	Sama1	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Mac\SFX\Sama1_10C4C929.wem		\Actor-Mixer Hierarchy\Music Work Unit\EndMusicSequenceContainer\Sama1		5287480
+	972252301	Sama2	Y:\Documents\NYU\Spring 24\Thesis\Pomegranates-FINAL\Pomegranates-FINAL\Pomegranates-FINAL_WwiseProject\.cache\Mac\SFX\Sama2_10C4C929.wem		\Actor-Mixer Hierarchy\Music Work Unit\EndMusicSequenceContainer\Sama2		5291112
 

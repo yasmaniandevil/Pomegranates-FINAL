@@ -66,7 +66,7 @@
 				<GameParameter Id="513275970" Name="FadeOutStreetAudio"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{6E082BBA-B443-0916-6FA4-379BA07F7E4B}">
+		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{AE40C6B7-8507-0330-D282-6A31CBAED2A9}">
 			<ShortName>SFX_Soundbank</ShortName>
 			<Path>SFX_Soundbank.bnk</Path>
 			<Media>
@@ -382,7 +382,7 @@
 				<GameParameter Id="513275970" Name="FadeOutStreetAudio"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3589812408" Type="User" Language="SFX" Hash="{19CBEE68-AE97-7D04-D50A-DECBA10F6382}">
+		<SoundBank Id="3589812408" Type="User" Language="SFX" Hash="{9226574E-BFAB-F4BF-4086-2503E09B1A34}">
 			<ShortName>Music_Soundbank</ShortName>
 			<Path>Music_Soundbank.bnk</Path>
 			<Media>
@@ -390,13 +390,37 @@
 					<ShortName>StartMusic2wav.wav</ShortName>
 					<CachePath>SFX/StartMusic2wav_FCFFF15B.wem</CachePath>
 				</File>
+				<File Id="411649524" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sama3.wav</ShortName>
+					<CachePath>SFX/Sama3_10C4C929.wem</CachePath>
+				</File>
+				<File Id="488395571" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sama6.wav</ShortName>
+					<CachePath>SFX/Sama6_10C4C929.wem</CachePath>
+				</File>
 				<File Id="583924016" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>StartScene1.wav</ShortName>
 					<CachePath>SFX/StartScene1_A716F73D.wem</CachePath>
 				</File>
+				<File Id="732269496" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sama4.wav</ShortName>
+					<CachePath>SFX/Sama4_10C4C929.wem</CachePath>
+				</File>
 				<File Id="771506818" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ALBINT2.wav</ShortName>
 					<CachePath>SFX/ALBINT2_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="800255054" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sama5.wav</ShortName>
+					<CachePath>SFX/Sama5_10C4C929.wem</CachePath>
+				</File>
+				<File Id="824719184" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sama1.wav</ShortName>
+					<CachePath>SFX/Sama1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="972252301" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sama2.wav</ShortName>
+					<CachePath>SFX/Sama2_10C4C929.wem</CachePath>
 				</File>
 			</Media>
 			<Plugins>
@@ -420,6 +444,16 @@
 						<AuxBusRef Id="348963605" Name="Reverb"/>
 						<AuxBusRef Id="730513497" Name="HPF"/>
 					</AuxBusRefs>
+				</Event>
+				<Event Id="684185614" Name="Event_EndMusicSequenceContainer" DurationType="OneShot" DurationMin="179.04446" DurationMax="179.04446">
+					<MediaRefs>
+						<MediaRef Id="411649524"/>
+						<MediaRef Id="488395571"/>
+						<MediaRef Id="732269496"/>
+						<MediaRef Id="800255054"/>
+						<MediaRef Id="824719184"/>
+						<MediaRef Id="972252301"/>
+					</MediaRefs>
 				</Event>
 				<Event Id="2459759789" Name="Event_StartMusicSequenceContainer" DurationType="Infinite">
 					<MediaRefs>
@@ -447,5 +481,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{AA8957CD-4BC1-3566-A0AC-E983E7ECF4F3}</FileHash>
+	<FileHash>{A6847907-A7FF-267E-2A2A-18B11106BADF}</FileHash>
 </SoundBanksInfo>

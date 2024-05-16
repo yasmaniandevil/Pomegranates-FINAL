@@ -498,8 +498,8 @@ MonoBehaviour:
         guid: ebb6d062a2d79a4d91789b364a4c0562
       Path: Events/Music Events Work Unit/Event_EndMusicSequenceContainer
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 179.04446
+      minDuration: 179.04446
     - name: Event_StartMusicSequenceContainer
       guid: 8312412a7f882145aaf4fab6a700065a
       id: 2459759789
